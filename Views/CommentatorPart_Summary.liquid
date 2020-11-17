@@ -1,0 +1,3 @@
+﻿{% assign url = '//' | append:Model.ShortName | append:'.disqus.com/count.js' %}
+{% script id:"dsq-count-scr", src:url, at:"Foot", async %}
+<a href="{{ Model.ContentItem | display_url }}#disqus_thread" data-disqus-identifier="{{ Model.ContentItem.ContentItemId }}"></a>

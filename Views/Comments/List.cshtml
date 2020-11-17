@@ -1,0 +1,16 @@
+﻿@model ListContentsViewModel
+@using OrchardCore.ContentManagement
+
+@inject IContentManager ContentManager
+@inject OrchardCore.IOrchardHelper Orchard
+
+@if (Model.ContentItems.Count > 0)
+{
+    <ul>
+    @foreach (var contentItem in Model.ContentItems)
+    {
+
+        @await DisplayAsync(contentItem)
+    }
+    </ul>
+}

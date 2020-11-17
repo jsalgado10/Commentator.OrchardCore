@@ -1,0 +1,9 @@
+@model OrchardCore.Commentator.Settings.CommentatorPartSettingsViewModel
+
+<div class="form-group">
+    <div class="row col-lg">
+        <label asp-for="ShortName">@T["Short name"]</label>
+        <input asp-for="ShortName" class="form-control" />
+        <span class="hint">@T["The short name of the site on Disqus."]</span>
+    </div>
+</div>

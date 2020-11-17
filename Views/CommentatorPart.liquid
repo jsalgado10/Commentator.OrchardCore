@@ -1,0 +1,20 @@
+﻿{% script name:"jQuery", at:"Foot" %}
+{% script name:"sweetalert-js", at:"Foot" %}
+{% script name:"Commentator-site-js", at:"Foot" %}
+{% style name:"Commentator-site", version:"1" %}
+
+{% resources type: "FootScript" %}                 
+
+{% if Model.AllowComments %}
+<div id="new_comment"></div>
+<div id="divComments"></div>
+<input type="hidden" id="ArticleId" value="{{ Model.ContentItem.ContentItemId }}" />
+<script at="Foot" type="text/javascript">
+    var newCommentLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/Add/CommentPost';
+    var commentsLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/{{ Model.ContentItem.ContentItemId }}';
+    console.log(newCommentLink);
+    console.log(commentsLink);    
+    $('#new_comment').load(newCommentLink);
+    $('#divComments').load(commentsLink);    
+</script>
+{% endif %}

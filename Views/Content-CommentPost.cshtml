@@ -1,0 +1,28 @@
+﻿@inject IContentDefinitionManager ContentDefinitionManager
+@inject OrchardCore.IOrchardHelper Orchard
+
+@{ 
+    ContentItem contentItem = Model.ContentItem;
+    var postDate = (object)(await DisplayAsync(await New.TimeSpan(Utc: Model.ContentItem.PublishedUtc))).Name;
+}
+
+<li class="commentPost">
+    <div class="comment-profile">
+        @Model.ContentItem.Content.CommentPost.CommentBy.Text
+    </div>
+    <div class="comment-postdate">
+        <span class="hint">@T[$@"Posted {postDate}"]</span>
+    </div>
+    <div class="comment-content">
+        @Model.ContentItem.Content.CommentPost.CommentText.Text   @Model.ContentItem.Content.CommentPost.Comment
+    </div>
+    <div>
+        @Model.ContentItem.Content.CommentPost.CommentArticle.Text -  Post ID - @Model.ContentItem.ContentItemId
+    </div>
+    
+    <div>
+        <i class="fa fa-comment-alt fa-sm"></i>
+        <input type="button" class="replycomment" onclick="addAticleCommentBox(this,' + result.id + ');" value="Reply">
+    </div>
+</li>
+@Orchard.ConsoleLog(contentItem)

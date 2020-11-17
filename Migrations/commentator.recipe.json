@@ -1,0 +1,101 @@
+{
+  "steps": [
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "CommentPost",
+          "DisplayName": "Comment Post",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "CommentPost",
+              "Name": "CommentPost",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ContentParts": [
+        {
+          "Name": "CommentatorPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a comment section for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "CommentPost",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "CommentParent",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Comment Parent",
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CommentText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Comment Text",
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CommentBy",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Comment By",
+                  "Position": "3"
+                },
+                "TextFieldSettings": {},
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CommentArticle",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Comment Article",
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
