@@ -1,20 +1,28 @@
 ﻿{% script name:"jQuery", at:"Foot" %}
-{% script name:"sweetalert-js", at:"Foot" %}
 {% script name:"Commentator-site-js", at:"Foot" %}
+{% script name:"sweetalert-js", at:"Foot" %}
+{% script name:"Trumbowyg-js", at:"Foot" %}
+{% script name:"Trumbowyg-fontfamily-js", at:"Foot" %}
+{% script name:"Trumbowyg-fontsize-js", at:"Foot" %}
+{% script name:"Trumbowyg-emoji-js", at:"Foot" %}
+{% script name:"Trumbowyg-giphy-js", at:"Foot" %}
+{% style name:"Trumbowyg-css", version:"2" %}
+{% style name:"Trumbowyg-emoji-css", version:"2" %}
+{% style name:"Trumbowyg-giphy-css", version:"2" %}
 {% style name:"Commentator-site", version:"1" %}
+
 
 {% resources type: "FootScript" %}                 
 
 {% if Model.AllowComments %}
+<input type="hidden" id="ArticleId" value="{{ Model.ContentItem.ContentItemId }}" />
 <div id="new_comment"></div>
 <div id="divComments"></div>
-<input type="hidden" id="ArticleId" value="{{ Model.ContentItem.ContentItemId }}" />
 <script at="Foot" type="text/javascript">
+    var listOptions = '?Options.OrderBy={{ Model.OrderBy }}&Options.GroupBy={{ Model.GroupBy }}&PageCount={{ Model.CommentsPerPage }}';
     var newCommentLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/Add/CommentPost';
-    var commentsLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/{{ Model.ContentItem.ContentItemId }}';
-    console.log(newCommentLink);
-    console.log(commentsLink);    
+    var commentsLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/{{ Model.ContentItem.ContentItemId }}' + listOptions;    
     $('#new_comment').load(newCommentLink);
-    $('#divComments').load(commentsLink);    
+    $('#divComments').load(commentsLink);
 </script>
 {% endif %}

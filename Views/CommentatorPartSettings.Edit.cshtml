@@ -2,8 +2,18 @@
 
 <div class="form-group">
     <div class="row col-lg">
-        <label asp-for="ShortName">@T["Short name"]</label>
-        <input asp-for="ShortName" class="form-control" />
-        <span class="hint">@T["The short name of the site on Disqus."]</span>
+        <label asp-for="OrderBy">@T["Order By"]</label>
+        @Html.DropDownListFor(model => model.OrderBy, new SelectList(new string[] { "Date", "Rank" }, Model.OrderBy), new { @class = "form-control" })
+        <span class="hint">@T["How To Order Comments"]</span>
+    </div>
+    <div class="row col-lg">
+        <label asp-for="GroupBy">@T["Group By"]</label>
+        @Html.DropDownListFor(model => model.GroupBy, new SelectList(new string[] { "Thread", "Single" }, Model.GroupBy), new { @class = "form-control" })
+        <span class="hint">@T["How to Group Comments"]</span>
+    </div>
+    <div class="row col-lg">
+        <label asp-for="CommentsPerPage">@T["Page Count"]</label>
+        <input asp-for="CommentsPerPage" class="form-control" />
+        <span class="hint">@T["Number of Comments Per Page"]</span>
     </div>
 </div>

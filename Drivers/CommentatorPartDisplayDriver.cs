@@ -28,7 +28,7 @@ namespace OrchardCore.Commentator.Drivers
                     .Location("Summary", "Meta:5")
             );
         }
-        
+
         public override IDisplayResult Edit(CommentatorPart commentatorPart)
         {
             return Initialize<CommentatorPartViewModel>("CommentatorPart_Edit", m => BuildViewModel(m, commentatorPart));
@@ -39,7 +39,7 @@ namespace OrchardCore.Commentator.Drivers
             var settings = GetCommentatorPartSettings(model);
 
             await updater.TryUpdateModelAsync(model, Prefix, t => t.AllowComments);
-            
+
             return Edit(model);
         }
 
@@ -57,7 +57,9 @@ namespace OrchardCore.Commentator.Drivers
             var settings = GetCommentatorPartSettings(part);
 
             model.ContentItem = part.ContentItem;
-            model.ShortName = settings.ShortName;
+            model.OrderBy = settings.OrderBy;
+            model.GroupBy = settings.GroupBy;
+            model.CommentsPerPage = settings.CommentsPerPage;
             model.AllowComments = part.AllowComments;
             model.CommentatorPart = part;
             model.Settings = settings;

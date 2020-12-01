@@ -2,6 +2,8 @@
 {
     public class CommentatorPartSettings
     {
-        public string ShortName { get; set; }
+        public string OrderBy { get; set; }
+        public string GroupBy { get; set; }
+        public int CommentsPerPage { get; set; }
     }
 }

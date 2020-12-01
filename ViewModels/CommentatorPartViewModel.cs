@@ -7,9 +7,10 @@ namespace OrchardCore.Commentator.ViewModels
 {
     public class CommentatorPartViewModel
     {
-        public string ShortName { get; set; }
-
         public bool AllowComments { get; set; }
+        public string OrderBy { get; set; }
+        public string GroupBy { get; set; }
+        public int? CommentsPerPage { get; set; }
 
         [BindNever]
         public ContentItem ContentItem { get; set; }

@@ -1,28 +1,43 @@
 ﻿@inject IContentDefinitionManager ContentDefinitionManager
 @inject OrchardCore.IOrchardHelper Orchard
 
-@{ 
+@{
     ContentItem contentItem = Model.ContentItem;
     var postDate = (object)(await DisplayAsync(await New.TimeSpan(Utc: Model.ContentItem.PublishedUtc))).Name;
+    string commentText = Model.ContentItem.Content.CommentPost.CommentText.Text;
 }
 
-<li class="commentPost">
-    <div class="comment-profile">
-        @Model.ContentItem.Content.CommentPost.CommentBy.Text
+<li class="commentPost" id="comment-@contentItem.ContentItemId">
+    <div class="comment-wrapper">
+        <div class="avatar">
+            <div class="user">
+                <i class="fas fa-4x fa-user-alt"></i>
+            </div>
+        </div>
+        <div class="comment-content">
+            <div class="comment-header">
+                <div hidden>ContentId - @contentItem.ContentItemId</div>
+                <div hidden>ContentParent - @contentItem.Content.CommentPost.CommentParent.Text</div>
+                <span class="post-by">@contentItem.Content.CommentPost.CommentBy.Text </span>
+                <span class="post-meta">@T[$@"{postDate}"]</span>
+            </div>
+            <div class="post-comment">
+                @Html.Raw(commentText)
+            </div>
+            <div class="post-options">
+                @if (contentItem.Content.CommentPost.ChildCount.Value > 0)
+                {
+                    <button class="btn replycomment" onclick="ShowCommentReplies('@contentItem.ContentItemId');"><i class="fas fa-comment-dots"></i> View @contentItem.Content.CommentPost.ChildCount.Value Replies</button>
+                }
+
+                <button class="btn replycomment" onclick="AddNewCommentBox('@contentItem.ContentItemId');"><i class="fas fa-reply"></i> Reply</button>
+            </div>            
+        </div>
     </div>
-    <div class="comment-postdate">
-        <span class="hint">@T[$@"Posted {postDate}"]</span>
+    <div id="new_comment_@contentItem.ContentItemId" class="new-reply">
     </div>
-    <div class="comment-content">
-        @Model.ContentItem.Content.CommentPost.CommentText.Text   @Model.ContentItem.Content.CommentPost.Comment
-    </div>
-    <div>
-        @Model.ContentItem.Content.CommentPost.CommentArticle.Text -  Post ID - @Model.ContentItem.ContentItemId
-    </div>
-    
-    <div>
-        <i class="fa fa-comment-alt fa-sm"></i>
-        <input type="button" class="replycomment" onclick="addAticleCommentBox(this,' + result.id + ');" value="Reply">
+    <div id="post-children-@contentItem.ContentItemId" class="post-children">
+        <hr />
     </div>
 </li>
-@Orchard.ConsoleLog(contentItem)
+@*@Orchard.ConsoleLog(contentItem)*@

@@ -92,6 +92,18 @@
                   "Position": "0"
                 }
               }
+            },
+            {
+              "FieldName": "NumericField",
+              "Name": "ChildCount",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Child Count",
+                  "Position": "1"
+                },
+                "NumericFieldSettings": {},
+                "ContentIndexSettings": {}
+              }
             }
           ]
         }

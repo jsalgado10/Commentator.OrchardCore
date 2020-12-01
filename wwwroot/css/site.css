@@ -3,14 +3,6 @@
     position: relative;
 }
 
-    #divComments ul:before {
-        content: "";
-        background: #ddd;
-        width: 2px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-    }
 
 #divComments > ul:first-child:before {
     display: none;
@@ -37,7 +29,7 @@
     font-weight: bold;
 }
 
-#divComments ul i.fa-comment-alt {
+#divComments ul i.fa-reply {
     color: #ea9c0c;
 }
 
@@ -92,10 +84,11 @@
     }
 
     .avatar img {
-      /*  width: 48px;
-        height: 48px;*/
+        width: 48px;
+        height: 48px;
     }
 
+.comment-wrapper,
 .compose-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -107,12 +100,53 @@
     align-items: flex-start;
 }
 
+.comment-content {
+    padding-left: 10px;
+}
+
+.comment-content,
 .compose-content {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-left: 12px;
 }
 
-.post-comment{
-    margin-bottom : 0.5rem;
+.post-comment {
+    margin-bottom: 0.5rem;
+}
+
+.post-list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.comment-header {
+    line-height: 1;
+    font-size: 13px;
+    padding-right: 46px;
+    margin-bottom: 3px;
+}
+
+.post-by {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.post-options {
+    float: right;
+}
+
+.post-children {
+    display: inline-block;
+    color: #666;
+    width: 100%;
+}
+
+.new-reply {
+    padding-left: 40px;
+}
+
+.post-comment img {
+    max-width: 100%;
+    max-height: 100%;
 }

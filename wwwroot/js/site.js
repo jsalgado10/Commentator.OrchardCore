@@ -1,20 +1,22 @@
-function AddArticleComment() {
-
-    var formData = $('#newCommentForm').serialize();
-    postArticleComment(formData);
+function AddArticleComment(contentId) {
+    console.log('Adding Article Comment');
+    console.log('Content Id : ' + contentId);
+    var form = '#newCommentForm_' + contentId;
+    var formData = $(form).serialize();
+    postArticleComment(formData, contentId);
 }
 
-function postArticleComment(model) {
-    if ($('#txtArticleComment').val().trim().length === 0) {
+function postArticleComment(model, contentId) {
+    if ($('#txtArticleComment_' + contentId).val().trim().length === 0) {
         swal("Please enter your comment", '', "error");
         return;
     }
 
+    console.log('Posting New Comment');
     //console.log(model);
-    console.log('Postig New Comment');
     $.post(newCommentLink, model)
-        .done(function (data,status,xhr) {
-            console.log(data);
+        .done(function (data, status, xhr) {
+            //console.log(data);
             //console.log(status);
             //console.log(xhr);
             console.log('done');
@@ -29,4 +31,60 @@ function postArticleComment(model) {
             console.log('fail');
             swal("Sorry!", "Failed to add your comment", "error");
         });
+}
+
+function AddNewCommentBox(parentId) {
+    console.log('Add New Comment Box');
+    $('#new_comment_' + parentId).load(newCommentLink, function () {
+        $('#new_comment_' + parentId + ' input[name="CommentPost.CommentParent.Text"]').val(parentId);
+    });
+}
+
+function SetEditor(contentId) {
+    var currentTxtComment = '#txtArticleComment_' + contentId;
+
+    jQuery.noConflict();
+    console.log('Setting editor');
+    $(currentTxtComment).trumbowyg({
+        btns: [
+            ['viewHTML'],
+            ['undo', 'redo'],
+            ['formatting'],
+            ['strong', 'em', 'del'],
+            ['fontfamily'],
+            ['fontsize'],
+            ['emoji'],
+            ['giphy'],
+            ['link'],
+            ['insertImage'],
+            ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+            ['unorderedList', 'orderedList'],
+            ['horizontalRule'],
+            ['removeformat']
+        ],
+        plugins: {
+            giphy: {
+                apiKey: 'E7juuZxJbM4GPJsbUVqtDCqyYEUIT32c',
+                noResultGifUrl: 'http://example.com/yourimage.gif'
+            },
+            fontsize: {
+                allowCustomSize: true
+            }
+        },
+        autogrow: true,
+        urlProtocol: true,
+        minimalLinks: true,
+        tagsToRemove: ['script', 'link']
+    });
+    $(currentTxtComment).closest(".trumbowyg-box").css("min-height", "50px");
+    $(currentTxtComment).prev(".trumbowyg-editor").css("min-height", "50px");
+    console.log('Done Setting editor');
+}
+
+function ShowCommentReplies(parentId) {
+    console.log('show Comment replies');
+    var childDiv = '#post-children-' + parentId;
+    var subCommentOptions = '&OnlySubComments=True&ParentId=' + parentId;
+    $(childDiv).load(commentsLink + subCommentOptions);
+    console.log('done showing Comment replies');
 }

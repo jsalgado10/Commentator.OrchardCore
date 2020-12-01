@@ -21,7 +21,9 @@ namespace OrchardCore.Commentator.Settings
             {
                 var settings = contentTypePartDefinition.GetSettings<CommentatorPartSettings>();
 
-                model.ShortName = settings.ShortName;
+                model.OrderBy = settings.OrderBy;
+                model.GroupBy = settings.GroupBy;
+                model.CommentsPerPage = settings.CommentsPerPage;
                 model.CommentatorPartSettings = settings;
 
             }).Location("Content");
@@ -36,9 +38,14 @@ namespace OrchardCore.Commentator.Settings
 
             var model = new CommentatorPartSettingsViewModel();
 
-            if (await context.Updater.TryUpdateModelAsync(model, Prefix, m => m.ShortName))
+            if (await context.Updater.TryUpdateModelAsync(model, Prefix, m => m.OrderBy, m => m.GroupBy, m => m.CommentsPerPage))
             {
-                context.Builder.WithSettings(new CommentatorPartSettings { ShortName = model.ShortName });
+                context.Builder.WithSettings(new CommentatorPartSettings
+                {
+                    OrderBy = model.OrderBy,
+                    GroupBy = model.GroupBy,
+                    CommentsPerPage = model.CommentsPerPage
+                }) ;
             }
 
             return Edit(contentTypePartDefinition, context.Updater);

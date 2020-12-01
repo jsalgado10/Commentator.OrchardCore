@@ -8,28 +8,29 @@
 @{ ContentItem contentItem = Model.ContentItem;
     var contentTypeDefinition = ContentDefinitionManager.GetTypeDefinition(contentItem.ContentType);
     var typeDisplayName = contentTypeDefinition?.DisplayName ?? contentItem.ContentType.CamelFriendly();
-    var userName = User?.Identity?.Name ?? "Anonymous"; }
+    var userName = User?.Identity?.Name ?? "Anonymous";
+}
 
 <div class="compose-wrapper">
     <div class="avatar">
         <div class="user">
-            <img src="//a.disquscdn.com/1604363669/images/noavatar92.png" />
+            <i class="fas fa-4x fa-user-alt"></i>
         </div>
     </div>
     <div class="compose-content">
-        <form asp-action="Create" method="post" id="newCommentForm">
-            <div class="form-group mb-4" id="ArticleComment">
+        <form asp-action="Create" method="post" id="newCommentForm_@contentItem.ContentItemId">
+            <div class="form-group mb-4" id="ArticleComment_@contentItem.ContentItemId">
                 <input type="text" name="returnUrl" value="@FullRequestPath" hidden />
-                <input type="text" id="DocumentId" name="CommentPost.CommentArticle.Text" hidden />
-                <input type="text" name="CommentPost.CommentParent.Text" value="0" hidden />
+                <input type="text" id="DocumentId_@contentItem.ContentItemId" name="CommentPost.CommentArticle.Text" hidden />
+                <input type="text" id="CommentParentId_@contentItem.ContentItemId" name="CommentPost.CommentParent.Text" value="0" hidden />
                 <input type="text" name="CommentPost.CommentBy.Text" value="@userName" hidden />
                 <input type="text" name="CommentPost.CommentDate.LocalDateTime" value="@DateTime.Now" hidden />
                 <div class="post-comment">
-                    <textarea class="form-control" style="overflow: auto; overflow-wrap: break-word; max-height: 350px;" placeholder="Start the discussion..." id="txtArticleComment" name="CommentPost.CommentText.Text" message="comment text is a required field." required></textarea>
+                    <textarea class="form-control" style="overflow: auto; overflow-wrap: break-word; " placeholder="Start the discussion..." id="txtArticleComment_@contentItem.ContentItemId" name="CommentPost.CommentText.Text" message="comment text is a required field." required></textarea>
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-right article-main-comment">
-                        <button type="button" onclick="AddArticleComment();" id="btnPost" class="btn btn-primary">Post as @userName</button>
+                        <button type="button" id="btnPost_@contentItem.ContentItemId" onclick="AddArticleComment('@contentItem.ContentItemId')" class="btn btn-primary">Post as @userName</button>
                     </div>
                 </div>
             </div>
@@ -39,7 +40,10 @@
 
 <script type="text/javascript">
     $(function () {
-        var documentId2 = $('#ArticleId').val();
-        $('#DocumentId').val(documentId2);
+        var contentId = '@contentItem.ContentItemId';
+        console.log('Content Id ' + contentId);
+        var currentArticleId = $('#ArticleId').val();
+        $('#DocumentId_' + contentId).val(currentArticleId);
+        SetEditor(contentId);
     });
 </script>

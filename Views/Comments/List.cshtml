@@ -6,11 +6,16 @@
 
 @if (Model.ContentItems.Count > 0)
 {
-    <ul>
-    @foreach (var contentItem in Model.ContentItems)
-    {
-
-        @await DisplayAsync(contentItem)
-    }
+    <ul class="post-list">
+        @foreach (var contentItem in Model.ContentItems)
+        {
+            @await DisplayAsync(contentItem)
+        }
     </ul>
+}
+else
+{
+    <div class="alert alert-info">
+        @T["No Comments Found"]
+    </div>
 }
