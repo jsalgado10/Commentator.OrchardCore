@@ -1,16 +1,24 @@
 ﻿{% script name:"jQuery", at:"Foot" %}
 {% script name:"Commentator-site-js", at:"Foot" %}
-{% script name:"sweetalert-js", at:"Foot" %}
-{% script name:"Trumbowyg-js", at:"Foot" %}
-{% script name:"Trumbowyg-fontfamily-js", at:"Foot" %}
-{% script name:"Trumbowyg-fontsize-js", at:"Foot" %}
-{% script name:"Trumbowyg-emoji-js", at:"Foot" %}
-{% script name:"Trumbowyg-giphy-js", at:"Foot" %}
-{% style name:"Trumbowyg-css", version:"2" %}
-{% style name:"Trumbowyg-emoji-css", version:"2" %}
-{% style name:"Trumbowyg-giphy-css", version:"2" %}
-{% style name:"Commentator-site", version:"1" %}
+{% assign editorOption = Model.Editor %}
 
+{% case editorOption %}
+    {% when "CKEditor" %}
+        {% script name:"CkEditor5-js", at:"Foot" %}
+        {% style name:"CkEditor5-css", version:"5" %}
+    {% else %}
+        {% script name:"Trumbowyg-js", at:"Foot" %}
+        {% script name:"Trumbowyg-fontfamily-js", at:"Foot" %}
+        {% script name:"Trumbowyg-fontsize-js", at:"Foot" %}
+        {% script name:"Trumbowyg-emoji-js", at:"Foot" %}
+        {% script name:"Trumbowyg-giphy-js", at:"Foot" %}
+        {% style name:"Trumbowyg-css", version:"2" %}
+        {% style name:"Trumbowyg-emoji-css", version:"2" %}
+        {% style name:"Trumbowyg-giphy-css", version:"2" %}
+{% endcase %}
+
+{% script name:"sweetalert-js", at:"Foot" %}
+{% style name:"Commentator-site", version:"1" %}
 
 {% resources type: "FootScript" %}                 
 
@@ -19,6 +27,8 @@
 <div id="new_comment"></div>
 <div id="divComments"></div>
 <script at="Foot" type="text/javascript">
+    const editors = {};
+    var editorType = '{{ Model.Editor}}' == '' ? 'Trumbowyg' : '{{ Model.Editor }}';
     var listOptions = '?Options.OrderBy={{ Model.OrderBy }}&Options.GroupBy={{ Model.GroupBy }}&PageCount={{ Model.CommentsPerPage }}';
     var newCommentLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/Add/CommentPost';
     var commentsLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/{{ Model.ContentItem.ContentItemId }}' + listOptions;    

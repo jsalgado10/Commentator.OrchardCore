@@ -23,13 +23,6 @@ namespace OrchardCore.Commentator
 {
     public class Startup : StartupBase
     {
-        //private readonly AdminOptions _adminOptions;
-
-        //public Startup(IOptions<AdminOptions> adminOptions)
-        //{
-        //    _adminOptions = adminOptions.Value;
-        //}
-
         public override void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IResourceManifestProvider, ResourceManifest>();
@@ -39,22 +32,6 @@ namespace OrchardCore.Commentator
             services.AddScoped<IContentTypePartDefinitionDisplayDriver, CommentatorPartSettingsDisplayDriver>();
             services.AddScoped<IDataMigration, Migrations>();
             services.AddScoped<IPermissionProvider, Permissions>();
-            //services.Configure<AutorouteOptions>(options =>
-            //{
-            //    if (options.GlobalRouteValues.Count == 0)
-            //    {
-            //        options.GlobalRouteValues = new RouteValueDictionary
-            //        {
-            //            {"Area", "OrchardCore.Commentator"},
-            //            {"Controller", "Comments"},
-            //            {"Action", "Display"}
-            //        };
-
-            //        options.ContentItemIdKey = "contentItemId";
-            //        options.ContainedContentItemIdKey = "containedContentItemId";
-            //        options.JsonPathKey = "jsonPath";
-            //    }
-            //});
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)

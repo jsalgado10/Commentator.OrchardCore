@@ -1,4 +1,4 @@
-﻿/*COMMENTS */
+﻿/*COMMENTS*/
 #divComments ul {
     position: relative;
 }
@@ -12,9 +12,9 @@
     padding: 0;
 }
 
-#divComments ul li {
+/*#divComments ul li {
     display: inline-block;
-}
+}*/
 
 #divComments ul .replycomment {
     background: none;
@@ -34,7 +34,7 @@
 }
 
 #divComments ul li {
-    display: inline-block;
+    /*display: inline-block;*/
     color: #666;
     width: 100%;
 }
@@ -88,10 +88,19 @@
         height: 48px;
     }
 
-.comment-wrapper,
+.comment-wrapper {
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    display: flex;
+}
+
 .compose-wrapper {
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-negative: 0;
@@ -101,14 +110,14 @@
 }
 
 .comment-content {
-    padding-left: 10px;
-}
-
-.comment-content,
-.compose-content {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-left: 12px;
+    padding-left: 10px;
+}
+.compose-content {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
 }
 
 .post-comment {
@@ -150,3 +159,4 @@
     max-width: 100%;
     max-height: 100%;
 }
+

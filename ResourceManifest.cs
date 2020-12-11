@@ -31,10 +31,15 @@ namespace OrchardCore.Commentator
             manifest
                  .DefineScript("Trumbowyg-emoji-js")
                  .SetCdn("https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/plugins/emoji/trumbowyg.emoji.min.js");
-            
+
             manifest
                  .DefineScript("Trumbowyg-fontfamily-js")
                  .SetCdn("https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/plugins/fontfamily/trumbowyg.fontfamily.min.js");
+
+            manifest
+                 .DefineScript("CkEditor5-js")
+                 .SetUrl("~/OrchardCore.Commentator/js/ckeditor.js")
+                 .SetVersion("5.0.0");
 
             manifest
                  .DefineScript("Trumbowyg-fontsize-js")
@@ -44,6 +49,10 @@ namespace OrchardCore.Commentator
                .DefineStyle("Commentator-site")
                .SetUrl("~/OrchardCore.Commentator/css/site.min.css", "~/OrchardCore.Commentator/css/site.css")
                .SetVersion("1.0.0");
+            manifest
+               .DefineStyle("CkEditor5-css")
+               .SetUrl("~/OrchardCore.Commentator/css/ckeditor.css")
+               .SetVersion("5.0.0");
 
             manifest
                .DefineStyle("Trumbowyg-css")

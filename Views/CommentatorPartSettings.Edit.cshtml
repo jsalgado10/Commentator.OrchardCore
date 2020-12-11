@@ -12,6 +12,11 @@
         <span class="hint">@T["How to Group Comments"]</span>
     </div>
     <div class="row col-lg">
+        <label asp-for="Editor">@T["Editor"]</label>
+        @Html.DropDownListFor(model => model.Editor, new SelectList(new string[] { "Trumbowyg", "CKEditor" }, Model.GroupBy), new { @class = "form-control" })
+        <span class="hint">@T["Editor to Display"]</span>
+    </div>
+    <div class="row col-lg">
         <label asp-for="CommentsPerPage">@T["Page Count"]</label>
         <input asp-for="CommentsPerPage" class="form-control" />
         <span class="hint">@T["Number of Comments Per Page"]</span>

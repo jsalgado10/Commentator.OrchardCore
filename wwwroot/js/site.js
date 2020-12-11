@@ -1,6 +1,10 @@
-function AddArticleComment(contentId) {
+﻿function AddArticleComment(contentId) {
     console.log('Adding Article Comment');
     console.log('Content Id : ' + contentId);
+    if (editorType == 'CKEditor') {
+        $('#txtArticleComment_' + contentId).val(editors[contentId].getData());
+        console.log(editors[contentId].getData());
+    }
     var form = '#newCommentForm_' + contentId;
     var formData = $(form).serialize();
     postArticleComment(formData, contentId);
@@ -40,7 +44,83 @@ function AddNewCommentBox(parentId) {
     });
 }
 
-function SetEditor(contentId) {
+function CKEditorAddEmojis(editor) {
+    var emojis = [];
+    $.getJSON('/OrchardCore.Commentator/Assets/emoji.json', function (data) {
+        $.each(data, function (index, value) {
+            emojis.push({ title: value.id.replace(':', ''), character: value.symbol });
+        })
+        editor.plugins.get('SpecialCharacters').addItems('Emoji', emojis);
+    });
+    
+}
+
+function SetCKEditor(contentId) {
+    var currentTxtComment = '#txtArticleComment_' + contentId;
+    ClassicEditor
+        .create(document.querySelector(currentTxtComment), {
+
+            toolbar: {
+                items: [
+                    'heading',
+                    '|',
+                    'bold',
+                    'italic',
+                    'link',
+                    'bulletedList',
+                    'numberedList',
+                    '|',
+                    'indent',
+                    'outdent',
+                    '|',
+                    'imageUpload',
+                    'blockQuote',
+                    'insertTable',
+                    'mediaEmbed',
+                    'undo',
+                    'redo',
+                    'alignment',
+                    'code',
+                    'codeBlock',
+                    'fontSize',
+                    'fontFamily',
+                    'highlight',
+                    'htmlEmbed',
+                    'removeFormat',
+                    'horizontalLine',
+                    'specialCharacters',
+                    'underline'
+                ]
+            },
+            language: 'en',
+            image: {
+                toolbar: [
+                    'imageTextAlternative',
+                    'imageStyle:full',
+                    'imageStyle:side'
+                ]
+            },
+            table: {
+                contentToolbar: [
+                    'tableColumn',
+                    'tableRow',
+                    'mergeTableCells'
+                ]
+            },
+            licenseKey: '',
+
+        })
+        .then(editor => {
+            console.log('Editor was initialized ' + editor);
+            CKEditorAddEmojis(editor);
+            editors[contentId] = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function SetEditorTrumbowyg(contentId) {
     var currentTxtComment = '#txtArticleComment_' + contentId;
 
     jQuery.noConflict();
@@ -87,4 +167,17 @@ function ShowCommentReplies(parentId) {
     var subCommentOptions = '&OnlySubComments=True&ParentId=' + parentId;
     $(childDiv).load(commentsLink + subCommentOptions);
     console.log('done showing Comment replies');
+}
+
+function SetEditor(contentId) {
+    switch (editorType) {
+        case 'Trumbowyg':
+            SetEditorTrumbowyg(contentId);
+            break;
+        case 'CKEditor':
+            SetCKEditor(contentId);
+            break;
+        default:
+            console.log('No Editor was Set');
+    }
 }

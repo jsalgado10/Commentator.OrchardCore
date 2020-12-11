@@ -59,6 +59,7 @@ namespace OrchardCore.Commentator.Drivers
             model.ContentItem = part.ContentItem;
             model.OrderBy = settings.OrderBy;
             model.GroupBy = settings.GroupBy;
+            model.Editor = settings.Editor;
             model.CommentsPerPage = settings.CommentsPerPage;
             model.AllowComments = part.AllowComments;
             model.CommentatorPart = part;
