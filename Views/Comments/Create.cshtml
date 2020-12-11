@@ -3,7 +3,6 @@
 @using OrchardCore.Mvc.Utilities
 
 @inject IContentDefinitionManager ContentDefinitionManager
-@inject OrchardCore.IOrchardHelper Orchard
 
 @{ ContentItem contentItem = Model.ContentItem;
     var contentTypeDefinition = ContentDefinitionManager.GetTypeDefinition(contentItem.ContentType);
