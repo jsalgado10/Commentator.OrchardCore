@@ -9,6 +9,9 @@
             @await DisplayAsync(contentItem)
         }
     </ul>
+    <div hidden>
+        @await DisplayAsync(Model.Pager)
+    </div>
 }
 else
 {

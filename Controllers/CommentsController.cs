@@ -76,14 +76,10 @@ namespace OrchardCore.Commentator.Controllers
         {
             List<ContentItem> contentItems;
             var siteSettings = await siteService.GetSiteSettingsAsync();
-            var pager = new Pager(pagerParameters, siteSettings.PageSize);
+            var pager = new Pager(pagerParameters, model.PageCount);
             var query = await session.Query<ContentItem, ContentItemIndex>()
                 .Where(x => x.ContentType == "CommentPost" && x.Latest == true && x.Published == true)
                 .ListAsync();
-            //contentItems = (await session.Query<ContentItem, ContentItemIndex>()
-            //    .Where(x => x.ContentType == "CommentPost" && x.Latest == true && x.Published == true)
-            //    .OrderByDescending(x => x.PublishedUtc)
-            //    .ListAsync()).ToList();
 
             /* Get all comments for Document */
             contentItems = query.Where(x => BelongsToDocument(x, contentTypeId)).ToList();
@@ -134,28 +130,21 @@ namespace OrchardCore.Commentator.Controllers
                     break;
             }
 
-            /* Take X comments per page */
-            //var maxPagedCount = model.PageCount;
-            //if (maxPagedCount > 0 && pager.PageSize > maxPagedCount)
-            //    pager.PageSize = maxPagedCount;
-            //var maxPagedCount = siteSettings.MaxPagedCount;
-            //if (maxPagedCount > 0 && pager.PageSize > maxPagedCount)
-            //    pager.PageSize = maxPagedCount;
-
-            ////We prepare the pager
-            //var routeData = new RouteData();
-            //routeData.Values.Add("DisplayText", model.Options.DisplayText);
-
-            //var pagerShape = (await New.Pager(pager)).TotalItemCount(maxPagedCount > 0 ? maxPagedCount : await query.CountAsync()).RouteData(routeData);
-            //var pageOfContentItems = await query.Skip(pager.GetStartIndex()).Take(pager.PageSize).ListAsync();
-
             for (int i = 0; i < contentItems.Count; i++)
             {
                 contentItems[i] = await contentManager.LoadAsync(contentItems[i]);
             }
 
+            /* Prepare Pager */
+            var maxPagedCount = siteSettings.MaxPagedCount;
+            if (maxPagedCount > 0 && pager.PageSize > maxPagedCount)
+                pager.PageSize = maxPagedCount;
+
+            var pagerShape = (await New.Pager(pager)).TotalItemCount(maxPagedCount > 0 ? maxPagedCount : contentItems.Count());
+            var pageOfContentItems = contentItems.Skip(pager.GetStartIndex()).Take(model.PageCount);
+
             var contentItemSummaries = new List<dynamic>();
-            foreach (var contentItem in contentItems)
+            foreach (var contentItem in pageOfContentItems)
             {
                 contentItemSummaries.Add(await contentItemDisplayManager.BuildDisplayAsync(contentItem, updateModelAccessor.ModelUpdater));
             }
@@ -163,7 +152,9 @@ namespace OrchardCore.Commentator.Controllers
             var viewModel = new ListContentsViewModel
             {
                 ContentItems = contentItemSummaries,
-                Options = model.Options
+                Options = model.Options,
+                PageCount = model.PageCount,
+                Pager = pagerShape
             };
             return PartialView(viewModel);
         }
