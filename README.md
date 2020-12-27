@@ -5,7 +5,7 @@ Internal Comment Engine Module for Orchard Core.
 The commentator part can be added to any content type
 
 # Liquid Template
-You will need to add {{ Model.Content.CommentatorPart | shape_render }} to you template to display the commentator part. It will display by default if you are not using a custom template
+You will need to add {{ Model.Content.CommentatorPart | shape_render }} to your template to display the commentator part. It will display by default if you are not using a custom template
 
 # Commentator Options
 - Order By - Used to sort comments by Date, Rank (not yet implemented)
