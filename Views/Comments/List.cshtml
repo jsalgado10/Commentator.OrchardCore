@@ -1,8 +1,21 @@
 ﻿@model ListContentsViewModel
 @using OrchardCore.ContentManagement
 
+@inject IContentManager ContentManager
+
 @if (Model.ContentItems.Count > 0)
 {
+    var commentItem = Model.ContentItems.FirstOrDefault();
+    var articleId = commentItem.ContentItem.Content.CommentPost.CommentArticle.Text.Value;
+    ContentItem articleItem = await ContentManager.GetAsync(articleId);
+    var commentCount = await Orchard.CommentCount(articleItem);
+    var commentMessage = commentCount > 1 ? $@"{commentCount} comments" : $@"{commentCount} comment";
+
+    <div class="d-flex flex-items-center flex-wrap post-commentcount">
+        <div class="forum-my-2 forum-mr-2 flex-auto">
+            <h4>@commentMessage</h4>
+        </div>
+    </div>
     <ul class="post-list">
         @foreach (var contentItem in Model.ContentItems)
         {

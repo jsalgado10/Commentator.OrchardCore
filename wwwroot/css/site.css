@@ -1,8 +1,14 @@
 ﻿/*COMMENTS*/
+
+h4, .h4 {
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+    font-weight: 600 !important;
+}
+
 #divComments ul {
     position: relative;
 }
-
 
 #divComments > ul:first-child:before {
     display: none;
@@ -11,10 +17,6 @@
 #divComments > ul:first-child {
     padding: 0;
 }
-
-/*#divComments ul li {
-    display: inline-block;
-}*/
 
 #divComments ul .replycomment {
     background: none;
@@ -34,7 +36,6 @@
 }
 
 #divComments ul li {
-    /*display: inline-block;*/
     color: #666;
     width: 100%;
 }
@@ -115,6 +116,7 @@
     margin-left: 12px;
     padding-left: 10px;
 }
+
 .compose-content {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
@@ -160,3 +162,6 @@
     max-height: 100%;
 }
 
+.post-commentcount {
+    padding-bottom: 10px;
+}

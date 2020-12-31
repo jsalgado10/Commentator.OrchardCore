@@ -74,6 +74,11 @@ namespace OrchardCore.Commentator.Controllers
 
         public async Task<ActionResult> List(ListContentsViewModel model, PagerParameters pagerParameters, string contentTypeId = "")
         {
+            if(model.PageCount == 0)
+            {
+                model.PageCount = 999;
+            }
+
             List<ContentItem> contentItems;
             var siteSettings = await siteService.GetSiteSettingsAsync();
             var pager = new Pager(pagerParameters, model.PageCount);

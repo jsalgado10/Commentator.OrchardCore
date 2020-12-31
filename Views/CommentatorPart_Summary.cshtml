@@ -1,0 +1,5 @@
+﻿@{
+    ContentItem contentItem = Model.ContentItem;
+}
+<i class="far fa-comment-alt"></i>
+@await Orchard.CommentCount(contentItem)
