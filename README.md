@@ -15,3 +15,8 @@ You will need to add {{ Model.Content.CommentatorPart | shape_render }} to your 
 
 # Content Type Settings
 - Allow Comments - This will toggle the comment window to show or not
+
+# Pending Features
+- Admin Dashboard to maintain Comments
+- Pager on Comment List
+- Handle unathorize user. Add a message or pop up
