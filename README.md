@@ -20,3 +20,4 @@ You will need to add {{ Model.Content.CommentatorPart | shape_render }} to your 
 - Admin Dashboard to maintain Comments
 - Pager on Comment List
 - Handle unathorize user. Add a message or pop up
+- Email Notifications
