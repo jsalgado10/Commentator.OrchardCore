@@ -16,6 +16,7 @@
     <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
     <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-13450" />
     <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Users" Version="1.0.0-rc2-13450" />
   </ItemGroup>
 
   <ItemGroup>

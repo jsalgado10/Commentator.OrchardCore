@@ -1,10 +1,6 @@
 ﻿function AddArticleComment(contentId) {
     console.log('Adding Article Comment');
     console.log('Content Id : ' + contentId);
-    if (editorType == 'CKEditor') {
-        $('#txtArticleComment_' + contentId).val(editors[contentId].getData());
-        console.log(editors[contentId].getData());
-    }
     var form = '#newCommentForm_' + contentId;
     var formData = $(form).serialize();
     postArticleComment(formData, contentId);
@@ -69,6 +65,7 @@ function SetCKEditor(contentId) {
                     'link',
                     'bulletedList',
                     'numberedList',
+                    'todoList',
                     '|',
                     'indent',
                     'outdent',
@@ -113,7 +110,10 @@ function SetCKEditor(contentId) {
         .then(editor => {
             console.log('Editor was initialized ' + editor);
             CKEditorAddEmojis(editor);
-            editors[contentId] = editor;
+            editor.model.document.on('change:data', () => {
+                editor.updateSourceElement();
+                $(document).trigger('contentpreview:render');
+            });
         })
         .catch(error => {
             console.error(error);

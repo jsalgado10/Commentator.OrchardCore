@@ -20,6 +20,7 @@ using OrchardCore.DisplayManagement;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.DisplayManagement.Notify;
 using OrchardCore.Modules;
+using OrchardCore.Mvc.Utilities;
 using OrchardCore.Navigation;
 using OrchardCore.Routing;
 using OrchardCore.Settings;
@@ -177,7 +178,7 @@ namespace OrchardCore.Commentator.Controllers
 
             if (!await authorizationService.AuthorizeAsync(User, Permissions.AddCommentsAccess))
             {
-                return Forbid();
+                return this.ChallengeOrForbid();
             }
 
             var model = await contentItemDisplayManager.BuildEditorAsync(contentItem, updateModelAccessor.ModelUpdater, true);
@@ -190,7 +191,7 @@ namespace OrchardCore.Commentator.Controllers
         {
             if (!await authorizationService.AuthorizeAsync(User, Permissions.AddCommentsAccess))
             {
-                return Forbid();
+                return this.ChallengeOrForbid();
             }
 
             return await CreatePOST(contentType, returnUrl, async contentItem =>
@@ -208,7 +209,7 @@ namespace OrchardCore.Commentator.Controllers
 
             if (!await authorizationService.AuthorizeAsync(User, Permissions.AddCommentsAccess))
             {
-                return Forbid();
+                return this.ChallengeOrForbid();
             }
 
             var model = await contentItemDisplayManager.UpdateEditorAsync(contentItem, updateModelAccessor.ModelUpdater, true);

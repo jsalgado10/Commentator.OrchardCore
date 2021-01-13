@@ -27,7 +27,6 @@
 <div id="new_comment"></div>
 <div id="divComments"></div>
 <script at="Foot" type="text/javascript">
-    const editors = {};
     var editorType = '{{ Model.Editor}}' == '' ? 'Trumbowyg' : '{{ Model.Editor }}';
     var listOptions = '?Options.OrderBy={{ Model.OrderBy }}&Options.GroupBy={{ Model.GroupBy }}&PageCount={{ Model.CommentsPerPage }}';
     var newCommentLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/Add/CommentPost';

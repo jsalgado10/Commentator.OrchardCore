@@ -7,16 +7,20 @@ using OrchardCore.Commentator.Controllers;
 using OrchardCore.Commentator.Drivers;
 using OrchardCore.Commentator.Handlers;
 using OrchardCore.Commentator.Models;
+using OrchardCore.Commentator.Services;
 using OrchardCore.Commentator.Settings;
 using OrchardCore.ContentManagement;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
+using OrchardCore.ContentManagement.Handlers;
 using OrchardCore.ContentManagement.Routing;
 using OrchardCore.ContentTypes.Editors;
 using OrchardCore.Data.Migration;
+using OrchardCore.DisplayManagement.Handlers;
 using OrchardCore.Modules;
 using OrchardCore.Mvc.Core.Utilities;
 using OrchardCore.ResourceManagement;
 using OrchardCore.Security.Permissions;
+using OrchardCore.Users.Models;
 using System;
 
 namespace OrchardCore.Commentator
@@ -29,9 +33,13 @@ namespace OrchardCore.Commentator
             services.AddContentPart<CommentatorPart>()
                 .UseDisplayDriver<CommentatorPartDisplayDriver>()
                 .AddHandler<CommentatorPartHandler>();
+            services.AddScoped<IContentHandler, ContentHandler>();
             services.AddScoped<IContentTypePartDefinitionDisplayDriver, CommentatorPartSettingsDisplayDriver>();
             services.AddScoped<IDataMigration, Migrations>();
             services.AddScoped<IPermissionProvider, Permissions>();
+            services.AddScoped<INotificationService, EmailNotificationService>();
+            services.AddScoped<IContentHandler, ContentHandler>();
+            services.AddScoped<IDisplayDriver<User>, UserProfileCommentatorDisplayDriver>();
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)

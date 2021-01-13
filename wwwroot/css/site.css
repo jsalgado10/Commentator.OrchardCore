@@ -162,6 +162,11 @@ h4, .h4 {
     max-height: 100%;
 }
 
+.post-comment p {
+    white-space:pre-wrap;
+    word-break:break-word;
+}
+
 .post-commentcount {
     padding-bottom: 10px;
 }

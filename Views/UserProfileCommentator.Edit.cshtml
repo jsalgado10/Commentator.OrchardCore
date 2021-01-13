@@ -1,0 +1,16 @@
+@model EditUserProfileCommentatorViewModel
+
+<h6>@T["Comments Notifications"]</h6>
+<div class="form-group">
+    <div class="custom-control custom-switch">
+        <input asp-for="NotificationCommentOnReplies" type="checkbox" class="custom-control-input" checked="@Model.NotificationCommentOnReplies" />
+        <label asp-for="NotificationCommentOnReplies" class="custom-control-label cursor-pointer">@T["Notifications on Comment Replies"]</label>
+        <span class="hint">- @T["Check this to Receive Notifications on Comment Replies"]</span>
+    </div>
+
+    <div class="custom-control custom-switch">
+        <input asp-for="NotificationCommentOnMentions" type="checkbox" class="custom-control-input" checked="@Model.NotificationCommentOnMentions" />
+        <label asp-for="NotificationCommentOnMentions" class="custom-control-label cursor-pointer">@T["Notifications on Comment Mentions"]</label>
+        <span class="hint">- @T["Check this to Receive Notifications on Comment Mentions"]</span>
+    </div>
+</div>
