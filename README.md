@@ -1,10 +1,11 @@
+# OrchardCore.Commentator
+Internal Comment Engine Module for Orchard Core.
+
 # Getting Started
 Install NuGet package 
 
 
 ``dotnet add package Commentator.OrchardCore``
-# OrchardCore.Commentator
-Internal Comment Engine Module for Orchard Core.
 
 # Add Commentator to Content Type
 The commentator part can be added to any content type
