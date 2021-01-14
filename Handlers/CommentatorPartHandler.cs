@@ -1,8 +1,8 @@
-﻿using OrchardCore.ContentManagement.Handlers;
-using OrchardCore.Commentator.Models;
+﻿using Commentator.OrchardCore.Models;
+using OrchardCore.ContentManagement.Handlers;
 using System.Threading.Tasks;
 
-namespace OrchardCore.Commentator.Handlers
+namespace Commentator.OrchardCore.Handlers
 {
     public class CommentatorPartHandler : ContentPartHandler<CommentatorPart>
     {

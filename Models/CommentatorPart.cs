@@ -1,6 +1,6 @@
 ﻿using OrchardCore.ContentManagement;
 
-namespace OrchardCore.Commentator.Models
+namespace Commentator.OrchardCore.Models
 {
     public class CommentatorPart : ContentPart
     {

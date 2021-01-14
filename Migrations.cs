@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System;
 using OrchardCore.Security.Services;
 
-namespace OrchardCore.Commentator
+namespace Commentator.OrchardCore
 {
     public class Migrations : DataMigration
     {

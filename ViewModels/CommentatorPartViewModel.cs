@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Commentator.OrchardCore.Models;
+using Commentator.OrchardCore.Settings;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using OrchardCore.ContentManagement;
-using OrchardCore.Commentator.Models;
-using OrchardCore.Commentator.Settings;
 
-namespace OrchardCore.Commentator.ViewModels
+namespace Commentator.OrchardCore.ViewModels
 {
     public class CommentatorPartViewModel
     {

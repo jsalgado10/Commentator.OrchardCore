@@ -1,4 +1,4 @@
-﻿namespace OrchardCore.Commentator.Settings
+﻿namespace Commentator.OrchardCore.Settings
 {
     public class CommentatorPartSettings
     {

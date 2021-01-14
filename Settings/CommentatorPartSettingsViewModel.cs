@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace OrchardCore.Commentator.Settings
+namespace Commentator.OrchardCore.Settings
 {
     public class CommentatorPartSettingsViewModel
     {

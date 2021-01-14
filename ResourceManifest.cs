@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using OrchardCore.ResourceManagement;
 
-namespace OrchardCore.Commentator
+namespace Commentator.OrchardCore
 {
     public class ResourceManifest : IResourceManifestProvider
     {
@@ -13,7 +13,7 @@ namespace OrchardCore.Commentator
 
             manifest
                 .DefineScript("Commentator-site-js")
-                .SetUrl("~/OrchardCore.Commentator/js/site.min.js", "~/OrchardCore.Commentator/js/site.js")
+                .SetUrl("~/Commentator.OrchardCore/js/site.min.js", "~/Commentator.OrchardCore/js/site.js")
                 .SetVersion("1.0.0");
 
             manifest
@@ -38,7 +38,7 @@ namespace OrchardCore.Commentator
 
             manifest
                  .DefineScript("CkEditor5-js")
-                 .SetUrl("~/OrchardCore.Commentator/js/ckeditor.js")
+                 .SetUrl("~/Commentator.OrchardCore/js/ckeditor.js")
                  .SetVersion("5.0.0");
 
             manifest
@@ -47,11 +47,11 @@ namespace OrchardCore.Commentator
 
             manifest
                .DefineStyle("Commentator-site")
-               .SetUrl("~/OrchardCore.Commentator/css/site.min.css", "~/OrchardCore.Commentator/css/site.css")
+               .SetUrl("~/Commentator.OrchardCore/css/site.min.css", "~/Commentator.OrchardCore/css/site.css")
                .SetVersion("1.0.0");
             manifest
                .DefineStyle("CkEditor5-css")
-               .SetUrl("~/OrchardCore.Commentator/css/ckeditor.css")
+               .SetUrl("~/Commentator.OrchardCore/css/ckeditor.css")
                .SetVersion("5.0.0");
 
             manifest

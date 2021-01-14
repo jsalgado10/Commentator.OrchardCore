@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OrchardCore.Commentator.ViewModels
+namespace Commentator.OrchardCore.ViewModels
 {
     public class EditUserProfileCommentatorViewModel
     {

@@ -1,14 +1,14 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using Commentator.OrchardCore.Models;
+using Commentator.OrchardCore.Settings;
+using Commentator.OrchardCore.ViewModels;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
 using OrchardCore.ContentManagement.Metadata;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.DisplayManagement.Views;
-using OrchardCore.Commentator.Models;
-using OrchardCore.Commentator.Settings;
-using OrchardCore.Commentator.ViewModels;
 
-namespace OrchardCore.Commentator.Drivers
+namespace Commentator.OrchardCore.Drivers
 {
     public class CommentatorPartDisplayDriver : ContentPartDisplayDriver<CommentatorPart>
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OrchardCore.Commentator.Models
+namespace Commentator.OrchardCore.Models
 {
     public class UserProfileCommentator
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OrchardCore.Security.Permissions;
 
-namespace OrchardCore.Commentator
+namespace Commentator.OrchardCore
 {
     public class Permissions : IPermissionProvider
     {

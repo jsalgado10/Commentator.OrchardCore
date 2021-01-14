@@ -1,14 +1,14 @@
+using Commentator.OrchardCore.Controllers;
+using Commentator.OrchardCore.Drivers;
+using Commentator.OrchardCore.Handlers;
+using Commentator.OrchardCore.Models;
+using Commentator.OrchardCore.Services;
+using Commentator.OrchardCore.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using OrchardCore.Admin;
-using OrchardCore.Commentator.Controllers;
-using OrchardCore.Commentator.Drivers;
-using OrchardCore.Commentator.Handlers;
-using OrchardCore.Commentator.Models;
-using OrchardCore.Commentator.Services;
-using OrchardCore.Commentator.Settings;
 using OrchardCore.ContentManagement;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
 using OrchardCore.ContentManagement.Handlers;
@@ -23,7 +23,7 @@ using OrchardCore.Security.Permissions;
 using OrchardCore.Users.Models;
 using System;
 
-namespace OrchardCore.Commentator
+namespace Commentator.OrchardCore
 {
     public class Startup : StartupBase
     {
@@ -48,14 +48,14 @@ namespace OrchardCore.Commentator
 
             routes.MapAreaControllerRoute(
                 name: "DisplayArticleComments",
-                areaName: "OrchardCore.Commentator",
+                areaName: "Commentator.OrchardCore",
                 pattern: "comments/{contentTypeId}",
                 defaults: new { controller = itemController, action = nameof(CommentsController.List) }
             );
 
             routes.MapAreaControllerRoute(
-                name: "DisplayArticleComments",
-                areaName: "OrchardCore.Commentator",
+                name: "AddArticleComments",
+                areaName: "Commentator.OrchardCore",
                 pattern: "comments/Add/{contentType}",
                 defaults: new { controller = itemController, action = nameof(CommentsController.Create) }
             );

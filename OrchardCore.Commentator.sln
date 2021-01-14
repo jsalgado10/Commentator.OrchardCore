@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Commentator", "OrchardCore.Commentator.csproj", "{78CA2B4F-2A04-4B54-AAE4-6622AE73347F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commentator.OrchardCore", "Commentator.OrchardCore.csproj", "{9579C42A-E21D-48DA-9F93-7CDA1D1462CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78CA2B4F-2A04-4B54-AAE4-6622AE73347F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78CA2B4F-2A04-4B54-AAE4-6622AE73347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78CA2B4F-2A04-4B54-AAE4-6622AE73347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78CA2B4F-2A04-4B54-AAE4-6622AE73347F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9579C42A-E21D-48DA-9F93-7CDA1D1462CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9579C42A-E21D-48DA-9F93-7CDA1D1462CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9579C42A-E21D-48DA-9F93-7CDA1D1462CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9579C42A-E21D-48DA-9F93-7CDA1D1462CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

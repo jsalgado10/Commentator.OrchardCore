@@ -4,8 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>OrchardCore.Commentator</Title>
     <Authors>Jhovani Salgado</Authors>
-    <Company></Company>
+    <Company>Jhovani Salgado</Company>
     <Description>Comment Engine for Orchard Core</Description>
     <PackageProjectUrl>https://github.com/jsalgado10/OrchardCore.Commentator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jsalgado10/OrchardCore.Commentator</RepositoryUrl>
@@ -15,6 +16,9 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Product>Commentator.OrchardCore</Product>
+    <AssemblyName>Commentator.OrchardCore</AssemblyName>
+    <Version>1.0.5</Version>
+    <RepositoryType>Commentator.OrchardCore</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

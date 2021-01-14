@@ -1,11 +1,11 @@
-﻿using OrchardCore.Commentator.Services;
+﻿using Commentator.OrchardCore.Services;
 using OrchardCore.ContentManagement.Handlers;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrchardCore.Commentator.Handlers
+namespace Commentator.OrchardCore.Handlers
 {
     public class ContentHandler : ContentHandlerBase
     {

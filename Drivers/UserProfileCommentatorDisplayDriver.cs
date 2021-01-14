@@ -1,13 +1,13 @@
 using System;
 using System.Threading.Tasks;
-using OrchardCore.Commentator.Models;
-using OrchardCore.Commentator.ViewModels;
+using Commentator.OrchardCore.Models;
+using Commentator.OrchardCore.ViewModels;
 using OrchardCore.DisplayManagement.Entities;
 using OrchardCore.DisplayManagement.Handlers;
 using OrchardCore.DisplayManagement.Views;
 using OrchardCore.Users.Models;
 
-namespace OrchardCore.Commentator.Drivers
+namespace Commentator.OrchardCore.Drivers
 {
     public class UserProfileCommentatorDisplayDriver : SectionDisplayDriver<User, UserProfileCommentator>
     {

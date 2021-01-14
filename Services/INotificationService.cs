@@ -2,7 +2,7 @@
 using OrchardCore.ContentManagement;
 using OrchardCore.Users;
 
-namespace OrchardCore.Commentator.Services
+namespace Commentator.OrchardCore.Services
 {
     public interface INotificationService
     {

@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
+using Commentator.OrchardCore.Models;
 using OrchardCore.ContentManagement.Metadata.Models;
 using OrchardCore.ContentTypes.Editors;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.DisplayManagement.Views;
-using OrchardCore.Commentator.Models;
 
-namespace OrchardCore.Commentator.Settings
+namespace Commentator.OrchardCore.Settings
 {
     public class CommentatorPartSettingsDisplayDriver : ContentTypePartDefinitionDisplayDriver
     {
