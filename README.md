@@ -1,4 +1,4 @@
-# OrchardCore.Commentator
+# Commentator.OrchardCore
 Internal Comment Engine Module for Orchard Core.
 
 # Getting Started
