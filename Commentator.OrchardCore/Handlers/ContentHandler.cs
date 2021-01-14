@@ -17,10 +17,10 @@ namespace Commentator.OrchardCore.Handlers
         public override Task PublishedAsync(PublishContentContext context)
         {
             Console.WriteLine(context.ContentItem.ContentType.ToString());
-            if (context.ContentItem.ContentType == "CommentPost")
-            {
-                return notificationService.SendNotification(context.ContentItem.ContentItem);
-            }
+            //if (context.ContentItem.ContentType == "CommentPost")
+            //{
+            //    return notificationService.SendNotification(context.ContentItem.ContentItem);
+            //}
 
             return Task.CompletedTask;
         }
