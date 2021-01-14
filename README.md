@@ -1,3 +1,8 @@
+# Getting Started
+Install NuGet package 
+
+
+``dotnet add package Commentator.OrchardCore --version 1.0.0``
 # OrchardCore.Commentator
 Internal Comment Engine Module for Orchard Core.
 
