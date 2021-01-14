@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Commentator Module\Commentator.OrchardCore\Commentator.OrchardCore.csproj" />
+    <ProjectReference Include="..\Commentator.OrchardCore\Commentator.OrchardCore.csproj" />
   </ItemGroup>
 
 </Project>
