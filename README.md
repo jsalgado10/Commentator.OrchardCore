@@ -1,16 +1,15 @@
-# Getting Started
-Install NuGet package 
-
-
-``dotnet add package Commentator.OrchardCore``
-# OrchardCore.Commentator
+# Commentator.OrchardCore
 Internal Comment Engine Module for Orchard Core.
 
-# Add Commentator to Content Type
-The commentator part can be added to any content type
+# Getting Started
+- Install NuGet package 
+
+  - ``dotnet add package Commentator.OrchardCore``
+- Launch your Orchard Core application, login as admin, then go to the Features admin page and enable the Commentator module
+- Add the Commentator Part to your Content type
 
 # Liquid Template
-You will need to add {{ Model.Content.CommentatorPart | shape_render }} to your template to display the commentator part. It will display by default if you are not using a custom template
+You will need to add `` {{ Model.Content.CommentatorPart | shape_render }} `` to your template to display the commentator part. It will display by default if you are not using a custom template
 
 # Commentator Options
 - Order By - Used to sort comments by Date, Rank (not yet implemented)
