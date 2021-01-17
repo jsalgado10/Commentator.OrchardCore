@@ -1,4 +1,6 @@
-﻿using OrchardCore.ContentManagement;
+﻿using Notifications.OrchardCore.Services;
+using OrchardCore.ContentManagement;
+using OrchardCore.ContentManagement.Handlers;
 using OrchardCore.DisplayManagement;
 using OrchardCore.Email;
 using System;
@@ -18,12 +20,12 @@ namespace Commentator.OrchardCore.Services
             New = shapeFactory;
             emailService = currentEmailService;
         }
-        public Task SendNotification(ContentItem item)
+        public Task SendAsync(ContentContextBase context)
         {
             MailMessage message = new MailMessage()
             {
-                To = "email@email.com",
-                From = "notification@email.com",
+                To = "jsalgado@dcrpos.com",
+                From = "notification@dcrpos.com",
                 Subject = "Test email",
                 Body = "Notification on Commentator Module"
             };

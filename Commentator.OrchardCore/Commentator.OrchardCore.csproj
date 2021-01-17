@@ -17,7 +17,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Product>Commentator.OrchardCore</Product>
     <AssemblyName>Commentator.OrchardCore</AssemblyName>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <RepositoryType>Commentator.OrchardCore</RepositoryType>
   </PropertyGroup>
 
@@ -44,6 +44,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DCR Orchard CMS\DCR Wiki\Notifications.OrchardCore\Notifications.OrchardCore.csproj" />
   </ItemGroup>
 
 </Project>

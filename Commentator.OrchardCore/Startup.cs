@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Notifications.OrchardCore.Services;
 using OrchardCore.Admin;
 using OrchardCore.ContentManagement;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
@@ -33,12 +34,10 @@ namespace Commentator.OrchardCore
             services.AddContentPart<CommentatorPart>()
                 .UseDisplayDriver<CommentatorPartDisplayDriver>()
                 .AddHandler<CommentatorPartHandler>();
-            services.AddScoped<IContentHandler, ContentHandler>();
             services.AddScoped<IContentTypePartDefinitionDisplayDriver, CommentatorPartSettingsDisplayDriver>();
             services.AddScoped<IDataMigration, Migrations>();
             services.AddScoped<IPermissionProvider, Permissions>();
             services.AddScoped<INotificationService, EmailNotificationService>();
-            services.AddScoped<IContentHandler, ContentHandler>();
             services.AddScoped<IDisplayDriver<User>, UserProfileCommentatorDisplayDriver>();
         }
 

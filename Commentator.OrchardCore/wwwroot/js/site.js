@@ -42,7 +42,7 @@ function AddNewCommentBox(parentId) {
 
 function CKEditorAddEmojis(editor) {
     var emojis = [];
-    $.getJSON('/OrchardCore.Commentator/Assets/emoji.json', function (data) {
+    $.getJSON('/Commentator.OrchardCore/Assets/emoji.json', function (data) {
         $.each(data, function (index, value) {
             emojis.push({ title: value.id.replace(':', ''), character: value.symbol });
         })
