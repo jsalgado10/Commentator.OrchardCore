@@ -5,7 +5,6 @@ using OrchardCore.Modules.Manifest;
     Author = "Jhovani Salgado",
     Website = "https://jfdservice.com",
     Version = "1.0.0",
-    Description = "The Commentator module allows you to add a comments section to your Content Type.",
-    Dependencies = new[] { "OrchardCore.Email" },
+    Description = "The Commentator module allows you to add a comments section to your Content Type.",    
     Category = "Comments"
 )]
