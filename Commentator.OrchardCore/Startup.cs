@@ -37,7 +37,7 @@ namespace Commentator.OrchardCore
             services.AddScoped<IContentTypePartDefinitionDisplayDriver, CommentatorPartSettingsDisplayDriver>();
             services.AddScoped<IDataMigration, Migrations>();
             services.AddScoped<IPermissionProvider, Permissions>();
-            services.AddScoped<INotificationService, EmailNotificationService>();
+            services.AddScoped<INotificationService, CommentatorNotificationService>();
             services.AddScoped<IDisplayDriver<User>, UserProfileCommentatorDisplayDriver>();
         }
 
