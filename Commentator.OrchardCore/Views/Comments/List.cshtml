@@ -11,11 +11,14 @@
     var commentCount = await Orchard.CommentCount(articleItem);
     var commentMessage = commentCount > 1 ? $@"{commentCount} comments" : $@"{commentCount} comment";
 
-    <div class="d-flex flex-items-center flex-wrap post-commentcount">
-        <div class="forum-my-2 forum-mr-2 flex-auto">
-            <h4>@commentMessage</h4>
+    @if (!Model.OnlySubComments)
+    {
+        <div class="d-flex flex-items-center flex-wrap post-commentcount">
+            <div class="forum-my-2 forum-mr-2 flex-auto">
+                <h4>@commentMessage</h4>
+            </div>
         </div>
-    </div>
+    }
     <ul class="post-list">
         @foreach (var contentItem in Model.ContentItems)
         {

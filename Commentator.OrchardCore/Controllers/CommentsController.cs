@@ -75,7 +75,7 @@ namespace Commentator.OrchardCore.Controllers
 
         public async Task<ActionResult> List(ListContentsViewModel model, PagerParameters pagerParameters, string contentTypeId = "")
         {
-            if(model.PageCount == 0)
+            if (model.PageCount == 0)
             {
                 model.PageCount = 999;
             }
@@ -160,7 +160,8 @@ namespace Commentator.OrchardCore.Controllers
                 ContentItems = contentItemSummaries,
                 Options = model.Options,
                 PageCount = model.PageCount,
-                Pager = pagerShape
+                Pager = pagerShape,
+                OnlySubComments = model.OnlySubComments
             };
             return PartialView(viewModel);
         }
