@@ -46,8 +46,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\DCR Orchard CMS\DCR Wiki\Notifications.OrchardCore\Notifications.OrchardCore.csproj" />
-  </ItemGroup>
-
 </Project>
