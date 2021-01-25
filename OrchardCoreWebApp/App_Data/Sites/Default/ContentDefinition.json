@@ -170,11 +170,10 @@
       "Settings": {
         "ContentTypeSettings": {
           "Creatable": true,
-          "Listable": true,
           "Draftable": true,
-          "Versionable": true
-        },
-        "FullTextAspectSettings": {}
+          "Versionable": true,
+          "Listable": true
+        }
       },
       "ContentTypePartDefinitionRecords": [
         {
@@ -205,8 +204,8 @@
           "Name": "HtmlBodyPart",
           "Settings": {
             "ContentTypePartSettings": {
-              "Position": "2",
-              "Editor": "Wysiwyg"
+              "Editor": "Wysiwyg",
+              "Position": "2"
             }
           }
         },
@@ -218,15 +217,6 @@
               "Position": "0"
             }
           }
-        },
-        {
-          "PartName": "CommentatorPart",
-          "Name": "CommentatorPart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "4"
-            }
-          }
         }
       ]
     },
@@ -236,11 +226,10 @@
       "Settings": {
         "ContentTypeSettings": {
           "Creatable": true,
-          "Listable": true,
           "Draftable": true,
-          "Versionable": true
-        },
-        "FullTextAspectSettings": {}
+          "Versionable": true,
+          "Listable": true
+        }
       },
       "ContentTypePartDefinitionRecords": [
         {
@@ -283,15 +272,6 @@
               "Position": "0"
             }
           }
-        },
-        {
-          "PartName": "CommentatorPart",
-          "Name": "CommentatorPart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "4"
-            }
-          }
         }
       ]
     },
@@ -302,8 +282,7 @@
         "ContentTypeSettings": {
           "Draftable": true,
           "Versionable": true
-        },
-        "FullTextAspectSettings": {}
+        }
       },
       "ContentTypePartDefinitionRecords": [
         {
@@ -343,17 +322,8 @@
           "Name": "MarkdownBodyPart",
           "Settings": {
             "ContentTypePartSettings": {
-              "Position": "2",
-              "Editor": "Wysiwyg"
-            }
-          }
-        },
-        {
-          "PartName": "CommentatorPart",
-          "Name": "CommentatorPart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "4"
+              "Editor": "Wysiwyg",
+              "Position": "2"
             }
           }
         }
@@ -756,38 +726,6 @@
       ]
     },
     {
-      "Name": "CommentPost",
-      "DisplayName": "Comment Post",
-      "Settings": {
-        "ContentTypeSettings": {
-          "Draftable": true,
-          "Versionable": true,
-          "Securable": true
-        },
-        "FullTextAspectSettings": {}
-      },
-      "ContentTypePartDefinitionRecords": [
-        {
-          "PartName": "CommentPost",
-          "Name": "CommentPost",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "1"
-            }
-          }
-        },
-        {
-          "PartName": "TitlePart",
-          "Name": "TitlePart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "0"
-            }
-          }
-        }
-      ]
-    },
-    {
       "Name": "WikiPost",
       "DisplayName": "Wiki Post",
       "Settings": {
@@ -824,32 +762,52 @@
           }
         },
         {
-          "PartName": "CommentatorPart",
-          "Name": "CommentatorPart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "3"
-            },
-            "CommentatorPartSettings": {
-              "OrderBy": "Date",
-              "GroupBy": "Thread",
-              "Editor": "CKEditor"
-            },
-            "ContentIndexSettings": {}
-          }
-        },
-        {
           "PartName": "HtmlBodyPart",
           "Name": "HtmlBodyPart",
           "Settings": {
             "ContentTypePartSettings": {
-              "Position": "4",
-              "Editor": "Trumbowyg"
-            },
-            "HtmlBodyPartSettings": {},
-            "ContentIndexSettings": {},
-            "HtmlBodyPartTrumbowygEditorSettings": {
-              "Options": "{\r\n    autogrow: true,\r\n    btns: [\r\n        [\"viewHTML\"],\r\n        [\"undo\", \"redo\"],\r\n        [\"formatting\"],\r\n        [\"strong\", \"em\", \"del\"],\r\n        [\"foreColor\", \"backColor\"],\r\n        [\"superscript\", \"subscript\"],\r\n        [\"link\"],\r\n        [\"image\"],\r\n        [\"align\"],\r\n        [\"unorderedList\", \"orderedList\"],\r\n        [\"horizontalRule\"],\r\n        [\"removeformat\"],\r\n        [\"fullscreen\"]\r\n    ],\r\n    btnsDef: {\r\n        align: {\r\n            dropdown: [\"justifyLeft\", \"justifyCenter\", \"justifyRight\", \"justifyFull\"],\r\n            ico: \"justifyLeft\"\r\n        },\r\n        image: {\r\n            dropdown: [\"insertImage\", \"base64\", \"noembed\"],\r\n            ico: \"insertImage\"\r\n        }\r\n    }\r\n}"
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "CommentatorPart",
+          "Name": "CommentatorPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CommentPost",
+      "DisplayName": "Comment Post",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "CommentPost",
+          "Name": "CommentPost",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
             }
           }
         },
@@ -908,7 +866,7 @@
       "Settings": {
         "ContentPartSettings": {
           "Attachable": true,
-          "Description": "Provides a way to define the url that is used to render your content item."
+          "Description": "Provides a way to define the url that is used to render your content item for preview. You only need to use this for the content preview feature when running the frontend decoupled from the admin."
         }
       },
       "ContentPartFieldDefinitionRecords": []
@@ -918,7 +876,7 @@
       "Settings": {
         "ContentPartSettings": {
           "Attachable": true,
-          "Description": "Provides a way to add widgets per content items."
+          "Description": "Provides a way to add widgets to Layout zones for your content item."
         }
       },
       "ContentPartFieldDefinitionRecords": []
@@ -928,7 +886,7 @@
       "Settings": {
         "ContentPartSettings": {
           "Attachable": true,
-          "Description": "Provides a customizable body for your content item."
+          "Description": "Provides a customizable body for your content item where you can build a content structure with widgets."
         }
       },
       "ContentPartFieldDefinitionRecords": []
@@ -939,7 +897,7 @@
         "ContentPartSettings": {
           "Attachable": true,
           "Reusable": true,
-          "Description": "Provides a collection behavior for your content item."
+          "Description": "Provides a collection behavior for your content item where you can place other content items."
         }
       },
       "ContentPartFieldDefinitionRecords": []
@@ -1054,7 +1012,8 @@
               "Template": null
             },
             "MediaFieldSettings": {
-              "Multiple": false
+              "Multiple": false,
+              "AllowAnchors": true
             }
           }
         }
@@ -1091,7 +1050,8 @@
               "Template": null
             },
             "MediaFieldSettings": {
-              "Multiple": false
+              "Multiple": false,
+              "AllowAnchors": true
             }
           }
         },
@@ -1107,7 +1067,7 @@
             },
             "ContentIndexSettings": {},
             "TaxonomyFieldSettings": {
-              "TaxonomyContentItemId": "4j6r98swh0mcw09g0xkb66mfnv"
+              "TaxonomyContentItemId": "4hcf1gxggv7sdxmd63srt6a4mm"
             },
             "TaxonomyFieldTagsEditorSettings": {}
           }
@@ -1122,7 +1082,7 @@
             },
             "ContentIndexSettings": {},
             "TaxonomyFieldSettings": {
-              "TaxonomyContentItemId": "4jdwf5s8v1wv1zeserz5ftya4y",
+              "TaxonomyContentItemId": "4wr391adh322hskzxrhfb1f649",
               "Unique": true,
               "LeavesOnly": true
             }
@@ -1150,10 +1110,11 @@
           "Settings": {
             "ContentPartFieldSettings": {
               "DisplayName": "Banner Image",
-              "Position": "1"
+              "Position": "0"
             },
             "MediaFieldSettings": {
-              "Multiple": false
+              "Multiple": false,
+              "AllowAnchors": true
             }
           }
         }
@@ -1337,5 +1298,5 @@
       ]
     }
   ],
-  "Serial": 145
+  "Identifier": "47g4d8n2zqpnevabqr0v6fchn5"
 }

@@ -4,13 +4,14 @@
     ContentItem contentItem = Model.ContentItem;
     var postDate = (object)(await DisplayAsync(await New.TimeSpan(Utc: Model.ContentItem.PublishedUtc))).Name;
     string commentText = Model.ContentItem.Content.CommentPost.CommentText.Text;
+    var userName = contentItem.Owner ?? "Anonymous";
 }
 
 <li class="commentPost" id="comment-@contentItem.ContentItemId">
     <div class="comment-wrapper">
         <div class="avatar">
             <div class="user">
-                <i class="fas fa-4x fa-user-alt"></i>
+                <img src="https://ui-avatars.com/api/?name=@userName&size=25&rounded=true&length=1&bold=true" />
             </div>
         </div>
         <div class="comment-content">
