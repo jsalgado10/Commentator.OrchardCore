@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Notifications.OrchardCore" Version="1.0.1-rc-2" />
+    <PackageReference Include="Notifications.OrchardCore" Version="1.0.1-rc-3" />
     <PackageReference Include="OrchardCore.Admin" Version="1.0.0-rc2-15787" />
     <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-15787" />
     <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.0.0-rc2-15787" />

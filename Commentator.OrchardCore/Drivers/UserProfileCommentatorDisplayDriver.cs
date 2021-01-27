@@ -18,7 +18,7 @@ namespace Commentator.OrchardCore.Drivers
                 model.NotificationCommentOnReplies = profile.NotificationCommentOnReplies;
                 model.NotificationCommentOnMentions = profile.NotificationCommentOnMentions;
 
-            }).Location("Content:2");
+            }).Location("Content:2#Notifications");
         }
 
         public override async Task<IDisplayResult> UpdateAsync(UserProfileCommentator profile, BuildEditorContext context)

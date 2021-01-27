@@ -21,6 +21,7 @@ using OrchardCore.Modules;
 using OrchardCore.Mvc.Core.Utilities;
 using OrchardCore.ResourceManagement;
 using OrchardCore.Security.Permissions;
+using OrchardCore.Settings;
 using OrchardCore.Users.Models;
 using System;
 
@@ -39,6 +40,7 @@ namespace Commentator.OrchardCore
             services.AddScoped<IPermissionProvider, Permissions>();
             services.AddScoped<INotificationService, CommentatorNotificationService>();
             services.AddScoped<IDisplayDriver<User>, UserProfileCommentatorDisplayDriver>();
+            services.AddScoped<IDisplayDriver<ISite>, CommentatorNotificationsSettingsDisplayDriver>();
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)

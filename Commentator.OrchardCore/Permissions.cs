@@ -13,6 +13,7 @@ namespace Commentator.OrchardCore
         public static readonly Permission EditCommentsAccess = new Permission("EditCommentAccess", "Edit Comments");
         public static readonly Permission DeleteCommentsAccess = new Permission("DeleteCommentAccess", "Delete Comments");
         public static readonly Permission ViewCommentsAccess = new Permission("ViewCommentAccess", "View Comments");
+        public static readonly Permission ManageCommentNotificationsSettings = new Permission("ManageCommentNotificationsSettings", "Manage Notifications Settings");
 
         public IEnumerable<PermissionStereotype> GetDefaultStereotypes()
         {
@@ -33,7 +34,8 @@ namespace Commentator.OrchardCore
                         AddCommentsAccess,
                         EditCommentsAccess,
                         DeleteCommentsAccess,
-                        ViewCommentsAccess
+                        ViewCommentsAccess,
+                        ManageCommentNotificationsSettings
                     }
                 },
                 new PermissionStereotype {
@@ -55,7 +57,8 @@ namespace Commentator.OrchardCore
                 AddCommentsAccess,
                 EditCommentsAccess,
                 DeleteCommentsAccess,
-                ViewCommentsAccess
+                ViewCommentsAccess,
+                ManageCommentNotificationsSettings
             }
             .AsEnumerable());
         }
