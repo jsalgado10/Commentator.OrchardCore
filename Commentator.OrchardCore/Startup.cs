@@ -60,6 +60,13 @@ namespace Commentator.OrchardCore
                 pattern: "comments/Add/{contentType}",
                 defaults: new { controller = itemController, action = nameof(CommentsController.Create) }
             );
+
+            routes.MapAreaControllerRoute(
+               name: "GetUserNames",
+               areaName: "Commentator.OrchardCore",
+               pattern: "comments/getusernames",
+               defaults: new { controller = itemController, action = nameof(CommentsController.GetUsernames) }
+           );
         }
     }
 }

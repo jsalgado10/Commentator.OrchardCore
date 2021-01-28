@@ -17,13 +17,13 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Product>Commentator.OrchardCore</Product>
     <AssemblyName>Commentator.OrchardCore</AssemblyName>
-    <Version>1.0.8-rc-2</Version>
+    <Version>1.0.8-rc-3</Version>
     <RepositoryType>Commentator.OrchardCore</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Notifications.OrchardCore" Version="1.0.1-rc-3" />
+    <PackageReference Include="Notifications.OrchardCore" Version="1.0.1-rc-6" />
     <PackageReference Include="OrchardCore.Admin" Version="1.0.0-rc2-15787" />
     <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-15787" />
     <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.0.0-rc2-15787" />

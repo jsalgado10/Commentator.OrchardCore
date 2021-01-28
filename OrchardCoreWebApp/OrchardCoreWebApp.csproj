@@ -8,11 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Hangfire-log.db" />
+    <None Remove="Hangfire.db" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="Localization\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Notifications.OrchardCore" Version="1.0.1-rc-6" />
     <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc2-15787" />
     <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc2-15787" />
   </ItemGroup>

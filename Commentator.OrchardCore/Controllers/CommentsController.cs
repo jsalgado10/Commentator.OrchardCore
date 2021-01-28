@@ -24,6 +24,8 @@ using OrchardCore.Mvc.Utilities;
 using OrchardCore.Navigation;
 using OrchardCore.Routing;
 using OrchardCore.Settings;
+using OrchardCore.Users.Indexes;
+using OrchardCore.Users.Models;
 using YesSql;
 using YesSql.Services;
 
@@ -185,6 +187,18 @@ namespace Commentator.OrchardCore.Controllers
             var model = await contentItemDisplayManager.BuildEditorAsync(contentItem, updateModelAccessor.ModelUpdater, true);
 
             return PartialView(model);
+        }
+
+        public async Task<IEnumerable<string>> GetUsernames()
+        {
+            if (!await authorizationService.AuthorizeAsync(User, Permissions.AddCommentsAccess))
+            {
+                return new List<string>();
+            }
+            var userList = await session.Query<User, UserIndex>().ListAsync();
+            var userNames = userList.Select(user => $@"@{user.UserName}");
+
+            return userNames;
         }
 
         [HttpPost, ActionName("Create")]

@@ -31,6 +31,7 @@
     var listOptions = '?Options.OrderBy={{ Model.OrderBy }}&Options.GroupBy={{ Model.GroupBy }}&PageCount={{ Model.CommentsPerPage }}';
     var newCommentLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/Add/CommentPost';
     var commentsLink = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/{{ Model.ContentItem.ContentItemId }}' + listOptions;    
+    var usernameMentions = '{{ Site.BaseUrl}}{{ Request.PathBase }}/comments/getusernames';    
     $('#new_comment').load(newCommentLink);
     $('#divComments').load(commentsLink);
 </script>

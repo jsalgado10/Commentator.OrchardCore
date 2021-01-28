@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 /OrchardCoreWebApp/wwwroot/is-cache/9/3/a/8/3/5/f/f/d/1/4/7
 /OrchardCoreWebApp/App_Data
+/OrchardCoreWebApp/Hangfire.db
+/OrchardCoreWebApp/Hangfire-log.db

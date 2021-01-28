@@ -48,10 +48,39 @@ function CKEditorAddEmojis(editor) {
         })
         editor.plugins.get('SpecialCharacters').addItems('Emoji', emojis);
     });
-    
+
+}
+
+function GetUsernames() {
+    $.get(usernameMentions, function (data) {
+        items = data;
+        console.log(items);
+    });
+}
+
+function getFeedItems(queryText) {
+
+    return new Promise(resolve => {
+        setTimeout(() => {
+            const itemsToDisplay = items
+                .filter(isItemMatching)
+                .slice(0, 10);
+
+            resolve(itemsToDisplay);
+        }, 100);
+    });
+
+    function isItemMatching(item) {
+        const searchString = queryText.toLowerCase();
+        return (
+            item.toLowerCase().includes(searchString)
+        );
+    }
 }
 
 function SetCKEditor(contentId) {
+    var items = [];
+    GetUsernames();
     var currentTxtComment = '#txtArticleComment_' + contentId;
     ClassicEditor
         .create(document.querySelector(currentTxtComment), {
@@ -96,6 +125,15 @@ function SetCKEditor(contentId) {
                     'imageStyle:full',
                     'imageStyle:side'
                 ]
+            },
+            mention: {
+                feeds: [
+                    {
+                        marker: '@',
+                        feed: getFeedItems
+                    }
+                ]
+
             },
             table: {
                 contentToolbar: [
