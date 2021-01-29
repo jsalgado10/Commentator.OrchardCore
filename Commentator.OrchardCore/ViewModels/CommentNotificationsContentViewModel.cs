@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Commentator.OrchardCore.ViewModels
 {
-    public class NotificationsContentViewModel : ShapeViewModel
+    public class CommentNotificationsContentViewModel : ShapeViewModel
     {
-        public NotificationsContentViewModel()
+        public CommentNotificationsContentViewModel()
         {
             Metadata.Type = "BaseNotification";
         }

@@ -21,6 +21,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Linq;
 using YesSql;
+using YesSql.Services;
+using System.IO;
 
 namespace Commentator.OrchardCore.Services
 {
@@ -56,29 +58,82 @@ namespace Commentator.OrchardCore.Services
         public override async Task<IList<MailMessage>> GetNotificationsPublishedAsync(PublishContentContext context)
         {
             var contentItemDisplayManager = serviceProvider.GetRequiredService<IContentItemDisplayManager>();
+            var contentManager = serviceProvider.GetRequiredService<IContentManager>();
             var notificationSettings = siteSettings.GetSiteSettingsAsync()
                 .GetAwaiter().GetResult()
                 .As<CommentatorNotificationsSettings>();
-            var users = await session.Query<User, UserIndex>().ListAsync();
+            var users = await session.Query<User, UserIndex>().Where(user => user.IsEnabled).ListAsync();
             MailMessage message;
-            NotificationsContentViewModel model;
+            CommentNotificationsContentViewModel model;
             List<MailMessage> messages = new List<MailMessage>();
 
             try
             {
-                var document = await contentItemDisplayManager.BuildDisplayAsync(context.ContentItem, updateModelAccessor.ModelUpdater, "Summary");
+                //var document = await contentItemDisplayManager.BuildDisplayAsync(context.ContentItem, updateModelAccessor.ModelUpdater, "Summary");
+                var document = context.ContentItem;
                 var isCommentReply = context.ContentItem.Content.CommentPost.CommentParent.Text.Value != "0";
                 var commentContent = context.ContentItem.Content.CommentPost.CommentText.Text.Value;
                 var mentionPattern = @"<span class=""mention"" data-mention=""@(\w+)"">";
                 var mentions = Regex.Matches(commentContent, mentionPattern);
+                List<string> mentionedUsernames = new List<string>();
                 foreach (Match mention in mentions)
                 {
+                    mentionedUsernames.Add(mention.Groups[1].Value);
                     logger.LogInformation($@"Mentioned : {mention.Groups[1].Value}");
                 }
 
                 if (notificationSettings.SendCommentNotifications)
                 {
+                    if (mentionedUsernames.Count > 0)
+                    {
+                        logger.LogInformation("Getting List of Users that want notifications on comment mentions");
+                        var mentionedUsers = users.Where(user => mentionedUsernames.Contains(user.UserName));
+                        var mentionedEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentMentionSubjectMessage) ? "You were mentioned in a comment" : notificationSettings.CommentMentionSubjectMessage;
+                        var mentionedEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentMentionEmailMessage) ? "Your name came up in the following comment" : notificationSettings.CommentMentionEmailMessage;
+                        var commentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
+                        {
+                            TemplateName = "CommentMentioned",
+                            ContentItem = document
+                        });
 
+                        foreach (var user in mentionedUsers)
+                        {
+                            model = new CommentNotificationsContentViewModel()
+                            {
+                                TemplateName = "CommentatorBaseNotification",
+                                Message = mentionedEmailMessage,
+                                User = user.UserName,
+                                ContentData = commentData
+                            };
+
+                            message = new MailMessage()
+                            {
+                                To = user.Email,
+                                Subject = mentionedEmailSubject,
+                                Body = await BuildShapeOutput(model),
+                                IsBodyHtml = true
+                            };
+
+                            messages.Add(message);
+                        }
+                    }
+
+                    if (isCommentReply)
+                    {
+                        logger.LogInformation("Getting List of Users that want notifications on comment replies");
+                        var parentCommentId = context.ContentItem.Content.CommentPost.CommentParent.Text.Value;
+                        dynamic parentComment = await contentManager.GetAsync(parentCommentId);
+                        if (parentComment != null)
+                        {
+                            var parentCommentOwner = parentComment.Owner;
+                            var replyUsers = users.Where(user => user.UserName == parentCommentOwner && NotifyOnReply(user));
+                        }
+
+                    }
+                }
+                else
+                {
+                    logger.LogInformation($@"Comment Notifications are disabled");
                 }
             }
             catch (Exception ex)
@@ -87,6 +142,31 @@ namespace Commentator.OrchardCore.Services
             }
 
             return await Task.FromResult(messages);
+        }
+
+        private bool NotifyOnMentions(dynamic user)
+        {
+            var result = (user.Properties?.UserProfile?.NotificationCommentOnMentions) ?? false;
+            return result;
+        }
+
+        private bool NotifyOnReply(dynamic user)
+        {
+            var result = (user.Properties?.UserProfile?.NotificationCommentOnReplies) ?? false;
+            return result;
+        }
+
+        private async Task<string> BuildShapeOutput(object model)
+        {
+            var body = string.Empty;
+            using (var sw = new StringWriter())
+            {
+                var htmlContent = await displayHelper.ShapeExecuteAsync(model);
+                htmlContent.WriteTo(sw, htmlEncoder);
+                body = sw.ToString();
+            }
+
+            return body;
         }
     }
 }

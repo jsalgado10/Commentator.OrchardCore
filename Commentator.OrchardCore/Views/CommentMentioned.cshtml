@@ -1,0 +1,32 @@
+﻿@model CommentNotificationsContentViewModel
+
+@{
+    Layout = "";
+    ContentItem contentItem = Model.ContentItem;
+    var postDate = (object)(await DisplayAsync(await New.TimeSpan(Utc: Model.ContentItem.PublishedUtc))).Name;
+    string commentText = Model.ContentItem.Content.CommentPost.CommentText.Text;
+    var userName = contentItem.Owner ?? "Anonymous";
+}
+
+<tr>
+    <td class="email-content-main" style="padding: 0px; border-collapse: collapse; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
+        <table id="page-title-pattern" cellspacing="0" cellpadding="0" border="0" width="100%" style="color: #333333">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="comment-header">
+                            <span class="avatar"><img src="https://ui-avatars.com/api/?name=@userName&size=25&rounded=true&length=1&bold=true" /></span>
+                            <span class="post-by">@contentItem.Content.CommentPost.CommentBy.Text </span>
+                            <span class="post-meta" title="@Model.ContentItem.PublishedUtc">@T[$@"{postDate}"]</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td class="email-content-main" style="padding: 0px; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
+        @Html.Raw(commentText)
+    </td>
+</tr>
