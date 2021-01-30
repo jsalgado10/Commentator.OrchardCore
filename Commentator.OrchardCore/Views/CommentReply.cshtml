@@ -9,11 +9,19 @@
 }
 
 <tr>
+    <td class="email-content-main" style="padding: 0px; border-collapse: collapse; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 0 0 16px; background-color: #ffffff" bgcolor="#ffffff">
+        <div class="comment-header">
+            <span class="avatar">Re:</span>
+            <span class="post-by">@Html.Raw(Model.CommentParentData)</span>
+        </div>
+    </td>
+</tr>
+<tr>
     <td class="email-content-main" style="padding: 0px; border-collapse: collapse; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
         <table id="page-title-pattern" cellspacing="0" cellpadding="0" border="0" width="100%" style="color: #333333">
             <tbody>
                 <tr>
-                    <td>
+                    <td class="email-content-main" style="padding: 0px; border-left: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
                         <div class="comment-header">
                             <span class="avatar"><img src="https://ui-avatars.com/api/?name=@userName&size=25&rounded=true&length=1&bold=true" /></span>
                             <span class="post-by">@contentItem.Content.CommentPost.CommentBy.Text </span>
@@ -21,12 +29,12 @@
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td class="email-content-main" style="padding: 0px; border-left: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
+                        @Html.Raw(commentText)
+                    </td>
+                </tr>
             </tbody>
         </table>
-    </td>
-</tr>
-<tr>
-    <td class="email-content-main" style="padding: 0px; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-top: 0; border-bottom: 0; padding: 0 15px 15px 16px; background-color: #ffffff" bgcolor="#ffffff">
-        @Html.Raw(commentText)
     </td>
 </tr>

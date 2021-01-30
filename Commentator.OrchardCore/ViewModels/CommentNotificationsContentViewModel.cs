@@ -30,7 +30,8 @@ namespace Commentator.OrchardCore.ViewModels
 
         public string Message { get; set; }
 
-        public dynamic ContentItem { get; set; }
+        public dynamic RecordItem { get; set; }
         public string ContentData { get; set; }
+        public string CommentParentData { get; set; }
     }
 }
