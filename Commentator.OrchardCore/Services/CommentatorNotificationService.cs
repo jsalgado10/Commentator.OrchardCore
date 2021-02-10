@@ -66,89 +66,51 @@ namespace Commentator.OrchardCore.Services
             MailMessage message;
             CommentNotificationsContentViewModel model;
             List<MailMessage> messages = new List<MailMessage>();
+            var document = context.ContentItem;
 
-            try
+            if (document.ContentType == "CommentPost")
             {
-                var document = context.ContentItem;
-                var isCommentReply = context.ContentItem.Content.CommentPost.CommentParent.Text.Value != "0";
-                var commentContent = context.ContentItem.Content.CommentPost.CommentText.Text.Value;
-                var mentionPattern = @"<span class=""mention"" data-mention=""@(\w+)"">";
-                var mentions = Regex.Matches(commentContent, mentionPattern);
-                List<string> mentionedUsernames = new List<string>();
-                foreach (Match mention in mentions)
+                try
                 {
-                    mentionedUsernames.Add(mention.Groups[1].Value);
-                    logger.LogInformation($@"Mentioned : {mention.Groups[1].Value}");
-                }
-
-                if (notificationSettings.SendCommentNotifications)
-                {
-                    if (mentionedUsernames.Count > 0)
+                    if (notificationSettings.SendCommentNotifications)
                     {
-                        logger.LogInformation("Getting List of Users that want notifications on comment mentions");
-                        var mentionedUsers = users.Where(user => mentionedUsernames.Contains(user.UserName) && NotifyOnMentions(user));
-                        var mentionedEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentMentionSubjectMessage) ? "You were mentioned in a comment" : notificationSettings.CommentMentionSubjectMessage;
-                        var mentionedEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentMentionEmailMessage) ? "Your name came up in the following comment" : notificationSettings.CommentMentionEmailMessage;
-                        var mentionedCommentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
+                        var isCommentReply = context.ContentItem.Content.CommentPost.CommentParent.Text.Value != "0";
+                        var commentContent = context.ContentItem.Content.CommentPost.CommentText.Text.Value;
+                        var mentionPattern = @"<span class=""mention"" data-mention=""@(\w+)"">";
+                        var mentions = Regex.Matches(commentContent, mentionPattern);
+                        List<string> mentionedUsernames = new List<string>();
+                        foreach (Match mention in mentions)
                         {
-                            TemplateName = "CommentMentioned",
-                            RecordItem = document
-                        });
-
-                        foreach (var user in mentionedUsers)
-                        {
-                            model = new CommentNotificationsContentViewModel()
-                            {
-                                TemplateName = "CommentatorBaseNotification",
-                                Message = mentionedEmailMessage,
-                                User = user.UserName,
-                                ContentData = mentionedCommentData
-                            };
-
-                            message = new MailMessage()
-                            {
-                                To = user.Email,
-                                Subject = mentionedEmailSubject,
-                                Body = await BuildShapeOutput(model),
-                                IsBodyHtml = true
-                            };
-
-                            messages.Add(message);
+                            mentionedUsernames.Add(mention.Groups[1].Value);
+                            logger.LogInformation($@"Mentioned : {mention.Groups[1].Value}");
                         }
-                    }
 
-                    if (isCommentReply)
-                    {
-                        logger.LogInformation("Getting List of Users that want notifications on comment replies");
-                        var parentCommentId = context.ContentItem.Content.CommentPost.CommentParent.Text.Value;
-                        dynamic parentComment = await contentManager.GetAsync(parentCommentId);
-                        if (parentComment != null)
+                        if (mentionedUsernames.Count > 0)
                         {
-                            var parentCommentOwner = parentComment.Owner;
-                            var replyUsers = users.Where(user => user.UserName == parentCommentOwner && NotifyOnReply(user));
-                            var replyEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentReplySubjectMessage) ? "A reply to your comment" : notificationSettings.CommentReplySubjectMessage;
-                            var replyEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentReplyEmailMessage) ? "Somebody reply to your comment" : notificationSettings.CommentReplyEmailMessage;
-                            var replyCommentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
+                            logger.LogInformation("Getting List of Users that want notifications on comment mentions");
+                            var mentionedUsers = users.Where(user => mentionedUsernames.Contains(user.UserName) && NotifyOnMentions(user));
+                            var mentionedEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentMentionSubjectMessage) ? "You were mentioned in a comment" : notificationSettings.CommentMentionSubjectMessage;
+                            var mentionedEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentMentionEmailMessage) ? "Your name came up in the following comment" : notificationSettings.CommentMentionEmailMessage;
+                            var mentionedCommentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
                             {
-                                TemplateName = "CommentReply",
-                                RecordItem = document,
-                                CommentParentData = parentComment.Content.CommentPost.CommentText.Text
+                                TemplateName = "CommentMentioned",
+                                RecordItem = document
                             });
 
-                            foreach (var user in replyUsers)
+                            foreach (var user in mentionedUsers)
                             {
                                 model = new CommentNotificationsContentViewModel()
                                 {
                                     TemplateName = "CommentatorBaseNotification",
-                                    Message = replyEmailMessage,
+                                    Message = mentionedEmailMessage,
                                     User = user.UserName,
-                                    ContentData = replyCommentData
+                                    ContentData = mentionedCommentData
                                 };
 
                                 message = new MailMessage()
                                 {
                                     To = user.Email,
-                                    Subject = replyEmailSubject,
+                                    Subject = mentionedEmailSubject,
                                     Body = await BuildShapeOutput(model),
                                     IsBodyHtml = true
                                 };
@@ -156,16 +118,57 @@ namespace Commentator.OrchardCore.Services
                                 messages.Add(message);
                             }
                         }
+
+                        if (isCommentReply)
+                        {
+                            logger.LogInformation("Getting List of Users that want notifications on comment replies");
+                            var parentCommentId = context.ContentItem.Content.CommentPost.CommentParent.Text.Value;
+                            dynamic parentComment = await contentManager.GetAsync(parentCommentId);
+                            if (parentComment != null)
+                            {
+                                var parentCommentOwner = parentComment.Owner;
+                                var replyUsers = users.Where(user => user.UserName == parentCommentOwner && NotifyOnReply(user));
+                                var replyEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentReplySubjectMessage) ? "A reply to your comment" : notificationSettings.CommentReplySubjectMessage;
+                                var replyEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentReplyEmailMessage) ? "Somebody reply to your comment" : notificationSettings.CommentReplyEmailMessage;
+                                var replyCommentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
+                                {
+                                    TemplateName = "CommentReply",
+                                    RecordItem = document,
+                                    CommentParentData = parentComment.Content.CommentPost.CommentText.Text
+                                });
+
+                                foreach (var user in replyUsers)
+                                {
+                                    model = new CommentNotificationsContentViewModel()
+                                    {
+                                        TemplateName = "CommentatorBaseNotification",
+                                        Message = replyEmailMessage,
+                                        User = user.UserName,
+                                        ContentData = replyCommentData
+                                    };
+
+                                    message = new MailMessage()
+                                    {
+                                        To = user.Email,
+                                        Subject = replyEmailSubject,
+                                        Body = await BuildShapeOutput(model),
+                                        IsBodyHtml = true
+                                    };
+
+                                    messages.Add(message);
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        logger.LogInformation($@"Comment Notifications are disabled");
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    logger.LogInformation($@"Comment Notifications are disabled");
+                    logger.LogError($@"GetNotificationsPublishedAsync Error: {ex.Message}");
                 }
-            }
-            catch (Exception ex)
-            {
-                logger.LogError($@"GetNotificationsPublishedAsync Error: {ex.Message}");
             }
 
             return await Task.FromResult(messages);
