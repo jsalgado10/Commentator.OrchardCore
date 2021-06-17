@@ -106,6 +106,7 @@ function SetCKEditor(contentId) {
                     'undo',
                     'redo',
                     'alignment',
+                    'pageBreak',
                     'code',
                     'codeBlock',
                     'fontSize',
