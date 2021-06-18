@@ -140,7 +140,9 @@ function SetCKEditor(contentId) {
                 contentToolbar: [
                     'tableColumn',
                     'tableRow',
-                    'mergeTableCells'
+                    'mergeTableCells',
+                    'tableProperties',
+                    'tableCellProperties'
                 ]
             },
             licenseKey: '',
