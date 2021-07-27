@@ -196,7 +196,8 @@ namespace Commentator.OrchardCore.Controllers
                 return new List<string>();
             }
             var userList = await session.Query<User, UserIndex>().ListAsync();
-            var userNames = userList.Select(user => $@"@{user.UserName}");
+            var allMention = new List<string> { "@All" };
+            var userNames = userList.Select(user => $@"@{user.UserName}").Union(allMention);
 
             return userNames;
         }
@@ -231,7 +232,7 @@ namespace Commentator.OrchardCore.Controllers
 
             if (!ModelState.IsValid)
             {
-                session.Cancel();
+                await session.CancelAsync();
                 return PartialView(model);
             }
 

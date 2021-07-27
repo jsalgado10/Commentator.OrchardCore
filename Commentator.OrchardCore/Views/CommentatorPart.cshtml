@@ -1,0 +1,45 @@
+﻿@model CommentatorPartViewModel
+
+@{ 
+    var editorOption = Model.Editor;
+}
+<script asp-name="jQuery" at="Foot"></script>
+<script asp-name="Commentator-site-js" at="Foot"></script>
+
+@switch (editorOption)
+{
+    case "CKEditor":
+        <script asp-name="CkEditor5-js" at="Foot"></script>
+        <style asp-name="CkEditor5-css" version="5"></style>
+        break;
+    default:
+        <script asp-name="Trumbowyg-js" at="Foot"></script>
+        <script asp-name="Trumbowyg-fontfamily-js" at="Foot"></script>
+        <script asp-name="Trumbowyg-fontsize-js" at="Foot"></script>
+        <script asp-name="Trumbowyg-emoji-js" at="Foot"></script>
+        <script asp-name="Trumbowyg-giphy-js" at="Foot"></script>
+        <style asp-name="Trumbowyg-css" version="2"></style>
+        <style asp-name="Trumbowyg-emoji-css" version="2"></style>
+        <style asp-name="Trumbowyg-giphy-css" version="2"></style>
+        break;
+}
+<script asp-name="sweetalert-js" at="Foot"></script>
+<style asp-name="Commentator-site" version="1"></style>
+
+<resources type="FootScript" />
+
+@if (Model.AllowComments)
+{
+<input type="hidden" id="ArticleId" value="@Model.ContentItem.ContentItemId" />
+<div id="new_comment"></div>
+<div id="divComments"></div>
+<script at="Foot" type="text/javascript">
+    var editorType = '@editorOption' == '' ? 'Trumbowyg' : '@Model.Editor';
+    var listOptions = '?Options.OrderBy=@Model.OrderBy&Options.GroupBy=@Model.GroupBy&PageCount=@Model.CommentsPerPage';
+    var newCommentLink = '@Site.BaseUrl@Context.Request.PathBase/comments/Add/CommentPost';
+    var commentsLink = '@Site.BaseUrl@Context.Request.PathBase/comments/@Model.ContentItem.ContentItemId' + listOptions;
+    var usernameMentions = '@Site.BaseUrl@Context.Request.PathBase/comments/getusernames';
+    $('#new_comment').load(newCommentLink);
+    $('#divComments').load(commentsLink);
+</script>
+}

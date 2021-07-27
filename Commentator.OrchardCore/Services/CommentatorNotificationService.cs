@@ -191,7 +191,7 @@ namespace Commentator.OrchardCore.Services
             var body = string.Empty;
             using (var sw = new StringWriter())
             {
-                var htmlContent = await displayHelper.ShapeExecuteAsync(model);
+                var htmlContent = await displayHelper.ShapeExecuteAsync((IShape)model);
                 htmlContent.WriteTo(sw, htmlEncoder);
                 body = sw.ToString();
             }

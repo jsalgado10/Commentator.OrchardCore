@@ -31,7 +31,7 @@ namespace Commentator.OrchardCore
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IResourceManifestProvider, ResourceManifest>();
+            services.AddTransient<IConfigureOptions<ResourceManagementOptions>, ResourceManagementOptionsConfiguration>();
             services.AddContentPart<CommentatorPart>()
                 .UseDisplayDriver<CommentatorPartDisplayDriver>()
                 .AddHandler<CommentatorPartHandler>();
