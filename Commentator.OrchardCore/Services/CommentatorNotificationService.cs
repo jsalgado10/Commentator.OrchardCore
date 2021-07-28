@@ -74,6 +74,14 @@ namespace Commentator.OrchardCore.Services
                 {
                     if (notificationSettings.SendCommentNotifications)
                     {
+                        var commentArticleId = context.ContentItem.Content.CommentPost.CommentArticle.Text.Value;
+                        var commentArticle = await contentManager.GetAsync(commentArticleId);
+                        var commentArticleShape = await contentItemDisplayManager.BuildDisplayAsync(commentArticle, updateModelAccessor.ModelUpdater,"Summary");
+                        var commentArticleData = await BuildShapeOutput(new CommentNotificationsContentViewModel
+                        {
+                            TemplateName = "CommentArticle",
+                            RecordItem = commentArticleShape
+                        });
                         var isCommentReply = context.ContentItem.Content.CommentPost.CommentParent.Text.Value != "0";
                         var commentContent = context.ContentItem.Content.CommentPost.CommentText.Text.Value;
                         var mentionPattern = @"<span class=""mention"" data-mention=""@(\w+)"">";
@@ -104,7 +112,8 @@ namespace Commentator.OrchardCore.Services
                                     TemplateName = "CommentatorBaseNotification",
                                     Message = mentionedEmailMessage,
                                     User = user.UserName,
-                                    ContentData = mentionedCommentData
+                                    ContentData = mentionedCommentData,
+                                    CommentArticleLink = commentArticleData
                                 };
 
                                 message = new MailMessage()
@@ -144,7 +153,8 @@ namespace Commentator.OrchardCore.Services
                                         TemplateName = "CommentatorBaseNotification",
                                         Message = replyEmailMessage,
                                         User = user.UserName,
-                                        ContentData = replyCommentData
+                                        ContentData = replyCommentData,
+                                        CommentArticleLink= commentArticleData
                                     };
 
                                     message = new MailMessage()

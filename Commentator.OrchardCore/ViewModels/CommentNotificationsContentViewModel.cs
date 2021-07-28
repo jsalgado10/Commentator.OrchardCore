@@ -33,5 +33,6 @@ namespace Commentator.OrchardCore.ViewModels
         public dynamic RecordItem { get; set; }
         public string ContentData { get; set; }
         public string CommentParentData { get; set; }
+        public string CommentArticleLink { get; set; }
     }
 }
