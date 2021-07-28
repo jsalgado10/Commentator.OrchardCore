@@ -76,7 +76,7 @@ namespace Commentator.OrchardCore.Services
                     {
                         var commentArticleId = context.ContentItem.Content.CommentPost.CommentArticle.Text.Value;
                         var commentArticle = await contentManager.GetAsync(commentArticleId);
-                        var commentArticleShape = await contentItemDisplayManager.BuildDisplayAsync(commentArticle, updateModelAccessor.ModelUpdater,"Summary");
+                        var commentArticleShape = await contentItemDisplayManager.BuildDisplayAsync(commentArticle, updateModelAccessor.ModelUpdater, "Summary");
                         var commentArticleData = await BuildShapeOutput(new CommentNotificationsContentViewModel
                         {
                             TemplateName = "CommentArticle",
@@ -96,7 +96,7 @@ namespace Commentator.OrchardCore.Services
                         if (mentionedUsernames.Count > 0)
                         {
                             logger.LogInformation("Getting List of Users that want notifications on comment mentions");
-                            var mentionedUsers = users.Where(user => mentionedUsernames.Contains(user.UserName) && NotifyOnMentions(user));
+                            var mentionedUsers = mentionedUsernames.Contains("All") ? users.Where(user => NotifyOnMentions(user)) : users.Where(user => mentionedUsernames.Contains(user.UserName) && NotifyOnMentions(user));
                             var mentionedEmailSubject = string.IsNullOrEmpty(notificationSettings.CommentMentionSubjectMessage) ? "You were mentioned in a comment" : notificationSettings.CommentMentionSubjectMessage;
                             var mentionedEmailMessage = string.IsNullOrEmpty(notificationSettings.CommentMentionEmailMessage) ? "Your name came up in the following comment" : notificationSettings.CommentMentionEmailMessage;
                             var mentionedCommentData = await BuildShapeOutput(new CommentNotificationsContentViewModel
@@ -154,7 +154,7 @@ namespace Commentator.OrchardCore.Services
                                         Message = replyEmailMessage,
                                         User = user.UserName,
                                         ContentData = replyCommentData,
-                                        CommentArticleLink= commentArticleData
+                                        CommentArticleLink = commentArticleData
                                     };
 
                                     message = new MailMessage()
@@ -198,12 +198,14 @@ namespace Commentator.OrchardCore.Services
 
         private async Task<string> BuildShapeOutput(object model)
         {
+            logger.LogInformation("Building Email Body");
             var body = string.Empty;
             using (var sw = new StringWriter())
             {
                 var htmlContent = await displayHelper.ShapeExecuteAsync((IShape)model);
                 htmlContent.WriteTo(sw, htmlEncoder);
                 body = sw.ToString();
+                logger.LogInformation($@"HTML Body Content : {body}");
             }
 
             return body;
