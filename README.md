@@ -24,4 +24,6 @@ You will need to add `` {{ Model.Content.CommentatorPart | shape_render }} `` to
 - Admin Dashboard to maintain Comments
 - Pager on Comment List
 - Handle unathorize user. Add a message or pop up
-- Email Notifications
+
+# New Features 1.2.0-rc-1
+- Email Notifications - using 'Notification.OrchardCore' Nuget Library
