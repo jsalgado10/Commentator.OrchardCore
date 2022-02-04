@@ -120,6 +120,22 @@ function SetCKEditor(contentId) {
                 ]
             },
             language: 'en',
+            fontFamily: {
+                options: [
+                    'default',
+                    'Comic Sans MS, cursive',
+                    'Papyrus, fantasy',
+                    'Arial, Helvetica, sans-serif',
+                    'Courier New, Courier, monospace',
+                    'Georgia, serif',
+                    'Lucida Sans Unicode, Lucida Grande, sans-serif',
+                    'Tahoma, Geneva, sans-serif',
+                    'Times New Roman, Times, serif',
+                    'Trebuchet MS, Helvetica, sans-serif',
+                    'Verdana, Geneva, sans-serif'
+                ],
+                supportAllValues: true
+            },
             image: {
                 toolbar: [
                     'imageTextAlternative',

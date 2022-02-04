@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: mk\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Forms.pot\n"
-"X-Crowdin-File-ID: 556\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Forms.pot\n"
+"X-Crowdin-File-ID: 748\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Macedonian\n"
 "Language: mk_MK\n"
-"PO-Revision-Date: 2021-07-01 09:45\n"
+"PO-Revision-Date: 2021-10-07 22:47\n"
 
 #. updater.ModelState.AddModelError(Prefix + '.' + nameof(SelectPartEditViewModel.Options), S["The options are written in an incorrect format."]);
 #: OrchardCore.Forms\Drivers\SelectPartDisplayDriver.cs:58
@@ -138,7 +138,7 @@ msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormTask"
 msgid "Invalid"
 msgstr "Невалидно"
 
-#. <h4><i class="fa fa-exclamation-triangle"></i>@Model.Activity.GetTitleOrDefault(() => T["Add Form Validation Error"])</h4>
+#. <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Add Form Validation Error"])</h4>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design"
 msgid "Add Form Validation Error"
@@ -148,7 +148,7 @@ msgstr "Додадете порака за грешка при валидаци�
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design"
 msgid "<em>{0}</em>: <em>{1}</em>"
-msgstr "<em>{0}</em>: <em>{1}</em>"
+msgstr ""
 
 #. <label asp-for="Key">@T["Key"]</label>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Edit.cshtml:5
@@ -174,7 +174,7 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Edit"
 msgid "The validation error message to display."
 msgstr "Пораката за грешка која треба да се прикаже."
 
-#. <h4 class="card-title"><i class="fa fa-exclamation-triangle"></i>@T["Add Form Validation Error"]</h4>
+#. <h4 class="card-title"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>@T["Add Form Validation Error"]</h4>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Thumbnail"
 msgid "Add Form Validation Error"
@@ -186,13 +186,13 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Thumbn
 msgid "Adds a validation error to the model state."
 msgstr "Додава грешка за валидација во состојбата на моделот."
 
-#. <h4><i class="fa fa-clone"></i>@Model.Activity.GetTitleOrDefault(() => T["Bind Form Model State"])</h4>
+#. <h4><i class="fa fa-clone" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Bind Form Model State"])</h4>
 #: OrchardCore.Forms\Views\Items\BindModelStateTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.BindModelStateTask.Fields.Design"
 msgid "Bind Form Model State"
 msgstr "Поврзи состојба на модел на форма"
 
-#. <h4 class="card-title"><i class="fa fa-clone"></i>@T["Bind Form to Model State"]</h4>
+#. <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i>@T["Bind Form to Model State"]</h4>
 #: OrchardCore.Forms\Views\Items\BindModelStateTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.BindModelStateTask.Fields.Thumbnail"
 msgid "Bind Form to Model State"
@@ -346,7 +346,7 @@ msgstr "Време"
 #: OrchardCore.Forms\Views\Items\InputPart.Fields.Edit.cshtml:13
 msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "DateTime"
-msgstr "DateTime"
+msgstr ""
 
 #. <option value="datetime-local">@T["Local DateTime"]</option>
 #: OrchardCore.Forms\Views\Items\InputPart.Fields.Edit.cshtml:14
@@ -522,14 +522,14 @@ msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Default?"
 msgstr ""
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:58
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Add an option"
 msgstr ""
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="#" v-on:click.prevent.stop="showModal = true" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit"></i></a>
+#. <a href="#" v-on:click.prevent.stop="showModal = true" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:72
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:107
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
@@ -598,13 +598,13 @@ msgctxt "OrchardCore.Forms.Views.Items.TextAreaPart.Fields.Edit"
 msgid "The default value for this textarea."
 msgstr "Предодредената вредност за ова поле за текст."
 
-#. <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Antiforgery Token"])</h4>
+#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Antiforgery Token"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateAntiforgeryTokenTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Design"
 msgid "Validate Antiforgery Token"
 msgstr "Валидирај токен против фалсификување"
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt"></i>@T["Validate Antiforgery Token"]</h4>
+#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Antiforgery Token"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateAntiforgeryTokenTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Thumbnail"
 msgid "Validate Antiforgery Token"
@@ -616,7 +616,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Thumb
 msgid "Validates the antiforgery token for the current HTTP context in which the workflow executes."
 msgstr "Валидирајте го токенот против фалсификување генериран за тековниот HTTP контекст, во кој се извршива тековниот „тек на работа“."
 
-#. <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form Field"])</h4>
+#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form Field"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Design"
 msgid "Validate Form Field"
@@ -652,7 +652,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Edit"
 msgid "The validation error message to display."
 msgstr "Пораката за грешка при валидација која треба да се прикаже."
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt"></i>@T["Validate Form Field"]</h4>
+#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Form Field"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Thumbnail"
 msgid "Validate Form Field"
@@ -664,13 +664,13 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Thumbnail"
 msgid "Validates a specific form field."
 msgstr "Валидира специфично поле од форма."
 
-#. <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form"])</h4>
+#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormTask.Fields.Design"
 msgid "Validate Form"
 msgstr "Валидирај форма"
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt"></i>@T["Validate Form"]</h4>
+#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Form"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormTask.Fields.Thumbnail"
 msgid "Validate Form"

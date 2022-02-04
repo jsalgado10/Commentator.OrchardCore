@@ -4,19 +4,19 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: zh-TW\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Shortcodes.pot\n"
-"X-Crowdin-File-ID: 668\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Shortcodes.pot\n"
+"X-Crowdin-File-ID: 816\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2021-07-14 10:25\n"
+"PO-Revision-Date: 2022-01-05 14:01\n"
 
 #. .Add(S["Design"], design => design
 #: OrchardCore.Shortcodes\AdminMenu.cs:25
 msgctxt "OrchardCore.Shortcodes.AdminMenu"
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #. .Add(S["Shortcodes"], S["Shortcodes"].PrefixPosition(), import => import
 #. .Add(S["Shortcodes"], S["Shortcodes"].PrefixPosition(), import => import
@@ -27,59 +27,59 @@ msgid "Shortcodes"
 msgstr ""
 
 #. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:94
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:93
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "Delete"
 msgstr ""
 
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["The name is mandatory."]);
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["The name is mandatory."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:131
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:232
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:130
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:231
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "The name is mandatory."
 msgstr ""
 
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["The name contains invalid characters."]);
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["The name contains invalid characters."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:135
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:236
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:134
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:235
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "The name contains invalid characters."
 msgstr ""
 
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["A template with the same name already exists."]);
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Name), S["A template with the same name already exists."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:143
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:241
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:142
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:240
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "A template with the same name already exists."
 msgstr ""
 
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Content), S["The template content is mandatory."]);
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Content), S["The template content is mandatory."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:149
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:246
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:148
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:245
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "The template content is mandatory."
 msgstr ""
 
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Content), S["The template doesn't contain a valid Liquid expression. Details: {0}", String.Join(" ", errors)]);
 #. ModelState.AddModelError(nameof(ShortcodeTemplateViewModel.Content), S["The template doesn't contain a valid Liquid expression. Details: {0}", String.Join(" ", errors)]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:153
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:250
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:152
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:249
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "The template doesn't contain a valid Liquid expression. Details: {0}"
 msgstr ""
 
-#. _notifier.Success(H["Shortcode template deleted successfully."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:300
+#. await _notifier.SuccessAsync(H["Shortcode template deleted successfully."]);
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:299
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "Shortcode template deleted successfully."
 msgstr ""
 
-#. _notifier.Success(H["Shortcode templates successfully removed."]);
-#: OrchardCore.Shortcodes\Controllers\AdminController.cs:327
+#. await _notifier.SuccessAsync(H["Shortcode templates successfully removed."]);
+#: OrchardCore.Shortcodes\Controllers\AdminController.cs:326
 msgctxt "OrchardCore.Shortcodes.Controllers.AdminController"
 msgid "Shortcode templates successfully removed."
 msgstr ""
@@ -108,7 +108,7 @@ msgstr ""
 #: OrchardCore.Shortcodes\Views\ShortcodeModal.cshtml:79
 msgctxt "OrchardCore.Shortcodes.Views.ShortcodeModal"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Create Shortcode"])</h1></zone>
 #: OrchardCore.Shortcodes\Views\Admin\Create.cshtml:36
@@ -242,7 +242,7 @@ msgstr ""
 #: OrchardCore.Shortcodes\Views\Admin\Create.cshtml:125
 msgctxt "OrchardCore.Shortcodes.Views.Admin.Create"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Edit Shortcode"])</h1></zone>
 #: OrchardCore.Shortcodes\Views\Admin\Edit.cshtml:37
@@ -376,7 +376,7 @@ msgstr ""
 #: OrchardCore.Shortcodes\Views\Admin\Edit.cshtml:133
 msgctxt "OrchardCore.Shortcodes.Views.Admin.Edit"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Shortcodes"])</h1></zone>
 #: OrchardCore.Shortcodes\Views\Admin\Index.cshtml:8
@@ -388,7 +388,7 @@ msgstr ""
 #: OrchardCore.Shortcodes\Views\Admin\Index.cshtml:21
 msgctxt "OrchardCore.Shortcodes.Views.Admin.Index"
 msgid "Search"
-msgstr ""
+msgstr "搜尋"
 
 #. <a asp-route-action="Create" class="btn btn-sm btn-secondary float-right create" role="button">@T["Add Shortcode"]</a>
 #: OrchardCore.Shortcodes\Views\Admin\Index.cshtml:24
@@ -426,7 +426,7 @@ msgstr[0] ""
 #: OrchardCore.Shortcodes\Views\Admin\Index.cshtml:45
 msgctxt "OrchardCore.Shortcodes.Views.Admin.Index"
 msgid "Actions"
-msgstr ""
+msgstr "操作"
 
 #. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Shortcodes\Views\Admin\Index.cshtml:50

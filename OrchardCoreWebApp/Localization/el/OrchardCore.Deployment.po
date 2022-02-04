@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: el\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Deployment.pot\n"
-"X-Crowdin-File-ID: 540\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Deployment.pot\n"
+"X-Crowdin-File-ID: 730\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
-"PO-Revision-Date: 2021-05-08 11:43\n"
+"PO-Revision-Date: 2021-11-05 16:09\n"
 
 #. .Add(S["Configuration"], configuration => configuration
 #: OrchardCore.Deployment\AdminMenu.cs:25
@@ -56,11 +56,11 @@ msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#. _notifier.Success(H["Deployment plans successfully deleted."]);
+#. await _notifier.SuccessAsync(H["Deployment plans successfully deleted."]);
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:143
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plans successfully deleted."
-msgstr ""
+msgstr "Τα σχέδια ανάπτυξης διαγράφηκαν με επιτυχία."
 
 #. ModelState.AddModelError(nameof(CreateDeploymentPlanViewModel.Name), S["The name is mandatory."]);
 #. ModelState.AddModelError(nameof(EditDeploymentPlanViewModel.Name), S["The name is mandatory."]);
@@ -76,33 +76,33 @@ msgstr "Το όνομα είναι υποχρεωτικό."
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:290
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "A deployment plan with the same name already exists."
-msgstr ""
+msgstr "Υπάρχει ήδη ένα σχέδιο ανάπτυξης με το ίδιο όνομα."
 
-#. _notifier.Success(H["Deployment plan updated successfully."]);
+#. await _notifier.SuccessAsync(H["Deployment plan updated successfully."]);
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:301
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plan updated successfully."
-msgstr ""
+msgstr "Το σχέδιο ανάπτυξης ενημερώθηκε με επιτυχία."
 
-#. _notifier.Success(H["Deployment plan deleted successfully."]);
+#. await _notifier.SuccessAsync(H["Deployment plan deleted successfully."]);
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:327
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plan deleted successfully."
-msgstr ""
+msgstr "Το σχέδιο ανάπτυξης διαγράφηκε με επιτυχία."
 
-#. _notifier.Error(H["Only zip or json files are supported."]);
+#. await _notifier.ErrorAsync(H["Only zip or json files are supported."]);
 #: OrchardCore.Deployment\Controllers\ImportController.cs:84
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Only zip or json files are supported."
-msgstr ""
+msgstr "Υποστηρίζονται μόνο αρχεία zip ή json."
 
-#. _notifier.Success(H["Deployment package imported."]);
+#. await _notifier.SuccessAsync(H["Deployment package imported."]);
 #: OrchardCore.Deployment\Controllers\ImportController.cs:91
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Deployment package imported."
 msgstr "Το πακέτο ανάπτυξης εισήχθη."
 
-#. _notifier.Error(H["Please add a file to import."]);
+#. await _notifier.ErrorAsync(H["Please add a file to import."]);
 #: OrchardCore.Deployment\Controllers\ImportController.cs:108
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Please add a file to import."
@@ -114,35 +114,35 @@ msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "The recipe is written in an incorrect json format."
 msgstr "Η συνταγή είναι γραμμένη σε λανθασμένη μορφή json."
 
-#. _notifier.Success(H["Recipe imported."]);
+#. await _notifier.SuccessAsync(H["Recipe imported."]);
 #: OrchardCore.Deployment\Controllers\ImportController.cs:148
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Recipe imported."
 msgstr "Η συνταγή εισήχθη."
 
-#. _notifier.Success(H["Deployment plan step added successfully."]);
+#. await _notifier.SuccessAsync(H["Deployment plan step added successfully."]);
 #: OrchardCore.Deployment\Controllers\StepController.cs:121
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment plan step added successfully."
-msgstr ""
+msgstr "Το βήμα του σχεδίου ανάπτυξης προστέθηκε με επιτυχία."
 
-#. _notifier.Success(H["Deployment plan step updated successfully."]);
+#. await _notifier.SuccessAsync(H["Deployment plan step updated successfully."]);
 #: OrchardCore.Deployment\Controllers\StepController.cs:194
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment plan step updated successfully."
-msgstr ""
+msgstr "Το βήμα του σχεδίου ανάπτυξης ενημερώθηκε με επιτυχία."
 
-#. _notifier.Error(H["The deployment plan step has validation errors."]);
+#. await _notifier.ErrorAsync(H["The deployment plan step has validation errors."]);
 #: OrchardCore.Deployment\Controllers\StepController.cs:198
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "The deployment plan step has validation errors."
-msgstr ""
+msgstr "Το βήμα του σχεδίου ανάπτυξης έχει σφάλματα επικύρωσης."
 
-#. _notifier.Success(H["Deployment step deleted successfully."]);
+#. await _notifier.SuccessAsync(H["Deployment step deleted successfully."]);
 #: OrchardCore.Deployment\Controllers\StepController.cs:230
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment step deleted successfully."
-msgstr ""
+msgstr "Το βήμα ανάπτυξης διαγράφηκε επιτυχώς."
 
 #. name: S["File Download"],
 #: OrchardCore.Deployment\Services\FileDownloadDeploymentTargetProvider.cs:22
@@ -155,6 +155,18 @@ msgstr "Μεταφόρτωσης Αρχείου"
 msgctxt "OrchardCore.Deployment.FileDownloadDeploymentTargetProvider"
 msgid "Download a deployment plan locally."
 msgstr "Κάντε λήψη του σχεδίου ανάπτυξης."
+
+#. updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["The recipe must have a name property"]);
+#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:71
+msgctxt "OrchardCore.Deployment.Steps.JsonRecipeDeploymentStepDriver"
+msgid "The recipe must have a name property"
+msgstr "Η συνταγή πρέπει να έχει μια ιδιότητα ονόματος"
+
+#. updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["Invalid JSON supplied"]);
+#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:77
+msgctxt "OrchardCore.Deployment.Steps.JsonRecipeDeploymentStepDriver"
+msgid "Invalid JSON supplied"
+msgstr "Δόθηκε μη έγκυρο JSON"
 
 #. class="btn btn-primary btn-sm">@T["Edit"]</a>
 #: OrchardCore.Deployment\Views\DeploymentStep.Summary.cshtml:9
@@ -208,7 +220,7 @@ msgstr "Σχέδιο Aνάπτυξης"
 #: OrchardCore.Deployment\Views\DeploymentPlan\Display.cshtml:15
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Display"
 msgid "Error updating step order"
-msgstr ""
+msgstr "Σφάλμα κατά την ενημέρωση της σειράς βημάτων"
 
 #. @T["Execute"]
 #: OrchardCore.Deployment\Views\DeploymentPlan\Display.cshtml:21
@@ -501,6 +513,42 @@ msgstr "Σχέδια Aνάπτυξης"
 msgctxt "OrchardCore.Deployment.Views.Items.DeploymentPlanDeploymentStep.Fields.Thumbnail"
 msgid "Exports all or specified deployment plans."
 msgstr "Εξάγει όλα ή συγκεκριμένα σχέδια ανάπτυξης."
+
+#. <h5>@T["JSON Recipe"]</h5>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Edit.cshtml:3
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Edit"
+msgid "JSON Recipe"
+msgstr "Συνταγή JSON"
+
+#. <label asp-for="Json">@T["Recipe"]</label>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Edit.cshtml:8
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Edit"
+msgid "Recipe"
+msgstr "Συνταγή"
+
+#. <span class="hint">@T["The json recipe."]</span>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Edit.cshtml:13
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Edit"
+msgid "The json recipe."
+msgstr "Η συνταγή json."
+
+#. <h5>@T["JSON Recipe"]</h5>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Summary.cshtml:3
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Summary"
+msgid "JSON Recipe"
+msgstr "Συνταγή JSON"
+
+#. <h4 class="card-title">@T["JSON Recipe"]</h4>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Thumbnail.cshtml:3
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Thumbnail"
+msgid "JSON Recipe"
+msgstr "Συνταγή JSON"
+
+#. <p>@T["Exports a JSON Recipe."]</p>
+#: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Thumbnail.cshtml:4
+msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Thumbnail"
+msgid "Exports a JSON Recipe."
+msgstr "Εξάγει μια συνταγή JSON."
 
 #. <h5>@T["Recipe File"]</h5>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:3

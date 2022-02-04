@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: fi\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.ContentFields.pot\n"
-"X-Crowdin-File-ID: 522\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.ContentFields.pot\n"
+"X-Crowdin-File-ID: 710\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2021-04-14 09:13\n"
+"PO-Revision-Date: 2022-01-05 13:36\n"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.ContentItemIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:92
@@ -37,31 +37,31 @@ msgid "A value is required for {0}."
 msgstr "Arvo vaaditaan kohteelle {0}."
 
 #. context.Updater.ModelState.AddModelError(Prefix, nameof(viewModel.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}", fieldName, string.Join(" ", errors)]);
-#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:94
+#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.HtmlFieldDisplayDriver"
 msgid "{0} doesn't contain a valid Liquid expression. Details: {1}"
 msgstr "\"{0}\" ei sisällä validia Liquid-lauseketta. Yksityiskohdat: {1}"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["The url is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:71
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:88
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The url is required for {0}."
 msgstr "Url on pakollinen kohteelle {0}."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["{0} is an invalid url.", field.Url]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:75
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:92
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "{0} is an invalid url."
 msgstr "{0} on virheellinen url."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The link text is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:81
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:98
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The link text is required for {0}."
 msgstr "Linkkiteksti on pakollinen kohteelle {0}."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The text default value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:85
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:102
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The text default value is required for {0}."
 msgstr "Tekstin oletusarvo vaaditaan kohteelle {0}."
@@ -79,7 +79,7 @@ msgid "The {0} field cannot contain multiple items."
 msgstr "Kenttä \"{0}\" ei voi sisältää useampia nimikkeitä."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Values), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\MultiTextFieldDisplayDriver.cs:71
+#: OrchardCore.ContentFields\Drivers\MultiTextFieldDisplayDriver.cs:70
 msgctxt "OrchardCore.ContentFields.Fields.MultiTextFieldDisplayDriver"
 msgid "A value is required for {0}."
 msgstr "Arvo vaaditaan kohteelle {0}."
@@ -133,13 +133,13 @@ msgid "A value is required for {0}."
 msgstr "Arvo vaaditaan kohteelle {0}."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:86
+#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:88
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field is required."
 msgstr "Kenttä \"{0}\" on pakollinen."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:91
+#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field cannot contain multiple items."
 msgstr "Kenttä \"{0}\" ei voi sisältää useampia nimikkeitä."
@@ -157,10 +157,10 @@ msgid "The format of the url is invalid"
 msgstr "Url-osoitteen muoto on virheellinen"
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:49
+#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:48
 msgctxt "OrchardCore.ContentFields.Settings.HtmlFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "Asetukset on kirjoitettu virheellisessä muodossa."
 
 #. context.Updater.ModelState.AddModelError(Prefix + '.' + nameof(TrumbowygSettingsViewModel.Options), S["The options are written in an incorrect format."]);
 #: OrchardCore.ContentFields\Settings\HtmlFieldTrumbowygEditorSettingsDriver.cs:44
@@ -175,10 +175,10 @@ msgid "The options are written in an incorrect format."
 msgstr "Asetukset on kirjoitettu virheellisessä muodossa."
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:48
+#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:47
 msgctxt "OrchardCore.ContentFields.Settings.TextFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "Asetukset on kirjoitettu virheellisessä muodossa."
 
 #. context.Updater.ModelState.AddModelError(Prefix, S["The options are written in an incorrect format."]);
 #: OrchardCore.ContentFields\Settings\TextFieldPredefinedListEditorSettingsDriver.cs:53
@@ -193,13 +193,13 @@ msgid "The field only accepts Urls"
 msgstr "Kenttä hyväksyy vain url-osoitteita"
 
 #. Description = S["Content stored as HTML."];
-#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:28
+#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:27
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "Content stored as HTML."
 msgstr "Sisältö HTML-muodossa."
 
 #. .Description(S["the HTML content"])
-#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:32
+#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:31
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "the HTML content"
 msgstr "HTML-sisältö"
@@ -450,7 +450,7 @@ msgstr "Tämän kentän vihjeteksti, mikä esitetään editorissa."
 #: OrchardCore.ContentFields\Views\HtmlField-Monaco.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.HtmlField-Monaco.Option"
 msgid "Monaco editor"
-msgstr ""
+msgstr "Monaco editori"
 
 #. <option value="Multiline" selected="@(currentEditor == "Multiline")">@T["Multiline"]</option>
 #: OrchardCore.ContentFields\Views\HtmlField-Multiline.Option.cshtml:4
@@ -486,13 +486,13 @@ msgstr "Standardi"
 #: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:10
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldMonacoEditorSettings.Edit"
 msgid "Enter the editor options, language is always set to `html` when saved."
-msgstr ""
+msgstr "Anna editorin asetukset, kieleksi asetetaan 'html' tallettaessa."
 
 #. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.istandaloneeditorconstructionoptions.html" target="_blank">@T["Documentation for options"]</a></span>
 #: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:12
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldMonacoEditorSettings.Edit"
 msgid "Documentation for options"
-msgstr ""
+msgstr "Asetusten ohjeet"
 
 #. <label asp-for="Hint">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\HtmlFieldSettings.Edit.cshtml:5
@@ -558,7 +558,7 @@ msgstr "Standardi"
 #: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.LinkField.Edit"
 msgid "Url"
-msgstr "Url"
+msgstr "URL-osoite"
 
 #. <label asp-for="Text" class="@textClass">@T["Link text"]</label>
 #: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:34
@@ -903,14 +903,14 @@ msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Remove element from list"
 msgstr "Poista elementti listasta"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:60
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Add an option"
 msgstr "Lisää vaihtoehto"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:73
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:103
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
@@ -1085,7 +1085,7 @@ msgstr "Oletusarvo (valinnainen)"
 #: OrchardCore.ContentFields\Views\TextField-CodeMirror.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField-CodeMirror.Option"
 msgid "Code Mirror"
-msgstr "Code Mirror"
+msgstr "Code Mirror editori"
 
 #. <option value="Color" selected="@(currentEditor == "Color")">@T["Color"]</option>
 #: OrchardCore.ContentFields\Views\TextField-Color.Option.cshtml:4
@@ -1115,7 +1115,7 @@ msgstr "Kuvakkeen valitsin"
 #: OrchardCore.ContentFields\Views\TextField-Monaco.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField-Monaco.Option"
 msgid "Monaco editor"
-msgstr ""
+msgstr "Monaco editori"
 
 #. <option value="PredefinedList" selected="@(currentEditor == "PredefinedList")">@T["Predefined List"]</option>
 #: OrchardCore.ContentFields\Views\TextField-PredefinedList.Option.cshtml:4
@@ -1139,7 +1139,7 @@ msgstr "Monirivinen"
 #: OrchardCore.ContentFields\Views\TextField-Url.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField-Url.Option"
 msgid "Url"
-msgstr "Url"
+msgstr "URL-osoite"
 
 #. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\TextField.DisplayOption.cshtml:4
@@ -1199,13 +1199,13 @@ msgstr "H6"
 #: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:10
 msgctxt "OrchardCore.ContentFields.Views.TextFieldMonacoEditorSettings.Edit"
 msgid "Enter the editor options."
-msgstr ""
+msgstr "Anna editorin asetukset."
 
 #. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.istandaloneeditorconstructionoptions.html" target="_blank">@T["Documentation for options"]</a></span>
 #: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:12
 msgctxt "OrchardCore.ContentFields.Views.TextFieldMonacoEditorSettings.Edit"
 msgid "Documentation for options"
-msgstr ""
+msgstr "Asetusten ohjeet"
 
 #. <th scope="col">@T["Option Label"]</th>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:15
@@ -1237,14 +1237,14 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "Remove element from list"
 msgstr "Poista elementti luettelosta"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "Add an option"
 msgstr "Lisää vaihtoehto"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:58
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:98
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
@@ -1355,14 +1355,32 @@ msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "Onko arvo pakollinen."
 
+#. <label asp-for="Step">@T["Step"]</label>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:12
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "Step"
+msgstr ""
+
+#. <span class="hint">@T["The step attribute of the time input allowing to edit seconds and ms."]</span>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:15
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "The step attribute of the time input allowing to edit seconds and ms."
+msgstr ""
+
+#. <span class="hint">@T["For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."]</span>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:16
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."
+msgstr ""
+
 #. <label asp-for="Hint">@T["Hint"]</label>
-#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:13
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Hint"
 msgstr "Vihje"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
-#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:16
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "Tämän kentän editorissa näytettävä vinkkiteksti."

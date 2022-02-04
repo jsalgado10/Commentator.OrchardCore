@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Lucene.pot\n"
-"X-Crowdin-File-ID: 576\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Lucene.pot\n"
+"X-Crowdin-File-ID: 772\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-05-08 11:43\n"
+"PO-Revision-Date: 2022-01-05 13:50\n"
 
 #. .Add(S["Search"], NavigationConstants.AdminMenuSearchPosition, search => search
 #. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
@@ -90,53 +90,53 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An index named {0} doesn't exist."
 msgstr "名为 {0} 的索引不存在。"
 
-#. _notifier.Error(H["An error occurred while creating the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while creating the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:230
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while creating the index."
 msgstr "创建索引时出错。"
 
-#. _notifier.Success(H["Index <em>{0}</em> created successfully.", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> created successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:235
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> created successfully."
 msgstr "索引 <em>{0}</em> 创建成功。"
 
-#. _notifier.Error(H["An error occurred while editing the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while editing the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:247
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while editing the index."
 msgstr "编辑索引时出错。"
 
-#. _notifier.Success(H["Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:252
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>"
 msgstr "索引 <em>{0}</em> 修改成功， <strong>请考虑在索引上进行重建。</strong>"
 
-#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", id]);
-#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", item.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> reset successfully.", id]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> reset successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:281
 #: OrchardCore.Lucene\Controllers\AdminController.cs:457
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> reset successfully."
 msgstr "索引 <em>{0}</em> 重置成功。"
 
-#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", id]);
-#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", item.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> rebuilt successfully.", id]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> rebuilt successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:302
 #: OrchardCore.Lucene\Controllers\AdminController.cs:471
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> rebuilt successfully."
 msgstr "索引 <em>{0}</em> 重建成功。"
 
-#. _notifier.Success(H["Index <em>{0}</em> deleted successfully.", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> deleted successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:328
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> deleted successfully."
 msgstr "索引 <em>{0}</em> 已成功删除。"
 
-#. _notifier.Error(H["An error occurred while deleting the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while deleting the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:332
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while deleting the index."
@@ -148,7 +148,7 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Invalid query : {0}"
 msgstr "无效查询： {0}"
 
-#. _notifier.Success(H["Indices successfully removed."]);
+#. await _notifier.SuccessAsync(H["Indices successfully removed."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:444
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Indices successfully removed."
@@ -173,7 +173,7 @@ msgid "The index name contains unallowed chars."
 msgstr "索引名称包含无效的字符。"
 
 #. ModelState.AddModelError("Terms", S["Incorrect query syntax."]);
-#: OrchardCore.Lucene\Controllers\SearchController.cs:158
+#: OrchardCore.Lucene\Controllers\SearchController.cs:157
 msgctxt "OrchardCore.Lucene.Controllers.SearchController"
 msgid "Incorrect query syntax."
 msgstr "查询语法不正确。"
@@ -300,44 +300,50 @@ msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Default search index"
 msgstr "默认搜索索引"
 
+#. <option value="" selected="@(Model.SearchIndex == null)">@T["Select a search index"]</option>
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:8
+msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
+msgid "Select a search index"
+msgstr ""
+
 #. <span class="hint">@T["The default index to use for the search page."]</span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:14
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:15
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "The default index to use for the search page."
 msgstr "用于搜索页的默认索引。"
 
 #. <div class="alert alert-warning">@T["You need to create at least an index to set as the Search index."]</div>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:19
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:20
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "You need to create at least an index to set as the Search index."
 msgstr "您需要创建至少一个要设置为搜索索引的索引。"
 
 #. <label asp-for="SearchFields">@T["Default searched fields"]</label>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:23
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:24
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Default searched fields"
 msgstr "默认搜索字段"
 
 #. <span class="hint">@T["A comma separated list of fields to use for search pages. The default value is <code>Content.ContentItem.FullText</code>."]</span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:26
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "A comma separated list of fields to use for search pages. The default value is <code>Content.ContentItem.FullText</code>."
 msgstr "用于搜索页面的字段列表用逗号分隔。默认值： <code>ContentItem.Fulltext</code>。"
 
 #. <label class="custom-control-label" asp-for="AllowLuceneQueriesInSearch">@T["Allow Lucene queries in search forms"]</label>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:32
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Allow Lucene queries in search forms"
 msgstr "允许Lucene 查询搜索表单"
 
 #. <span class="hint dashed">@T["Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."] <a  class="seedoc" href="http://www.lucenetutorial.com/lucene-query-syntax.html" target="_blank">@T["See documentation"]</a></span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:34
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."
 msgstr "是否允许搜索查询使用 <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene 查询解析器语法</a>。"
 
 #. <span class="hint dashed">@T["Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."] <a  class="seedoc" href="http://www.lucenetutorial.com/lucene-query-syntax.html" target="_blank">@T["See documentation"]</a></span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:34
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "See documentation"
 msgstr "查看文档"

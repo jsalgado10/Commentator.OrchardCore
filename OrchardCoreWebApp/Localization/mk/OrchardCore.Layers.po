@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: mk\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Layers.pot\n"
-"X-Crowdin-File-ID: 568\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Layers.pot\n"
+"X-Crowdin-File-ID: 762\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Macedonian\n"
 "Language: mk_MK\n"
-"PO-Revision-Date: 2021-06-01 09:29\n"
+"PO-Revision-Date: 2021-12-23 13:32\n"
 
 #. .Add(S["Design"], design => design
 #: OrchardCore.Layers\AdminMenu.cs:26
@@ -40,49 +40,55 @@ msgctxt "OrchardCore.Layers.AdminMenu"
 msgid "Widgets"
 msgstr "Додатоци"
 
-#. _notifier.Success(H["Layer deleted successfully."]);
-#: OrchardCore.Layers\Controllers\AdminController.cs:258
+#. await _notifier.WarningAsync(H["The Widget content item with id {0} has no matching {1} content type definition.", widget.ContentItem.ContentItemId, widget.ContentItem.ContentType]);
+#: OrchardCore.Layers\Controllers\AdminController.cs:120
+msgctxt "OrchardCore.Layers.Controllers.AdminController"
+msgid "The Widget content item with id {0} has no matching {1} content type definition."
+msgstr ""
+
+#. await _notifier.SuccessAsync(H["Layer deleted successfully."]);
+#: OrchardCore.Layers\Controllers\AdminController.cs:276
 msgctxt "OrchardCore.Layers.Controllers.AdminController"
 msgid "Layer deleted successfully."
 msgstr "Слојот е успешно избришан."
 
-#. _notifier.Error(H["The layer couldn't be deleted: you must remove any associated widgets first."]);
-#: OrchardCore.Layers\Controllers\AdminController.cs:262
+#. await _notifier.ErrorAsync(H["The layer couldn't be deleted: you must remove any associated widgets first."]);
+#: OrchardCore.Layers\Controllers\AdminController.cs:280
 msgctxt "OrchardCore.Layers.Controllers.AdminController"
 msgid "The layer couldn't be deleted: you must remove any associated widgets first."
 msgstr "Слојот не можеше да биде избришан: најпрво мора да ги избришете поврзаните додатоци."
 
 #. ModelState.AddModelError(nameof(LayerEditViewModel.Name), S["The layer name is required."]);
-#: OrchardCore.Layers\Controllers\AdminController.cs:338
+#: OrchardCore.Layers\Controllers\AdminController.cs:356
 msgctxt "OrchardCore.Layers.Controllers.AdminController"
 msgid "The layer name is required."
 msgstr "Името на слојот е задолжително."
 
 #. ModelState.AddModelError(nameof(LayerEditViewModel.Name), S["The layer name already exists."]);
-#: OrchardCore.Layers\Controllers\AdminController.cs:342
+#: OrchardCore.Layers\Controllers\AdminController.cs:360
 msgctxt "OrchardCore.Layers.Controllers.AdminController"
 msgid "The layer name already exists."
 msgstr "Слој со такво име веќе постои."
 
-#. _notifier.Success(H["Condition added successfully."]);
+#. await _notifier.SuccessAsync(H["Condition added successfully."]);
 #: OrchardCore.Layers\Controllers\LayerRuleController.cs:134
 msgctxt "OrchardCore.Layers.Controllers.LayerRuleController"
 msgid "Condition added successfully."
 msgstr ""
 
-#. _notifier.Success(H["Condition updated successfully."]);
+#. await _notifier.SuccessAsync(H["Condition updated successfully."]);
 #: OrchardCore.Layers\Controllers\LayerRuleController.cs:203
 msgctxt "OrchardCore.Layers.Controllers.LayerRuleController"
 msgid "Condition updated successfully."
 msgstr ""
 
-#. _notifier.Error(H["The condition has validation errors."]);
+#. await _notifier.ErrorAsync(H["The condition has validation errors."]);
 #: OrchardCore.Layers\Controllers\LayerRuleController.cs:207
 msgctxt "OrchardCore.Layers.Controllers.LayerRuleController"
 msgid "The condition has validation errors."
 msgstr ""
 
-#. _notifier.Success(H["Condition deleted successfully."]);
+#. await _notifier.SuccessAsync(H["Condition deleted successfully."]);
 #: OrchardCore.Layers\Controllers\LayerRuleController.cs:241
 msgctxt "OrchardCore.Layers.Controllers.LayerRuleController"
 msgid "Condition deleted successfully."
@@ -221,49 +227,61 @@ msgid "Please <a href=\"{0}\">define the available zones</a> before adding Widge
 msgstr "Ве молиме <a href=\"{0}\"> дефинирајте ги достапните зони</a> пред да додадете додаток"
 
 #. @T["Add Widget"]
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:79
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:81
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Add Widget"
 msgstr "Додади Додаток"
 
+#. <span>@T["No widgets found."]</span>
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:102
+msgctxt "OrchardCore.Layers.Views.Admin.Index"
+msgid "No widgets found."
+msgstr ""
+
+#. <span>@T["No layers found."]</span>
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:107
+msgctxt "OrchardCore.Layers.Views.Admin.Index"
+msgid "No layers found."
+msgstr ""
+
 #. <h3>@T["Layers"]</h3>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:105
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:116
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Layers"
 msgstr "Слоеви"
 
 #. @T["Select a layer to reveal its associated widgets."]
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:108
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:119
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Select a layer to reveal its associated widgets."
 msgstr "Изберете слој да ги прикажете поврзаните додатоци."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Layers/#rules" target="_blank">@T["See documentation"]</a>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:109
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:120
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "See documentation"
 msgstr ""
 
 #. <a class="btn btn-primary btn-sm" href="@Url.Action("Edit", "Admin", new { area = "OrchardCore.Layers", name = layer.Name })">@T["Edit"]</a>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:124
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:135
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Edit"
 msgstr "Измени"
 
 #. <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Admin", new { area = "OrchardCore.Layers", name = layer.Name })" data-url-af="RemoveUrl UnsafeUrl">@T["Delete"]</a>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:125
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:136
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Delete"
 msgstr "Избриши"
 
 #. <p class="alert alert-warning">@T["Please <a href=\"{0}\">create a layer</a> before adding Widgets", Url.Action("Create", "Admin", new { area = "OrchardCore.Layers" })]</p>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:138
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:149
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Please <a href=\"{0}\">create a layer</a> before adding Widgets"
 msgstr "Ве молиме <a href=\"{0}\"> додадете слој</a> пред да додадете додаток"
 
 #. <a class="button btn-sm" href="@Url.Action("Create", "Admin", new { area = "OrchardCore.Layers" })">@T["Add"]</a>
-#: OrchardCore.Layers\Views\Admin\Index.cshtml:141
+#: OrchardCore.Layers\Views\Admin\Index.cshtml:152
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Add"
 msgstr "Додади"

@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: fa\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Google.pot\n"
-"X-Crowdin-File-ID: 560\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Google.pot\n"
+"X-Crowdin-File-ID: 752\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
-"PO-Revision-Date: 2021-07-08 17:57\n"
+"PO-Revision-Date: 2021-10-07 22:48\n"
 
 #. builder.Add(S["Security"], security => security
 #: OrchardCore.Google\AdminMenu.cs:23
@@ -72,15 +72,39 @@ msgctxt "OrchardCore.Google.GoogleTagManagerAdminMenu"
 msgid "Google Tag Manager"
 msgstr ""
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<GoogleTagManagerSettings>(S["Google Tag Manager Settings"], S["Exports the Google Tag Manager settings."]);
-#: OrchardCore.Google\Startup.cs:102
-msgctxt "OrchardCore.Google.DeploymentStartup"
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
+#: OrchardCore.Google\Startup.cs:89
+msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
+msgid "Google Authentication Settings"
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
+#: OrchardCore.Google\Startup.cs:89
+msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
+msgid "Exports the Google Authentication settings."
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
+#: OrchardCore.Google\Startup.cs:99
+msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
+msgid "Google Analytics Settings"
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
+#: OrchardCore.Google\Startup.cs:99
+msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
+msgid "Exports the Google Analytics settings."
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
+#: OrchardCore.Google\Startup.cs:109
+msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
 msgid "Google Tag Manager Settings"
 msgstr ""
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<GoogleTagManagerSettings>(S["Google Tag Manager Settings"], S["Exports the Google Tag Manager settings."]);
-#: OrchardCore.Google\Startup.cs:102
-msgctxt "OrchardCore.Google.DeploymentStartup"
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
+#: OrchardCore.Google\Startup.cs:109
+msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
 msgid "Exports the Google Tag Manager settings."
 msgstr ""
 
@@ -178,7 +202,7 @@ msgstr "کلید مخفی سرویس‌گیرنده در کنسول Google API �
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:36
 msgctxt "OrchardCore.Google.Views.GoogleAuthenticationSettings.Edit"
 msgid "CallbackPath"
-msgstr "CallbackPath"
+msgstr ""
 
 #. <span class="hint">@T["The request path within the application's base path where the user-agent will be returned. The middleware will process this request when it arrives."]</span>
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:39

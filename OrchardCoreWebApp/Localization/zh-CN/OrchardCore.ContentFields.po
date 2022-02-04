@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.ContentFields.pot\n"
-"X-Crowdin-File-ID: 522\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.ContentFields.pot\n"
+"X-Crowdin-File-ID: 710\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-04-17 03:04\n"
+"PO-Revision-Date: 2022-01-05 13:36\n"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.ContentItemIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:92
@@ -37,31 +37,31 @@ msgid "A value is required for {0}."
 msgstr "“{0}”需要一个值。"
 
 #. context.Updater.ModelState.AddModelError(Prefix, nameof(viewModel.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}", fieldName, string.Join(" ", errors)]);
-#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:94
+#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.HtmlFieldDisplayDriver"
 msgid "{0} doesn't contain a valid Liquid expression. Details: {1}"
 msgstr "{0} 不包含有效的 Liquid 表达式。详细信息: {1}"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["The url is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:71
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:88
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The url is required for {0}."
 msgstr "{0} 需要一个url。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["{0} is an invalid url.", field.Url]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:75
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:92
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "{0} is an invalid url."
 msgstr "{0} 是一个无效的url。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The link text is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:81
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:98
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The link text is required for {0}."
 msgstr "{0} 需要链接文本。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The text default value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:85
+#: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:102
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The text default value is required for {0}."
 msgstr "{0} 需要文本默认值。"
@@ -79,7 +79,7 @@ msgid "The {0} field cannot contain multiple items."
 msgstr "{0} 字段不能包含多个项目。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Values), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\MultiTextFieldDisplayDriver.cs:71
+#: OrchardCore.ContentFields\Drivers\MultiTextFieldDisplayDriver.cs:70
 msgctxt "OrchardCore.ContentFields.Fields.MultiTextFieldDisplayDriver"
 msgid "A value is required for {0}."
 msgstr "需要 {0} 的值。"
@@ -133,13 +133,13 @@ msgid "A value is required for {0}."
 msgstr "“{0}”需要一个值。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:86
+#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:88
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field is required."
 msgstr "{0} 字段是必需的。"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:91
+#: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field cannot contain multiple items."
 msgstr "{0} 字段不能包含多个项目。"
@@ -157,7 +157,7 @@ msgid "The format of the url is invalid"
 msgstr "URL格式无效"
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:49
+#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:48
 msgctxt "OrchardCore.ContentFields.Settings.HtmlFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
 msgstr "选项格式错误。"
@@ -175,7 +175,7 @@ msgid "The options are written in an incorrect format."
 msgstr "选项格式错误。"
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:48
+#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:47
 msgctxt "OrchardCore.ContentFields.Settings.TextFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
 msgstr "选项格式错误。"
@@ -193,13 +193,13 @@ msgid "The field only accepts Urls"
 msgstr "字段只接受网址"
 
 #. Description = S["Content stored as HTML."];
-#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:28
+#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:27
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "Content stored as HTML."
 msgstr "内容存储为 HTML。"
 
 #. .Description(S["the HTML content"])
-#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:32
+#: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:31
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "the HTML content"
 msgstr "HTML 内容"
@@ -432,7 +432,7 @@ msgstr "必填"
 #: OrchardCore.ContentFields\Views\DateTimeFieldSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.DateTimeFieldSettings.Edit"
 msgid "Whether a value is required."
-msgstr "-是否需要值。"
+msgstr "是否需要值。"
 
 #. <label asp-for="Hint">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\DateTimeFieldSettings.Edit.cshtml:13
@@ -903,14 +903,14 @@ msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Remove element from list"
 msgstr "从列表中删除元素"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:60
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Add an option"
 msgstr "添加选项"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:73
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:103
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
@@ -1007,7 +1007,7 @@ msgstr "必填"
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:15
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Whether a value is required."
-msgstr "-是否需要值。"
+msgstr "是否需要值。"
 
 #. <label asp-for="Hint">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:21
@@ -1237,14 +1237,14 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "Remove element from list"
 msgstr "从列表中删除元素"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "Add an option"
 msgstr "添加选项"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-right" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:58
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:98
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
@@ -1317,7 +1317,7 @@ msgstr "必填"
 #: OrchardCore.ContentFields\Views\TextFieldSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
 msgid "Whether a value is required."
-msgstr "-是否需要值。"
+msgstr "是否需要值。"
 
 #. <label asp-for="Hint">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldSettings.Edit.cshtml:13
@@ -1353,16 +1353,34 @@ msgstr "必填"
 #: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Whether a value is required."
-msgstr "-是否需要值。"
+msgstr "是否需要值。"
+
+#. <label asp-for="Step">@T["Step"]</label>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:12
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "Step"
+msgstr "步长"
+
+#. <span class="hint">@T["The step attribute of the time input allowing to edit seconds and ms."]</span>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:15
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "The step attribute of the time input allowing to edit seconds and ms."
+msgstr "时间输入的步长属性允许编辑秒毫秒。"
+
+#. <span class="hint">@T["For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."]</span>
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:16
+msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
+msgid "For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."
+msgstr ""
 
 #. <label asp-for="Hint">@T["Hint"]</label>
-#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:13
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Hint"
 msgstr "提示"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
-#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:16
+#: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "编辑器上为此字段显示的提示文本。"
@@ -1505,7 +1523,7 @@ msgstr "必填"
 #: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Whether a value is required."
-msgstr "-是否需要值。"
+msgstr "是否需要值。"
 
 #. <label asp-for="Hint">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:19

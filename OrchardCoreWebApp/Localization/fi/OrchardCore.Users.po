@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: fi\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Users.pot\n"
-"X-Crowdin-File-ID: 630\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Users.pot\n"
+"X-Crowdin-File-ID: 838\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2021-07-08 17:52\n"
+"PO-Revision-Date: 2022-01-05 14:06\n"
 
 #. builder.Add(S["Security"], NavigationConstants.AdminMenuSecurityPosition, security => security
 #: OrchardCore.Users\AdminMenu.cs:27
@@ -100,50 +100,50 @@ msgctxt "OrchardCore.Users.ResetPasswordAdminMenu"
 msgid "User Reset password"
 msgstr "Aseta uusi salasana"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<LoginSettings>(S["Login settings"], S["Exports the Login settings."]);
-#: OrchardCore.Users\Startup.cs:309
+#. services.AddSiteSettingsPropertyDeploymentStep<LoginSettings, LoginDeploymentStartup>(S => S["Login settings"], S => S["Exports the Login settings."]);
+#: OrchardCore.Users\Startup.cs:302
 msgctxt "OrchardCore.Users.LoginDeploymentStartup"
 msgid "Login settings"
 msgstr "Kirjautumisasetukset"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<LoginSettings>(S["Login settings"], S["Exports the Login settings."]);
-#: OrchardCore.Users\Startup.cs:309
+#. services.AddSiteSettingsPropertyDeploymentStep<LoginSettings, LoginDeploymentStartup>(S => S["Login settings"], S => S["Exports the Login settings."]);
+#: OrchardCore.Users\Startup.cs:302
 msgctxt "OrchardCore.Users.LoginDeploymentStartup"
 msgid "Exports the Login settings."
 msgstr "Vie kirjautumisasetukset."
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<ChangeEmailSettings>(S["Change Email settings"], S["Exports the Change Email settings."]);
-#: OrchardCore.Users\Startup.cs:360
+#. services.AddSiteSettingsPropertyDeploymentStep<ChangeEmailDeploymentStartup, ChangeEmailDeploymentStartup>(S => S["Change Email settings"], S => S["Exports the Change Email settings."]);
+#: OrchardCore.Users\Startup.cs:347
 msgctxt "OrchardCore.Users.ChangeEmailDeploymentStartup"
 msgid "Change Email settings"
 msgstr "Sähköpostin muutosasetukset"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<ChangeEmailSettings>(S["Change Email settings"], S["Exports the Change Email settings."]);
-#: OrchardCore.Users\Startup.cs:360
+#. services.AddSiteSettingsPropertyDeploymentStep<ChangeEmailDeploymentStartup, ChangeEmailDeploymentStartup>(S => S["Change Email settings"], S => S["Exports the Change Email settings."]);
+#: OrchardCore.Users\Startup.cs:347
 msgctxt "OrchardCore.Users.ChangeEmailDeploymentStartup"
 msgid "Exports the Change Email settings."
 msgstr "Vie sähköpostin muutosasetukset."
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<RegistrationSettings>(S["Registration settings"], S["Exports the Registration settings."]);
-#: OrchardCore.Users\Startup.cs:419
+#. services.AddSiteSettingsPropertyDeploymentStep<RegistrationSettings, RegistrationDeploymentStartup>(S => S["Registration settings"], S => S["Exports the Registration settings."]);
+#: OrchardCore.Users\Startup.cs:400
 msgctxt "OrchardCore.Users.RegistrationDeploymentStartup"
 msgid "Registration settings"
 msgstr "Rekisteröitymisen asetukset"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<RegistrationSettings>(S["Registration settings"], S["Exports the Registration settings."]);
-#: OrchardCore.Users\Startup.cs:419
+#. services.AddSiteSettingsPropertyDeploymentStep<RegistrationSettings, RegistrationDeploymentStartup>(S => S["Registration settings"], S => S["Exports the Registration settings."]);
+#: OrchardCore.Users\Startup.cs:400
 msgctxt "OrchardCore.Users.RegistrationDeploymentStartup"
 msgid "Exports the Registration settings."
 msgstr "Vie rekisteröitymisen asetukset."
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<ResetPasswordSettings>(S["Reset Password settings"], S["Exports the Reset Password settings."]);
-#: OrchardCore.Users\Startup.cs:483
+#. services.AddSiteSettingsPropertyDeploymentStep<ResetPasswordSettings, ResetPasswordDeploymentStartup>(S => S["Reset Password settings"], S => S["Exports the Reset Password settings."]);
+#: OrchardCore.Users\Startup.cs:458
 msgctxt "OrchardCore.Users.ResetPasswordDeploymentStartup"
 msgid "Reset Password settings"
 msgstr "Salasanan nollausasetukset"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<ResetPasswordSettings>(S["Reset Password settings"], S["Exports the Reset Password settings."]);
-#: OrchardCore.Users\Startup.cs:483
+#. services.AddSiteSettingsPropertyDeploymentStep<ResetPasswordSettings, ResetPasswordDeploymentStartup>(S => S["Reset Password settings"], S => S["Exports the Reset Password settings."]);
+#: OrchardCore.Users\Startup.cs:458
 msgctxt "OrchardCore.Users.ResetPasswordDeploymentStartup"
 msgid "Exports the Reset Password settings."
 msgstr "Vie salasanan nollausasetukset."
@@ -155,65 +155,65 @@ msgid "User created successfully"
 msgstr "Käyttäjä luotu onnistuneesti"
 
 #. ModelState.AddModelError(string.Empty, S["You must confirm your email."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:162
+#: OrchardCore.Users\Controllers\AccountController.cs:160
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "You must confirm your email."
 msgstr "Sinun täytyy vahvistaa sähköpostiosoitteesi."
 
 #. ModelState.AddModelError(String.Empty, S["The specified user is not allowed to sign in."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:176
+#: OrchardCore.Users\Controllers\AccountController.cs:174
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "The specified user is not allowed to sign in."
 msgstr "Tämä käyttäjä ei saa kirjautua sisään."
 
 #. ModelState.AddModelError("", S["Local login is disabled."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:198
+#: OrchardCore.Users\Controllers\AccountController.cs:196
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Local login is disabled."
 msgstr "Paikallinen kirjautuminen ei ole käytössä."
 
 #. ModelState.AddModelError(string.Empty, S["The account is locked out"]);
-#: OrchardCore.Users\Controllers\AccountController.cs:226
+#: OrchardCore.Users\Controllers\AccountController.cs:224
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "The account is locked out"
-msgstr ""
+msgstr "Tili on lukittu"
 
 #. ModelState.AddModelError(string.Empty, S["Invalid login attempt."]);
 #. ModelState.AddModelError(string.Empty, S["Invalid login attempt."]);
 #. ModelState.AddModelError(string.Empty, S["Invalid login attempt."]);
 #. ModelState.AddModelError(string.Empty, S["Invalid login attempt."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:235
-#: OrchardCore.Users\Controllers\AccountController.cs:411
-#: OrchardCore.Users\Controllers\AccountController.cs:501
-#: OrchardCore.Users\Controllers\AccountController.cs:649
+#: OrchardCore.Users\Controllers\AccountController.cs:233
+#: OrchardCore.Users\Controllers\AccountController.cs:415
+#: OrchardCore.Users\Controllers\AccountController.cs:512
+#: OrchardCore.Users\Controllers\AccountController.cs:660
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Invalid login attempt."
 msgstr "Virheellinen kirjautumisyritys."
 
-#. _notifier.Success(H["Your password has been changed successfully."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:274
+#. await _notifier.SuccessAsync(H["Your password has been changed successfully."]);
+#: OrchardCore.Users\Controllers\AccountController.cs:272
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Your password has been changed successfully."
-msgstr ""
+msgstr "Salasanasi on vaihdettu onnistuneesti."
 
 #. ModelState.AddModelError("", S["An error occurred in external provider."]);
 #. ModelState.AddModelError("", S["An error occurred in external provider."]);
-#: OrchardCore.Users\Controllers\AccountController.cs:383
-#: OrchardCore.Users\Controllers\AccountController.cs:391
+#: OrchardCore.Users\Controllers\AccountController.cs:387
+#: OrchardCore.Users\Controllers\AccountController.cs:395
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "An error occurred in external provider."
 msgstr "Ulkoinen palveluntarjoaja palautti virheen."
 
 #. string message = S["Site does not allow user registration."];
-#: OrchardCore.Users\Controllers\AccountController.cs:438
+#: OrchardCore.Users\Controllers\AccountController.cs:449
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Site does not allow user registration."
 msgstr "Sivusto ei salli käyttäjien rekisteröitymistä."
 
 #. }, S["Confirm your account"], _logger);
 #. iUser = await this.RegisterUser(new RegisterViewModel() { UserName = model.UserName, Email = model.Email, Password = model.Password, ConfirmPassword = model.ConfirmPassword }, S["Confirm your account"], _logger);
-#: OrchardCore.Users\Controllers\AccountController.cs:468
-#: OrchardCore.Users\Controllers\AccountController.cs:578
+#: OrchardCore.Users\Controllers\AccountController.cs:479
+#: OrchardCore.Users\Controllers\AccountController.cs:589
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Confirm your account"
 msgstr "Vahvista tilisi"
@@ -284,71 +284,71 @@ msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Authenticated (no roles)"
 msgstr "Autentikoidut (ei rooleja)"
 
-#. _notifier.Success(H["User {0} successfully approved.", user.UserName]);
+#. await _notifier.SuccessAsync(H["User {0} successfully approved.", user.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:257
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User {0} successfully approved."
 msgstr "Käyttäjä {0} on hyväksytty onnistuneesti."
 
-#. _notifier.Success(H["User {0} successfully deleted.", user.UserName]);
+#. await _notifier.SuccessAsync(H["User {0} successfully deleted.", user.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:269
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User {0} successfully deleted."
 msgstr "Käyttäjä {0} on poistettu onnistuneesti."
 
-#. _notifier.Success(H["User {0} successfully disabled.", user.UserName]);
+#. await _notifier.SuccessAsync(H["User {0} successfully disabled.", user.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:281
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User {0} successfully disabled."
 msgstr "Käyttäjä {0} onnistuneesti poistettu käytöstä."
 
-#. _notifier.Success(H["User {0} successfully enabled.", user.UserName]);
+#. await _notifier.SuccessAsync(H["User {0} successfully enabled.", user.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:293
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User {0} successfully enabled."
 msgstr "Käyttäjä {0} on otettu onnistuneesti käyttöön."
 
-#. _notifier.Success(H["User created successfully."]);
+#. await _notifier.SuccessAsync(H["User created successfully."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:342
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User created successfully."
 msgstr "Käyttäjä on luotu onnistuneesti."
 
-#. _notifier.Success(H["User updated successfully."]);
+#. await _notifier.SuccessAsync(H["User updated successfully."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:430
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User updated successfully."
 msgstr "Käyttäjä on päivitetty onnistuneesti."
 
-#. _notifier.Success(H["User deleted successfully."]);
+#. await _notifier.SuccessAsync(H["User deleted successfully."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:471
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User deleted successfully."
 msgstr "Käyttäjä on poistettu onnistuneesti."
 
-#. _notifier.Error(H["Could not delete the user."]);
+#. await _notifier.ErrorAsync(H["Could not delete the user."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:477
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Could not delete the user."
 msgstr "Käyttäjää ei voitu poistaa."
 
-#. _notifier.Success(H["Password updated correctly."]);
+#. await _notifier.SuccessAsync(H["Password updated correctly."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:528
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Password updated correctly."
 msgstr "Salasana on päivitetty onnistuneesti."
 
-#. _notifier.Success(H["User unlocked successfully."]);
+#. await _notifier.SuccessAsync(H["User unlocked successfully."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:557
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "User unlocked successfully."
-msgstr ""
+msgstr "Käyttäjän lukitus avattu onnistuneesti."
 
-#. _notifier.Error(H["Could not unlock the user."]);
+#. await _notifier.ErrorAsync(H["Could not unlock the user."]);
 #: OrchardCore.Users\Controllers\AdminController.cs:563
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Could not unlock the user."
-msgstr ""
+msgstr "Käyttäjän lukituksen avaus ei onnistunut."
 
 #. ModelState.AddModelError("Email", S["This email is already your current one."]);
 #: OrchardCore.Users\Controllers\ChangeEmailController.cs:67
@@ -388,7 +388,7 @@ msgctxt "OrchardCore.Users.Controllers.RegistrationController"
 msgid "Confirm your account"
 msgstr "Vahvista tilisi"
 
-#. _notifier.Success(H["Verification email sent."]);
+#. await _notifier.SuccessAsync(H["Verification email sent."]);
 #: OrchardCore.Users\Controllers\RegistrationController.cs:173
 msgctxt "OrchardCore.Users.Controllers.RegistrationController"
 msgid "Verification email sent."
@@ -400,13 +400,13 @@ msgctxt "OrchardCore.Users.Controllers.ResetPasswordController"
 msgid "Reset your password"
 msgstr "Palauta salasana"
 
-#. _notifier.Warning(H["Cannot disable the only administrator."]);
+#. await _notifier.WarningAsync(H["Cannot disable the only administrator."]);
 #: OrchardCore.Users\Drivers\UserDisplayDriver.cs:96
 msgctxt "OrchardCore.Users.Drivers.UserDisplayDriver"
 msgid "Cannot disable the only administrator."
 msgstr "Ainoaa ylläpitäjää ei voi poistaa käytöstä."
 
-#. _notifier.Warning(H["Cannot remove administrator role from the only administrator."]);
+#. await _notifier.WarningAsync(H["Cannot remove administrator role from the only administrator."]);
 #: OrchardCore.Users\Drivers\UserRoleDisplayDriver.cs:136
 msgctxt "OrchardCore.Users.Drivers.UserRoleDisplayDriver"
 msgid "Cannot remove administrator role from the only administrator."
@@ -466,14 +466,14 @@ msgctxt "OrchardCore.Users.ViewModels.LinkExternalLoginViewModel"
 msgid "Password is required"
 msgstr "Salasana on pakollinen"
 
-#. yield return new ValidationResult(S["Username is required."], new[] { "UserName" });
-#: OrchardCore.Users\ViewModels\LoginViewModel.cs:22
+#. [Required(ErrorMessage = "Username is required.")]
+#: OrchardCore.Users\ViewModels\LoginViewModel.cs:7
 msgctxt "OrchardCore.Users.ViewModels.LoginViewModel"
 msgid "Username is required."
 msgstr "Käyttäjätunnus on pakollinen."
 
-#. yield return new ValidationResult(S["Password is required."], new[] { "Password" });
-#: OrchardCore.Users\ViewModels\LoginViewModel.cs:27
+#. [Required(ErrorMessage = "Password is required.")]
+#: OrchardCore.Users\ViewModels\LoginViewModel.cs:11
 msgctxt "OrchardCore.Users.ViewModels.LoginViewModel"
 msgid "Password is required."
 msgstr "Salasana on pakollinen."
@@ -572,31 +572,31 @@ msgstr "Uusi salasana ja vahvistussalasana eivät täsmää."
 #: OrchardCore.Users\AuditTrail\Registration\UserRegistrationAuditTrailEventConfiguration.cs:13
 msgctxt "OrchardCore.Users.AuditTrail.Registration.UserRegistrationAuditTrailEventConfiguration"
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #. .WithEvent(Registered, S => S["Registered"], S => S["A user was successfully registered."], true);
 #: OrchardCore.Users\AuditTrail\Registration\UserRegistrationAuditTrailEventConfiguration.cs:14
 msgctxt "OrchardCore.Users.AuditTrail.Registration.UserRegistrationAuditTrailEventConfiguration"
 msgid "Registered"
-msgstr ""
+msgstr "Rekisteröitynyt"
 
 #. .WithEvent(Registered, S => S["Registered"], S => S["A user was successfully registered."], true);
 #: OrchardCore.Users\AuditTrail\Registration\UserRegistrationAuditTrailEventConfiguration.cs:14
 msgctxt "OrchardCore.Users.AuditTrail.Registration.UserRegistrationAuditTrailEventConfiguration"
 msgid "A user was successfully registered."
-msgstr ""
+msgstr "Käyttäjä rekisteröitiin onnistuneesti."
 
 #. options.For<UserResetPasswordAuditTrailEventConfiguration>(User, S => S["User"])
 #: OrchardCore.Users\AuditTrail\ResetPassword\UserResetPasswordAuditTrailEventConfiguration.cs:14
 msgctxt "OrchardCore.Users.AuditTrail.ResetPassword.UserResetPasswordAuditTrailEventConfiguration"
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #. .WithEvent(PasswordReset, S => S["Password reset"], S => S["A user successfully reset the password."], true)
 #: OrchardCore.Users\AuditTrail\ResetPassword\UserResetPasswordAuditTrailEventConfiguration.cs:15
 msgctxt "OrchardCore.Users.AuditTrail.ResetPassword.UserResetPasswordAuditTrailEventConfiguration"
 msgid "Password reset"
-msgstr ""
+msgstr "Salasanan nollaus"
 
 #. .WithEvent(PasswordReset, S => S["Password reset"], S => S["A user successfully reset the password."], true)
 #: OrchardCore.Users\AuditTrail\ResetPassword\UserResetPasswordAuditTrailEventConfiguration.cs:15
@@ -608,7 +608,7 @@ msgstr ""
 #: OrchardCore.Users\AuditTrail\ResetPassword\UserResetPasswordAuditTrailEventConfiguration.cs:16
 msgctxt "OrchardCore.Users.AuditTrail.ResetPassword.UserResetPasswordAuditTrailEventConfiguration"
 msgid "Password recovered"
-msgstr ""
+msgstr "Salasana palautettu"
 
 #. .WithEvent(PasswordRecovered, S => S["Password recovered"], S => S["A user successfully recovered the password."], true);
 #: OrchardCore.Users\AuditTrail\ResetPassword\UserResetPasswordAuditTrailEventConfiguration.cs:16
@@ -620,13 +620,13 @@ msgstr ""
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:21
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #. .WithEvent(LoggedIn, S => S["Logged in"], S => S["A user was successfully logged in."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:22
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Logged in"
-msgstr ""
+msgstr "Sisäänkirjautunut"
 
 #. .WithEvent(LoggedIn, S => S["Logged in"], S => S["A user was successfully logged in."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:22
@@ -638,13 +638,13 @@ msgstr ""
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:23
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Login failed"
-msgstr ""
+msgstr "Kirjautuminen epäonnistui"
 
 #. .WithEvent(LogInFailed, S => S["Login failed"], S => S["An attempt to login failed."], false) // Intentionally not enabled by default.
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:23
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "An attempt to login failed."
-msgstr ""
+msgstr "Yritys kirjautua sisään epäonnistui."
 
 #. .WithEvent(LogInIsLockedOut, S => S["Login account locked"], S => S["An attempt to login failed because the user is locked out."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:24
@@ -662,61 +662,61 @@ msgstr ""
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:25
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Enabled"
-msgstr ""
+msgstr "Käytössä"
 
 #. .WithEvent(Enabled, S => S["Enabled"], S => S["A user was enabled."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:25
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "A user was enabled."
-msgstr ""
+msgstr "Käyttäjä on otettu käyttöön."
 
 #. .WithEvent(Disabled, S => S["Disabled"], S => S["A user was disabled."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:26
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Disabled"
-msgstr ""
+msgstr "Pois käytöstä"
 
 #. .WithEvent(Disabled, S => S["Disabled"], S => S["A user was disabled."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:26
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "A user was disabled."
-msgstr ""
+msgstr "Käyttäjä on poistettu käytöstä."
 
 #. .WithEvent(Created, S => S["Created"], S => S["A user was created."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:27
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Created"
-msgstr ""
+msgstr "Luotu"
 
 #. .WithEvent(Created, S => S["Created"], S => S["A user was created."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:27
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "A user was created."
-msgstr ""
+msgstr "Käyttäjä on luotu."
 
 #. .WithEvent(Updated, S => S["Updated"], S => S["A user was updated."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:28
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Updated"
-msgstr ""
+msgstr "Päivitetty"
 
 #. .WithEvent(Updated, S => S["Updated"], S => S["A user was updated."], true)
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:28
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "A user was updated."
-msgstr ""
+msgstr "Käyttäjä on päivitetty."
 
 #. .WithEvent(Deleted, S => S["Deleted"], S => S["A user was deleted."], true);
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:29
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "Deleted"
-msgstr ""
+msgstr "Poistettu"
 
 #. .WithEvent(Deleted, S => S["Deleted"], S => S["A user was deleted."], true);
 #: OrchardCore.Users\AuditTrail\Services\UserAuditTrailEventConfiguration.cs:29
 msgctxt "OrchardCore.Users.AuditTrail.Services.UserAuditTrailEventConfiguration"
 msgid "A user was deleted."
-msgstr ""
+msgstr "Käyttäjä on poistettu."
 
 #. public override LocalizedString DisplayText => S["Assign User Role Task"];
 #: OrchardCore.Users\Workflows\Activities\AssignUserRoleTask.cs:31
@@ -752,7 +752,7 @@ msgstr "Tehtävä rekisteröi käyttäjä"
 #: OrchardCore.Users\Workflows\Activities\RegisterUserTask.cs:58
 msgctxt "OrchardCore.Users.Workflows.Activities.RegisterUserTask"
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
 #: OrchardCore.Users\Workflows\Activities\RegisterUserTask.cs:88
@@ -854,7 +854,15 @@ msgstr "Todentaminen"
 #: OrchardCore.Users\Workflows\Activities\ValidateUserTask.cs:46
 msgctxt "OrchardCore.Users.Workflows.Activities.ValidateUserTask"
 msgid "InRole"
-msgstr "InRole"
+msgstr ""
+
+#. updater.ModelState.AddModelError(Prefix, nameof(viewModel.ConfirmationEmailSubject), S["A value is required for {0}.", nameof(viewModel.ConfirmationEmailSubject)]);
+#. updater.ModelState.AddModelError(Prefix, nameof(viewModel.ConfirmationEmailTemplate), S["A value is required for {0}.", nameof(viewModel.ConfirmationEmailTemplate)]);
+#: OrchardCore.Users\Workflows\Drivers\RegisterUserTaskDisplayDriver.cs:45
+#: OrchardCore.Users\Workflows\Drivers\RegisterUserTaskDisplayDriver.cs:50
+msgctxt "OrchardCore.Users.Workflows.Drivers.RegisterUserTaskDisplayDriver"
+msgid "A value is required for {0}."
+msgstr ""
 
 #. <label class="custom-control-label" asp-for="AllowChangeEmail">@T["Allow the users to change their email"]</label>
 #: OrchardCore.Users\Views\ChangeEmailSettings.Edit.cshtml:7
@@ -1090,23 +1098,23 @@ msgctxt "OrchardCore.Users.Views.TemplateUserConfirmEmail"
 msgid "Thank you"
 msgstr "Kiitos"
 
-#. @T["Dear {0},", Model.User.UserName]
-#: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:8
+#. <p>@T["Someone recently requested that the password be reset for <b>{0}</b>.", Model.User.UserName]</p>
+#: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:7
 msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
-msgid "Dear {0},"
-msgstr "Hyvä {0},"
+msgid "Someone recently requested that the password be reset for <b>{0}</b>."
+msgstr ""
 
-#. <p>@T["Please <a href=\"{0}\">click here</a> to change your password.", Model.LostPasswordUrl]</p>
+#. <p>@T["To reset your password please click this link: <a href=\"{0}\">Reset Password</a>", Model.LostPasswordUrl]</p>
+#: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:9
+msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
+msgid "To reset your password please click this link: <a href=\"{0}\">Reset Password</a>"
+msgstr ""
+
+#. <p>@T["If you did not request a password reset please ignore this email - your password will not be changed."]</p>
 #: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:11
 msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
-msgid "Please <a href=\"{0}\">click here</a> to change your password."
-msgstr "Ole hyvä ja <a href=\"{0}\">klikkaa tai paina tästä</a> muuttaaksesi salasanasi."
-
-#. <p>@T["Thank you"]</p>
-#: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:13
-msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
-msgid "Thank you"
-msgstr "Kiitos"
+msgid "If you did not request a password reset please ignore this email - your password will not be changed."
+msgstr ""
 
 #. <a asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-primary btn-sm">@T["Edit"]</a>
 #: OrchardCore.Users\Views\UserButtons.cshtml:14
@@ -1130,19 +1138,19 @@ msgstr "Muokkaa salasanaa"
 #: OrchardCore.Users\Views\UserButtons.cshtml:25
 msgctxt "OrchardCore.Users.Views.UserButtons"
 msgid "Unlock user"
-msgstr ""
+msgstr "Avaa käyttäjä"
 
 #. <a asp-action="Unlock" asp-route-id="@user.UserId" class="btn btn-danger btn-sm" data-url-af="RemoveUrl UnsafeUrl" data-title="@T["Unlock user"]" data-message="@T["Are you sure you want to unlock this user?"]">@T["Unlock"]</a>
 #: OrchardCore.Users\Views\UserButtons.cshtml:25
 msgctxt "OrchardCore.Users.Views.UserButtons"
 msgid "Are you sure you want to unlock this user?"
-msgstr ""
+msgstr "Haluatko varmasti avata tämän käyttäjän?"
 
 #. <a asp-action="Unlock" asp-route-id="@user.UserId" class="btn btn-danger btn-sm" data-url-af="RemoveUrl UnsafeUrl" data-title="@T["Unlock user"]" data-message="@T["Are you sure you want to unlock this user?"]">@T["Unlock"]</a>
 #: OrchardCore.Users\Views\UserButtons.cshtml:25
 msgctxt "OrchardCore.Users.Views.UserButtons"
 msgid "Unlock"
-msgstr ""
+msgstr "Avaa lukitus"
 
 #. <button asp-action="SendVerificationEmail" asp-controller="Registration" class="btn btn-info btn-sm">@T["Send verification email"]</button>
 #: OrchardCore.Users\Views\UserButtons.cshtml:33
@@ -1151,7 +1159,7 @@ msgid "Send verification email"
 msgstr "Lähetä vahvistusviesti"
 
 #. <span class="badge badge-danger ml-2" title="@T["Disabled"]">
-#. <i class="fas fa-user-alt-slash"></i> @T["Disabled"]
+#. <i class="fas fa-user-alt-slash" aria-hidden="true"></i> @T["Disabled"]
 #: OrchardCore.Users\Views\UserFields.cshtml:6
 #: OrchardCore.Users\Views\UserFields.cshtml:7
 msgctxt "OrchardCore.Users.Views.UserFields"
@@ -1216,7 +1224,7 @@ msgstr "Profiili"
 #: OrchardCore.Users\Views\UserMenu.cshtml:14
 msgctxt "OrchardCore.Users.Views.UserMenu"
 msgid "Change password"
-msgstr ""
+msgstr "Vaihda salasana"
 
 #. <button type="submit" class="dropdown-item"><span><i class="fa fa-sign-out-alt" aria-hidden="true"></i></span>&nbsp;<span> @T["Log off"]</span></button>
 #: OrchardCore.Users\Views\UserMenu.cshtml:15
@@ -1304,23 +1312,23 @@ msgctxt "OrchardCore.Users.Views.UsersAdminListFilters"
 msgid "Sort"
 msgstr "Järjestä"
 
-#. <i class="fa fa-filter" title="@T["Filters"]"></i>
+#. <i class="fa fa-filter" title="@T["Filters"]" aria-hidden="true"></i>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:12
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Filters"
-msgstr ""
+msgstr "Suodattimet"
 
 #. <a class="dropdown-item" href="?q=status:Enabled">@T["Only enabled users"]</a>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:16
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Only enabled users"
-msgstr ""
+msgstr "Vain sallitut käyttäjät"
 
 #. <a class="dropdown-item" href="?q=status:Disabled">@T["Only disabled users"]</a>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:17
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Only disabled users"
-msgstr ""
+msgstr "Vain estetyt käyttäjät"
 
 #. <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalUserIndexOptionsFilterSyntax">@T["Filter syntax"]</a>
 #. <h4>@T["Filter syntax"]</h4>
@@ -1328,7 +1336,7 @@ msgstr ""
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:48
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Filter syntax"
-msgstr ""
+msgstr "Suodattimen syntaksi"
 
 #. <label asp-for="SearchText" class="sr-only">@T["Search"]</label>
 #. <input asp-for="SearchText" class="form-control" placeholder="@T["Search"]" inputmode="search" type="search"
@@ -1342,13 +1350,13 @@ msgstr "Hae"
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:35
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Available Filters"
-msgstr ""
+msgstr "Käytettävissä olevat suodattimet"
 
 #. <span class="hint">@T["Default"]</span>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:52
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Default"
-msgstr ""
+msgstr "Oletusarvo"
 
 #. <span class="hint dashed">@T["may be entered with or without the term name"]</span>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:53
@@ -1360,7 +1368,7 @@ msgstr ""
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:57
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Single"
-msgstr ""
+msgstr "Yksittäinen"
 
 #. <span class="hint dashed">@T["A single value can be entered"]</span>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:58
@@ -1372,9 +1380,9 @@ msgstr ""
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:62
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Multiple"
-msgstr ""
+msgstr "Useita"
 
-#. <span class="hint dashed">@T["Logical operators and groups are supported"]
+#. <span class="hint dashed">@T["Logical operators and groups are supported"]</span>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:63
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Logical operators and groups are supported"
@@ -1414,7 +1422,7 @@ msgstr ""
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:93
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Current filter"
-msgstr ""
+msgstr "Nykyinen suodatin"
 
 #. <span class="hint dashed">@T["including all implied groups and operators"]</span>
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:98
@@ -1432,7 +1440,7 @@ msgstr ""
 #: OrchardCore.Users\Views\UsersAdminListSearch.cshtml:108
 msgctxt "OrchardCore.Users.Views.UsersAdminListSearch"
 msgid "Close"
-msgstr ""
+msgstr "Sulje"
 
 #. <label class="custom-control-label" for="select-all" id="select-all-label" title="@T["Select All"]"></label>
 #: OrchardCore.Users\Views\UsersAdminListSummary.cshtml:6
@@ -1736,7 +1744,7 @@ msgctxt "OrchardCore.Users.Views.ChangeEmail.Index"
 msgid "Submit"
 msgstr "Lähetä"
 
-#. <h4><i class="fa fa-user"></i>@Model.Activity.GetTitleOrDefault(() => T["Assign user to role"])</h4>
+#. <h4><i class="fa fa-user" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Assign user to role"])</h4>
 #: OrchardCore.Users\Views\Items\AssignUserRoleTask.Fields.Design.cshtml:5
 msgctxt "OrchardCore.Users.Views.Items.AssignUserRoleTask.Fields.Design"
 msgid "Assign user to role"
@@ -1772,7 +1780,7 @@ msgctxt "OrchardCore.Users.Views.Items.AssignUserRoleTask.Fields.Edit"
 msgid "The Role to assign. With Liquid support."
 msgstr "Liitettävä rooli. Liquid-tuella."
 
-#. <h4 class="card-title"><i class="fa fa-user"></i>@T["Assign user to role"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user" aria-hidden="true"></i>@T["Assign user to role"]</h4>
 #: OrchardCore.Users\Views\Items\AssignUserRoleTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.AssignUserRoleTask.Fields.Thumbnail"
 msgid "Assign user to role"
@@ -1794,9 +1802,9 @@ msgstr ""
 #: OrchardCore.Users\Views\Items\AuditTrailUserEventDetail.DetailAdmin.cshtml:10
 msgctxt "OrchardCore.Users.Views.Items.AuditTrailUserEventDetail.DetailAdmin"
 msgid "User Name"
-msgstr ""
+msgstr "Käyttäjätunnus"
 
-#. <h4><i class="fa @icon"></i>@Model.Activity.GetTitleOrDefault(() => T["Register User"])</h4>
+#. <h4><i class="fa @icon" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Register User"])</h4>
 #: OrchardCore.Users\Views\Items\RegisterUserTask.Fields.Design.cshtml:11
 msgctxt "OrchardCore.Users.Views.Items.RegisterUserTask.Fields.Design"
 msgid "Register User"
@@ -1838,7 +1846,7 @@ msgctxt "OrchardCore.Users.Views.Items.RegisterUserTask.Fields.Edit"
 msgid "Users must be approved before they can log in"
 msgstr ""
 
-#. <h4 class="card-title"><i class="fa fa-user"></i>@T["Register User"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user" aria-hidden="true"></i>@T["Register User"]</h4>
 #: OrchardCore.Users\Views\Items\RegisterUserTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.RegisterUserTask.Fields.Thumbnail"
 msgid "Register User"
@@ -1850,13 +1858,13 @@ msgctxt "OrchardCore.Users.Views.Items.RegisterUserTask.Fields.Thumbnail"
 msgid "Register user from form fields."
 msgstr "Rekisteröi käyttäjä lomakkeen kentistä."
 
-#. <h4><i class="fa fa-user-plus"></i>@Model.Activity.GetTitleOrDefault(() => T["User Created"])</h4>
+#. <h4><i class="fa fa-user-plus" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User Created"])</h4>
 #: OrchardCore.Users\Views\Items\UserCreatedEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserCreatedEvent.Fields.Design"
 msgid "User Created"
 msgstr "Käyttäjä luotu"
 
-#. <h4 class="card-title"><i class="fa fa-user-plus"></i>@T["User Created"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user-plus" aria-hidden="true"></i>@T["User Created"]</h4>
 #: OrchardCore.Users\Views\Items\UserCreatedEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserCreatedEvent.Fields.Thumbnail"
 msgid "User Created"
@@ -1868,13 +1876,13 @@ msgctxt "OrchardCore.Users.Views.Items.UserCreatedEvent.Fields.Thumbnail"
 msgid "User is created."
 msgstr "Käyttäjä on luotu."
 
-#. <h4><i class="fa fa-user-minus"></i>@Model.Activity.GetTitleOrDefault(() => T["User Deleted"])</h4>
+#. <h4><i class="fa fa-user-minus" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User Deleted"])</h4>
 #: OrchardCore.Users\Views\Items\UserDeletedEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserDeletedEvent.Fields.Design"
 msgid "User Deleted"
 msgstr "Käyttäjä poistettu"
 
-#. <h4 class="card-title"><i class="fa fa-user-minus"></i>@T["User Deleted"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user-minus" aria-hidden="true"></i>@T["User Deleted"]</h4>
 #: OrchardCore.Users\Views\Items\UserDeletedEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserDeletedEvent.Fields.Thumbnail"
 msgid "User Deleted"
@@ -1886,13 +1894,13 @@ msgctxt "OrchardCore.Users.Views.Items.UserDeletedEvent.Fields.Thumbnail"
 msgid "User is Deleted."
 msgstr "Käyttäjä on poistettu."
 
-#. <h4><i class="fa fa-user-times"></i>@Model.Activity.GetTitleOrDefault(() => T["User Disabled"])</h4>
+#. <h4><i class="fa fa-user-times" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User Disabled"])</h4>
 #: OrchardCore.Users\Views\Items\UserDisabledEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserDisabledEvent.Fields.Design"
 msgid "User Disabled"
 msgstr "Käyttäjä poistettu käytöstä"
 
-#. <h4 class="card-title"><i class="fa fa-user-times"></i>@T["User Disabled"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user-times" aria-hidden="true"></i>@T["User Disabled"]</h4>
 #: OrchardCore.Users\Views\Items\UserDisabledEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserDisabledEvent.Fields.Thumbnail"
 msgid "User Disabled"
@@ -1904,13 +1912,13 @@ msgctxt "OrchardCore.Users.Views.Items.UserDisabledEvent.Fields.Thumbnail"
 msgid "User is disabled."
 msgstr "Käyttäjä on poistettu käytöstä."
 
-#. <h4><i class="fa fa-user-check"></i>@Model.Activity.GetTitleOrDefault(() => T["User Enabled"])</h4>
+#. <h4><i class="fa fa-user-check" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User Enabled"])</h4>
 #: OrchardCore.Users\Views\Items\UserEnabledEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserEnabledEvent.Fields.Design"
 msgid "User Enabled"
 msgstr "Käyttäjä otettu käyttöön"
 
-#. <h4 class="card-title"><i class="fa fa-user-check"></i>@T["User Enabled"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user-check" aria-hidden="true"></i>@T["User Enabled"]</h4>
 #: OrchardCore.Users\Views\Items\UserEnabledEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserEnabledEvent.Fields.Thumbnail"
 msgid "User Enabled"
@@ -1922,13 +1930,13 @@ msgctxt "OrchardCore.Users.Views.Items.UserEnabledEvent.Fields.Thumbnail"
 msgid "User is enabled."
 msgstr "Käyttäjä on otettu käyttöön."
 
-#. <h4><i class="fa fa-id-card"></i>@Model.Activity.GetTitleOrDefault(() => T["User LoggedIn"])</h4>
+#. <h4><i class="fa fa-id-card" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User LoggedIn"])</h4>
 #: OrchardCore.Users\Views\Items\UserLoggedInEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserLoggedInEvent.Fields.Design"
 msgid "User LoggedIn"
 msgstr "Käyttäjä kirjautunut sisään"
 
-#. <h4 class="card-title"><i class="fa fa-id-card"></i>@T["User Logged in"]</h4>
+#. <h4 class="card-title"><i class="fa fa-id-card" aria-hidden="true"></i>@T["User Logged in"]</h4>
 #: OrchardCore.Users\Views\Items\UserLoggedInEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserLoggedInEvent.Fields.Thumbnail"
 msgid "User Logged in"
@@ -1970,13 +1978,13 @@ msgctxt "OrchardCore.Users.Views.Items.UsersAdminFilters-Status.Thumbnail"
 msgid "Filters on a user status."
 msgstr ""
 
-#. <h4><i class="fa fa-user-edit"></i>@Model.Activity.GetTitleOrDefault(() => T["User Updated"])</h4>
+#. <h4><i class="fa fa-user-edit" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["User Updated"])</h4>
 #: OrchardCore.Users\Views\Items\UserUpdatedEvent.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Users.Views.Items.UserUpdatedEvent.Fields.Design"
 msgid "User Updated"
 msgstr "Käyttäjä päivitetty"
 
-#. <h4 class="card-title"><i class="fa fa-user-edit"></i>@T["User Updated"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user-edit" aria-hidden="true"></i>@T["User Updated"]</h4>
 #: OrchardCore.Users\Views\Items\UserUpdatedEvent.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.UserUpdatedEvent.Fields.Thumbnail"
 msgid "User Updated"
@@ -1988,7 +1996,7 @@ msgctxt "OrchardCore.Users.Views.Items.UserUpdatedEvent.Fields.Thumbnail"
 msgid "User is updated."
 msgstr "Käyttäjä on päivitetty."
 
-#. <h4><i class="fa fa-user"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate User"])</h4>
+#. <h4><i class="fa fa-user" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate User"])</h4>
 #: OrchardCore.Users\Views\Items\ValidateUserTask.Fields.Design.cshtml:7
 msgctxt "OrchardCore.Users.Views.Items.ValidateUserTask.Fields.Design"
 msgid "Validate User"
@@ -2012,7 +2020,7 @@ msgctxt "OrchardCore.Users.Views.Items.ValidateUserTask.Fields.Edit"
 msgid "The 'InRole' outcome will be triggerred if the user has at least one of the selected roles."
 msgstr "Tulos \"InRole\" palautetaan, jos käyttäjällä on vähintään yksi valituista rooleista."
 
-#. <h4 class="card-title"><i class="fa fa-user"></i>@T["Validate User"]</h4>
+#. <h4 class="card-title"><i class="fa fa-user" aria-hidden="true"></i>@T["Validate User"]</h4>
 #: OrchardCore.Users\Views\Items\ValidateUserTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Users.Views.Items.ValidateUserTask.Fields.Thumbnail"
 msgid "Validate User"
@@ -2058,13 +2066,13 @@ msgstr ""
 #: OrchardCore.Users\Views\Registration\ConfirmEmailSent.cshtml:14
 msgctxt "OrchardCore.Users.Views.Registration.ConfirmEmailSent"
 msgid "Previous Page"
-msgstr ""
+msgstr "Edellinen sivu"
 
 #. <a href="@Url.Content("~/")">@T["Home"]</a>
 #: OrchardCore.Users\Views\Registration\ConfirmEmailSent.cshtml:18
 msgctxt "OrchardCore.Users.Views.Registration.ConfirmEmailSent"
 msgid "Home"
-msgstr ""
+msgstr "Koti"
 
 #. <h2>@T["Register"]</h2>
 #. <button type="submit" class="btn btn-primary">@T["Register"]</button>
@@ -2108,7 +2116,7 @@ msgstr "Vahvista salasana"
 #: OrchardCore.Users\Views\Registration\RegistrationPending.cshtml:7
 msgctxt "OrchardCore.Users.Views.Registration.RegistrationPending"
 msgid "User Registration Pending"
-msgstr ""
+msgstr "Käyttäjän rekisteröinti kesken"
 
 #. <p>@T["Your user account has been created but has to be approved before it can be used."]</p>
 #: OrchardCore.Users\Views\Registration\RegistrationPending.cshtml:9
@@ -2120,13 +2128,13 @@ msgstr ""
 #: OrchardCore.Users\Views\Registration\RegistrationPending.cshtml:13
 msgctxt "OrchardCore.Users.Views.Registration.RegistrationPending"
 msgid "Previous Page"
-msgstr ""
+msgstr "Edellinen sivu"
 
 #. <a href="@Url.Content("~/")">@T["Home"]</a>
 #: OrchardCore.Users\Views\Registration\RegistrationPending.cshtml:17
 msgctxt "OrchardCore.Users.Views.Registration.RegistrationPending"
 msgid "Home"
-msgstr ""
+msgstr "Koti"
 
 #. <h2>@T["Forgot password?"]</h2>
 #: OrchardCore.Users\Views\ResetPassword\ForgotPassword.cshtml:7

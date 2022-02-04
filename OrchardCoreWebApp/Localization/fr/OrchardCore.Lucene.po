@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: fr\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Lucene.pot\n"
-"X-Crowdin-File-ID: 576\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Lucene.pot\n"
+"X-Crowdin-File-ID: 772\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2021-05-08 11:43\n"
+"PO-Revision-Date: 2022-01-05 13:50\n"
 
 #. .Add(S["Search"], NavigationConstants.AdminMenuSearchPosition, search => search
 #. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
@@ -90,53 +90,53 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An index named {0} doesn't exist."
 msgstr "Un index nommé {0} n'existe pas."
 
-#. _notifier.Error(H["An error occurred while creating the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while creating the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:230
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while creating the index."
 msgstr "Une erreur s’est produite lors de la création de l'index."
 
-#. _notifier.Success(H["Index <em>{0}</em> created successfully.", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> created successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:235
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> created successfully."
 msgstr "Index <em>{0}</em> créé avec succès."
 
-#. _notifier.Error(H["An error occurred while editing the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while editing the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:247
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while editing the index."
 msgstr "Une erreur s'est produite lors de la modification de l'index."
 
-#. _notifier.Success(H["Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:252
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>"
 msgstr "L'index <em>{0}</em> a été modifié avec succès, <strong>veuillez envisager de reconstruire l'index.</strong>"
 
-#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", id]);
-#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", item.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> reset successfully.", id]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> reset successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:281
 #: OrchardCore.Lucene\Controllers\AdminController.cs:457
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> reset successfully."
 msgstr "Index <em>{0}</em> réinitialisé avec succès."
 
-#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", id]);
-#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", item.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> rebuilt successfully.", id]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> rebuilt successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:302
 #: OrchardCore.Lucene\Controllers\AdminController.cs:471
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> rebuilt successfully."
 msgstr "Index <em>{0}</em> reconstruit avec succès."
 
-#. _notifier.Success(H["Index <em>{0}</em> deleted successfully.", model.IndexName]);
+#. await _notifier.SuccessAsync(H["Index <em>{0}</em> deleted successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:328
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Index <em>{0}</em> deleted successfully."
 msgstr "Index <em>{0}</em> supprimé avec succès."
 
-#. _notifier.Error(H["An error occurred while deleting the index."]);
+#. await _notifier.ErrorAsync(H["An error occurred while deleting the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:332
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while deleting the index."
@@ -148,7 +148,7 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Invalid query : {0}"
 msgstr "Requête invalide : {0}"
 
-#. _notifier.Success(H["Indices successfully removed."]);
+#. await _notifier.SuccessAsync(H["Indices successfully removed."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:444
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Indices successfully removed."
@@ -173,7 +173,7 @@ msgid "The index name contains unallowed chars."
 msgstr "Le nom de l'index contient des caractères non autorisés."
 
 #. ModelState.AddModelError("Terms", S["Incorrect query syntax."]);
-#: OrchardCore.Lucene\Controllers\SearchController.cs:158
+#: OrchardCore.Lucene\Controllers\SearchController.cs:157
 msgctxt "OrchardCore.Lucene.Controllers.SearchController"
 msgid "Incorrect query syntax."
 msgstr "Syntaxe de requête incorrecte."
@@ -300,44 +300,50 @@ msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Default search index"
 msgstr "Index de recherche par défaut"
 
+#. <option value="" selected="@(Model.SearchIndex == null)">@T["Select a search index"]</option>
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:8
+msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
+msgid "Select a search index"
+msgstr "Sélectionnez un index de recherche"
+
 #. <span class="hint">@T["The default index to use for the search page."]</span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:14
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:15
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "The default index to use for the search page."
 msgstr "L'index par défaut à utiliser pour la page de recherche."
 
 #. <div class="alert alert-warning">@T["You need to create at least an index to set as the Search index."]</div>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:19
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:20
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "You need to create at least an index to set as the Search index."
 msgstr "Vous devez créer au moins un index pour définir comme index de recherche."
 
 #. <label asp-for="SearchFields">@T["Default searched fields"]</label>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:23
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:24
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Default searched fields"
 msgstr "Champs recherchés par défaut"
 
 #. <span class="hint">@T["A comma separated list of fields to use for search pages. The default value is <code>Content.ContentItem.FullText</code>."]</span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:26
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "A comma separated list of fields to use for search pages. The default value is <code>Content.ContentItem.FullText</code>."
 msgstr "Une liste de champs séparés par des virgules à utiliser pour les pages de recherche. La valeur par défaut est <code>Content.ContentItem.FullText</code>."
 
 #. <label class="custom-control-label" asp-for="AllowLuceneQueriesInSearch">@T["Allow Lucene queries in search forms"]</label>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:32
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Allow Lucene queries in search forms"
 msgstr "Autoriser les requêtes Lucene dans les formulaires de recherche"
 
 #. <span class="hint dashed">@T["Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."] <a  class="seedoc" href="http://www.lucenetutorial.com/lucene-query-syntax.html" target="_blank">@T["See documentation"]</a></span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:34
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."
 msgstr "Si les requêtes de recherche doivent être autorisées à utiliser la <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">syntaxe de l'analyseur de requête Lucene</a>."
 
 #. <span class="hint dashed">@T["Whether search queries should be allowed to use <a href=\"https://lucene.apache.org/core/2_9_4/queryparsersyntax.html\">Lucene query parser syntax</a>."] <a  class="seedoc" href="http://www.lucenetutorial.com/lucene-query-syntax.html" target="_blank">@T["See documentation"]</a></span>
-#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:33
+#: OrchardCore.Lucene\Views\LuceneSettings.Edit.cshtml:34
 msgctxt "OrchardCore.Lucene.Views.LuceneSettings.Edit"
 msgid "See documentation"
 msgstr "Voir la documentation"

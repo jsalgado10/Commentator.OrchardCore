@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: el\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Features.pot\n"
-"X-Crowdin-File-ID: 552\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Features.pot\n"
+"X-Crowdin-File-ID: 744\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
-"PO-Revision-Date: 2021-03-18 10:00\n"
+"PO-Revision-Date: 2021-10-22 14:42\n"
 
 #. .Add(S["Configuration"], NavigationConstants.AdminMenuConfigurationPosition, configuration => configuration
 #: OrchardCore.Features\AdminMenu.cs:25
@@ -26,29 +26,29 @@ msgctxt "OrchardCore.Features.AdminMenu"
 msgid "Features"
 msgstr "Χαρακτηριστικά"
 
-#. ModelState.AddModelError("featureIds", H["Please select one or more features."].ToString());
-#: OrchardCore.Features\Controllers\AdminController.cs:94
+#. ModelState.AddModelError(nameof(BulkActionViewModel.FeatureIds), S["Please select one or more features."]);
+#: OrchardCore.Features\Controllers\AdminController.cs:98
 msgctxt "OrchardCore.Features.Controllers.AdminController"
 msgid "Please select one or more features."
 msgstr "Παρακαλώ επίλεξε ένα ή περισσότερα Χαρακτηριστικά."
 
-#. _notifier.Success(H["{0} was {1}.", feature.Name ?? feature.Id, enabled ? "enabled" : "disabled"]);
-#: OrchardCore.Features\Controllers\AdminController.cs:194
+#. await _notifier.SuccessAsync(H["{0} was {1}.", feature.Name ?? feature.Id, enabled ? "enabled" : "disabled"]);
+#: OrchardCore.Features\Controllers\AdminController.cs:190
 msgctxt "OrchardCore.Features.Controllers.AdminController"
 msgid "{0} was {1}."
-msgstr ""
+msgstr "{0} ήταν {1}."
 
-#. _notifier.Success(H["{0} was enabled.", enabledFeature.Name]);
+#. await _notifier.SuccessAsync(H["{0} was enabled.", enabledFeature.Name]);
 #: OrchardCore.Features\Services\ModuleService.cs:71
 msgctxt "OrchardCore.Features.Services.ModuleService"
 msgid "{0} was enabled."
-msgstr ""
+msgstr "{0} ήταν ενεργοποιημένο."
 
-#. _notifier.Success(H["{0} was disabled.", feature.Name]);
+#. await _notifier.SuccessAsync(H["{0} was disabled.", feature.Name]);
 #: OrchardCore.Features\Services\ModuleService.cs:98
 msgctxt "OrchardCore.Features.Services.ModuleService"
 msgid "{0} was disabled."
-msgstr ""
+msgstr "{0} ήταν απενεργοποιημένο."
 
 #. <span class="icon"><i class="fa fa-gear" aria-hidden="true"></i></span><span class="title">@T["Configuration"]</span>
 #: OrchardCore.Features\Views\NavigationItemText-configuration.Id.cshtml:1
@@ -77,7 +77,7 @@ msgstr "Μαζικές ενέργειες"
 #. <a class="dropdown-item" href="#" data-action="@nameof(FeaturesBulkAction.Disable)">@T["Disable"]</a>
 #. <a id="btn-disable-@Html.GenerateIdFromName(feature.Descriptor.Id)" asp-action="Disable" asp-route-id="@feature.Descriptor.Id" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
 #: OrchardCore.Features\Views\Admin\Features.cshtml:20
-#: OrchardCore.Features\Views\Admin\Features.cshtml:129
+#: OrchardCore.Features\Views\Admin\Features.cshtml:120
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Disable"
 msgstr "Απενεργοποίηση"
@@ -85,7 +85,7 @@ msgstr "Απενεργοποίηση"
 #. <a class="dropdown-item" href="#" data-action="@nameof(FeaturesBulkAction.Enable)">@T["Enable"]</a>
 #. <a id="btn-enable-@Html.GenerateIdFromName(feature.Descriptor.Id)" asp-action="Enable" asp-route-id="@feature.Descriptor.Id" class="btn btn-primary btn-sm" data-url-af="UnsafeUrl">@T["Enable"]</a>
 #: OrchardCore.Features\Views\Admin\Features.cshtml:21
-#: OrchardCore.Features\Views\Admin\Features.cshtml:119
+#: OrchardCore.Features\Views\Admin\Features.cshtml:110
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Enable"
 msgstr "Εργοποίηση"
@@ -112,25 +112,25 @@ msgid "Disabling the {0} feature will also disable the following dependent featu
 msgstr "Η απενεργοποίηση της λειτουργίας {0} θα απενεργοποιήσει επίσης τις ακόλουθες εξαρτημένες λειτουργίες: {1} Συνέχεια;"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(feature.Descriptor.Id)" asp-action="Disable" asp-route-id="@feature.Descriptor.Id" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:129
+#: OrchardCore.Features\Views\Admin\Features.cshtml:120
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Disable Feature"
 msgstr "Απενεργοποίηση Χαρακτηριστικών"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(feature.Descriptor.Id)" asp-action="Disable" asp-route-id="@feature.Descriptor.Id" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:129
+#: OrchardCore.Features\Views\Admin\Features.cshtml:120
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Yes"
 msgstr "Ναι"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(feature.Descriptor.Id)" asp-action="Disable" asp-route-id="@feature.Descriptor.Id" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:129
+#: OrchardCore.Features\Views\Admin\Features.cshtml:120
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "No"
 msgstr "'Οχι"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
-#: OrchardCore.Features\Views\Admin\Features.cshtml:140
+#: OrchardCore.Features\Views\Admin\Features.cshtml:131
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "<strong>Nothing here!</strong> Your search returned no results."
 msgstr "<strong>Δεν υπάρχει τίποτα εδώ!</strong> Η αναζήτηση δεν επέστρεψε κανένα αποτέλεσμα."
@@ -163,7 +163,7 @@ msgstr "Όλα τα Χαρακτηριστικά"
 #: OrchardCore.Features\Views\Items\AllFeaturesDeploymentStep.Fields.Summary.cshtml:5
 msgctxt "OrchardCore.Features.Views.Items.AllFeaturesDeploymentStep.Fields.Summary"
 msgid "Adds all features and their state to the plan. Features should be placed before other steps that depend on the state of the sites features."
-msgstr ""
+msgstr "Προσθέτει όλα τα χαρακτηριστικά και την κατάστασή τους στο σχέδιο. Τα χαρακτηριστικά θα πρέπει να τοποθετούνται πριν από άλλα βήματα που εξαρτώνται από την κατάσταση των χαρακτηριστικών του ιστότοπου."
 
 #. <h4 class="card-title">@T["All Features"]</h4>
 #: OrchardCore.Features\Views\Items\AllFeaturesDeploymentStep.Fields.Thumbnail.cshtml:3

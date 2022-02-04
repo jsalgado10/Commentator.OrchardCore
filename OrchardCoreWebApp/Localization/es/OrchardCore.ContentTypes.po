@@ -4,19 +4,19 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.ContentTypes.pot\n"
-"X-Crowdin-File-ID: 530\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.ContentTypes.pot\n"
+"X-Crowdin-File-ID: 718\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2021-06-01 09:19\n"
+"PO-Revision-Date: 2021-10-25 15:13\n"
 
 #. builder.Add(S["Content"], content => content
 #: OrchardCore.ContentTypes\AdminMenu.cs:28
 msgctxt "OrchardCore.ContentTypes.AdminMenu"
 msgid "Content"
-msgstr ""
+msgstr "Contenido"
 
 #. .Add(S["Content Definition"], S["Content Definition"].PrefixPosition("9"), contentDefinition => contentDefinition
 #. .Add(S["Content Definition"], S["Content Definition"].PrefixPosition("9"), contentDefinition => contentDefinition
@@ -84,7 +84,7 @@ msgstr "El Nombre Técnico no puede estar vacío."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:647
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name must start with a letter."
-msgstr ""
+msgstr "El nombre técnico debe comenzar con una letra."
 
 #. ModelState.AddModelError("Name", S["The Technical Name contains invalid characters."]);
 #. ModelState.AddModelError("Name", S["The Technical Name contains invalid characters."]);
@@ -96,7 +96,7 @@ msgstr ""
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:652
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name contains invalid characters."
-msgstr ""
+msgstr "El nombre técnico contiene caracteres inválidos."
 
 #. ModelState.AddModelError("Name", S["The Technical Name is reserved for internal use."]);
 #. ModelState.AddModelError("Name", S["The Technical Name is reserved for internal use."]);
@@ -106,36 +106,36 @@ msgstr ""
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:484
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name is reserved for internal use."
-msgstr ""
+msgstr "El nombre técnico está reservado para uso interno."
 
 #. ModelState.AddModelError("Name", S["A type with the same Technical Name already exists."]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:131
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A type with the same Technical Name already exists."
-msgstr ""
+msgstr "Una parte con el mismo Nombre Técnico ya existe."
 
-#. _notifier.Success(H["The \"{0}\" content type has been created.", typeViewModel.DisplayName]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" content type has been created.", typeViewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:144
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" content type has been created."
 msgstr "Se ha creado el tipo de contenido \"{0}\"."
 
-#. _notifier.Success(H["\"{0}\" settings have been saved.", contentTypeDefinition.Name]);
+#. await _notifier.SuccessAsync(H["\"{0}\" settings have been saved.", contentTypeDefinition.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:203
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "\"{0}\" settings have been saved."
 msgstr "Se han guardado los ajustes de \"{0}\"."
 
-#. _notifier.Success(H["\"{0}\" has been removed.", typeViewModel.DisplayName]);
-#. _notifier.Information(H["\"{0}\" has been removed.", partViewModel.DisplayName]);
+#. await _notifier.SuccessAsync(H["\"{0}\" has been removed.", typeViewModel.DisplayName]);
+#. await _notifier.InformationAsync(H["\"{0}\" has been removed.", partViewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:227
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:576
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "\"{0}\" has been removed."
 msgstr "Se ha eliminado \"{0}\"."
 
-#. _notifier.Success(H["The \"{0}\" part has been added.", partToAdd]);
-#. _notifier.Success(H["The \"{0}\" part has been added.", partToAdd]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" part has been added.", partToAdd]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" part has been added.", partToAdd]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:316
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:397
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
@@ -148,7 +148,7 @@ msgstr "Se ha añadido la parte \"{0}\"."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:926
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A part with the same Display Name already exists."
-msgstr ""
+msgstr "Una parte con el mismo Nombre de Visualización ya existe."
 
 #. ModelState.AddModelError("Name", S["A part with the same Technical Name already exists."]);
 #. ModelState.AddModelError("Name", S["A part with the same Technical Name already exists."]);
@@ -156,27 +156,27 @@ msgstr ""
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:469
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A part with the same Technical Name already exists."
-msgstr ""
+msgstr "Una parte con el mismo Nombre Técnico ya existe."
 
-#. _notifier.Success(H["The \"{0}\" part has been removed.", name]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" part has been removed.", name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:419
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" part has been removed."
 msgstr "Se ha eliminado la parte \"{0}\"."
 
-#. _notifier.Information(H["The content part could not be created."]);
+#. await _notifier.InformationAsync(H["The content part could not be created."]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:496
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The content part could not be created."
 msgstr "No se ha podido crear la parte de contenido."
 
-#. _notifier.Success(H["The \"{0}\" content part has been created.", partViewModel.Name]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" content part has been created.", partViewModel.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:500
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" content part has been created."
 msgstr "Se ha creado la parte de contenido \"{0}\"."
 
-#. _notifier.Success(H["The settings of \"{0}\" have been saved.", contentPartDefinition.Name]);
+#. await _notifier.SuccessAsync(H["The settings of \"{0}\" have been saved.", contentPartDefinition.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:552
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The settings of \"{0}\" have been saved."
@@ -194,33 +194,33 @@ msgstr "Ya existe un campo con el mismo Nombre de Visualización."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:642
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A field with the same Technical Name already exists."
-msgstr ""
+msgstr "Ya existe un campo con el mismo Nombre Técnico."
 
-#. _notifier.Success(H["The field \"{0}\" has been added.", viewModel.DisplayName]);
+#. await _notifier.SuccessAsync(H["The field \"{0}\" has been added.", viewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:668
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The field \"{0}\" has been added."
 msgstr "Se ha añadido el campo \"{0}\"."
 
-#. _notifier.Information(H["Display name changed to {0}.", viewModel.DisplayName]);
+#. await _notifier.InformationAsync(H["Display name changed to {0}.", viewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:770
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "Display name changed to {0}."
 msgstr "Se ha cambiado el nombre a mostrar a {0}."
 
-#. _notifier.Success(H["The \"{0}\" field settings have been saved.", field.DisplayName()]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" field settings have been saved.", field.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:789
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" field settings have been saved."
 msgstr "Se han guardado los ajustes del campo \"{0}\"."
 
-#. _notifier.Success(H["The \"{0}\" field has been removed.", field.DisplayName()]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" field has been removed.", field.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:833
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" field has been removed."
 msgstr "Se ha eliminado el campo \"{0}\"."
 
-#. _notifier.Success(H["The \"{0}\" part settings have been saved.", part.DisplayName()]);
+#. await _notifier.SuccessAsync(H["The \"{0}\" part settings have been saved.", part.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:952
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" part settings have been saved."
@@ -230,7 +230,7 @@ msgstr "Se han guardado los ajustes de la parte \"{0}\"."
 #: OrchardCore.ContentTypes\Editors\ContentTypeSettingsDisplayDriver.cs:52
 msgctxt "OrchardCore.ContentTypes.Editors.ContentTypeSettingsDisplayDriver"
 msgid "The stereotype should be alphanumeric."
-msgstr ""
+msgstr "El esterotipo debe ser alfanumérico."
 
 #. context.Updater.ModelState.AddModelError("DisplayName", S["The Content Type name can't be empty."]);
 #: OrchardCore.ContentTypes\Editors\DefaultContentTypeDisplayDriver.cs:38
@@ -248,13 +248,13 @@ msgstr "No se puede añadir la parte llamada \"{0}\". Ya existe otra con ese mis
 #: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:5
 msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
 msgid "Technical Name"
-msgstr ""
+msgstr "Nombre Técnico"
 
 #. <span class="hint w-100">@T["Technical name of the part."]</span>
 #: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
 msgid "Technical name of the part."
-msgstr ""
+msgstr "Nombre técnico de la parte reutilizable."
 
 #. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:11
@@ -308,13 +308,13 @@ msgstr "Marcar para permitir que esta parte pueda ser adjuntada varias veces."
 #: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:4
 msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
 msgid "Technical Name"
-msgstr ""
+msgstr "Nombre Técnico"
 
 #. <span class="hint w-100">@T["Technical name of the type."]</span>
 #: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:6
 msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
 msgid "Technical name of the type."
-msgstr ""
+msgstr "Nombre técnico del tipo."
 
 #. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:9
@@ -658,21 +658,21 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Remove"
 msgstr "Eliminar"
 
-#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info"></i> @field.DisplayMode()</span>
-#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info"></i> @part.DisplayMode()</span>
+#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @field.DisplayMode()</span>
+#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @part.DisplayMode()</span>
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:59
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:104
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Display mode"
-msgstr ""
+msgstr "Modo de visualización"
 
-#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info"></i> @field.Editor()</span>
-#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info"></i> @part.Editor()</span>
+#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @field.Editor()</span>
+#. <span class="badge ta-badge font-weight-normal" data-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @part.Editor()</span>
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:63
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:108
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #. <a asp-route-action="AddFieldTo" asp-route-id="@Model.TypeDefinition.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-info btn-sm" role="button">@T["Add Field"]</a>
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:73
@@ -858,7 +858,7 @@ msgstr "¿Qué tipo de editor debe usarse?"
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:82
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditTypePart"
 msgid "What type of display mode should be used?"
-msgstr ""
+msgstr "¿Qué tipo de modo de visualización debe usarse?"
 
 #. <button class="btn btn-primary save" type="submit" name="submit.Save" value="Save">@T["Save"]</button>
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:101
@@ -924,7 +924,7 @@ msgstr "<strong>¡Nada aquí!</strong> Tu búsqueda no ha devuelto ningún resul
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
 msgid "Update Content Definitions"
-msgstr ""
+msgstr "Actualizar definiciones de contenido"
 
 #. <label class="custom-control-label" asp-for="IncludeAll">@T["Include all content types and parts definitions."]</label>
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:21
@@ -948,115 +948,115 @@ msgstr "Las partes de contenido a añadir como parte del plan."
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:6
 msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
 msgid "Update Content Definitions"
-msgstr ""
+msgstr "Actualizar definiciones de contenido"
 
 #. <span class="hint d-block">@T["Content Definitions should be placed before any content steps."]</span>
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:44
 msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
 msgid "Content Definitions should be placed before any content steps."
-msgstr ""
+msgstr "Las definiciones de contenido deben colocarse antes de cualquier paso de contenido."
 
 #. <h4 class="card-title">@T["Update Content Definitions"]</h4>
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Update Content Definitions"
-msgstr ""
+msgstr "Actualizar definiciones de contenido"
 
 #. <p>@T["Exports specified content type and part definitions for updating."]</p>
 #: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
 msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Exports specified content type and part definitions for updating."
-msgstr ""
+msgstr "Exporta definiciones especificadas de tipo de contenido y partes para actualizar."
 
 #. <label asp-for="ContentTypes">@T["Content Type Definitions"]</label>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:4
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
 msgid "Content Type Definitions"
-msgstr ""
+msgstr "Definiciones de Tipo de Contenido"
 
 #. <span class="hint">@T["A comma separated list of content type definitions to delete"]</span>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:7
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
 msgid "A comma separated list of content type definitions to delete"
-msgstr ""
+msgstr "Una lista separada por comas de definiciones de tipo de contenido a eliminar"
 
 #. <label asp-for="ContentParts">@T["Content Part Definitions"]</label>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:11
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
 msgid "Content Part Definitions"
-msgstr ""
+msgstr "Definiciones de Parte de Contenido"
 
 #. <span class="hint">@T["A comma separated list of content part definitions to delete"]</span>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
 msgid "A comma separated list of content part definitions to delete"
-msgstr ""
+msgstr "Una lista separada por comas de definiciones de partes de contenido a eliminar"
 
 #. <h5>@T["Delete Content Definitions"]</h5>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Summary.cshtml:5
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Summary"
 msgid "Delete Content Definitions"
-msgstr ""
+msgstr "Eliminar definiciones de contenido"
 
 #. <h4 class="card-title">@T["Delete Content Definitions"]</h4>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Delete Content Definitions"
-msgstr ""
+msgstr "Eliminar definiciones de contenido"
 
 #. <p>@T["Exports specified content type and part definitions for deletion."]</p>
 #: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
 msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Exports specified content type and part definitions for deletion."
-msgstr ""
+msgstr "Exporta definiciones especificadas de tipo de contenido y partes para su eliminación."
 
 #. <h5>@T["Replace Content Definitions"]</h5>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Edit"
 msgid "Replace Content Definitions"
-msgstr ""
+msgstr "Reemplazar definiciones de contenido"
 
 #. <label class="custom-control-label" asp-for="IncludeAll">@T["Include all content types and parts definitions."]</label>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Edit.cshtml:21
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Edit"
 msgid "Include all content types and parts definitions."
-msgstr ""
+msgstr "Incluye todos los tipos de contenido y definiciones de partes."
 
 #. <span class="hint">@T["The content types to add as part of the plan."]</span>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Edit.cshtml:31
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Edit"
 msgid "The content types to add as part of the plan."
-msgstr ""
+msgstr "Los tipos de contenido a añadir como parte del plan de despliegue."
 
 #. <span class="hint">@T["The content parts to add as part of the plan."]</span>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Edit.cshtml:88
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Edit"
 msgid "The content parts to add as part of the plan."
-msgstr ""
+msgstr "Las partes de contenido a añadir como parte del plan de despliegue."
 
 #. <h5>@T["Replace Content Definitions"]</h5>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Summary.cshtml:6
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Summary"
 msgid "Replace Content Definitions"
-msgstr ""
+msgstr "Reemplazar definiciones de contenido"
 
 #. <span class="hint d-block">@T["Content Definitions should be placed before any content steps."]</span>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Summary.cshtml:44
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Summary"
 msgid "Content Definitions should be placed before any content steps."
-msgstr ""
+msgstr "Las definiciones de contenido deben colocarse antes de cualquier paso de contenido."
 
 #. <h4 class="card-title">@T["Replace Content Definitions"]</h4>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Replace Content Definitions"
-msgstr ""
+msgstr "Actualizar definiciones de contenido"
 
 #. <p>@T["Exports specified content type and part definitions for replacement."]</p>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Exports specified content type and part definitions for replacement."
-msgstr ""
+msgstr "Exporta definiciones especificadas de tipo de contenido y partes para reemplazo."
 
 #. <a id="btn-edit-@Model.Name" class="btn btn-primary btn-sm" asp-route-action="EditPart" asp-route-id="@Model.Name">@T["Edit"]</a>
 #: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditPartViewModel.cshtml:5

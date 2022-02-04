@@ -4,64 +4,64 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: pl\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.AuditTrail.pot\n"
-"X-Crowdin-File-ID: 686\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.AuditTrail.pot\n"
+"X-Crowdin-File-ID: 704\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-07-13 20:54\n"
+"PO-Revision-Date: 2022-01-05 13:34\n"
 
 #. .WithSelectListItem<Startup>((S, opt, model) => new SelectListItem(S["Newest"], opt.Value, model.Sort == String.Empty))
-#: OrchardCore.AuditTrail\Startup.cs:100
+#: OrchardCore.AuditTrail\Startup.cs:98
 msgctxt "OrchardCore.AuditTrail.Startup"
 msgid "Newest"
 msgstr "Najnowsze"
 
 #. .WithSelectListItem<Startup>((S, opt, model) => new SelectListItem(S["Oldest"], opt.Value, model.Sort == opt.Value)))
-#: OrchardCore.AuditTrail\Startup.cs:105
+#: OrchardCore.AuditTrail\Startup.cs:103
 msgctxt "OrchardCore.AuditTrail.Startup"
 msgid "Oldest"
 msgstr "Najstarsze"
 
 #. .WithSelectListItem<Startup>((S, opt, model) => new SelectListItem(S["Category"], opt.Value, model.Sort == opt.Value)))
-#: OrchardCore.AuditTrail\Startup.cs:109
+#: OrchardCore.AuditTrail\Startup.cs:107
 msgctxt "OrchardCore.AuditTrail.Startup"
 msgid "Category"
 msgstr "Kategoria"
 
 #. .WithSelectListItem<Startup>((S, opt, model) => new SelectListItem(S["Event"], opt.Value, model.Sort == opt.Value)))
-#: OrchardCore.AuditTrail\Startup.cs:122
+#: OrchardCore.AuditTrail\Startup.cs:120
 msgctxt "OrchardCore.AuditTrail.Startup"
 msgid "Event"
 msgstr "Zdarzenie"
 
 #. .WithSelectListItem<Startup>((S, opt, model) => new SelectListItem(S["User"], opt.Value, model.Sort == opt.Value)))
-#: OrchardCore.AuditTrail\Startup.cs:135
+#: OrchardCore.AuditTrail\Startup.cs:133
 msgctxt "OrchardCore.AuditTrail.Startup"
 msgid "User"
 msgstr "Użytkownik"
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<AuditTrailSettings>(S["Audit Trail settings"], S["Exports the audit trail settings."]);
-#: OrchardCore.AuditTrail\Startup.cs:175
+#. services.AddSiteSettingsPropertyDeploymentStep<AuditTrailSettings, DeploymentStartup>(S => S["Audit Trail settings"], S => S["Exports the audit trail settings."]);
+#: OrchardCore.AuditTrail\Startup.cs:168
 msgctxt "OrchardCore.AuditTrail.DeploymentStartup"
 msgid "Audit Trail settings"
 msgstr ""
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<AuditTrailSettings>(S["Audit Trail settings"], S["Exports the audit trail settings."]);
-#: OrchardCore.AuditTrail\Startup.cs:175
+#. services.AddSiteSettingsPropertyDeploymentStep<AuditTrailSettings, DeploymentStartup>(S => S["Audit Trail settings"], S => S["Exports the audit trail settings."]);
+#: OrchardCore.AuditTrail\Startup.cs:168
 msgctxt "OrchardCore.AuditTrail.DeploymentStartup"
 msgid "Exports the audit trail settings."
 msgstr ""
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<AuditTrailTrimmingSettings>(S["Audit Trail Trimming settings"], S["Exports the audit trail trimming settings."]);
-#: OrchardCore.AuditTrail\Startup.cs:184
+#. services.AddSiteSettingsPropertyDeploymentStep<AuditTrailTrimmingSettings, DeploymentStartup>(S => S["Audit Trail Trimming settings"], S => S["Exports the audit trail trimming settings."]);
+#: OrchardCore.AuditTrail\Startup.cs:169
 msgctxt "OrchardCore.AuditTrail.DeploymentStartup"
 msgid "Audit Trail Trimming settings"
 msgstr ""
 
-#. return new SiteSettingsPropertyDeploymentStepDriver<AuditTrailTrimmingSettings>(S["Audit Trail Trimming settings"], S["Exports the audit trail trimming settings."]);
-#: OrchardCore.AuditTrail\Startup.cs:184
+#. services.AddSiteSettingsPropertyDeploymentStep<AuditTrailTrimmingSettings, DeploymentStartup>(S => S["Audit Trail Trimming settings"], S => S["Exports the audit trail trimming settings."]);
+#: OrchardCore.AuditTrail\Startup.cs:169
 msgctxt "OrchardCore.AuditTrail.DeploymentStartup"
 msgid "Exports the audit trail trimming settings."
 msgstr ""
@@ -214,7 +214,7 @@ msgctxt "OrchardCore.AuditTrail.Views.AuditTrailAdminListFilters"
 msgid "Sort"
 msgstr "Sortuj"
 
-#. <i class="fa fa-filter" title="@T["Filters"]"></i>
+#. <i class="fa fa-filter" title="@T["Filters"]" aria-hidden="true"></i>
 #: OrchardCore.AuditTrail\Views\AuditTrailAdminListSearch.cshtml:14
 msgctxt "OrchardCore.AuditTrail.Views.AuditTrailAdminListSearch"
 msgid "Filters"
@@ -272,7 +272,7 @@ msgctxt "OrchardCore.AuditTrail.Views.AuditTrailAdminListSearch"
 msgid "Multiple"
 msgstr ""
 
-#. <span class="hint dashed">@T["Logical operators and groups are supported"]
+#. <span class="hint dashed">@T["Logical operators and groups are supported"]</span>
 #: OrchardCore.AuditTrail\Views\AuditTrailAdminListSearch.cshtml:68
 msgctxt "OrchardCore.AuditTrail.Views.AuditTrailAdminListSearch"
 msgid "Logical operators and groups are supported"
@@ -480,14 +480,14 @@ msgctxt "OrchardCore.AuditTrail.Views.AuditTrailEventMeta.SummaryAdmin"
 msgid "Client IP Address"
 msgstr ""
 
-#. title="@T["Category"]">@Model.Descriptor.LocalizedCategory(Context.RequestServices)</a></span>
+#. title="@T["Category"]">@Model.Descriptor.LocalizedCategory(Context.RequestServices)</a>
 #: OrchardCore.AuditTrail\Views\AuditTrailEventTags.SummaryAdmin.cshtml:6
 msgctxt "OrchardCore.AuditTrail.Views.AuditTrailEventTags.SummaryAdmin"
 msgid "Category"
 msgstr "Kategoria"
 
-#. title="@T["Event Name"]">@Model.Descriptor.LocalizedName(Context.RequestServices)</a></span>
-#: OrchardCore.AuditTrail\Views\AuditTrailEventTags.SummaryAdmin.cshtml:12
+#. title="@T["Event Name"]">@Model.Descriptor.LocalizedName(Context.RequestServices)</a>
+#: OrchardCore.AuditTrail\Views\AuditTrailEventTags.SummaryAdmin.cshtml:13
 msgctxt "OrchardCore.AuditTrail.Views.AuditTrailEventTags.SummaryAdmin"
 msgid "Event Name"
 msgstr ""
@@ -615,7 +615,7 @@ msgstr ""
 #: OrchardCore.AuditTrail\Views\Items\AuditTrailAdminFilters-CorrelationId.Thumbnail.cshtml:6
 msgctxt "OrchardCore.AuditTrail.Views.Items.AuditTrailAdminFilters-CorrelationId.Thumbnail"
 msgid "Id"
-msgstr "Id"
+msgstr ""
 
 #. <p>@T["Filters on a correlation id."]</p>
 #: OrchardCore.AuditTrail\Views\Items\AuditTrailAdminFilters-CorrelationId.Thumbnail.cshtml:8

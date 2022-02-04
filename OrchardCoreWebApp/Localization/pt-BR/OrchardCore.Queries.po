@@ -4,13 +4,13 @@ msgstr ""
 "X-Crowdin-Project: orchard-core\n"
 "X-Crowdin-Project-ID: 307044\n"
 "X-Crowdin-Language: pt-BR\n"
-"X-Crowdin-File: /dev/Localization/OrchardCore.Queries.pot\n"
-"X-Crowdin-File-ID: 594\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Queries.pot\n"
+"X-Crowdin-File-ID: 794\n"
 "Project-Id-Version: orchard-core\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2021-01-04 09:52\n"
+"PO-Revision-Date: 2021-12-23 13:40\n"
 
 #. builder.Add(S["Search"], NavigationConstants.AdminMenuSearchPosition, search => search
 #: OrchardCore.Queries\AdminMenu.cs:24
@@ -38,25 +38,25 @@ msgctxt "OrchardCore.Queries.Controllers.AdminController"
 msgid "Delete"
 msgstr ""
 
-#. _notifier.Success(H["Query created successfully."]);
+#. await _notifier.SuccessAsync(H["Query created successfully."]);
 #: OrchardCore.Queries\Controllers\AdminController.cs:164
 msgctxt "OrchardCore.Queries.Controllers.AdminController"
 msgid "Query created successfully."
 msgstr ""
 
-#. _notifier.Success(H["Query updated successfully."]);
+#. await _notifier.SuccessAsync(H["Query updated successfully."]);
 #: OrchardCore.Queries\Controllers\AdminController.cs:220
 msgctxt "OrchardCore.Queries.Controllers.AdminController"
 msgid "Query updated successfully."
 msgstr ""
 
-#. _notifier.Success(H["Query deleted successfully."]);
+#. await _notifier.SuccessAsync(H["Query deleted successfully."]);
 #: OrchardCore.Queries\Controllers\AdminController.cs:247
 msgctxt "OrchardCore.Queries.Controllers.AdminController"
 msgid "Query deleted successfully."
 msgstr ""
 
-#. _notifier.Success(H["Queries successfully removed."]);
+#. await _notifier.SuccessAsync(H["Queries successfully removed."]);
 #: OrchardCore.Queries\Controllers\AdminController.cs:274
 msgctxt "OrchardCore.Queries.Controllers.AdminController"
 msgid "Queries successfully removed."
@@ -130,7 +130,7 @@ msgstr "Pesquisar"
 #: OrchardCore.Queries\Views\Query-Sql.Link.cshtml:5
 msgctxt "OrchardCore.Queries.Views.Query-Sql.Link"
 msgid "SQL"
-msgstr "SQL"
+msgstr ""
 
 #. <p class="hint">@T["Queries the SQL database."]</p>
 #: OrchardCore.Queries\Views\Query-Sql.Link.cshtml:6
@@ -184,13 +184,19 @@ msgstr "O nome técnico da consulta."
 #: OrchardCore.Queries\Views\Query.Fields.Edit.cshtml:12
 msgctxt "OrchardCore.Queries.Views.Query.Fields.Edit"
 msgid "Schema"
-msgstr "Schema"
+msgstr ""
 
-#. <span class="hint">@T["The schema the api will use to return results."]</span>
+#. <span class="hint">@T["The schema the GraphQL API will use to return results."] <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Queries/#graphql" target="_blank">@T["See documentation"]</a></span>
 #: OrchardCore.Queries\Views\Query.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Queries.Views.Query.Fields.Edit"
-msgid "The schema the api will use to return results."
-msgstr "O schema que a API usará para retornar resultados."
+msgid "The schema the GraphQL API will use to return results."
+msgstr ""
+
+#. <span class="hint">@T["The schema the GraphQL API will use to return results."] <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Queries/#graphql" target="_blank">@T["See documentation"]</a></span>
+#: OrchardCore.Queries\Views\Query.Fields.Edit.cshtml:14
+msgctxt "OrchardCore.Queries.Views.Query.Fields.Edit"
+msgid "See documentation"
+msgstr ""
 
 #. <h1>@T["If you see this message you need to create a custom shape template for {0}", "Query-" + Model.Name + ".Link"]</h1>
 #: OrchardCore.Queries\Views\Query.Link.cshtml:1
@@ -264,7 +270,7 @@ msgctxt "OrchardCore.Queries.Views.Admin.Index"
 msgid "Search"
 msgstr "Pesquisar"
 
-#. <button type="button" class="btn btn-sm btn-secondary float-right create" role="button" data-toggle="modal" data-target="#modalAddQuery">@T["Add Query"]</button>
+#. <button type="button" class="btn btn-sm btn-secondary float-right create" data-toggle="modal" data-target="#modalAddQuery">@T["Add Query"]</button>
 #: OrchardCore.Queries\Views\Admin\Index.cshtml:23
 msgctxt "OrchardCore.Queries.Views.Admin.Index"
 msgid "Add Query"
@@ -281,7 +287,7 @@ msgstr ""
 msgctxt "OrchardCore.Queries.Views.Admin.Index"
 msgid "1 item"
 msgid_plural "{0} items"
-msgstr[0] "1 item"
+msgstr[0] ""
 msgstr[1] "{0} itens"
 
 #. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>

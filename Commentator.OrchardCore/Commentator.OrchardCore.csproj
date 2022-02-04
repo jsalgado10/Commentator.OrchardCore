@@ -17,23 +17,23 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Product>Commentator.OrchardCore</Product>
     <AssemblyName>Commentator.OrchardCore</AssemblyName>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <RepositoryType>Commentator.OrchardCore</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Notifications.OrchardCore" Version="1.1.0" />
-    <PackageReference Include="OrchardCore.Admin" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.Data.Abstractions" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0" />
-    <PackageReference Include="OrchardCore.Users" Version="1.0.0" />
+    <PackageReference Include="Notifications.OrchardCore" Version="1.2.0" />
+    <PackageReference Include="OrchardCore.Admin" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.Data.Abstractions" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.2.2" />
+    <PackageReference Include="OrchardCore.Users" Version="1.2.2" />
   </ItemGroup>
 
   <ItemGroup>
