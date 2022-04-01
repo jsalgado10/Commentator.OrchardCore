@@ -48,25 +48,22 @@ namespace Commentator.OrchardCore
             var itemController = typeof(CommentsController).ControllerName();
 
             routes.MapAreaControllerRoute(
+               name: "GetUserNames",
+               areaName: "Commentator.OrchardCore",
+               pattern: "comments/getusernames",
+               defaults: new { controller = itemController, action = nameof(CommentsController.GetUsernames) });
+
+            routes.MapAreaControllerRoute(
                 name: "DisplayArticleComments",
                 areaName: "Commentator.OrchardCore",
                 pattern: "comments/{contentTypeId}",
-                defaults: new { controller = itemController, action = nameof(CommentsController.List) }
-            );
+                defaults: new { controller = itemController, action = nameof(CommentsController.List) });
 
             routes.MapAreaControllerRoute(
                 name: "AddArticleComments",
                 areaName: "Commentator.OrchardCore",
                 pattern: "comments/Add/{contentType}",
-                defaults: new { controller = itemController, action = nameof(CommentsController.Create) }
-            );
-
-            routes.MapAreaControllerRoute(
-               name: "GetUserNames",
-               areaName: "Commentator.OrchardCore",
-               pattern: "comments/getusernames",
-               defaults: new { controller = itemController, action = nameof(CommentsController.GetUsernames) }
-           );
+                defaults: new { controller = itemController, action = nameof(CommentsController.Create) });
         }
     }
 }
