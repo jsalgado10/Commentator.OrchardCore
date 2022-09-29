@@ -1,0 +1,25 @@
+﻿@page "/blogpost/{id}"
+@using OrchardCore.DisplayManagement
+@inject OrchardCore.IOrchardHelper Orchard
+
+@{
+    var _displayHelper = Orchard.HttpContext.RequestServices.GetService<IDisplayHelper>();
+    var blogPost = await Orchard.GetContentItemByIdAsync(Id);
+    var comments = await Orchard.GetContentItemCommentsAsync(Id);
+}
+
+<h1>This is the blog post: @blogPost.DisplayText</h1>
+<div>
+    @blogPost.Content.MarkdownBodyPart.Markdown
+</div>
+
+@foreach (var item in comments)
+{
+    @await _displayHelper.ShapeExecuteAsync(item)
+}
+
+@functions
+{
+    [FromRoute]
+    public string Id { get; set; }
+}
