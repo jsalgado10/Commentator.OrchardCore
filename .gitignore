@@ -352,3 +352,4 @@ MigrationBackup/
 /OrchardCoreWebApp/App_Data
 /OrchardCoreWebApp/Hangfire.db
 /OrchardCoreWebApp/Hangfire-log.db
+/OrchardCoreDecoupleCMSApp/App_Data
