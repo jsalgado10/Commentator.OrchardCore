@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
-"PO-Revision-Date: 2022-05-05 18:38\n"
+"PO-Revision-Date: 2023-02-18 19:30\n"
 
 #. builder.Add(S["Content"], content => content
 #: OrchardCore.ContentTypes\AdminMenu.cs:28
@@ -49,9 +49,9 @@ msgstr "أجزاء المحتوى"
 #. ModelState.AddModelError("DisplayName", S["The Display Name can't be empty."]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:101
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:354
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:627
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:752
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:921
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:643
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:769
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:938
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Display Name can't be empty."
 msgstr "الاسم الظاهر لا يمكن أن يكون فارغاً."
@@ -69,7 +69,7 @@ msgstr "النوع بنفس الإسم الظاهر موجود مسبقاً."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:111
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:379
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:464
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:637
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:653
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name can't be empty."
 msgstr "الاسم التقني لا يمكن أن يكون فارغاً."
@@ -81,7 +81,7 @@ msgstr "الاسم التقني لا يمكن أن يكون فارغاً."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:116
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:364
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:474
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:647
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:663
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name must start with a letter."
 msgstr "الإسم التقني يجب أن يبدأ بحرف."
@@ -93,7 +93,7 @@ msgstr "الإسم التقني يجب أن يبدأ بحرف."
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:121
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:369
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:479
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:652
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:668
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The Technical Name contains invalid characters."
 msgstr "الإسم التقني يحتوي على حروف غير صحيحة."
@@ -145,7 +145,7 @@ msgstr "تم إضافة الجزء \"{0}\"."
 #. ModelState.AddModelError("DisplayName", S["A part with the same Display Name already exists."]);
 #. ModelState.AddModelError("DisplayName", S["A part with the same Display Name already exists."]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:359
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:926
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:943
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A part with the same Display Name already exists."
 msgstr "جزء من الإسم الظاهر موجود مسبقاً."
@@ -182,52 +182,58 @@ msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The settings of \"{0}\" have been saved."
 msgstr "تمّ تسجيل إعدادات \"{0}\"."
 
+#. await _notifier.WarningAsync(H["There are no fields."]);
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:592
+msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
+msgid "There are no fields."
+msgstr ""
+
 #. ModelState.AddModelError("DisplayName", S["A field with the same Display Name already exists."]);
 #. ModelState.AddModelError("DisplayName", S["A field with the same Display Name already exists."]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:632
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:757
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:648
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:774
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A field with the same Display Name already exists."
 msgstr "الحقل بنفس الاسم الظاهر موجود مسبقاً."
 
 #. ModelState.AddModelError("Name", S["A field with the same Technical Name already exists."]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:642
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:658
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A field with the same Technical Name already exists."
 msgstr "الحقل بنفس الإسم التقني موجود مسبقاً."
 
 #. await _notifier.SuccessAsync(H["The field \"{0}\" has been added.", viewModel.DisplayName]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:668
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:684
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The field \"{0}\" has been added."
 msgstr "تم إضافة الحقل \"{0}\"."
 
 #. await _notifier.InformationAsync(H["Display name changed to {0}.", viewModel.DisplayName]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:770
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:787
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "Display name changed to {0}."
 msgstr "تمّ تغيير اسم العرض الى {0}."
 
 #. await _notifier.SuccessAsync(H["The \"{0}\" field settings have been saved.", field.DisplayName()]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:789
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:806
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" field settings have been saved."
 msgstr "تمّ تسجيل بيانات الحقل \"{0}\"."
 
 #. await _notifier.SuccessAsync(H["The \"{0}\" field has been removed.", field.DisplayName()]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:833
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:850
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" field has been removed."
 msgstr "تمّ حذف الحقل \"{0}\"."
 
 #. await _notifier.SuccessAsync(H["The \"{0}\" part settings have been saved.", part.DisplayName()]);
-#: OrchardCore.ContentTypes\Controllers\AdminController.cs:952
+#: OrchardCore.ContentTypes\Controllers\AdminController.cs:969
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The \"{0}\" part settings have been saved."
 msgstr "تمّ تسجيل بيانات الجزء \"{0}\"."
 
 #. context.Updater.ModelState.AddModelError(nameof(ContentTypeSettingsViewModel.Stereotype), S["The stereotype should be alphanumeric."]);
-#: OrchardCore.ContentTypes\Editors\ContentTypeSettingsDisplayDriver.cs:52
+#: OrchardCore.ContentTypes\Editors\ContentTypeSettingsDisplayDriver.cs:55
 msgctxt "OrchardCore.ContentTypes.Editors.ContentTypeSettingsDisplayDriver"
 msgid "The stereotype should be alphanumeric."
 msgstr "ينبغي أن تكون القوالب النمطية أبجدية ورقمية."
@@ -243,200 +249,6 @@ msgstr "لا يمكن لاسم نوع المحتوى أن يكون فارغاً.
 msgctxt "OrchardCore.ContentTypes.Services.ContentDefinitionService"
 msgid "Cannot add part named '{0}'. It already exists."
 msgstr "لا يمكن إظافة الجزء '{0}' لأنّه موجوه بالفعل."
-
-#. <label asp-for="ContentPartDefinition.Name">@T["Technical Name"]</label>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:5
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Technical Name"
-msgstr "الإسم التقني"
-
-#. <span class="hint w-100">@T["Technical name of the part."]</span>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:7
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Technical name of the part."
-msgstr "الإسم التقني للجزء."
-
-#. <label asp-for="DisplayName">@T["Display Name"]</label>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:11
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Display Name"
-msgstr "الاسم الظاهر"
-
-#. <span class="hint w-100">@T["Name of the part as it will be displayed in screens. Leave empty to use defaults."]</span>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:13
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Name of the part as it will be displayed in screens. Leave empty to use defaults."
-msgstr "اسم الجزء كما سيتم عرضه في الشاشات. يمكن تركه فارغاً لاستخدام الإعدادات الافتراضية."
-
-#. <label asp-for="Description">@T["Description"]</label>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:17
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Description"
-msgstr "الوصف"
-
-#. <span class="hint w-100">@T["Optionally provide a description for this part."]</span>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:20
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Optionally provide a description for this part."
-msgstr "اختيارياً، قم بإضافة وصف لهذا الجزء."
-
-#. <label class="form-check-label" asp-for="Attachable">@T["Attachable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:25
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Attachable"
-msgstr "قابل للإرفاق"
-
-#. <span class="hint">@T["Check to allow this part to be attached to other content types."]</span>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:26
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Check to allow this part to be attached to other content types."
-msgstr "السماح بإرفاق هذا الجزء لأنواع محتوى أخرى."
-
-#. <label class="form-check-label" asp-for="Reusable">@T["Reusable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:31
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Reusable"
-msgstr "قابل للإستخدام"
-
-#. <span class="hint">@T["Check to allow this part to be attached multiple times."]</span>
-#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:32
-msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
-msgid "Check to allow this part to be attached multiple times."
-msgstr "السماح بإرفاق هذا الجزء عدة مرات."
-
-#. <label asp-for="Name">@T["Technical Name"]</label>
-#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:4
-msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
-msgid "Technical Name"
-msgstr "الإسم التقني"
-
-#. <span class="hint w-100">@T["Technical name of the type."]</span>
-#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:6
-msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
-msgid "Technical name of the type."
-msgstr "الإسم التقني للنوع."
-
-#. <label asp-for="DisplayName">@T["Display Name"]</label>
-#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:9
-msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
-msgid "Display Name"
-msgstr "الاسم الظاهر"
-
-#. <span class="hint w-100">@T["Name of the type as it will be displayed on screens."]</span>
-#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:11
-msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
-msgid "Name of the type as it will be displayed on screens."
-msgstr "اسم النوع كما سيظهر على الشاشات."
-
-#. <label class="form-check-label" asp-for="Creatable">@T["Creatable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:6
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Creatable"
-msgstr "قابل للإنشاء"
-
-#. <span class="hint dashed">@T["Determines if an instance of this content type can be created through the UI."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:7
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Determines if an instance of this content type can be created through the UI."
-msgstr "تحديد ما إذا كان نوع المحتوى يمكن إنشاؤه عبر واجهة المستخدم."
-
-#. <label class="form-check-label" asp-for="Listable">@T["Listable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:14
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Listable"
-msgstr "قابل للسرد"
-
-#. <span class="hint dashed">@T["Determines if an instance of this content type can be listed through the UI."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:15
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Determines if an instance of this content type can be listed through the UI."
-msgstr "تحديد ما إذا كان نوع المحتوى يمكن عرضه في واجهة المستخدم."
-
-#. <label class="form-check-label" asp-for="Draftable">@T["Draftable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:22
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Draftable"
-msgstr "قابل بأن يكون كمسودة"
-
-#. <span class="hint dashed">@T["Determines if this content type supports draft versions."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:23
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Determines if this content type supports draft versions."
-msgstr "تحديد ما إذا كان نوع المحتوى يدعم إنشاء نسخ مسودة."
-
-#. <label class="form-check-label" asp-for="Versionable">@T["Versionable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:30
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Versionable"
-msgstr "قابل لتعدد الإصدارات"
-
-#. <span class="hint dashed">@T["Determines if this content type supports versioning."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:31
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Determines if this content type supports versioning."
-msgstr "تحديد ما إذا كان نوع المحتوى يدعم الإصدارات."
-
-#. <label class="form-check-label" asp-for="Securable">@T["Securable"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:38
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Securable"
-msgstr "قابل للحماية"
-
-#. <span class="hint dashed">@T["Determines if this content type can have custom permissions."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:39
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Determines if this content type can have custom permissions."
-msgstr "تحديد ما إذا كان نوع المحتوى يمكن أن يحتوي على صلاحيات."
-
-#. <label asp-for="Stereotype">@T["Stereotype"]</label>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:45
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "Stereotype"
-msgstr "نوع نمطي"
-
-#. <span class="hint">@T["(Optional) The stereotype of the content type. e.g., Widget, MenuItem, ..."]</span>
-#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:48
-msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
-msgid "(Optional) The stereotype of the content type. e.g., Widget, MenuItem, ..."
-msgstr "(اختيارياً) النوع النمطي لنوع المحتوى. على سبيل المثال: Widget، عنصر قائمة، ..."
-
-#. <label class="form-check-label" asp-for="Settings.Collapse">@T["Collapse"]</label>
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:17
-msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
-msgid "Collapse"
-msgstr "طي"
-
-#. <span class="hint">@T["NB. Setting is collapsed by default, and cannot be overwritten."]</span>
-#. <span class="hint">@T["NB. Setting is collapsed by default, and cannot be overwritten."]</span>
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:20
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:32
-msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
-msgid "NB. Setting is collapsed by default, and cannot be overwritten."
-msgstr "إخفاء إعدادات NB افتراضياً، ومنع تعديلها."
-
-#. <span class="hint">@T["Check to collapse fields in the GraphQL schema."]</span>
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:24
-msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
-msgid "Check to collapse fields in the GraphQL schema."
-msgstr "طي حقول GraphQL schema."
-
-#. <label class="form-check-label" asp-for="Settings.Hidden">@T["Hide"]</label>
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:29
-msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
-msgid "Hide"
-msgstr "إخفاء"
-
-#. <span class="hint">@T["Check to hide type from the GraphQL schema."]</span>
-#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:36
-msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
-msgid "Check to hide type from the GraphQL schema."
-msgstr "منع ظهور النوع في GraphQL schema."
-
-#. <span class="icon"><i class="fa fa-cube" aria-hidden="true"></i></span><span class="title">@T["Content Definition"]</span>
-#: OrchardCore.ContentTypes\Views\NavigationItemText-contentdefinition.Id.cshtml:1
-msgctxt "OrchardCore.ContentTypes.Views.NavigationItemText-contentdefinition.Id"
-msgid "Content Definition"
-msgstr "تعريف المحتوى"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Add New Field To \"{0}\"", Model.Part.DisplayName()])</h1></zone>
 #: OrchardCore.ContentTypes\Views\Admin\AddFieldTo.cshtml:10
@@ -570,6 +382,222 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.AddReusablePartTo"
 msgid "Cancel"
 msgstr "إلغاء"
 
+#. <h5>@T["Update Content Definitions"]</h5>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
+msgid "Update Content Definitions"
+msgstr "تحديث تعاريف المحتوى"
+
+#. <label class="form-check-label" asp-for="IncludeAll">@T["Include all content types and parts definitions."]</label>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:21
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
+msgid "Include all content types and parts definitions."
+msgstr "تضمين كل تعريفات أنواع وأجزاء المحتوى."
+
+#. <span class="hint">@T["The content types to add as part of the plan."]</span>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:31
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
+msgid "The content types to add as part of the plan."
+msgstr "أنواع المحتوى التي يمكن أن تضاف كجزء من الخطة."
+
+#. <span class="hint">@T["The content parts to add as part of the plan."]</span>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:88
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
+msgid "The content parts to add as part of the plan."
+msgstr "أجزاء المحتوى التي يمكن أن تضاف كجزء من الخطة."
+
+#. <h5>@T["Update Content Definitions"]</h5>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:6
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
+msgid "Update Content Definitions"
+msgstr "تحديث تعاريف المحتوى"
+
+#. <span class="hint d-block">@T["Content Definitions should be placed before any content steps."]</span>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:44
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
+msgid "Content Definitions should be placed before any content steps."
+msgstr "يجب وضع تعاريف المحتوى قبل أي خطوات محتوى."
+
+#. <h4 class="card-title">@T["Update Content Definitions"]</h4>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
+msgid "Update Content Definitions"
+msgstr "تحديث تعاريف المحتوى"
+
+#. <p>@T["Exports specified content type and part definitions for updating."]</p>
+#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
+msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
+msgid "Exports specified content type and part definitions for updating."
+msgstr "تصدير التعريفات المحددة من أنواع وأجزاء المحتوى."
+
+#. <label asp-for="ContentPartDefinition.Name">@T["Technical Name"]</label>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:5
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Technical Name"
+msgstr "الإسم التقني"
+
+#. <span class="hint w-100">@T["Technical name of the part."]</span>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:7
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Technical name of the part."
+msgstr "الإسم التقني للجزء."
+
+#. <label asp-for="DisplayName">@T["Display Name"]</label>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:11
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. <span class="hint w-100">@T["Name of the part as it will be displayed in screens. Leave empty to use defaults."]</span>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:13
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Name of the part as it will be displayed in screens. Leave empty to use defaults."
+msgstr "اسم الجزء كما سيتم عرضه في الشاشات. يمكن تركه فارغاً لاستخدام الإعدادات الافتراضية."
+
+#. <label asp-for="Description">@T["Description"]</label>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:17
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Description"
+msgstr "الوصف"
+
+#. <span class="hint w-100">@T["Optionally provide a description for this part."]</span>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:20
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Optionally provide a description for this part."
+msgstr "اختيارياً، قم بإضافة وصف لهذا الجزء."
+
+#. <label class="form-check-label" asp-for="Attachable">@T["Attachable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:25
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Attachable"
+msgstr "قابل للإرفاق"
+
+#. <span class="hint">@T["Check to allow this part to be attached to other content types."]</span>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:26
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Check to allow this part to be attached to other content types."
+msgstr "السماح بإرفاق هذا الجزء لأنواع محتوى أخرى."
+
+#. <label class="form-check-label" asp-for="Reusable">@T["Reusable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:31
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Reusable"
+msgstr "قابل للإستخدام"
+
+#. <span class="hint">@T["Check to allow this part to be attached multiple times."]</span>
+#: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:32
+msgctxt "OrchardCore.ContentTypes.Views.ContentPartSettings.Edit"
+msgid "Check to allow this part to be attached multiple times."
+msgstr "السماح بإرفاق هذا الجزء عدة مرات."
+
+#. <label asp-for="Name">@T["Technical Name"]</label>
+#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:4
+msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
+msgid "Technical Name"
+msgstr "الإسم التقني"
+
+#. <span class="hint w-100">@T["Technical name of the type."]</span>
+#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:6
+msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
+msgid "Technical name of the type."
+msgstr "الإسم التقني للنوع."
+
+#. <label asp-for="DisplayName">@T["Display Name"]</label>
+#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:9
+msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. <span class="hint w-100">@T["Name of the type as it will be displayed on screens."]</span>
+#: OrchardCore.ContentTypes\Views\ContentType.Edit.cshtml:11
+msgctxt "OrchardCore.ContentTypes.Views.ContentType.Edit"
+msgid "Name of the type as it will be displayed on screens."
+msgstr "اسم النوع كما سيظهر على الشاشات."
+
+#. <label asp-for="Description">@T["Description"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:5
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Description"
+msgstr ""
+
+#. <span class="hint">@T["(Optional) Description of the content type"]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:8
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "(Optional) Description of the content type"
+msgstr ""
+
+#. <label class="form-check-label" asp-for="Creatable">@T["Creatable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:14
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Creatable"
+msgstr "قابل للإنشاء"
+
+#. <span class="hint dashed">@T["Determines if an instance of this content type can be created through the UI."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:15
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Determines if an instance of this content type can be created through the UI."
+msgstr "تحديد ما إذا كان نوع المحتوى يمكن إنشاؤه عبر واجهة المستخدم."
+
+#. <label class="form-check-label" asp-for="Listable">@T["Listable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:22
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Listable"
+msgstr "قابل للسرد"
+
+#. <span class="hint dashed">@T["Determines if an instance of this content type can be listed through the UI."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:23
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Determines if an instance of this content type can be listed through the UI."
+msgstr "تحديد ما إذا كان نوع المحتوى يمكن عرضه في واجهة المستخدم."
+
+#. <label class="form-check-label" asp-for="Draftable">@T["Draftable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:30
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Draftable"
+msgstr "قابل بأن يكون كمسودة"
+
+#. <span class="hint dashed">@T["Determines if this content type supports draft versions."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:31
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Determines if this content type supports draft versions."
+msgstr "تحديد ما إذا كان نوع المحتوى يدعم إنشاء نسخ مسودة."
+
+#. <label class="form-check-label" asp-for="Versionable">@T["Versionable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:38
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Versionable"
+msgstr "قابل لتعدد الإصدارات"
+
+#. <span class="hint dashed">@T["Determines if this content type supports versioning."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:39
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Determines if this content type supports versioning."
+msgstr "تحديد ما إذا كان نوع المحتوى يدعم الإصدارات."
+
+#. <label class="form-check-label" asp-for="Securable">@T["Securable"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:46
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Securable"
+msgstr "قابل للحماية"
+
+#. <span class="hint dashed">@T["Determines if this content type can have custom permissions."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:47
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Determines if this content type can have custom permissions."
+msgstr "تحديد ما إذا كان نوع المحتوى يمكن أن يحتوي على صلاحيات."
+
+#. <label asp-for="Stereotype">@T["Stereotype"]</label>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:53
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "Stereotype"
+msgstr "نوع نمطي"
+
+#. <span class="hint">@T["(Optional) The stereotype of the content type. e.g., Widget, MenuItem, ..."]</span>
+#: OrchardCore.ContentTypes\Views\ContentTypeSettings.Edit.cshtml:56
+msgctxt "OrchardCore.ContentTypes.Views.ContentTypeSettings.Edit"
+msgid "(Optional) The stereotype of the content type. e.g., Widget, MenuItem, ..."
+msgstr "(اختيارياً) النوع النمطي لنوع المحتوى. على سبيل المثال: Widget، عنصر قائمة، ..."
+
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["New Content Type"])</h1></zone>
 #: OrchardCore.ContentTypes\Views\Admin\Create.cshtml:3
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Create"
@@ -630,88 +658,130 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.CreatePart"
 msgid "Create"
 msgstr "إنشاء"
 
+#. <label asp-for="ContentTypes">@T["Content Type Definitions"]</label>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:4
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
+msgid "Content Type Definitions"
+msgstr "تعاريف نوع المحتوى"
+
+#. <span class="hint">@T["A comma separated list of content type definitions to delete"]</span>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:7
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
+msgid "A comma separated list of content type definitions to delete"
+msgstr "قائمة مفصولة بفواصل لتعاريف نوع المحتوى لحذفها"
+
+#. <label asp-for="ContentParts">@T["Content Part Definitions"]</label>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:11
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
+msgid "Content Part Definitions"
+msgstr "تعاريف نوع المحتوى"
+
+#. <span class="hint">@T["A comma separated list of content part definitions to delete"]</span>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
+msgid "A comma separated list of content part definitions to delete"
+msgstr "قائمة مفصولة بفواصل لتعاريف جزء المحتوى لحذفها"
+
+#. <h5>@T["Delete Content Definitions"]</h5>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Summary.cshtml:5
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Summary"
+msgid "Delete Content Definitions"
+msgstr "حذف تعاريف المحتوى"
+
+#. <h4 class="card-title">@T["Delete Content Definitions"]</h4>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
+msgid "Delete Content Definitions"
+msgstr "حذف تعاريف المحتوى"
+
+#. <p>@T["Exports specified content type and part definitions for deletion."]</p>
+#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
+msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
+msgid "Exports specified content type and part definitions for deletion."
+msgstr "تصدير التعريفات المحددة من أنواع وأجزاء المحتوى."
+
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Edit Content Type - {0}", Model.TypeDefinition.DisplayName])</h1></zone>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:25
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:34
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Edit Content Type - {0}"
 msgstr "تحرير نوع المحتوى - {0}"
 
 #. <h3>@T["Fields"]</h3>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:42
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:53
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Fields"
 msgstr "الحقول"
 
-#. <a asp-route-action="EditField" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@field.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-primary btn-sm" role="button">@T["Edit"]</a>
-#. <a asp-route-action="EditTypePart" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@part.Name" class="btn btn-primary btn-sm" role="button">@T["Edit"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:52
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:93
+#. <a asp-route-action="EditField" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@fieldDefintion.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-primary btn-sm" role="button">@T["Edit"]</a>
+#. <a asp-route-action="EditTypePart" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@partDefinition.Name" class="btn btn-primary btn-sm" role="button">@T["Edit"]</a>
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:63
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:109
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Edit"
 msgstr "تحرير"
 
-#. <a asp-route-action="RemoveFieldFrom" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@field.Name" class="btn btn-danger btn-sm" role="button" data-url-af="UnsafeUrl RemoveUrl">@T["Remove"]</a>
-#. <a asp-route-action="RemovePart" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@part.Name" class="btn btn-danger btn-sm" role="button" data-url-af="UnsafeUrl RemoveUrl">@T["Remove"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:53
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:94
+#. <a asp-route-action="RemoveFieldFrom" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@fieldDefintion.Name" class="btn btn-danger btn-sm" role="button" data-url-af="UnsafeUrl RemoveUrl">@T["Remove"]</a>
+#. <a asp-route-action="RemovePart" asp-route-id="@Model.TypeDefinition.Name" asp-route-name="@partDefinition.Name" class="btn btn-danger btn-sm" role="button" data-url-af="UnsafeUrl RemoveUrl">@T["Remove"]</a>
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:65
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:110
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Remove"
 msgstr "حذف"
 
-#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @field.DisplayMode()</span>
-#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @part.DisplayMode()</span>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:59
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:104
+#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @fieldDefintion.DisplayMode()</span>
+#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Display mode"]"><i class="fas fa-tv text-info" aria-hidden="true"></i> @partDefinition.DisplayMode()</span>
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:71
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:120
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Display mode"
 msgstr "وضع العرض"
 
-#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @field.Editor()</span>
-#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @part.Editor()</span>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:63
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:108
+#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @fieldDefintion.Editor()</span>
+#. <span class="badge ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Editor"]"><i class="fa fa-edit text-info" aria-hidden="true"></i> @partDefinition.Editor()</span>
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:75
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:124
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Editor"
 msgstr "المحرر"
 
 #. <a asp-route-action="AddFieldTo" asp-route-id="@Model.TypeDefinition.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-info btn-sm" role="button">@T["Add Field"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:73
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:87
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Add Field"
 msgstr "إضافة حقل"
 
 #. <h3>@T["Parts"]</h3>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:76
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:92
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Parts"
 msgstr "أجزاء"
 
 #. <span class="hint dashed">@T["Contains the fields for the current type"]</span>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:99
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:115
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Contains the fields for the current type"
 msgstr "يحتوي على حقول لنوع المحتوى الحالي"
 
 #. <a asp-route-action="AddPartsTo" asp-route-id="@Model.TypeDefinition.Name" class="btn btn-info btn-sm" role="button">@T["Add Parts"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:118
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:134
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Add Parts"
 msgstr "إضافة أجزاء"
 
 #. <a asp-route-action="AddReusablePartTo" asp-route-id="@Model.TypeDefinition.Name" class="btn btn-info btn-sm" role="button">@T["Add Named Part"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:119
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:135
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Add Named Part"
 msgstr "أضف جزءاً مسمى"
 
 #. <button class="btn btn-primary save" type="submit" name="submit.Save" value="Save">@T["Save"]</button>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:123
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:139
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Save"
 msgstr "حفظ"
 
 #. <button class="btn btn-danger delete" type="submit" name="submit.Delete" value="Delete" data-url-af="RemoveUrl">@T["Delete"]</button>
-#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:124
+#: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:140
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Delete"
 msgstr "حذف"
@@ -771,46 +841,52 @@ msgid "Cancel"
 msgstr "إلغاء"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Edit Content Part - {0}", Model.DisplayName])</h1></zone>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:12
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:17
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Edit Content Part - {0}"
 msgstr "تحرير جزء المحتوى - {0}"
 
 #. <h3>@T["Fields"]</h3>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:27
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:34
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Fields"
 msgstr "الحقول"
 
 #. <a asp-route-action="EditField" asp-route-id="@Model.PartDefinition.Name" asp-route-name="@field.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-primary btn-sm" role="button">@T["Edit"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:37
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:46
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Edit"
 msgstr "تحرير"
 
 #. <a asp-route-action="RemoveFieldFrom" asp-route-id="@Model.PartDefinition.Name" asp-route-name="@field.Name" class="btn btn-danger btn-sm" role="button" data-url-af="UnsafeUrl RemoveUrl">@T["Remove"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:38
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:48
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Remove"
 msgstr "حذف"
 
 #. <a asp-route-action="AddFieldTo" asp-route-id="@Model.PartDefinition.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-info btn-sm" role="button">@T["Add Field"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:49
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:61
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Add Field"
 msgstr "إضافة حقل"
 
 #. <button class="btn btn-primary save" type="submit" name="submit.Save" value="Save">@T["Save"]</button>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:53
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:66
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Save"
 msgstr "حفظ"
 
 #. <button class="btn btn-danger delete" type="submit" name="submit.Delete" value="Delete" data-url-af="RemoveUrl">@T["Delete"]</button>
-#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:54
+#: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:67
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Delete"
 msgstr "حذف"
+
+#. <a id="btn-edit-@Model.Name" class="btn btn-primary btn-sm" asp-route-action="EditPart" asp-route-id="@Model.Name">@T["Edit"]</a>
+#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditPartViewModel.cshtml:5
+msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditPartViewModel"
+msgid "Edit"
+msgstr "تحرير"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Edit Part - {0}", Model.DisplayName])</h1></zone>
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:16
@@ -872,6 +948,84 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.EditTypePart"
 msgid "Cancel"
 msgstr "إلغاء"
 
+#. <span class="badge rounded-pill ta-badge font-weight-normal" data-bs-toggle="tooltip" title="@T["Technical Name"]"><i class="fas fa-file-alt text-danger" aria-hidden="true"></i> @Model.Name</span>
+#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:10
+msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
+msgid "Technical Name"
+msgstr ""
+
+#. <a id="btn-create-@Model.Name" asp-route-area="OrchardCore.Contents" asp-route-action="Create" asp-route-id="@Model.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-success btn-sm">@T["Create New {0}", Model.DisplayName]</a>
+#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:20
+msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
+msgid "Create New {0}"
+msgstr "إنشاء {0} جديد"
+
+#. <a role="btn-list-@Model.Name" asp-route-action="List" asp-route-area="OrchardCore.Contents" asp-route-contentTypeId="@Model.Name" class="btn btn-secondary btn-sm">@T["List Items"]</a>
+#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:22
+msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
+msgid "List Items"
+msgstr "عناصر قائمة"
+
+#. <a role="btn-edit-@Model.Name" asp-route-action="Edit" asp-route-area="OrchardCore.ContentTypes" asp-route-id="@Model.Name" class="btn btn-primary btn-sm">@T["Edit"]</a>
+#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:23
+msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
+msgid "Edit"
+msgstr "تحرير"
+
+#. <label class="form-check-label" asp-for="Settings.Collapse">@T["Collapse"]</label>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:17
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "Collapse"
+msgstr "طي"
+
+#. <span class="hint">@T["NB. Setting is collapsed by default, and cannot be overwritten."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:20
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "NB. Setting is collapsed by default, and cannot be overwritten."
+msgstr "إخفاء إعدادات NB افتراضياً، ومنع تعديلها."
+
+#. <span class="hint">@T["Check to collapse fields in the GraphQL schema."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:24
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "Check to collapse fields in the GraphQL schema."
+msgstr "طي حقول GraphQL schema."
+
+#. <label class="form-check-label" asp-for="Settings.Hidden">@T["Hide"]</label>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:29
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "Hide"
+msgstr "إخفاء"
+
+#. <span class="hint">@T["Setting is hidden by default, and cannot be overwritten."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:32
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "Setting is hidden by default, and cannot be overwritten."
+msgstr ""
+
+#. <span class="hint">@T["Check to hide part from the GraphQL schema."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypePartSettings.Edit.cshtml:36
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypePartSettings.Edit"
+msgid "Check to hide part from the GraphQL schema."
+msgstr ""
+
+#. <label class="form-check-label" asp-for="Settings.Hidden">@T["Hide"]</label>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypeSettings.Edit.cshtml:12
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypeSettings.Edit"
+msgid "Hide"
+msgstr ""
+
+#. <span class="hint">@T["Setting is hidden by default, and cannot be overwritten."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypeSettings.Edit.cshtml:15
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypeSettings.Edit"
+msgid "Setting is hidden by default, and cannot be overwritten."
+msgstr ""
+
+#. <span class="hint">@T["Check to hide type from the GraphQL schema."]</span>
+#: OrchardCore.ContentTypes\Views\GraphQLContentTypeSettings.Edit.cshtml:19
+msgctxt "OrchardCore.ContentTypes.Views.GraphQLContentTypeSettings.Edit"
+msgid "Check to hide type from the GraphQL schema."
+msgstr ""
+
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Content Types"])</h1></zone>
 #: OrchardCore.ContentTypes\Views\Admin\List.cshtml:3
 msgctxt "OrchardCore.ContentTypes.Views.Admin.List"
@@ -879,19 +1033,19 @@ msgid "Content Types"
 msgstr "أنواع المحتوى"
 
 #. <input id="search-box" class="form-control" placeholder="@T["Search"]" type="search" autofocus />
-#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:9
+#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:11
 msgctxt "OrchardCore.ContentTypes.Views.Admin.List"
 msgid "Search"
 msgstr "بحث"
 
-#. <a asp-route-action="Create" id="btnCreate" class="btn btn-sm btn-secondary d-inline-flex float-end create" role="button">@T["Create new type"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:11
+#. <a asp-route-action="Create" id="btnCreate" class="btn btn-secondary create" role="button">@T["Create new type"]</a>
+#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:15
 msgctxt "OrchardCore.ContentTypes.Views.Admin.List"
 msgid "Create new type"
 msgstr "إنشاء نوع جديد"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
-#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:24
+#: OrchardCore.ContentTypes\Views\Admin\List.cshtml:30
 msgctxt "OrchardCore.ContentTypes.Views.Admin.List"
 msgid "<strong>Nothing here!</strong> Your search returned no results."
 msgstr "<strong>لا شىء</strong> لا توجد أي نتائج للبحث."
@@ -903,112 +1057,28 @@ msgid "Content Parts"
 msgstr "أجزاء محتوى"
 
 #. <input id="search-box" class="form-control" placeholder="@T["Search"]" type="search" autofocus />
-#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:9
+#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:11
 msgctxt "OrchardCore.ContentTypes.Views.Admin.ListParts"
 msgid "Search"
 msgstr "بحث"
 
-#. <a asp-route-action="CreatePart" id="btnCreate" class="btn btn-sm btn-secondary d-inline-flex float-end create" role="button">@T["Create new part"]</a>
-#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:11
+#. <a asp-route-action="CreatePart" id="btnCreate" class="btn btn-secondary create" role="button">@T["Create new part"]</a>
+#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:15
 msgctxt "OrchardCore.ContentTypes.Views.Admin.ListParts"
 msgid "Create new part"
 msgstr "إنشاء جزء جديد"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
-#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:24
+#: OrchardCore.ContentTypes\Views\Admin\ListParts.cshtml:30
 msgctxt "OrchardCore.ContentTypes.Views.Admin.ListParts"
 msgid "<strong>Nothing here!</strong> Your search returned no results."
 msgstr "<strong>لا شىء</strong> لا توجد أي نتائج للبحث."
 
-#. <h5>@T["Update Content Definitions"]</h5>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
-msgid "Update Content Definitions"
-msgstr "تحديث تعاريف المحتوى"
-
-#. <label class="form-check-label" asp-for="IncludeAll">@T["Include all content types and parts definitions."]</label>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:21
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
-msgid "Include all content types and parts definitions."
-msgstr "تضمين كل تعريفات أنواع وأجزاء المحتوى."
-
-#. <span class="hint">@T["The content types to add as part of the plan."]</span>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:31
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
-msgid "The content types to add as part of the plan."
-msgstr "أنواع المحتوى التي يمكن أن تضاف كجزء من الخطة."
-
-#. <span class="hint">@T["The content parts to add as part of the plan."]</span>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Edit.cshtml:88
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Edit"
-msgid "The content parts to add as part of the plan."
-msgstr "أجزاء المحتوى التي يمكن أن تضاف كجزء من الخطة."
-
-#. <h5>@T["Update Content Definitions"]</h5>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:6
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
-msgid "Update Content Definitions"
-msgstr "تحديث تعاريف المحتوى"
-
-#. <span class="hint d-block">@T["Content Definitions should be placed before any content steps."]</span>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Summary.cshtml:44
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Summary"
-msgid "Content Definitions should be placed before any content steps."
-msgstr "يجب وضع تعاريف المحتوى قبل أي خطوات محتوى."
-
-#. <h4 class="card-title">@T["Update Content Definitions"]</h4>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
-msgid "Update Content Definitions"
-msgstr "تحديث تعاريف المحتوى"
-
-#. <p>@T["Exports specified content type and part definitions for updating."]</p>
-#: OrchardCore.ContentTypes\Views\Items\ContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
-msgctxt "OrchardCore.ContentTypes.Views.Items.ContentDefinitionDeploymentStep.Fields.Thumbnail"
-msgid "Exports specified content type and part definitions for updating."
-msgstr "تصدير التعريفات المحددة من أنواع وأجزاء المحتوى."
-
-#. <label asp-for="ContentTypes">@T["Content Type Definitions"]</label>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:4
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
-msgid "Content Type Definitions"
-msgstr "تعاريف نوع المحتوى"
-
-#. <span class="hint">@T["A comma separated list of content type definitions to delete"]</span>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:7
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
-msgid "A comma separated list of content type definitions to delete"
-msgstr "قائمة مفصولة بفواصل لتعاريف نوع المحتوى لحذفها"
-
-#. <label asp-for="ContentParts">@T["Content Part Definitions"]</label>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:11
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
-msgid "Content Part Definitions"
-msgstr "تعاريف نوع المحتوى"
-
-#. <span class="hint">@T["A comma separated list of content part definitions to delete"]</span>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Edit"
-msgid "A comma separated list of content part definitions to delete"
-msgstr "قائمة مفصولة بفواصل لتعاريف جزء المحتوى لحذفها"
-
-#. <h5>@T["Delete Content Definitions"]</h5>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Summary.cshtml:5
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Summary"
-msgid "Delete Content Definitions"
-msgstr "حذف تعاريف المحتوى"
-
-#. <h4 class="card-title">@T["Delete Content Definitions"]</h4>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:1
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
-msgid "Delete Content Definitions"
-msgstr "حذف تعاريف المحتوى"
-
-#. <p>@T["Exports specified content type and part definitions for deletion."]</p>
-#: OrchardCore.ContentTypes\Views\Items\DeleteContentDefinitionDeploymentStep.Fields.Thumbnail.cshtml:2
-msgctxt "OrchardCore.ContentTypes.Views.Items.DeleteContentDefinitionDeploymentStep.Fields.Thumbnail"
-msgid "Exports specified content type and part definitions for deletion."
-msgstr "تصدير التعريفات المحددة من أنواع وأجزاء المحتوى."
+#. <span class="icon"><i class="fa fa-cube" aria-hidden="true"></i></span><span class="title">@T["Content Definition"]</span>
+#: OrchardCore.ContentTypes\Views\NavigationItemText-contentdefinition.Id.cshtml:1
+msgctxt "OrchardCore.ContentTypes.Views.NavigationItemText-contentdefinition.Id"
+msgid "Content Definition"
+msgstr "تعريف المحتوى"
 
 #. <h5>@T["Replace Content Definitions"]</h5>
 #: OrchardCore.ContentTypes\Views\Items\ReplaceContentDefinitionDeploymentStep.Fields.Edit.cshtml:14
@@ -1057,28 +1127,4 @@ msgstr "إستبدال تعاريف المحتوى"
 msgctxt "OrchardCore.ContentTypes.Views.Items.ReplaceContentDefinitionDeploymentStep.Fields.Thumbnail"
 msgid "Exports specified content type and part definitions for replacement."
 msgstr "تصدير التعريفات المحددة من أنواع وأجزاء المحتوى لإستبدالها."
-
-#. <a id="btn-edit-@Model.Name" class="btn btn-primary btn-sm" asp-route-action="EditPart" asp-route-id="@Model.Name">@T["Edit"]</a>
-#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditPartViewModel.cshtml:5
-msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditPartViewModel"
-msgid "Edit"
-msgstr "تحرير"
-
-#. <a id="btn-create-@Model.Name" asp-route-area="OrchardCore.Contents" asp-route-action="Create" asp-route-id="@Model.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-success btn-sm">@T["Create New {0}", Model.DisplayName]</a>
-#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:11
-msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
-msgid "Create New {0}"
-msgstr "إنشاء {0} جديد"
-
-#. <a role="btn-list-@Model.Name" asp-route-action="List" asp-route-area="OrchardCore.Contents" asp-route-contentTypeId="@Model.Name" class="btn btn-secondary btn-sm">@T["List Items"]</a>
-#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:13
-msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
-msgid "List Items"
-msgstr "عناصر قائمة"
-
-#. <a role="btn-edit-@Model.Name" asp-route-action="Edit" asp-route-area="OrchardCore.ContentTypes" asp-route-id="@Model.Name" class="btn btn-primary btn-sm">@T["Edit"]</a>
-#: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:14
-msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
-msgid "Edit"
-msgstr "تحرير"
 

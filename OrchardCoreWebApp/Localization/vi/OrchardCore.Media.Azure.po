@@ -10,13 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2022-05-05 19:03\n"
+"PO-Revision-Date: 2023-02-18 19:42\n"
 
 #. builder.Add(S["Configuration"], configuration => configuration
 #: OrchardCore.Media.Azure\AdminMenu.cs:24
 msgctxt "OrchardCore.Media.Azure.AdminMenu"
 msgid "Configuration"
-msgstr ""
+msgstr "Cấu hình"
 
 #. .Add(S["Media"], S["Media"].PrefixPosition(), media => media
 #. .Add(S["Media"], S["Media"].PrefixPosition(), media => media
@@ -24,7 +24,7 @@ msgstr ""
 #: OrchardCore.Media.Azure\AdminMenu.cs:25
 msgctxt "OrchardCore.Media.Azure.AdminMenu"
 msgid "Media"
-msgstr ""
+msgstr "Tài nguyên"
 
 #. .Add(S["Azure Blob Options"], S["Azure Blob Options"].PrefixPosition(), options => options
 #. .Add(S["Azure Blob Options"], S["Azure Blob Options"].PrefixPosition(), options => options
@@ -32,6 +32,18 @@ msgstr ""
 #: OrchardCore.Media.Azure\AdminMenu.cs:26
 msgctxt "OrchardCore.Media.Azure.AdminMenu"
 msgid "Azure Blob Options"
+msgstr ""
+
+#. context.ErrorMessage = S["Unable to remove the Azure Media Storage Container '{0}'.", _options.ContainerName];
+#: OrchardCore.Media.Azure\MediaBlobContainerTenantEvents.cs:80
+msgctxt "OrchardCore.Media.Azure.MediaBlobContainerTenantEvents"
+msgid "Unable to remove the Azure Media Storage Container '{0}'."
+msgstr ""
+
+#. context.ErrorMessage = S["Failed to remove the Azure Media Storage Container '{0}'.", _options.ContainerName];
+#: OrchardCore.Media.Azure\MediaBlobContainerTenantEvents.cs:86
+msgctxt "OrchardCore.Media.Azure.MediaBlobContainerTenantEvents"
+msgid "Failed to remove the Azure Media Storage Container '{0}'."
 msgstr ""
 
 #. <h1>@RenderTitleSegments(T["Azure Blob storage options"])</h1>
@@ -50,23 +62,23 @@ msgstr ""
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:6
 msgctxt "OrchardCore.Media.Azure.Views.Admin.Options"
 msgid "See documentation"
-msgstr ""
+msgstr "Xem tài liệu"
 
 #. <label asp-for="ConnectionString" class="col-sm-2 col-form-label">@T["Connection String"]</label>
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:10
 msgctxt "OrchardCore.Media.Azure.Views.Admin.Options"
 msgid "Connection String"
-msgstr ""
+msgstr "Chuỗi kết nối"
 
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:0
 msgctxt "OrchardCore.Media.Azure.Views.Admin.Options"
 msgid "Configured"
-msgstr ""
+msgstr "Đã cấu hình"
 
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:0
 msgctxt "OrchardCore.Media.Azure.Views.Admin.Options"
 msgid "Not Configured"
-msgstr ""
+msgstr "Chưa được cấu hình"
 
 #. <label asp-for="ContainerName" class="col-sm-2 col-form-label">@T["Container Name"]</label>
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:26
@@ -78,7 +90,7 @@ msgstr ""
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:33
 msgctxt "OrchardCore.Media.Azure.Views.Admin.Options"
 msgid "Base Path"
-msgstr ""
+msgstr "Đường dẫn Gốc"
 
 #. <label class="form-check-label" asp-for="CreateContainer">@T["Create Container"]</label>
 #: OrchardCore.Media.Azure\Views\Admin\Options.cshtml:42

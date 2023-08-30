@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2022-05-05 18:55\n"
+"PO-Revision-Date: 2023-02-18 19:37\n"
 
 #. builder.Add(S["Security"], security => security
 #: OrchardCore.Google\AdminMenu.cs:23
@@ -30,7 +30,7 @@ msgstr "Xác thực"
 #: OrchardCore.Google\AdminMenu.cs:25
 msgctxt "OrchardCore.Google.GoogleAuthenticationAdminMenu"
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #. builder.Add(S["Configuration"], configuration => configuration
 #: OrchardCore.Google\AdminMenu.cs:50
@@ -50,19 +50,19 @@ msgstr "Cài đặt"
 #: OrchardCore.Google\AdminMenu.cs:52
 msgctxt "OrchardCore.Google.GoogleAnalyticsAdminMenu"
 msgid "Google Analytics"
-msgstr ""
+msgstr "Google Analytics"
 
 #. builder.Add(S["Configuration"], configuration => configuration
 #: OrchardCore.Google\AdminMenu.cs:78
 msgctxt "OrchardCore.Google.GoogleTagManagerAdminMenu"
 msgid "Configuration"
-msgstr ""
+msgstr "Cấu hình"
 
 #. .Add(S["Settings"], settings => settings
 #: OrchardCore.Google\AdminMenu.cs:79
 msgctxt "OrchardCore.Google.GoogleTagManagerAdminMenu"
 msgid "Settings"
-msgstr ""
+msgstr "Các cài đặt"
 
 #. .Add(S["Google Tag Manager"], S["Google Tag Manager"].PrefixPosition(), settings => settings
 #. .Add(S["Google Tag Manager"], S["Google Tag Manager"].PrefixPosition(), settings => settings
@@ -70,42 +70,18 @@ msgstr ""
 #: OrchardCore.Google\AdminMenu.cs:80
 msgctxt "OrchardCore.Google.GoogleTagManagerAdminMenu"
 msgid "Google Tag Manager"
+msgstr "Quản lý từ khóa Google"
+
+#. results.Add(new ValidationResult(S["The Client ID is required."], new[]
+#: OrchardCore.Google\Authentication\Services\GoogleAuthenticationService.cs:66
+msgctxt "OrchardCore.Google.Authentication.Services.GoogleAuthenticationService"
+msgid "The Client ID is required."
 msgstr ""
 
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
-#: OrchardCore.Google\Startup.cs:89
-msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
-msgid "Google Authentication Settings"
-msgstr ""
-
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
-#: OrchardCore.Google\Startup.cs:89
-msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
-msgid "Exports the Google Authentication settings."
-msgstr ""
-
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
-#: OrchardCore.Google\Startup.cs:99
-msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
-msgid "Google Analytics Settings"
-msgstr ""
-
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
-#: OrchardCore.Google\Startup.cs:99
-msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
-msgid "Exports the Google Analytics settings."
-msgstr ""
-
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
-#: OrchardCore.Google\Startup.cs:109
-msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
-msgid "Google Tag Manager Settings"
-msgstr ""
-
-#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
-#: OrchardCore.Google\Startup.cs:109
-msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
-msgid "Exports the Google Tag Manager settings."
+#. results.Add(new ValidationResult(S["The Client Secret is required."], new[]
+#: OrchardCore.Google\Authentication\Services\GoogleAuthenticationService.cs:74
+msgctxt "OrchardCore.Google.Authentication.Services.GoogleAuthenticationService"
+msgid "The Client Secret is required."
 msgstr ""
 
 #. [Required(AllowEmptyStrings = false, ErrorMessage = "ClientID key is required")]
@@ -126,11 +102,77 @@ msgctxt "OrchardCore.Google.Authentication.ViewModels.GoogleAuthenticationSettin
 msgid "Invalid path"
 msgstr "Đường dẫn không hợp lệ"
 
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
+#: OrchardCore.Google\Startup.cs:91
+msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
+msgid "Google Authentication Settings"
+msgstr "Cài đặt Xác thực Google"
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAuthenticationSettings, GoogleAuthenticationDeploymentStartup>(S => S["Google Authentication Settings"], S => S["Exports the Google Authentication settings."]);
+#: OrchardCore.Google\Startup.cs:91
+msgctxt "OrchardCore.Google.GoogleAuthenticationDeploymentStartup"
+msgid "Exports the Google Authentication settings."
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
+#: OrchardCore.Google\Startup.cs:101
+msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
+msgid "Google Analytics Settings"
+msgstr "Cài đặt Google Analytics"
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleAnalyticsSettings, GoogleAnalyticsDeploymentStartup>(S => S["Google Analytics Settings"], S => S["Exports the Google Analytics settings."]);
+#: OrchardCore.Google\Startup.cs:101
+msgctxt "OrchardCore.Google.GoogleAnalyticsDeploymentStartup"
+msgid "Exports the Google Analytics settings."
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
+#: OrchardCore.Google\Startup.cs:111
+msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
+msgid "Google Tag Manager Settings"
+msgstr ""
+
+#. services.AddSiteSettingsPropertyDeploymentStep<GoogleTagManagerSettings, GoogleTagManagerDeploymentStartup>(S => S["Google Tag Manager Settings"], S => S["Exports the Google Tag Manager settings."]);
+#: OrchardCore.Google\Startup.cs:111
+msgctxt "OrchardCore.Google.GoogleTagManagerDeploymentStartup"
+msgid "Exports the Google Tag Manager settings."
+msgstr ""
+
+#. <h5>@T["Google Analytics Settings"]</h5>
+#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Edit.cshtml:3
+msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Edit"
+msgid "Google Analytics Settings"
+msgstr "Cài đặt Google Analytics"
+
+#. <h5>@T["Google Analytics Settings"]</h5>
+#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Summary.cshtml:3
+msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Summary"
+msgid "Google Analytics Settings"
+msgstr "Cài đặt Google Analytics"
+
+#. <span class="hint">@T["Adds Google Analytics settings to the plan."]</span>
+#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Summary.cshtml:5
+msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Summary"
+msgid "Adds Google Analytics settings to the plan."
+msgstr ""
+
+#. <h4 class="card-title">@T["Google Analytics Settings"]</h4>
+#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Thumbnail.cshtml:3
+msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Thumbnail"
+msgid "Google Analytics Settings"
+msgstr "Cài đặt Google Analytics"
+
+#. <p>@T["Exports the Google Analytics settings."]</p>
+#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Thumbnail.cshtml:4
+msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Thumbnail"
+msgid "Exports the Google Analytics settings."
+msgstr ""
+
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Google/#google-analytics" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Google\Views\GoogleAnalyticsSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Google.Views.GoogleAnalyticsSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "Xem tài liệu"
 
 #. <h3>@T["Google Analytics Settings"]</h3>
 #: OrchardCore.Google\Views\GoogleAnalyticsSettings.Edit.cshtml:8
@@ -160,7 +202,7 @@ msgstr "Trang web hiện tại sẽ được tải lại sau khi các cài đặ
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Google.Views.GoogleAuthenticationSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "Xem tài liệu"
 
 #. <p class="alert alert-danger">@T["An error occurred while decrypting a setting. Please apply and save."]</p>
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:11
@@ -214,19 +256,19 @@ msgstr "Đường dẫn yêu cầu trong đường dẫn cơ sở của ứng d�
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:46
 msgctxt "OrchardCore.Google.Views.GoogleAuthenticationSettings.Edit"
 msgid "Store tokens"
-msgstr ""
+msgstr "Lưu trữ tokens"
 
 #. <span class="hint dashed">@T["Store external authentication tokens for reuse"]</span>
 #: OrchardCore.Google\Views\GoogleAuthenticationSettings.Edit.cshtml:47
 msgctxt "OrchardCore.Google.Views.GoogleAuthenticationSettings.Edit"
 msgid "Store external authentication tokens for reuse"
-msgstr ""
+msgstr "Lưu trữ tokens xác thực để sử dụng lại"
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Google/#google-tag-manager" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Google\Views\GoogleTagManagerSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Google.Views.GoogleTagManagerSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "Xem tài liệu"
 
 #. <h3>@T["Google Tag Manager Settings"]</h3>
 #: OrchardCore.Google\Views\GoogleTagManagerSettings.Edit.cshtml:8
@@ -262,35 +304,5 @@ msgstr ""
 #: OrchardCore.Google\Views\NavigationItemText-googleTagManager.Id.cshtml:1
 msgctxt "OrchardCore.Google.Views.NavigationItemText-googleTagManager.Id"
 msgid "Google Tag Manager"
-msgstr ""
-
-#. <h5>@T["Google Analytics Settings"]</h5>
-#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Edit.cshtml:3
-msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Edit"
-msgid "Google Analytics Settings"
-msgstr ""
-
-#. <h5>@T["Google Analytics Settings"]</h5>
-#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Summary.cshtml:3
-msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Summary"
-msgid "Google Analytics Settings"
-msgstr ""
-
-#. <span class="hint">@T["Adds Google Analytics settings to the plan."]</span>
-#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Summary.cshtml:5
-msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Summary"
-msgid "Adds Google Analytics settings to the plan."
-msgstr ""
-
-#. <h4 class="card-title">@T["Google Analytics Settings"]</h4>
-#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Thumbnail.cshtml:3
-msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Thumbnail"
-msgid "Google Analytics Settings"
-msgstr ""
-
-#. <p>@T["Exports the Google Analytics settings."]</p>
-#: OrchardCore.Google\Views\Items\GoogleAnalyticsDeploymentStep.Thumbnail.cshtml:4
-msgctxt "OrchardCore.Google.Views.Items.GoogleAnalyticsDeploymentStep.Thumbnail"
-msgid "Exports the Google Analytics settings."
-msgstr ""
+msgstr "Quản lý từ khóa Google"
 

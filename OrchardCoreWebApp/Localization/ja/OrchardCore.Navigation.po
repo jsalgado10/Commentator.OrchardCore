@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2021-07-15 18:56\n"
+"PO-Revision-Date: 2023-02-17 16:53\n"
 
 #. var firstText = FirstText ?? S["<<"];
 #: OrchardCore.Navigation\PagerShapes.cs:181
@@ -21,7 +21,7 @@ msgstr ""
 #. var previousText = PreviousText ?? S["<"];
 #. var previousText = PreviousText ?? S["<"];
 #: OrchardCore.Navigation\PagerShapes.cs:182
-#: OrchardCore.Navigation\PagerShapes.cs:394
+#: OrchardCore.Navigation\PagerShapes.cs:370
 msgctxt "OrchardCore.Navigation.PagerShapes"
 msgid "<"
 msgstr ""
@@ -29,7 +29,7 @@ msgstr ""
 #. var nextText = NextText ?? S[">"];
 #. var nextText = NextText ?? S[">"];
 #: OrchardCore.Navigation\PagerShapes.cs:183
-#: OrchardCore.Navigation\PagerShapes.cs:395
+#: OrchardCore.Navigation\PagerShapes.cs:371
 msgctxt "OrchardCore.Navigation.PagerShapes"
 msgid ">"
 msgstr ""

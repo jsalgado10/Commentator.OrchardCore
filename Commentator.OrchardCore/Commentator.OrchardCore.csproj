@@ -23,17 +23,17 @@
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Notifications.OrchardCore" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Admin" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Data.Abstractions" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Users" Version="1.4.0" />
+    <PackageReference Include="Notifications.OrchardCore" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Admin" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.Data.Abstractions" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.Users" Version="1.6.0" />
   </ItemGroup>
 
   <ItemGroup>

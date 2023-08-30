@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: orchard-core\n"
+"X-Crowdin-Project-ID: 307044\n"
+"X-Crowdin-Language: el\n"
+"X-Crowdin-File: /main/Localization/OrchardCore.Search.pot\n"
+"X-Crowdin-File-ID: 874\n"
+"Project-Id-Version: orchard-core\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Greek\n"
+"Language: el_GR\n"
+"PO-Revision-Date: 2023-02-25 12:39\n"
+
+#. .Add(S["Search"], NavigationConstants.AdminMenuSearchPosition, search => search
+#. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
+#. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
+#: OrchardCore.Search\AdminMenu.cs:26
+#: OrchardCore.Search\AdminMenu.cs:29
+#: OrchardCore.Search\AdminMenu.cs:29
+msgctxt "OrchardCore.Search.AdminMenu"
+msgid "Search"
+msgstr ""
+
+#. .Add(S["Settings"], settings => settings
+#: OrchardCore.Search\AdminMenu.cs:28
+msgctxt "OrchardCore.Search.AdminMenu"
+msgid "Settings"
+msgstr ""
+
+#. await _notifier.WarningAsync(H["No search provider feature is enabled."]);
+#: OrchardCore.Search\Controllers\SearchController.cs:62
+msgctxt "OrchardCore.Search.SearchController"
+msgid "No search provider feature is enabled."
+msgstr ""
+
+#: OrchardCore.Search\Views\Search-Form.cshtml:0
+msgctxt "OrchardCore.Search.Views.Search-Form"
+msgid "Enter your search term(s)"
+msgstr ""
+
+#. <button type="submit" class="btn btn-primary btn-sm">@T["Search"]</button>
+#: OrchardCore.Search\Views\Search-Form.cshtml:13
+msgctxt "OrchardCore.Search.Views.Search-Form"
+msgid "Search"
+msgstr ""
+
+#. <p class="alert alert-warning">@T["There are no such results."]</p>
+#: OrchardCore.Search\Views\Search-Results.cshtml:17
+msgctxt "OrchardCore.Search.Views.Search-Results"
+msgid "There are no such results."
+msgstr ""
+
+#. <button type="submit" class="btn btn-primary btn-sm">@T["Search"]</button>
+#: OrchardCore.Search\Views\SearchPart.cshtml:8
+msgctxt "OrchardCore.Search.Views.SearchPart"
+msgid "Search"
+msgstr ""
+
+#. <label asp-for="Placeholder" class="@Orchard.GetLabelCssClasses()">@T["Placeholder"]</label>
+#: OrchardCore.Search\Views\SearchPart.Edit.cshtml:6
+msgctxt "OrchardCore.Search.Views.SearchPart.Edit"
+msgid "Placeholder"
+msgstr ""
+
+#. <span class="hint">@T["The placeholder text to use in the search bar."]</span>
+#: OrchardCore.Search\Views\SearchPart.Edit.cshtml:9
+msgctxt "OrchardCore.Search.Views.SearchPart.Edit"
+msgid "The placeholder text to use in the search bar."
+msgstr ""
+
+#. <label asp-for="IndexName" class="@Orchard.GetLabelCssClasses()">@T["Index Name"]</label>
+#: OrchardCore.Search\Views\SearchPart.Edit.cshtml:14
+msgctxt "OrchardCore.Search.Views.SearchPart.Edit"
+msgid "Index Name"
+msgstr ""
+
+#. <span class="hint">@T["Leave it empty to use the default index."]</span>
+#: OrchardCore.Search\Views\SearchPart.Edit.cshtml:17
+msgctxt "OrchardCore.Search.Views.SearchPart.Edit"
+msgid "Leave it empty to use the default index."
+msgstr ""
+
+#. <label asp-for="ProviderName">@T["Default search provider"]</label>
+#: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:6
+msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
+msgid "Default search provider"
+msgstr ""
+
+#. <span class="hint">@T["The default search provider to use for the search page."]</span>
+#: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:9
+msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
+msgid "The default search provider to use for the search page."
+msgstr ""
+
+#. <label asp-for="Placeholder">@T["Placeholder"]</label>
+#: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:13
+msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
+msgid "Placeholder"
+msgstr ""
+
+#. <span class="hint">@T["The placeholder text to use in the search bar."]</span>
+#: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:15
+msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
+msgid "The placeholder text to use in the search bar."
+msgstr ""
+
+#. <div class="alert alert-warning">@T["You need to enable at least one search provider (Lucene, Elasticsearch)."]</div>
+#: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:20
+msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
+msgid "You need to enable at least one search provider (Lucene, Elasticsearch)."
+msgstr ""
+
+#. <h5>@T["Search Settings"]</h5>
+#: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Edit.cshtml:3
+msgctxt "OrchardCore.Search.Views.Items.SearchSettingsDeploymentStep.Fields.Edit"
+msgid "Search Settings"
+msgstr ""
+
+#. <h5>@T["Search Settings"]</h5>
+#: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Summary.cshtml:3
+msgctxt "OrchardCore.Search.Views.Items.SearchSettingsDeploymentStep.Fields.Summary"
+msgid "Search Settings"
+msgstr ""
+
+#. <span class="hint">@T["Adds search settings to the plan."]</span>
+#: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Summary.cshtml:5
+msgctxt "OrchardCore.Search.Views.Items.SearchSettingsDeploymentStep.Fields.Summary"
+msgid "Adds search settings to the plan."
+msgstr ""
+
+#. <h4 class="card-title">@T["Search Settings"]</h4>
+#: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Thumbnail.cshtml:3
+msgctxt "OrchardCore.Search.Views.Items.SearchSettingsDeploymentStep.Fields.Thumbnail"
+msgid "Search Settings"
+msgstr ""
+
+#. <p>@T["Exports search settings."]</p>
+#: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Thumbnail.cshtml:4
+msgctxt "OrchardCore.Search.Views.Items.SearchSettingsDeploymentStep.Fields.Thumbnail"
+msgid "Exports search settings."
+msgstr ""
+
