@@ -22,7 +22,7 @@ namespace Commentator.OrchardCore.Drivers
         public override IDisplayResult Display(CommentatorPart commentatorPart)
         {
             return Combine(
-                Initialize<CommentatorPartViewModel>("CommentatorPart", m => BuildViewModel(m, commentatorPart))
+                Initialize<CommentatorPartViewModel>("CommentatorPart", m =>  BuildViewModel(m, commentatorPart))
                     .Location("Detail", "Content:20"),
                 Initialize<CommentatorPartViewModel>("CommentatorPart_Summary", m => BuildViewModel(m, commentatorPart))
                     .Location("Summary", "Meta:5")
@@ -43,9 +43,9 @@ namespace Commentator.OrchardCore.Drivers
             return Edit(model);
         }
 
-        public CommentatorPartSettings GetCommentatorPartSettings(CommentatorPart part)
+        public async Task<CommentatorPartSettings> GetCommentatorPartSettings(CommentatorPart part)
         {
-            var contentTypeDefinition = _contentDefinitionManager.GetTypeDefinition(part.ContentItem.ContentType);
+            var contentTypeDefinition = await _contentDefinitionManager.GetTypeDefinitionAsync(part.ContentItem.ContentType);
             var contentTypePartDefinition = contentTypeDefinition.Parts.FirstOrDefault(p => p.PartDefinition.Name == nameof(CommentatorPart));
             var settings = contentTypePartDefinition.GetSettings<CommentatorPartSettings>();
 
@@ -54,7 +54,7 @@ namespace Commentator.OrchardCore.Drivers
 
         private Task BuildViewModel(CommentatorPartViewModel model, CommentatorPart part)
         {
-            var settings = GetCommentatorPartSettings(part);
+            var settings = GetCommentatorPartSettings(part).Result;
 
             model.ContentItem = part.ContentItem;
             model.OrderBy = settings.OrderBy;

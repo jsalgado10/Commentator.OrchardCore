@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2023-02-18 20:36\n"
+"PO-Revision-Date: 2023-12-22 16:31\n"
 
 #. <h4>@T["Welcome to Orchard Core, your site has been successfully set up."]</h4>
 #: TheTheme\Views\Home\Index.cshtml:2
@@ -18,39 +18,52 @@ msgctxt "TheTheme.Views.Home.Index"
 msgid "Welcome to Orchard Core, your site has been successfully set up."
 msgstr "Chào mừng bạn đến với Orchard Core, trang web của bạn đã được thiết lập thành công."
 
-#. <a class="dropdown-item" asp-route-area="OrchardCore.Admin" asp-controller="Admin" asp-action="Index"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i> @T["Dashboard"]</a>
-#: TheTheme\Views\LoginMenu.cshtml:24
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "Dashboard"
-msgstr "Bảng điều khiển"
+#. <a role="button" class="nav-link dropdown-toggle" id="bd-theme" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="@T["Toggle theme"]">
+#. <span class="d-none" id="bd-theme-text">@T["Toggle theme"]</span>
+#: TheTheme\Views\ToggleTheme.cshtml:2
+#: TheTheme\Views\ToggleTheme.cshtml:4
+msgctxt "TheTheme.Views.ToggleTheme"
+msgid "Toggle theme"
+msgstr ""
 
-#. <a class="dropdown-item" asp-route-area="OrchardCore.Users" asp-controller="ChangeEmail" asp-action="Index"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> @T["Change Email"]</a>
-#: TheTheme\Views\LoginMenu.cshtml:28
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "Change Email"
-msgstr "Thay đổi Email"
+#. <span class="ps-2">@T["Auto"]</span>
+#: TheTheme\Views\ToggleTheme.cshtml:12
+msgctxt "TheTheme.Views.ToggleTheme"
+msgid "Auto"
+msgstr ""
 
-#. <a class="dropdown-item" asp-route-area="OrchardCore.Users" asp-controller="Account" asp-action="ChangePassword" asp-route-returnUrl="@FullRequestPath"><i class="fa fa-lock fa-fw" aria-hidden="true"></i> @T["Change Password"]</a>
-#: TheTheme\Views\LoginMenu.cshtml:30
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "Change Password"
-msgstr "Đổi mật khẩu"
+#. <span class="ps-2">@T["Light"]</span>
+#: TheTheme\Views\ToggleTheme.cshtml:20
+msgctxt "TheTheme.Views.ToggleTheme"
+msgid "Light"
+msgstr ""
 
-#. <a class="dropdown-item" asp-route-area="OrchardCore.Users" asp-controller="Account" asp-action="ExternalLogins"><i class="fa fa-user-lock fa-fw" aria-hidden="true"></i> @T["External Logins"]</a>
-#: TheTheme\Views\LoginMenu.cshtml:33
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "External Logins"
-msgstr "Đăng nhập Bên ngoài"
+#. <span class="ps-2">@T["Dark"]</span>
+#: TheTheme\Views\ToggleTheme.cshtml:28
+msgctxt "TheTheme.Views.ToggleTheme"
+msgid "Dark"
+msgstr ""
 
-#. <button type="submit" class="btn btn-link navbar-btn dropdown-item"><i class="fa fa-sign-out-alt fa-fw" aria-hidden="true"></i> @T["Log off"]</button>
-#: TheTheme\Views\LoginMenu.cshtml:36
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "Log off"
-msgstr "Đăng xuất"
+#: TheTheme\Views\UserNotificationNavbar.cshtml:0
+msgctxt "TheTheme.Views.UserNotificationNavbar"
+msgid "You have more than {0} unread notifications"
+msgstr ""
 
-#. <li class="nav-item"><a class="nav-link" asp-route-area="OrchardCore.Users" asp-controller="Account" asp-action="Login"><i class="fa fa-sign-in-alt fa-fw" aria-hidden="true"></i> @T["Log in"]</a></li>
-#: TheTheme\Views\LoginMenu.cshtml:43
-msgctxt "TheTheme.Views.LoginMenu"
-msgid "Log in"
-msgstr "Đăng nhập"
+#: TheTheme\Views\UserNotificationNavbar.cshtml:0
+msgctxt "TheTheme.Views.UserNotificationNavbar"
+msgid "You have {1} unread notification"
+msgid_plural "You have {0} unread notifications"
+msgstr[0] ""
+
+#. <i class="fa-regular fa-bell" aria-hidden="true" data-bs-toggle="tooltip" data-bs-original-title="@T["You have no unread notifications"]"></i>
+#: TheTheme\Views\UserNotificationNavbar.cshtml:31
+msgctxt "TheTheme.Views.UserNotificationNavbar"
+msgid "You have no unread notifications"
+msgstr ""
+
+#. <a class="dropdown-item fw-bold" asp-action="List" asp-controller="Admin" asp-area="OrchardCore.Notifications">@T["Notification Center"]</a>
+#: TheTheme\Views\UserNotificationNavbar.cshtml:54
+msgctxt "TheTheme.Views.UserNotificationNavbar"
+msgid "Notification Center"
+msgstr ""
 

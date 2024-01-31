@@ -10,47 +10,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
-"PO-Revision-Date: 2023-02-18 20:37\n"
+"PO-Revision-Date: 2023-12-22 16:31\n"
 
 #. builder.Add(S["Security"], security => security
-#: OrchardCore.Twitter\AdminMenu.cs:23
+#: OrchardCore.Twitter\AdminMenuSignin.cs:23
 msgctxt "OrchardCore.Twitter.AdminMenuSignin"
 msgid "Security"
-msgstr ""
+msgstr "امنیت"
 
 #. .Add(S["Authentication"], authentication => authentication
-#: OrchardCore.Twitter\AdminMenu.cs:24
+#: OrchardCore.Twitter\AdminMenuSignin.cs:24
 msgctxt "OrchardCore.Twitter.AdminMenuSignin"
 msgid "Authentication"
-msgstr ""
+msgstr "احراز هویت"
 
 #. .Add(S["Sign in with Twitter"], S["Sign in with Twitter"].PrefixPosition(), settings => settings
 #. .Add(S["Sign in with Twitter"], S["Sign in with Twitter"].PrefixPosition(), settings => settings
-#: OrchardCore.Twitter\AdminMenu.cs:25
-#: OrchardCore.Twitter\AdminMenu.cs:25
+#: OrchardCore.Twitter\AdminMenuSignin.cs:25
+#: OrchardCore.Twitter\AdminMenuSignin.cs:25
 msgctxt "OrchardCore.Twitter.AdminMenuSignin"
 msgid "Sign in with Twitter"
-msgstr ""
+msgstr "ورود به سامانه توسط توییتر"
 
 #. builder.Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Twitter\AdminMenu.cs:50
+#: OrchardCore.Twitter\AdminMenuSignin.cs:50
 msgctxt "OrchardCore.Twitter.AdminMenu"
 msgid "Configuration"
-msgstr ""
+msgstr "پیکربندی"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Twitter\AdminMenu.cs:51
+#: OrchardCore.Twitter\AdminMenuSignin.cs:51
 msgctxt "OrchardCore.Twitter.AdminMenu"
 msgid "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #. .Add(S["Twitter"], S["Twitter"].PrefixPosition(), settings => settings
 #. .Add(S["Twitter"], S["Twitter"].PrefixPosition(), settings => settings
-#: OrchardCore.Twitter\AdminMenu.cs:52
-#: OrchardCore.Twitter\AdminMenu.cs:52
+#: OrchardCore.Twitter\AdminMenuSignin.cs:52
+#: OrchardCore.Twitter\AdminMenuSignin.cs:52
 msgctxt "OrchardCore.Twitter.AdminMenu"
 msgid "Twitter"
-msgstr ""
+msgstr "توییتر"
 
 #. yield return new ValidationResult(S["ConsumerKey is required"], new string[] { nameof(settings.ConsumerKey) });
 #: OrchardCore.Twitter\Services\TwitterSettingsService.cs:65
@@ -80,130 +80,130 @@ msgstr "کلید مخفی توکن دسترسی ضروری است"
 #: OrchardCore.Twitter\Signin\ViewModels\TwitterSigninSettingsViewModel.cs:7
 msgctxt "OrchardCore.Twitter.Signin.ViewModels.TwitterSigninSettingsViewModel"
 msgid "Invalid path"
-msgstr ""
+msgstr "مسیر نامعتبر"
 
 #. [Required(AllowEmptyStrings = false, ErrorMessage = "API key is required")]
 #: OrchardCore.Twitter\ViewModels\TwitterSettingsViewModel.cs:7
 msgctxt "OrchardCore.Twitter.ViewModels.TwitterSettingsViewModel"
 msgid "API key is required"
-msgstr ""
+msgstr "کلید API (الزامی)"
 
 #. [Required(AllowEmptyStrings = false, ErrorMessage = "API secret key is required")]
 #: OrchardCore.Twitter\ViewModels\TwitterSettingsViewModel.cs:10
 msgctxt "OrchardCore.Twitter.ViewModels.TwitterSettingsViewModel"
 msgid "API secret key is required"
-msgstr ""
+msgstr "کلید مخفی API مورد نیاز است"
 
 #. [Required(AllowEmptyStrings = false, ErrorMessage = "Access token is required")]
 #: OrchardCore.Twitter\ViewModels\TwitterSettingsViewModel.cs:13
 msgctxt "OrchardCore.Twitter.ViewModels.TwitterSettingsViewModel"
 msgid "Access token is required"
-msgstr ""
+msgstr "رمز دسترسی مورد نیاز است"
 
 #. [Required(AllowEmptyStrings = false, ErrorMessage = "Access token secret is required")]
 #: OrchardCore.Twitter\ViewModels\TwitterSettingsViewModel.cs:16
 msgctxt "OrchardCore.Twitter.ViewModels.TwitterSettingsViewModel"
 msgid "Access token secret is required"
-msgstr ""
+msgstr "رمز دسترسی مورد نیاز است"
 
 #. public override LocalizedString DisplayText => S["Update Twitter Status Task"];
-#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:32
+#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:29
 msgctxt "OrchardCore.Twitter.Workflows.Activities.UpdateTwitterStatusTask"
 msgid "Update Twitter Status Task"
 msgstr "وظیفه به‌روزرسانی وضعیت توییتر"
 
 #. public override LocalizedString Category => S["Social"];
-#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:35
+#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:32
 msgctxt "OrchardCore.Twitter.Workflows.Activities.UpdateTwitterStatusTask"
 msgid "Social"
 msgstr "اجتماعی"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:47
+#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:44
 msgctxt "OrchardCore.Twitter.Workflows.Activities.UpdateTwitterStatusTask"
 msgid "Done"
 msgstr "انجام شد"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:47
+#: OrchardCore.Twitter\Workflows\Activities\UpdateTwitterStatusTask.cs:44
 msgctxt "OrchardCore.Twitter.Workflows.Activities.UpdateTwitterStatusTask"
 msgid "Failed"
 msgstr "انجام‌نشد"
 
-#. <span class="icon"><i class="fab fa-twitter" aria-hidden="true"></i></span><span class="title">@T["Twitter"]</span>
+#. <span class="icon"><i class="fa-brands fa-twitter" aria-hidden="true"></i></span><span class="title">@T["Twitter"]</span>
 #: OrchardCore.Twitter\Views\NavigationItemText-twitter.Id.cshtml:1
 msgctxt "OrchardCore.Twitter.Views.NavigationItemText-twitter.Id"
 msgid "Twitter"
 msgstr "توییتر"
 
-#. <p class="alert alert-warning">@T["The current tenant will be reloaded when the settings are saved."]
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:4
+#. @T["The current tenant will be reloaded when the settings are saved."]
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "The current tenant will be reloaded when the settings are saved."
 msgstr "پس از ذخیره تنظیمات، tenant جاری، مجدد بارگذاری خواهد شد."
 
-#. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Twitter/#twitter-integration" target="_blank">@T["See documentation"]</a></p>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:5
+#. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Twitter/#twitter-integration" target="_blank">@T["See documentation"]</a>
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "مستندات را ببینید"
 
 #. <p class="alert alert-danger">@T["An error occurred while decrypting a setting. Please apply and save."]</p>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:9
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:11
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "An error occurred while decrypting a setting. Please apply and save."
-msgstr ""
+msgstr "هنگام رمزگشایی یک تنظیم خطایی روی داد. لطفا اعمال و ذخیره کنید."
 
 #. <h3>@T["Twitter Integration Settings"]</h3>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:12
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:14
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "Twitter Integration Settings"
 msgstr "تنظیمات ادغام توییتر"
 
-#. <label asp-for="APIKey">@T["API key"]</label>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:16
+#. <label asp-for="APIKey" class="form-label">@T["API key"]</label>
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:18
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "API key"
 msgstr "کلید API"
 
 #. <span class="hint">@T["The API key defined in the Keys and tokens tab of twitter app dashboard."]</span>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:19
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:21
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "The API key defined in the Keys and tokens tab of twitter app dashboard."
 msgstr "کلید API در تب Keys and Tokens در داشبرد برنامه توییتر تعریف می‌شود."
 
-#. <label asp-for="APISecretKey">@T["API secret key"]</label>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:25
+#. <label asp-for="APISecretKey" class="form-label">@T["API secret key"]</label>
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "API secret key"
 msgstr "کلید مخفی API"
 
 #. <span class="hint">@T["The API secret defined in the Keys and tokens tab of twitter app dashboard."]</span>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:28
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:30
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "The API secret defined in the Keys and tokens tab of twitter app dashboard."
 msgstr "کلید مخفی API در تب Keys and Tokens در داشبرد برنامه توییتر تعریف می‌شود."
 
-#. <label asp-for="AccessToken">@T["Access Token"]</label>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:34
+#. <label asp-for="AccessToken" class="form-label">@T["Access Token"]</label>
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:36
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "Access Token"
 msgstr "توکن دسترسی"
 
 #. <span class="hint">@T["The Access Token defined in the Keys and tokens tab of twitter app dashboard."]</span>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:37
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:39
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "The Access Token defined in the Keys and tokens tab of twitter app dashboard."
 msgstr "توکن دسترسی در تب Keys and Tokens در داشبرد برنامه توییتر تعریف می‌شود."
 
-#. <label asp-for="AccessTokenSecret">@T["Access Token Secret"]</label>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:43
+#. <label asp-for="AccessTokenSecret" class="form-label">@T["Access Token Secret"]</label>
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:45
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "Access Token Secret"
 msgstr "کلید مخفی توکن دسترسی"
 
 #. <span class="hint">@T["The Access Token Secret in the Keys and tokens tab of twitter app dashboard."]</span>
-#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:46
+#: OrchardCore.Twitter\Views\TwitterSettings.Edit.cshtml:48
 msgctxt "OrchardCore.Twitter.Views.TwitterSettings.Edit"
 msgid "The Access Token Secret in the Keys and tokens tab of twitter app dashboard."
 msgstr "کلید مخفی توکن دسترسی در تب Keys and Tokens در داشبرد برنامه توییتر تعریف می‌شود."
@@ -218,7 +218,7 @@ msgstr "پس از ذخیره تنظیمات، tenant جاری، مجدد بار�
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Twitter.Views.TwitterSigninSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "مستندات را ببینید"
 
 #. <h3>@T["Sign in with Twitter Settings"]</h3>
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:9
@@ -226,11 +226,11 @@ msgctxt "OrchardCore.Twitter.Views.TwitterSigninSettings.Edit"
 msgid "Sign in with Twitter Settings"
 msgstr "ورود به سامانه با تنظیمات توییتر"
 
-#. <label asp-for="CallbackPath">@T["CallbackPath"]</label>
+#. <label asp-for="CallbackPath" class="form-label">@T["CallbackPath"]</label>
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:13
 msgctxt "OrchardCore.Twitter.Views.TwitterSigninSettings.Edit"
 msgid "CallbackPath"
-msgstr ""
+msgstr "CallbackPath"
 
 #. <span class="hint">@T["The request path within the application's base path where the user-agent will be returned. The middleware will process this request when it arrives."]</span>
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:16
@@ -242,21 +242,21 @@ msgstr "مسیر درخواست به همراه مسیر پایه (base path) ب
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:23
 msgctxt "OrchardCore.Twitter.Views.TwitterSigninSettings.Edit"
 msgid "Store tokens"
-msgstr ""
+msgstr "ذخیره توکن ها"
 
 #. <span class="hint dashed">@T["Store external authentication tokens for reuse"]</span>
 #: OrchardCore.Twitter\Views\TwitterSigninSettings.Edit.cshtml:24
 msgctxt "OrchardCore.Twitter.Views.TwitterSigninSettings.Edit"
 msgid "Store external authentication tokens for reuse"
-msgstr ""
+msgstr "توکن های احراز هویت خارجی را برای استفاده مجدد ذخیره کنید"
 
-#. <h4><i class="fab fa-twitter" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Update Twitter Status"])</h4>
+#. <h4><i class="fa-brands fa-twitter" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Update Twitter Status"])</h4>
 #: OrchardCore.Twitter\Views\Items\UpdateTwitterStatusTask.Fields.Design.cshtml:8
 msgctxt "OrchardCore.Twitter.Views.Items.UpdateTwitterStatusTask.Fields.Design"
 msgid "Update Twitter Status"
 msgstr "به‌روزرسانی وضعیت توییتر"
 
-#. <label asp-for="StatusTemplate">@T["Template for updating twitter status"]</label>
+#. <label asp-for="StatusTemplate" class="form-label">@T["Template for updating twitter status"]</label>
 #: OrchardCore.Twitter\Views\Items\UpdateTwitterStatusTask.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Twitter.Views.Items.UpdateTwitterStatusTask.Fields.Edit"
 msgid "Template for updating twitter status"
@@ -268,7 +268,7 @@ msgctxt "OrchardCore.Twitter.Views.Items.UpdateTwitterStatusTask.Fields.Edit"
 msgid "The status text of the tweet."
 msgstr "متن وضعیت توییت."
 
-#. <h4 class="card-title"><i class="fab fa-twitter" aria-hidden="true"></i>@T["Update Twitter Status"]</h4>
+#. <h4 class="card-title"><i class="fa-brands fa-twitter" aria-hidden="true"></i>@T["Update Twitter Status"]</h4>
 #: OrchardCore.Twitter\Views\Items\UpdateTwitterStatusTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Twitter.Views.Items.UpdateTwitterStatusTask.Fields.Thumbnail"
 msgid "Update Twitter Status"

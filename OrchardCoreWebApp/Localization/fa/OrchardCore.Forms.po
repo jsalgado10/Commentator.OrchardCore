@@ -10,135 +10,165 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
-"PO-Revision-Date: 2023-02-18 19:37\n"
+"PO-Revision-Date: 2023-12-22 16:21\n"
+
+#. public override LocalizedString DisplayText => S["Http Redirect To Form Location Task"];
+#: OrchardCore.Forms\Activities\HttpRedirectToFormLocationTask.cs:26
+msgctxt "OrchardCore.Forms.Activities.HttpRedirectToFormLocationTask"
+msgid "Http Redirect To Form Location Task"
+msgstr ""
+
+#. public override LocalizedString Category => S["HTTP"];
+#: OrchardCore.Forms\Activities\HttpRedirectToFormLocationTask.cs:28
+msgctxt "OrchardCore.Forms.Activities.HttpRedirectToFormLocationTask"
+msgid "HTTP"
+msgstr ""
+
+#. => Outcomes(S["Done"], S["Failed"]);
+#: OrchardCore.Forms\Activities\HttpRedirectToFormLocationTask.cs:31
+msgctxt "OrchardCore.Forms.Activities.HttpRedirectToFormLocationTask"
+msgid "Done"
+msgstr ""
+
+#. => Outcomes(S["Done"], S["Failed"]);
+#: OrchardCore.Forms\Activities\HttpRedirectToFormLocationTask.cs:31
+msgctxt "OrchardCore.Forms.Activities.HttpRedirectToFormLocationTask"
+msgid "Failed"
+msgstr ""
+
+#. updater.ModelState.AddModelError(Prefix, nameof(viewModel.Name), S["A value is required for Name."]);
+#: OrchardCore.Forms\Drivers\FormInputElementPartDisplayDriver.cs:38
+msgctxt "OrchardCore.Forms.Drivers.FormInputElementPartDisplayDriver"
+msgid "A value is required for Name."
+msgstr "یک مقدار برای Name لازم است."
 
 #. updater.ModelState.AddModelError(Prefix + '.' + nameof(SelectPartEditViewModel.Options), S["The options are written in an incorrect format."]);
 #: OrchardCore.Forms\Drivers\SelectPartDisplayDriver.cs:60
 msgctxt "OrchardCore.Forms.Drivers.SelectPartDisplayDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 
 #. public override LocalizedString DisplayText => S["Add Model Validation Error Task"];
-#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:27
+#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:25
 msgctxt "OrchardCore.Forms.Workflows.Activities.AddModelValidationErrorTask"
 msgid "Add Model Validation Error Task"
 msgstr "وظیفه افزودن خطای اعتبارسنجی"
 
 #. public override LocalizedString Category => S["Validation"];
-#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:29
+#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:27
 msgctxt "OrchardCore.Forms.Workflows.Activities.AddModelValidationErrorTask"
 msgid "Validation"
 msgstr "اعتبارسنجی"
 
 #. return Outcomes(S["Done"]);
-#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:45
+#: OrchardCore.Forms\Workflows\Activities\AddModelValidationErrorTask.cs:43
 msgctxt "OrchardCore.Forms.Workflows.Activities.AddModelValidationErrorTask"
 msgid "Done"
 msgstr "انجام شد"
 
 #. public override LocalizedString DisplayText => S["Bind Model State Task"];
-#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:31
+#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:29
 msgctxt "OrchardCore.Forms.Workflows.Activities.BindModelStateTask"
 msgid "Bind Model State Task"
 msgstr "وظیفه منطبق‌سازی Model State"
 
 #. public override LocalizedString Category => S["Validation"];
-#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:33
+#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:31
 msgctxt "OrchardCore.Forms.Workflows.Activities.BindModelStateTask"
 msgid "Validation"
 msgstr "اعتبارسنجی"
 
 #. return Outcomes(S["Done"]);
-#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:37
+#: OrchardCore.Forms\Workflows\Activities\BindModelStateTask.cs:35
 msgctxt "OrchardCore.Forms.Workflows.Activities.BindModelStateTask"
 msgid "Done"
 msgstr "انجام شد"
 
 #. public override LocalizedString DisplayText => S["Validate Antiforgery Token Task"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:31
+#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:29
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateAntiforgeryTokenTask"
 msgid "Validate Antiforgery Token Task"
 msgstr "وظیفه اعتبارسنجی Antiforgery Token"
 
 #. public override LocalizedString Category => S["Validation"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:33
+#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:31
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateAntiforgeryTokenTask"
 msgid "Validation"
 msgstr "اعتبارسنجی"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:39
+#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:37
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateAntiforgeryTokenTask"
 msgid "Done"
 msgstr "انجام شد"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:39
+#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:37
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateAntiforgeryTokenTask"
 msgid "Valid"
 msgstr "معتبر"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:39
+#: OrchardCore.Forms\Workflows\Activities\ValidateAntiforgeryTokenTask.cs:37
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateAntiforgeryTokenTask"
 msgid "Invalid"
 msgstr "نامعتبر"
 
 #. public override LocalizedString DisplayText => S["Validate Form Field Task"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:31
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:30
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormFieldTask"
 msgid "Validate Form Field Task"
 msgstr "وظیفه اعتبارسنجی فیلد‌های فرم"
 
 #. public override LocalizedString Category => S["Validation"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:33
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:32
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormFieldTask"
 msgid "Validation"
 msgstr "اعتبارسنجی"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:49
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:48
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormFieldTask"
 msgid "Done"
 msgstr "انجام شد"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:49
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:48
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormFieldTask"
 msgid "Valid"
 msgstr "معتبر"
 
 #. return Outcomes(S["Done"], S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:49
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormFieldTask.cs:48
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormFieldTask"
 msgid "Invalid"
 msgstr "نامعتبر"
 
 #. public override LocalizedString DisplayText => S["Validate Form Task"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:27
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:25
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormTask"
 msgid "Validate Form Task"
 msgstr "وظیفه اعتبارسنجی فرم"
 
 #. public override LocalizedString Category => S["Validation"];
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:29
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:27
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormTask"
 msgid "Validation"
 msgstr "اعتبارسنجی"
 
 #. return Outcomes(S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:35
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:33
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormTask"
 msgid "Valid"
 msgstr "معتبر"
 
 #. return Outcomes(S["Valid"], S["Invalid"]);
-#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:35
+#: OrchardCore.Forms\Workflows\Activities\ValidateFormTask.cs:33
 msgctxt "OrchardCore.Forms.Workflows.Activities.ValidateFormTask"
 msgid "Invalid"
 msgstr "نامعتبر"
 
-#. <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Add Form Validation Error"])</h4>
+#. <h4><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Add Form Validation Error"])</h4>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design"
 msgid "Add Form Validation Error"
@@ -148,9 +178,9 @@ msgstr "افزودن خطای اعتبارسنجی فرم"
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design"
 msgid "<em>{0}</em>: <em>{1}</em>"
-msgstr ""
+msgstr "<em>{0}</em>: <em>{1}</em>"
 
-#. <label asp-for="Key" class="@Orchard.GetLabelCssClasses()">@T["Key"]</label>
+#. <label asp-for="Key" class="@Orchard.GetLabelClasses()">@T["Key"]</label>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Edit"
 msgid "Key"
@@ -162,7 +192,7 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Edit"
 msgid "The name of the form field that has an invalid value."
 msgstr "نام فیلدِ فرمی که مقدار نامعتبری دارد."
 
-#. <label asp-for="ErrorMessage" class="@Orchard.GetLabelCssClasses()">@T["Error Message"]</label>
+#. <label asp-for="ErrorMessage" class="@Orchard.GetLabelClasses()">@T["Error Message"]</label>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Edit.cshtml:15
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Edit"
 msgid "Error Message"
@@ -174,7 +204,7 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Edit"
 msgid "The validation error message to display."
 msgstr "پیام خطای اعتبارسنجی برای نمایش."
 
-#. <h4 class="card-title"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>@T["Add Form Validation Error"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>@T["Add Form Validation Error"]</h4>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Thumbnail"
 msgid "Add Form Validation Error"
@@ -186,13 +216,13 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Thumbn
 msgid "Adds a validation error to the model state."
 msgstr "یک پیام اعتبارسنجی به model state اضافه می‌کند."
 
-#. <h4><i class="fa fa-clone" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Bind Form Model State"])</h4>
+#. <h4><i class="fa-solid fa-clone" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Bind Form Model State"])</h4>
 #: OrchardCore.Forms\Views\Items\BindModelStateTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.BindModelStateTask.Fields.Design"
 msgid "Bind Form Model State"
 msgstr "منطبق سازی Model State فرم"
 
-#. <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i>@T["Bind Form to Model State"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-clone" aria-hidden="true"></i>@T["Bind Form to Model State"]</h4>
 #: OrchardCore.Forms\Views\Items\BindModelStateTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.BindModelStateTask.Fields.Thumbnail"
 msgid "Bind Form to Model State"
@@ -204,7 +234,7 @@ msgctxt "OrchardCore.Forms.Views.Items.BindModelStateTask.Fields.Thumbnail"
 msgid "Binds submitted form fields to the model state."
 msgstr "فیلدهای فرم ثبت‌شده را با model state انطباق می‌دهد."
 
-#. <label asp-for="Text" class="@Orchard.GetLabelCssClasses()">@T["Text"]</label>
+#. <label asp-for="Text" class="@Orchard.GetLabelClasses()">@T["Text"]</label>
 #: OrchardCore.Forms\Views\Items\ButtonPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.ButtonPart.Fields.Edit"
 msgid "Text"
@@ -216,7 +246,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ButtonPart.Fields.Edit"
 msgid "The text to display on the button."
 msgstr "متنی که در دکمه نمایش داده می‌شود."
 
-#. <label asp-for="Type" class="@Orchard.GetLabelCssClasses()">@T["Type"]</label>
+#. <label asp-for="Type" class="@Orchard.GetLabelClasses()">@T["Type"]</label>
 #: OrchardCore.Forms\Views\Items\ButtonPart.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Forms.Views.Items.ButtonPart.Fields.Edit"
 msgid "Type"
@@ -228,49 +258,49 @@ msgctxt "OrchardCore.Forms.Views.Items.ButtonPart.Fields.Edit"
 msgid "The button type."
 msgstr "نوع دکمه."
 
-#. <label asp-for="LabelOption" class="@Orchard.GetLabelCssClasses()">@T["Label option"]</label>
+#. <label asp-for="LabelOption" class="@Orchard.GetLabelClasses()">@T["Label option"]</label>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:11
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "Label option"
-msgstr ""
+msgstr "گزینه برچسب"
 
 #. <option value="@LabelOptions.None">@T["None"]</option>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "None"
-msgstr ""
+msgstr "هیچ کدام"
 
 #. <option value="@LabelOptions.Standard">@T["Standard"]</option>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:15
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <option value="@LabelOptions.ScreenReaders">@T["Screen Readers"]</option>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:16
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "Screen Readers"
-msgstr ""
+msgstr "صفحه‌خوان‌ها"
 
 #. <span class="hint">@T["The type of label to create for this field."]</span>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:18
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "The type of label to create for this field."
-msgstr ""
+msgstr "نوع برچسبی که برای این فیلد ایجاد می شود."
 
-#. <label asp-for="Label" class="@Orchard.GetLabelCssClasses()">@T["Label Text"]</label>
+#. <label asp-for="Label" class="@Orchard.GetLabelClasses()">@T["Label Text"]</label>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:23
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "Label Text"
-msgstr ""
+msgstr "متن برچسب"
 
 #. <span class="hint">@T["The text to display in the label."]</span>
 #: OrchardCore.Forms\Views\Items\FormElementLabelPart.Fields.Edit.cshtml:26
 msgctxt "OrchardCore.Forms.Views.Items.FormElementLabelPart.Fields.Edit"
 msgid "The text to display in the label."
-msgstr ""
+msgstr "متن داخل برچسب."
 
-#. <label asp-for="Id" class="@Orchard.GetLabelCssClasses()">@T["ID"]</label>
+#. <label asp-for="Id" class="@Orchard.GetLabelClasses()">@T["ID"]</label>
 #: OrchardCore.Forms\Views\Items\FormElementPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.FormElementPart.Fields.Edit"
 msgid "ID"
@@ -282,31 +312,31 @@ msgctxt "OrchardCore.Forms.Views.Items.FormElementPart.Fields.Edit"
 msgid "The ID to render on this form element."
 msgstr "شناسه‌‌‌ای (ID) که برای این المان فرم در نظر گرفته می‌شود."
 
-#. <label asp-for="ValidationOption" class="@Orchard.GetLabelCssClasses()">@T["Validation option"]</label>
+#. <label asp-for="ValidationOption" class="@Orchard.GetLabelClasses()">@T["Validation option"]</label>
 #: OrchardCore.Forms\Views\Items\FormElementValidationPart.Fields.Edit.cshtml:7
 msgctxt "OrchardCore.Forms.Views.Items.FormElementValidationPart.Fields.Edit"
 msgid "Validation option"
-msgstr ""
+msgstr "گزینه اعتبار سنجی"
 
 #. <option value="@ValidationOptions.None">@T["None"]</option>
 #: OrchardCore.Forms\Views\Items\FormElementValidationPart.Fields.Edit.cshtml:10
 msgctxt "OrchardCore.Forms.Views.Items.FormElementValidationPart.Fields.Edit"
 msgid "None"
-msgstr ""
+msgstr "هیچ کدام"
 
 #. <option value="@ValidationOptions.Standard">@T["Standard"]</option>
 #: OrchardCore.Forms\Views\Items\FormElementValidationPart.Fields.Edit.cshtml:11
 msgctxt "OrchardCore.Forms.Views.Items.FormElementValidationPart.Fields.Edit"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <span class="hint">@T["The type of validation to create for this field."]</span>
 #: OrchardCore.Forms\Views\Items\FormElementValidationPart.Fields.Edit.cshtml:13
 msgctxt "OrchardCore.Forms.Views.Items.FormElementValidationPart.Fields.Edit"
 msgid "The type of validation to create for this field."
-msgstr ""
+msgstr "نوع اعتبارسنجی که برای این فیلد ایجاد می شود."
 
-#. <label asp-for="Name" class="@Orchard.GetLabelCssClasses()">@T["Name"]</label>
+#. <label asp-for="Name" class="@Orchard.GetLabelClasses()">@T["Name"]</label>
 #: OrchardCore.Forms\Views\Items\FormInputElementPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.FormInputElementPart.Fields.Edit"
 msgid "Name"
@@ -318,7 +348,7 @@ msgctxt "OrchardCore.Forms.Views.Items.FormInputElementPart.Fields.Edit"
 msgid "The name to render on this form element."
 msgstr "نامی (name) که برای این المان فرم در نظر گرفته می‌شود."
 
-#. <label asp-for="Action" class="@Orchard.GetLabelCssClasses()">@T["Action"]</label>
+#. <label asp-for="Action" class="@Orchard.GetLabelClasses()">@T["Action"]</label>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "Action"
@@ -330,7 +360,7 @@ msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "The URL to submit the form to."
 msgstr "آدرسی که فرم جهت ثبت به آن ارسال می‌شود."
 
-#. <label asp-for="Method" class="@Orchard.GetLabelCssClasses()">@T["Method"]</label>
+#. <label asp-for="Method" class="@Orchard.GetLabelClasses()">@T["Method"]</label>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "Method"
@@ -342,31 +372,73 @@ msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "The HTTP method to use when submitting the form."
 msgstr "متود HTTP، که در هنگام ثبت فرم از آن استفاده می‌شود."
 
-#. <label asp-for="EncType" class="@Orchard.GetLabelCssClasses()">@T["EncType"]</label>
+#. <label asp-for="EncType" class="@Orchard.GetLabelClasses()">@T["EncType"]</label>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:25
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "EncType"
-msgstr ""
+msgstr "EncType"
 
 #. <span class="hint">@T["The enctype to use when submitting the form using POST method."]</span>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:32
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "The enctype to use when submitting the form using POST method."
-msgstr ""
+msgstr "Enctype برای استفاده در هنگام ارسال فرم با استفاده از روش POST."
 
 #. <label asp-for="EnableAntiForgeryToken" class="form-check-label">@T["Anti Forgery Token"]</label>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:40
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "Anti Forgery Token"
-msgstr ""
+msgstr "توکن Anti Forgery"
 
 #. <span class="hint">@T["Check to generate an Anti Forgery Token in the form."]</span>
 #: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:41
 msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
 msgid "Check to generate an Anti Forgery Token in the form."
+msgstr "علامت بزنید تا Anti Forgery Token در فرم ایجاد شود."
+
+#. <label asp-for="SaveFormLocation" class="form-check-label">@T["Save Form Location"]</label>
+#: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:50
+msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
+msgid "Save Form Location"
 msgstr ""
 
-#. <label asp-for="Type" class="@Orchard.GetLabelCssClasses()">@T["Type"]</label>
+#. <span class="hint">@T["Check in order to store the current form location. This stored location can later be used to return the user to their initial location."]</span>
+#: OrchardCore.Forms\Views\Items\FormPart.Fields.Edit.cshtml:51
+msgctxt "OrchardCore.Forms.Views.Items.FormPart.Fields.Edit"
+msgid "Check in order to store the current form location. This stored location can later be used to return the user to their initial location."
+msgstr ""
+
+#. <h4><i class="fa-solid fa-globe" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["HTTP Redirect To Form Location"])</h4>
+#: OrchardCore.Forms\Views\Items\HttpRedirectToFormLocationTask.Fields.Design.cshtml:6
+msgctxt "OrchardCore.Forms.Views.Items.HttpRedirectToFormLocationTask.Fields.Design"
+msgid "HTTP Redirect To Form Location"
+msgstr ""
+
+#. <label asp-for="FormLocationKey" class="form-label">@T["Form Location Key"]</label>
+#: OrchardCore.Forms\Views\Items\HttpRedirectToFormLocationTask.Fields.Edit.cshtml:6
+msgctxt "OrchardCore.Forms.Views.Items.HttpRedirectToFormLocationTask.Fields.Edit"
+msgid "Form Location Key"
+msgstr ""
+
+#. <span class="hint">@T["This value needs to correspond with the Form Location Key value utilized in the HTTP request event settings. Leave blank if the workflow handles a single form event."]</span>
+#: OrchardCore.Forms\Views\Items\HttpRedirectToFormLocationTask.Fields.Edit.cshtml:9
+msgctxt "OrchardCore.Forms.Views.Items.HttpRedirectToFormLocationTask.Fields.Edit"
+msgid "This value needs to correspond with the Form Location Key value utilized in the HTTP request event settings. Leave blank if the workflow handles a single form event."
+msgstr ""
+
+#. <h4 class="card-title"><i class="fa-solid fa-globe" aria-hidden="true"></i>@T["HTTP Redirect To Form Location"]</h4>
+#: OrchardCore.Forms\Views\Items\HttpRedirectToFormLocationTask.Fields.Thumbnail.cshtml:1
+msgctxt "OrchardCore.Forms.Views.Items.HttpRedirectToFormLocationTask.Fields.Thumbnail"
+msgid "HTTP Redirect To Form Location"
+msgstr ""
+
+#. <p>@T["Redirect the user agent to the original location of the form."]</p>
+#: OrchardCore.Forms\Views\Items\HttpRedirectToFormLocationTask.Fields.Thumbnail.cshtml:2
+msgctxt "OrchardCore.Forms.Views.Items.HttpRedirectToFormLocationTask.Fields.Thumbnail"
+msgid "Redirect the user agent to the original location of the form."
+msgstr ""
+
+#. <label asp-for="Type" class="@Orchard.GetLabelClasses()">@T["Type"]</label>
 #: OrchardCore.Forms\Views\Items\InputPart.Fields.Edit.cshtml:8
 msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "Type"
@@ -504,7 +576,7 @@ msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "The button type."
 msgstr "نوع دکمه."
 
-#. <label asp-for="Placeholder" class="@Orchard.GetLabelCssClasses()">@T["Placeholder Text"]</label>
+#. <label asp-for="Placeholder" class="@Orchard.GetLabelClasses()">@T["Placeholder Text"]</label>
 #: OrchardCore.Forms\Views\Items\InputPart.Fields.Edit.cshtml:38
 msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "Placeholder Text"
@@ -516,7 +588,7 @@ msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "The text to display when the field has no value."
 msgstr "متنی که قبل از وارد کردن مقدار این فیلد، نمایش داده می‌شود."
 
-#. <label asp-for="DefaultValue" class="@Orchard.GetLabelCssClasses()">@T["Default Value"]</label>
+#. <label asp-for="DefaultValue" class="@Orchard.GetLabelClasses()">@T["Default Value"]</label>
 #: OrchardCore.Forms\Views\Items\InputPart.Fields.Edit.cshtml:46
 msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "Default Value"
@@ -528,7 +600,7 @@ msgctxt "OrchardCore.Forms.Views.Items.InputPart.Fields.Edit"
 msgid "The default value for this field."
 msgstr "مقدار پیش‌فرض برای این فیلد."
 
-#. <label asp-for="For" class="@Orchard.GetLabelCssClasses()">@T["For"]</label>
+#. <label asp-for="For" class="@Orchard.GetLabelClasses()">@T["For"]</label>
 #: OrchardCore.Forms\Views\Items\LabelPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.LabelPart.Fields.Edit"
 msgid "For"
@@ -544,127 +616,127 @@ msgstr "شناسه ‌(ID) المانی در فرم که به این label مر�
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:12
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Enter the text"
-msgstr ""
+msgstr "متن را وارد کنید"
 
 #. <input type="text" class="form-control courier" v-model="optionValue" placeholder="@T["Enter a value"]" />
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:15
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Enter a value"
-msgstr ""
+msgstr "مقدار را وارد نمایید"
 
 #. <label :for=" partId + '_' + option.key + '_id'" class="form-check-label" title="@T["Set as default"]" >
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:25
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Set as default"
-msgstr ""
+msgstr "تنظیم به‌عنوان پیش‌فرض"
 
 #. <a v-on:click.prevent.stop="remove" href="#" title="@T["Remove element from list"]" class="btn">
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:31
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Remove element from list"
-msgstr ""
+msgstr "حذف المان از لیست"
 
 #. <th scope="col">@T["Option Text"]</th>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:44
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Option Text"
-msgstr ""
+msgstr "متن گزینه"
 
 #. <th scope="col">@T["Value"]</th>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:45
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Value"
-msgstr ""
+msgstr "مقدار"
 
 #. <th scope="col" colspan="3">@T["Default?"]</th>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:46
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Default?"
-msgstr ""
+msgstr "پیش‌فرض؟"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fa-solid fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:60
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Add an option"
-msgstr ""
+msgstr "افزودن یک گزینه"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="#" v-on:click.prevent.stop="showModal = true" class="float-end" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
+#. <a href="#" v-on:click.prevent.stop="showModal = true" class="float-end" title="@T["Edit Data"]"><i class="fa-solid fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:74
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:127
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Edit Data"
-msgstr ""
+msgstr "ویرایش اطلاعات"
 
-#. <label for="select-options-textarea">@T["Options"]</label>
-#. <label asp-for="Options" class="@Orchard.GetLabelCssClasses()">@T["Options"]</label>
+#. <label for="select-options-textarea" class="form-label">@T["Options"]</label>
+#. <label asp-for="Options" class="@Orchard.GetLabelClasses()">@T["Options"]</label>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:79
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:122
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Options"
-msgstr ""
+msgstr "گزینه ها"
 
 #. <span class="hint">@T["A JSON representation of the allowed values, e.g. {0}", "[ { text: 'First option', value: 'option1' }, { text: 'Second option', value: 'option2' } ]"]</span>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:83
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "A JSON representation of the allowed values, e.g. {0}"
-msgstr ""
+msgstr "یک فایل JSON که مقادیر مجاز را نشان می‌دهد، برای مثال {0}"
 
-#. <label for="options-default-value">@T["Default value"]</label>
+#. <label for="options-default-value" class="form-label">@T["Default value"]</label>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:86
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Default value"
-msgstr ""
+msgstr "مقدار پیش‌فرض"
 
 #. <span class="hint">@T["(Optional) The value to assign to the select field."]</span>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:88
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "(Optional) The value to assign to the select field."
-msgstr ""
+msgstr "مقداری که باید به فیلد انتخاب اختصاص دهید (اختیاری)."
 
 #. v-on:click="closeModal(true)">@T["OK"]</button>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:94
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "OK"
-msgstr ""
+msgstr "تایید"
 
 #. <button type="button" class="btn btn-secondary" v-on:click="closeModal(false)">@T["Cancel"]</button>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:95
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Cancel"
-msgstr ""
+msgstr "انصراف"
 
-#. <label asp-for="Editor" class="@Orchard.GetLabelCssClasses()">@T["Editor"]</label>
+#. <label asp-for="Editor" class="@Orchard.GetLabelClasses()">@T["Editor"]</label>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:110
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Editor"
-msgstr ""
+msgstr "ویرایشگر"
 
 #. <option value="@SelectEditorOption.Dropdown">@T["Dropdown"]</option>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:113
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Dropdown"
-msgstr ""
+msgstr "لیست کشویی"
 
 #. <option value="@SelectEditorOption.Checkbox">@T["Checkbox"]</option>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:114
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Checkbox"
-msgstr ""
+msgstr "چک‌باکس"
 
 #. <option value="@SelectEditorOption.Radio">@T["Radio"]</option>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:115
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "Radio"
-msgstr ""
+msgstr "رادیویی"
 
 #. <span class="hint">@T["The editor style to use for this field."]</span>
 #: OrchardCore.Forms\Views\Items\SelectPart.Fields.Edit.cshtml:117
 msgctxt "OrchardCore.Forms.Views.Items.SelectPart.Fields.Edit"
 msgid "The editor style to use for this field."
-msgstr ""
+msgstr "سبک ویرایشگر برای استفاده در این زمینه."
 
-#. <label asp-for="Placeholder" class="@Orchard.GetLabelCssClasses()">@T["Placeholder Text"]</label>
+#. <label asp-for="Placeholder" class="@Orchard.GetLabelClasses()">@T["Placeholder Text"]</label>
 #: OrchardCore.Forms\Views\Items\TextAreaPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.TextAreaPart.Fields.Edit"
 msgid "Placeholder Text"
@@ -676,7 +748,7 @@ msgctxt "OrchardCore.Forms.Views.Items.TextAreaPart.Fields.Edit"
 msgid "The text to display when the textarea has no value."
 msgstr "متنی که قبل از وارد کردن مقدار این textarea، نمایش داده می‌شود."
 
-#. <label asp-for="DefaultValue" class="@Orchard.GetLabelCssClasses()">@T["Default Value"]</label>
+#. <label asp-for="DefaultValue" class="@Orchard.GetLabelClasses()">@T["Default Value"]</label>
 #: OrchardCore.Forms\Views\Items\TextAreaPart.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Forms.Views.Items.TextAreaPart.Fields.Edit"
 msgid "Default Value"
@@ -688,13 +760,13 @@ msgctxt "OrchardCore.Forms.Views.Items.TextAreaPart.Fields.Edit"
 msgid "The default value for this textarea."
 msgstr "مقدار پیش‌فرض برای این textarea."
 
-#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Antiforgery Token"])</h4>
+#. <h4><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Antiforgery Token"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateAntiforgeryTokenTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Design"
 msgid "Validate Antiforgery Token"
 msgstr "اعتبارسنجی Antiforgery Token"
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Antiforgery Token"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@T["Validate Antiforgery Token"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateAntiforgeryTokenTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Thumbnail"
 msgid "Validate Antiforgery Token"
@@ -706,7 +778,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateAntiforgeryTokenTask.Fields.Thumb
 msgid "Validates the antiforgery token for the current HTTP context in which the workflow executes."
 msgstr "antiforgery token متعلق به بستر HTTP فعلی، که گردش کار در آن اجرا می‌شود را اعتبارسنجی می‌کند."
 
-#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form Field"])</h4>
+#. <h4><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form Field"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Design"
 msgid "Validate Form Field"
@@ -718,7 +790,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Design"
 msgid "Validate <em>{0}</em>"
 msgstr "اعتبارسنجی <em>{0}</em>"
 
-#. <label asp-for="FieldName" class="@Orchard.GetLabelCssClasses()">@T["Field Name"]</label>
+#. <label asp-for="FieldName" class="@Orchard.GetLabelClasses()">@T["Field Name"]</label>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Edit"
 msgid "Field Name"
@@ -730,7 +802,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Edit"
 msgid "The name of the form field to validate."
 msgstr "نام (name) این فیلد فرم برای اعتبارسنجی."
 
-#. <label asp-for="ErrorMessage" class="@Orchard.GetLabelCssClasses()">@T["Error Message"]</label>
+#. <label asp-for="ErrorMessage" class="@Orchard.GetLabelClasses()">@T["Error Message"]</label>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Edit.cshtml:15
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Edit"
 msgid "Error Message"
@@ -742,7 +814,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Edit"
 msgid "The validation error message to display."
 msgstr "پیام خطای اعتبارسنجی برای نمایش."
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Form Field"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@T["Validate Form Field"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Thumbnail"
 msgid "Validate Form Field"
@@ -754,13 +826,13 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Thumbnail"
 msgid "Validates a specific form field."
 msgstr "یک فیلد مشخص موجود در فرم را اعتبارسنجی می‌کند."
 
-#. <h4><i class="fa fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form"])</h4>
+#. <h4><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate Form"])</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormTask.Fields.Design"
 msgid "Validate Form"
 msgstr "اعتبارسنجی فرم"
 
-#. <h4 class="card-title"><i class="fa fa-shield-alt" aria-hidden="true"></i>@T["Validate Form"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-shield-alt" aria-hidden="true"></i>@T["Validate Form"]</h4>
 #: OrchardCore.Forms\Views\Items\ValidateFormTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormTask.Fields.Thumbnail"
 msgid "Validate Form"
@@ -772,7 +844,7 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormTask.Fields.Thumbnail"
 msgid "Checks whether the submitted form contains any validation errors."
 msgstr "بررسی می‌کند که فرم ثبت‌شده دارای خطاهای اعتبار سنجی است یا خیر."
 
-#. <label asp-for="For" class="@Orchard.GetLabelCssClasses()">@T["For"]</label>
+#. <label asp-for="For" class="@Orchard.GetLabelClasses()">@T["For"]</label>
 #: OrchardCore.Forms\Views\Items\ValidationPart.Fields.Edit.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.ValidationPart.Fields.Edit"
 msgid "For"
@@ -784,9 +856,15 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidationPart.Fields.Edit"
 msgid "The field name that this validation is for."
 msgstr "نام فیلدی که این اعتبارسنجی برای آن است."
 
-#. <div class="hint">@T["Displays a list of validation errors."]</div>
-#: OrchardCore.Forms\Views\Items\ValidationSummaryPart.Fields.Edit.cshtml:1
+#. @T["Show Model Only Error"]
+#: OrchardCore.Forms\Views\Items\ValidationSummaryPart.Fields.Edit.cshtml:11
 msgctxt "OrchardCore.Forms.Views.Items.ValidationSummaryPart.Fields.Edit"
-msgid "Displays a list of validation errors."
-msgstr "لیست خطاهای اعتبار‌سنجی را نمایش می‌دهد."
+msgid "Show Model Only Error"
+msgstr "خطای Show Model Only"
+
+#. <div class="hint">@T["When checked, model level errors will be visible otherwise all errors will be visible."]</div>
+#: OrchardCore.Forms\Views\Items\ValidationSummaryPart.Fields.Edit.cshtml:14
+msgctxt "OrchardCore.Forms.Views.Items.ValidationSummaryPart.Fields.Edit"
+msgid "When checked, model level errors will be visible otherwise all errors will be visible."
+msgstr "با علامت زدن، خطاهای سطح مدل قابل مشاهده خواهند بود در غیر این صورت همه خطاها قابل مشاهده خواهند بود."
 

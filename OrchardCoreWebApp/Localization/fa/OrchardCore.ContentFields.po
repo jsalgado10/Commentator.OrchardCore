@@ -10,43 +10,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
-"PO-Revision-Date: 2023-02-18 19:28\n"
+"PO-Revision-Date: 2023-12-22 16:10\n"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.ContentItemIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:92
+#: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:108
 msgctxt "OrchardCore.ContentFields.Drivers.ContentPickerFieldDisplayDriver"
 msgid "The {0} field is required."
 msgstr "فیلد {0} الزامی است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.ContentItemIds), S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:97
+#: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:113
 msgctxt "OrchardCore.ContentFields.Drivers.ContentPickerFieldDisplayDriver"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\DateFieldDisplayDriver.cs:54
 msgctxt "OrchardCore.ContentFields.Drivers.DateFieldDisplayDriver"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(model.LocalDateTime), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\DateTimeFieldDisplayDriver.cs:63
 msgctxt "OrchardCore.ContentFields.Drivers.DateTimeFieldDisplayDriver"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
-#. context.Updater.ModelState.AddModelError(Prefix, nameof(viewModel.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}", fieldName, string.Join(" ", errors)]);
-#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:93
+#. nameof(viewModel.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}",
+#: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:96
 msgctxt "OrchardCore.ContentFields.Drivers.HtmlFieldDisplayDriver"
 msgid "{0} doesn't contain a valid Liquid expression. Details: {1}"
-msgstr ""
+msgstr "{0} شامل عبارت Liquid معتبری نیست. توضیحات: {1}"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["The url is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:97
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The url is required for {0}."
-msgstr ""
+msgstr "آدرس برای {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["{0} is an invalid url.", field.Url]);
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Url), S["{0} is an invalid url.", field.Url]);
@@ -54,151 +54,151 @@ msgstr ""
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:111
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "{0} is an invalid url."
-msgstr ""
+msgstr "{0} یک آدرس نامعتبر است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The link text is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:119
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The link text is required for {0}."
-msgstr ""
+msgstr "متن لینک برای {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["The text default value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:123
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
 msgid "The text default value is required for {0}."
-msgstr ""
+msgstr "متن پیش‌فرض برای {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.LocalizationSets), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LocalizationSetContentPickerFieldDisplayDriver.cs:98
 msgctxt "OrchardCore.ContentFields.Drivers.LocalizationSetContentPickerFieldDisplayDriver"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.LocalizationSets), S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LocalizationSetContentPickerFieldDisplayDriver.cs:103
 msgctxt "OrchardCore.ContentFields.Drivers.LocalizationSetContentPickerFieldDisplayDriver"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Values), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\MultiTextFieldDisplayDriver.cs:70
 msgctxt "OrchardCore.ContentFields.Fields.MultiTextFieldDisplayDriver"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:80
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["{0} is an invalid number.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:85
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "{0} is an invalid number."
-msgstr ""
+msgstr "{0} یک عدد نامعتبر است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["The value must be greater than {0}.", settings.Minimum.Value]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "The value must be greater than {0}."
-msgstr ""
+msgstr "مقدار باید از {0} بزرگتر باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["The value must be less than {0}.", settings.Maximum.Value]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:98
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "The value must be less than {0}."
-msgstr ""
+msgstr "مقدار باید از {0} کوچکتر باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["The {0} field must be an integer.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:106
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "The {0} field must be an integer."
-msgstr ""
+msgstr "مقدار فیلد {0} باید یک عدد صحیح باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["Invalid number of digits for {0}, max allowed: {1}.", context.PartFieldDefinition.DisplayName(), settings.Scale]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:110
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
 msgid "Invalid number of digits for {0}, max allowed: {1}."
-msgstr ""
+msgstr "تعداد رقم مجاز برای {0} صحیح نیست. بیشترین تعداد مجاز {1} است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Text), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
-#: OrchardCore.ContentFields\Drivers\TextFieldDisplayDriver.cs:55
+#: OrchardCore.ContentFields\Drivers\TextFieldDisplayDriver.cs:56
 msgctxt "OrchardCore.ContentFields.Drivers.TextFieldDisplayDriver"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.Value), S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\TimeFieldDisplayDriver.cs:54
 msgctxt "OrchardCore.ContentFields.Drivers.TimeFieldDisplayDriver"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:88
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(field.UserIds), S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\UserPickerFieldDisplayDriver.cs:93
 msgctxt "OrchardCore.ContentFields.Drivers.UserPickerFieldDisplayDriver"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(model.RawAddress), S["A value is required for '{0}'.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\YoutubeFieldDisplayDriver.cs:59
 msgctxt "OrchardCore.ContentFields.Drivers.YoutubeFieldDisplayDriver"
 msgid "A value is required for '{0}'."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(model.RawAddress), S["The format of the url is invalid"]);
 #: OrchardCore.ContentFields\Drivers\YoutubeFieldDisplayDriver.cs:77
 msgctxt "OrchardCore.ContentFields.Drivers.YoutubeFieldDisplayDriver"
 msgid "The format of the url is invalid"
-msgstr ""
+msgstr "فرمت آدرس نامعتبر است"
 
 #. Description = S["Content stored as HTML."];
 #: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:28
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "Content stored as HTML."
-msgstr ""
+msgstr "محتوا به صورت HTML ذخیره شد."
 
 #. .Description(S["the HTML content"])
 #: OrchardCore.ContentFields\GraphQL\Types\HtmlFieldQueryObjectType.cs:32
 msgctxt "OrchardCore.ContentFields.GraphQL.HtmlFieldQueryObjectType"
 msgid "the HTML content"
-msgstr ""
+msgstr "محتوای HTML"
 
 #. context.Fail(S["The {0} field is required.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.ContentItemIds));
 #: OrchardCore.ContentFields\Handlers\ContentPickerFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.ContentPickerFieldHandler"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. context.Fail(S["The {0} field cannot contain multiple items.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.ContentItemIds));
 #: OrchardCore.ContentFields\Handlers\ContentPickerFieldHandler.cs:30
 msgctxt "OrchardCore.ContentFields.Handlers.ContentPickerFieldHandler"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\DateFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.DateFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\DateTimeFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.DateTimeFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["The url is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Url));
 #: OrchardCore.ContentFields\Handlers\LinkFieldHandler.cs:62
 msgctxt "OrchardCore.ContentFields.Handlers.LinkFieldHandler"
 msgid "The url is required for {0}."
-msgstr ""
+msgstr "آدرس برای {0} ضروری است."
 
 #. context.Fail(S["{0} is an invalid url.", field.Url], nameof(field.Url));
 #. context.Fail(S["{0} is an invalid url.", field.Url], nameof(field.Url));
@@ -206,121 +206,127 @@ msgstr ""
 #: OrchardCore.ContentFields\Handlers\LinkFieldHandler.cs:76
 msgctxt "OrchardCore.ContentFields.Handlers.LinkFieldHandler"
 msgid "{0} is an invalid url."
-msgstr ""
+msgstr "{0} یک آدرس نامعتبر است."
 
 #. context.Fail(S["The link text is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Text));
 #: OrchardCore.ContentFields\Handlers\LinkFieldHandler.cs:83
 msgctxt "OrchardCore.ContentFields.Handlers.LinkFieldHandler"
 msgid "The link text is required for {0}."
-msgstr ""
+msgstr "متن لینک برای {0} ضروری است."
 
 #. context.Fail(S["The text default value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Text));
 #: OrchardCore.ContentFields\Handlers\LinkFieldHandler.cs:87
 msgctxt "OrchardCore.ContentFields.Handlers.LinkFieldHandler"
 msgid "The text default value is required for {0}."
-msgstr ""
+msgstr "متن پیش‌فرض برای {0} ضروری است."
 
 #. context.Fail(S["The {0} field is required.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.LocalizationSets));
 #: OrchardCore.ContentFields\Handlers\LocalizationSetContentPickerFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.LocalizationSetContentPickerFieldHandler"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. context.Fail(S["The {0} field cannot contain multiple items.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.LocalizationSets));
 #: OrchardCore.ContentFields\Handlers\LocalizationSetContentPickerFieldHandler.cs:30
 msgctxt "OrchardCore.ContentFields.Handlers.LocalizationSetContentPickerFieldHandler"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Values));
 #: OrchardCore.ContentFields\Handlers\MultiTextFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.MultiTextFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\NumericFieldHandler.cs:26
 msgctxt "OrchardCore.ContentFields.Handlers.NumericFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["The value must be greater than {0}.", settings.Minimum.Value], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\NumericFieldHandler.cs:33
 msgctxt "OrchardCore.ContentFields.Handlers.NumericFieldHandler"
 msgid "The value must be greater than {0}."
-msgstr ""
+msgstr "مقدار باید از {0} بزرگتر باشد."
 
 #. context.Fail(S["The value must be less than {0}.", settings.Maximum.Value], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\NumericFieldHandler.cs:38
 msgctxt "OrchardCore.ContentFields.Handlers.NumericFieldHandler"
 msgid "The value must be less than {0}."
-msgstr ""
+msgstr "مقدار باید از {0} کوچکتر باشد."
 
 #. context.Fail(S["The {0} field must be an integer.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\NumericFieldHandler.cs:46
 msgctxt "OrchardCore.ContentFields.Handlers.NumericFieldHandler"
 msgid "The {0} field must be an integer."
-msgstr ""
+msgstr "مقدار فیلد {0} باید یک عدد صحیح باشد."
 
 #. context.Fail(S["Invalid number of digits for {0}, max allowed: {1}.", context.ContentPartFieldDefinition.DisplayName(), settings.Scale], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\NumericFieldHandler.cs:50
 msgctxt "OrchardCore.ContentFields.Handlers.NumericFieldHandler"
 msgid "Invalid number of digits for {0}, max allowed: {1}."
-msgstr ""
+msgstr "تعداد رقم مجاز برای {0} صحیح نیست. بیشترین تعداد مجاز {1} است."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Text));
 #: OrchardCore.ContentFields\Handlers\TextFieldHandler.cs:26
 msgctxt "OrchardCore.ContentFields.Handlers.TextFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["A value is required for {0}.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.Value));
 #: OrchardCore.ContentFields\Handlers\TimeFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.TimeFieldHandler"
 msgid "A value is required for {0}."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["The {0} field is required.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.UserIds));
 #: OrchardCore.ContentFields\Handlers\UserPickerFieldHandler.cs:25
 msgctxt "OrchardCore.ContentFields.Handlers.UserPickerFieldHandler"
 msgid "The {0} field is required."
-msgstr ""
+msgstr "فیلد {0} ضروری است."
 
 #. context.Fail(S["The {0} field cannot contain multiple items.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.UserIds));
 #: OrchardCore.ContentFields\Handlers\UserPickerFieldHandler.cs:30
 msgctxt "OrchardCore.ContentFields.Handlers.UserPickerFieldHandler"
 msgid "The {0} field cannot contain multiple items."
-msgstr ""
+msgstr "فیلد {0} نمی‌تواند شامل چند آیتم باشد."
 
 #. context.Fail(S["A value is required for '{0}'.", context.ContentPartFieldDefinition.DisplayName()], nameof(field.RawAddress));
 #: OrchardCore.ContentFields\Handlers\YoutubeFieldHandler.cs:27
 msgctxt "OrchardCore.ContentFields.Handlers.YoutubeFieldHandler"
 msgid "A value is required for '{0}'."
-msgstr ""
+msgstr "مقدار {0} ضروری است."
 
 #. context.Fail(S["The format of the url is invalid"], nameof(field.RawAddress));
 #: OrchardCore.ContentFields\Handlers\YoutubeFieldHandler.cs:40
 msgctxt "OrchardCore.ContentFields.Handlers.YoutubeFieldHandler"
 msgid "The format of the url is invalid"
-msgstr ""
+msgstr "فرمت آدرس نامعتبر است"
+
+#. context.Updater.ModelState.AddModelError(nameof(model.TitlePattern), S["Title Pattern does not contain a valid Liquid expression. Details: {0}", string.Join(" ", titleErrors)]);
+#: OrchardCore.ContentFields\Settings\ContentPickerFieldSettingsDriver.cs:80
+msgctxt "OrchardCore.ContentFields.Settings.ContentPickerFieldSettingsDriver"
+msgid "Title Pattern does not contain a valid Liquid expression. Details: {0}"
+msgstr "الگوی عنوان حاوی یک عبارت Liquid معتبر نیست. جزئیات: {0}"
 
 #. updater.ModelState.AddModelError(Prefix, nameof(ContentPickerFieldSettingsViewModel.Stereotypes), S["Please provide a Stereotype."]);
-#: OrchardCore.ContentFields\Settings\ContentPickerFieldSettingsDriver.cs:72
+#: OrchardCore.ContentFields\Settings\ContentPickerFieldSettingsDriver.cs:91
 msgctxt "OrchardCore.ContentFields.Settings.ContentPickerFieldSettingsDriver"
 msgid "Please provide a Stereotype."
-msgstr ""
+msgstr "لطفا یک کلیشه ارائه دهید."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(ContentPickerFieldSettingsViewModel.DisplayedContentTypes), S["At least one content type must be selected."]);
-#: OrchardCore.ContentFields\Settings\ContentPickerFieldSettingsDriver.cs:84
+#: OrchardCore.ContentFields\Settings\ContentPickerFieldSettingsDriver.cs:103
 msgctxt "OrchardCore.ContentFields.Settings.ContentPickerFieldSettingsDriver"
 msgid "At least one content type must be selected."
-msgstr ""
+msgstr "حداقل یک نوع محتوا باید انتخاب شود."
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:48
+#: OrchardCore.ContentFields\Settings\HtmlFieldMonacoEditorSettingsDriver.cs:50
 msgctxt "OrchardCore.ContentFields.Settings.HtmlFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 
 #. context.Updater.ModelState.AddModelError(Prefix + '.' + nameof(TrumbowygSettingsViewModel.Options), S["The options are written in an incorrect format."]);
 #: OrchardCore.ContentFields\Settings\HtmlFieldTrumbowygEditorSettingsDriver.cs:44
@@ -332,13 +338,13 @@ msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 #: OrchardCore.ContentFields\Settings\MultiTextFieldSettingsDriver.cs:49
 msgctxt "OrchardCore.ContentFields.Settings.MultiTextFieldSettingsDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 
 #. context.Updater.ModelState.AddModelError(Prefix + "." + nameof(MonacoSettingsViewModel.Options), S["The options are written in an incorrect format."]);
-#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:47
+#: OrchardCore.ContentFields\Settings\TextFieldMonacoEditorSettingsDriver.cs:49
 msgctxt "OrchardCore.ContentFields.Settings.TextFieldMonacoEditorSettingsDriver"
 msgid "The options are written in an incorrect format."
-msgstr ""
+msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 
 #. context.Updater.ModelState.AddModelError(Prefix, S["The options are written in an incorrect format."]);
 #: OrchardCore.ContentFields\Settings\TextFieldPredefinedListEditorSettingsDriver.cs:54
@@ -350,7 +356,7 @@ msgstr "تنظیمات در فرمت نادرستی نوشته شده‌اند."
 #: OrchardCore.ContentFields\ViewModels\EditYoutubeFieldViewModel.cs:10
 msgctxt "OrchardCore.ContentFields.ViewModels.EditYoutubeFieldViewModel"
 msgid "The field only accepts Urls"
-msgstr ""
+msgstr "فیلد فقط آدرس می پذیرد"
 
 #. <option value="Switch" selected="@(currentEditor == "Switch")">@T["Switch"]</option>
 #: OrchardCore.ContentFields\Views\BooleanField-Switch.Option.cshtml:4
@@ -358,19 +364,19 @@ msgctxt "OrchardCore.ContentFields.Views.BooleanField-Switch.Option"
 msgid "Switch"
 msgstr "سوییچ"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\BooleanField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.BooleanField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\BooleanField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.BooleanField.Option"
 msgid "Standard"
 msgstr "استاندارد"
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\BooleanFieldSettings.Edit.cshtml:5
 msgctxt "OrchardCore.ContentFields.Views.BooleanFieldSettings.Edit"
 msgid "Hint"
@@ -382,7 +388,7 @@ msgctxt "OrchardCore.ContentFields.Views.BooleanFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <label asp-for="Label">@T["Label"]</label>
+#. <label asp-for="Label" class="form-label">@T["Label"]</label>
 #: OrchardCore.ContentFields\Views\BooleanFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.BooleanFieldSettings.Edit"
 msgid "Label"
@@ -412,135 +418,147 @@ msgctxt "OrchardCore.ContentFields.Views.ContentPickerField"
 msgid "No content items."
 msgstr "هیج آیتم محتوایی یافت نشد."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\ContentPickerField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <div class="align-items-center align-self-center"><span>{{ item.displayText }}</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
 #. <div v-cloak><span>{{ props.option.displayText }}</span><span class="small ms-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:29
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:48
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:28
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:47
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
 msgid "Not published"
 msgstr "منتشر نشده"
 
 #. label="displayText" placeholder="@T["Type to search"]"
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:41
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:40
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
 msgid "Type to search"
 msgstr "برای جستجو تایپ کنید"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:46
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
 msgid "Select"
 msgstr "انتخاب"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:46
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
 msgid "Remove"
 msgstr "حذف"
 
 #. @T["No result found"]
-#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:51
+#: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:50
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
 msgid "No result found"
 msgstr "موردی یافت نشد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\ContentPickerField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Option"
 msgid "Standard"
 msgstr "استاندارد"
 
 #. <label class="form-check-label" asp-for="Required">@T["Required"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:7
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:16
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Required"
 msgstr "ضروری"
 
 #. <span class="hint dashed">@T["Whether to ensure at least one element is selected."]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:8
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:17
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Whether to ensure at least one element is selected."
 msgstr "در صورتی که می‌خواهید مطمئن شوید، حداقل یک المان انتخاب شده باشد."
 
 #. <label class="form-check-label" asp-for="Multiple">@T["Allow multiple"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:15
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Allow multiple"
 msgstr "امکان چندین انتخاب"
 
 #. <span class="hint dashed">@T["Whether to allow multiple elements to be selected."]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:16
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:25
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Whether to allow multiple elements to be selected."
 msgstr "امکان انتخاب چند اِلمان وجود داشته باشد."
 
-#. <label asp-for="Source">@T["Contained Content Types"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:21
+#. <label asp-for="Source" class="form-label">@T["Contained Content Types"]</label>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:30
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Contained Content Types"
-msgstr ""
+msgstr "انواع محتوایی که شامل می‌شود"
 
 #. @T["Display All Content Types"]
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:26
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:35
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Display All Content Types"
-msgstr ""
+msgstr "نمایش انواع محتوا"
 
 #. @T["Content Types"]
-#. <label asp-for="DisplayedContentTypes">@T["Content Types"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:32
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:53
+#. <label asp-for="DisplayedContentTypes" class="form-label">@T["Content Types"]</label>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:41
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:62
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Content Types"
 msgstr "انواع محتوا"
 
 #. @T["Stereotype"] <span class="hint">@T["All content types of these Stereotypes"]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:38
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:47
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Stereotype"
-msgstr ""
+msgstr "استریوتایپ"
 
 #. @T["Stereotype"] <span class="hint">@T["All content types of these Stereotypes"]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:38
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:47
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "All content types of these Stereotypes"
-msgstr ""
+msgstr "همه نوع محتوای این استریوتایپ ها"
 
-#. <label asp-for="Stereotypes">@T["Stereotypes"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:46
+#. <label asp-for="Stereotypes" class="form-label">@T["Stereotypes"]</label>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:55
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Stereotypes"
-msgstr ""
+msgstr "استریوتایپ"
 
 #. <span class="hint">@T["The Stereotypes of the content types that this field can contain. You may define multiple Stereotypes using the comma (,) as a separator"]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:48
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:57
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "The Stereotypes of the content types that this field can contain. You may define multiple Stereotypes using the comma (,) as a separator"
-msgstr ""
+msgstr "کلیشه های انواع محتوایی که این زمینه می تواند داشته باشد. شما می توانید چندین کلیشه را با استفاده از کاما (،) به عنوان جداکننده تعریف کنید"
 
 #. <span class="hint">@T["The content types to display. Choose at least one."]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:54
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:63
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "The content types to display. Choose at least one."
 msgstr "انواع محتوا جهت نمایش. حداقل یک مورد انتخاب شود."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:60
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:69
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "Hint"
 msgstr "راهنمایی"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
-#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:63
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:72
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
+
+#. <label asp-for="TitlePattern" class="form-label">@T["Title Pattern"]</label>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:77
+msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
+msgid "Title Pattern"
+msgstr "الگوی عنوان"
+
+#. <span class="hint">@T["The pattern used to render the title in content picker. With Liquid support."]</span>
+#: OrchardCore.ContentFields\Views\ContentPickerFieldSettings.Edit.cshtml:80
+msgctxt "OrchardCore.ContentFields.Views.ContentPickerFieldSettings.Edit"
+msgid "The pattern used to render the title in content picker. With Liquid support."
+msgstr "الگوی مورد استفاده برای ارائه عنوان در انتخابگر محتوا. با پشتیبانی Liquid."
 
 #. <option value="Localized" selected="@(currentEditor == "Localized")">@T["Localized"]</option>
 #: OrchardCore.ContentFields\Views\DateField-Localized.Option.cshtml:4
@@ -548,13 +566,13 @@ msgctxt "OrchardCore.ContentFields.Views.DateField-Localized.Option"
 msgid "Localized"
 msgstr "بومی‌سازی شده"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\DateField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.DateField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\DateField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.DateField.Option"
 msgid "Standard"
@@ -572,7 +590,7 @@ msgctxt "OrchardCore.ContentFields.Views.DateFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\DateFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.DateFieldSettings.Edit"
 msgid "Hint"
@@ -584,13 +602,13 @@ msgctxt "OrchardCore.ContentFields.Views.DateFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\DateTimeField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.DateTimeField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\DateTimeField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.DateTimeField.Option"
 msgid "Standard"
@@ -608,7 +626,7 @@ msgctxt "OrchardCore.ContentFields.Views.DateTimeFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\DateTimeFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.DateTimeFieldSettings.Edit"
 msgid "Hint"
@@ -624,7 +642,7 @@ msgstr "توضیحی در مورد این فیلد که برای ویرایشگ�
 #: OrchardCore.ContentFields\Views\HtmlField-Monaco.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.HtmlField-Monaco.Option"
 msgid "Monaco editor"
-msgstr ""
+msgstr "ویرایشگر Monaco"
 
 #. <option value="Multiline" selected="@(currentEditor == "Multiline")">@T["Multiline"]</option>
 #: OrchardCore.ContentFields\Views\HtmlField-Multiline.Option.cshtml:4
@@ -644,31 +662,31 @@ msgctxt "OrchardCore.ContentFields.Views.HtmlField-Wysiwyg.Option"
 msgid "Wysiwyg editor"
 msgstr "ویرایشگر Wysiwyg"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\HtmlField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.HtmlField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\HtmlField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.HtmlField.Option"
 msgid "Standard"
 msgstr "استاندارد"
 
-#. <label asp-for="Options">@T["Enter the editor options, language is always set to `html` when saved."]</label>
-#: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:10
+#. <label asp-for="Options" class="form-label">@T["Enter the editor options, language is always set to `html` when saved."]</label>
+#: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:11
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldMonacoEditorSettings.Edit"
 msgid "Enter the editor options, language is always set to `html` when saved."
-msgstr ""
+msgstr "تنظیمات ویرایشگر را وارد نمایید. زبان پیشفرش هنگام ذخیره \"html\" است."
 
-#. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.IStandaloneEditorConstructionOptions.html" target="_blank">@T["Documentation for options"]</a></span>
-#: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:12
+#. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/typedoc/interfaces/editor.IStandaloneEditorConstructionOptions.html" target="_blank">@T["Documentation for options"]</a></span>
+#: OrchardCore.ContentFields\Views\HtmlFieldMonacoEditorSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldMonacoEditorSettings.Edit"
 msgid "Documentation for options"
-msgstr ""
+msgstr "مستندات تنظیمات"
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\HtmlFieldSettings.Edit.cshtml:5
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldSettings.Edit"
 msgid "Hint"
@@ -684,19 +702,19 @@ msgstr "توضیحی در مورد این فیلد که برای ویرایشگ�
 #: OrchardCore.ContentFields\Views\HtmlFieldSettings.Edit.cshtml:14
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldSettings.Edit"
 msgid "Sanitize Html"
-msgstr ""
+msgstr "حذف تگ های غیرمجاز از html (جهت جلوگیری از حمله xss با تگ های غیر مجاز)"
 
 #. @T["Whether the Html is sanitized to prevent custom scripts."]
 #: OrchardCore.ContentFields\Views\HtmlFieldSettings.Edit.cshtml:16
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldSettings.Edit"
 msgid "Whether the Html is sanitized to prevent custom scripts."
-msgstr ""
+msgstr "آیا Html برای جلوگیری از اسکریپت های سفارشی پاکسازی شده است یا خیر."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/core/Sanitizer" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.ContentFields\Views\HtmlFieldSettings.Edit.cshtml:17
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldSettings.Edit"
 msgid "See documentation"
-msgstr ""
+msgstr "مستندات را ببینید"
 
 #. <label class="form-check-label" asp-for="InsertMediaWithUrl">@T["Insert Media with url"]</label>
 #: OrchardCore.ContentFields\Views\HtmlFieldTrumbowygEditorSettings.Edit.cshtml:6
@@ -708,9 +726,9 @@ msgstr "واردکردن فایل با آدرس"
 #: OrchardCore.ContentFields\Views\HtmlFieldTrumbowygEditorSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldTrumbowygEditorSettings.Edit"
 msgid "Whether the url is used when selected from Insert Media (By default, the Shortcode is inserted)."
-msgstr ""
+msgstr "آیا نشانی اینترنتی هنگام انتخاب از Insert Media استفاده می‌شود یا نه (به طور پیش‌فرض، Shortcode درج می‌شود)."
 
-#. <label asp-for="Options">@T["Enter the editor options"]</label>
+#. <label asp-for="Options" class="form-label">@T["Enter the editor options"]</label>
 #: OrchardCore.ContentFields\Views\HtmlFieldTrumbowygEditorSettings.Edit.cshtml:12
 msgctxt "OrchardCore.ContentFields.Views.HtmlFieldTrumbowygEditorSettings.Edit"
 msgid "Enter the editor options"
@@ -722,20 +740,20 @@ msgctxt "OrchardCore.ContentFields.Views.HtmlFieldTrumbowygEditorSettings.Edit"
 msgid "Documentation for options"
 msgstr "مستندات تنظیمات"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\LinkField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.LinkField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <label asp-for="Url" class="@urlClass">@T["Url"]</label>
-#: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:22
+#: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.LinkField.Edit"
 msgid "Url"
 msgstr "آدرس"
 
 #. <label asp-for="Text" class="@textClass">@T["Link text"]</label>
-#: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:38
+#: OrchardCore.ContentFields\Views\LinkField.Edit.cshtml:37
 msgctxt "OrchardCore.ContentFields.Views.LinkField.Edit"
 msgid "Link text"
 msgstr "متن لینک"
@@ -752,7 +770,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Whether the url is required."
 msgstr "وارد کردن آدرس ضروری باشد."
 
-#. <label asp-for="LinkTextMode">@T["Text"]</label>
+#. <label asp-for="LinkTextMode" class="form-label">@T["Text"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Text"
@@ -782,7 +800,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Use the url of the link"
 msgstr "استفاده از آدرس لینک"
 
-#. <label asp-for="Hint">@T["Hint for the url"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint for the url"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Hint for the url"
@@ -794,7 +812,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "The hint text to display for the url on the editor."
 msgstr "توضیحی در مورد آدرس که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <label asp-for="HintLinkText">@T["Hint for the text"]</label>
+#. <label asp-for="HintLinkText" class="form-label">@T["Hint for the text"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:29
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Hint for the text"
@@ -806,7 +824,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "The hint text to display for the text of the link on the editor."
 msgstr "توضیحی در مورد متن لینک که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <label asp-for="UrlPlaceholder">@T["Watermark for the url"]</label>
+#. <label asp-for="UrlPlaceholder" class="form-label">@T["Watermark for the url"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:36
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Watermark for the url"
@@ -818,7 +836,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "A hint (placeholder) to display when the input of the url is empty."
 msgstr "توضیحی (از نوع پلازهولدر) که در صورت وارد نکردن آدرس نمایش داده می‌شود."
 
-#. <label asp-for="TextPlaceholder">@T["Watermark for the text"]</label>
+#. <label asp-for="TextPlaceholder" class="form-label">@T["Watermark for the text"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:41
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Watermark for the text"
@@ -830,7 +848,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "A hint (placeholder) to display when the input of the text is empty."
 msgstr "توضیحی (از نوع پلازهولدر) که در صورت وارد نکردن متن نمایش داده می‌شود."
 
-#. <label asp-for="DefaultUrl">@T["Default value of the url"]</label>
+#. <label asp-for="DefaultUrl" class="form-label">@T["Default value of the url"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:48
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Default value of the url"
@@ -842,7 +860,7 @@ msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "A valid url proposed when creating a content item."
 msgstr "یک آدرس معتبر که هنگام ساخت یک آیتم محتوا پیشنهاد می‌شود."
 
-#. <label asp-for="DefaultText">@T["Default value of the text"]</label>
+#. <label asp-for="DefaultText" class="form-label">@T["Default value of the text"]</label>
 #: OrchardCore.ContentFields\Views\LinkFieldSettings.Edit.cshtml:54
 msgctxt "OrchardCore.ContentFields.Views.LinkFieldSettings.Edit"
 msgid "Default value of the text"
@@ -860,45 +878,45 @@ msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField"
 msgid "No content items."
 msgstr "هیج آیتم محتوایی یافت نشد."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <div class="align-items-center align-self-center"><span>{{ item.displayText }}</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
 #. <div v-cloak><span>{{ props.option.displayText }}</span><span class="small ms-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:33
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:52
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:32
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:51
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
 msgid "Not published"
 msgstr "منتشر نشده"
 
 #. label="displayText" placeholder="@T["Type to search"]"
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:45
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:44
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
 msgid "Type to search"
 msgstr "برای جستجو تایپ کنید"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:50
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:49
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
 msgid "Select"
 msgstr "انتخاب"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:50
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:49
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
 msgid "Remove"
 msgstr "حذف"
 
 #. @T["No result found"]
-#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:55
+#: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:54
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
 msgid "No result found"
 msgstr "نتیجه‌ای یافت نشد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Option"
 msgid "Standard"
@@ -928,7 +946,7 @@ msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerFieldSettin
 msgid "Whether to allow multiple elements to be selected."
 msgstr "امکان انتخاب چند اِلمان وجود داشته باشد."
 
-#. <label asp-for="DisplayedContentTypes">@T["Content Types"]</label>
+#. <label asp-for="DisplayedContentTypes" class="form-label">@T["Content Types"]</label>
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerFieldSettings.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerFieldSettings.Edit"
 msgid "Content Types"
@@ -940,7 +958,7 @@ msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerFieldSettin
 msgid "The content types to display. Choose at least one."
 msgstr "انواع محتوا جهت نمایش. حداقل یک مورد انتخاب شود."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerFieldSettings.Edit.cshtml:28
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerFieldSettings.Edit"
 msgid "Hint"
@@ -974,160 +992,160 @@ msgstr "انصراف"
 #: OrchardCore.ContentFields\Views\MultiTextField-CheckboxList.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-CheckboxList.Option"
 msgid "Checkbox List"
-msgstr ""
+msgstr "فهرست چک باکس"
 
 #. placeholder="@T["Type to search"]"
-#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:38
+#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:37
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-Picker.Edit"
 msgid "Type to search"
-msgstr ""
+msgstr "برای جستجو تایپ کنید"
 
 #. select-label="@T["Select"]"
-#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:39
+#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:38
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-Picker.Edit"
 msgid "Select"
-msgstr ""
+msgstr "انتخاب"
 
 #. deselect-label="@T["Remove"]"
-#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:40
+#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:39
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-Picker.Edit"
 msgid "Remove"
-msgstr ""
+msgstr "حذف"
 
 #. @T["No values found"]
-#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:50
+#: OrchardCore.ContentFields\Views\MultiTextField-Picker.Edit.cshtml:49
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-Picker.Edit"
 msgid "No values found"
-msgstr ""
+msgstr "مقداری یافت نشد"
 
 #. <option value="Picker" selected="@(currentEditor == "Picker")">@T["Picker"]</option>
 #: OrchardCore.ContentFields\Views\MultiTextField-Picker.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField-Picker.Option"
 msgid "Picker"
-msgstr ""
+msgstr "انتخابگر"
 
 #: OrchardCore.ContentFields\Views\MultiTextField.cshtml:0
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField"
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\MultiTextField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\MultiTextField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.MultiTextField.Option"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <label class="form-check-label" asp-for="Required">@T["Required"]</label>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:6
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Required"
-msgstr ""
+msgstr "ضروری"
 
 #. <span class="hint dashed">@T["Whether a value is required."]</span>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Whether a value is required."
-msgstr ""
+msgstr "تعیین ضرروی بودن یک مقدار."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Hint"
-msgstr ""
+msgstr "راهنمایی"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:15
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
-msgstr ""
+msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
 #. <th scope="col">@T["Option Label"]</th>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:30
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Option Label"
-msgstr ""
+msgstr "برچسب تنظیم"
 
 #. <th scope="col">@T["Value"]</th>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:31
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Value"
-msgstr ""
+msgstr "مقدار"
 
 #. <th scope="col" colspan="3">@T["Default?"]</th>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:32
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Default?"
-msgstr ""
+msgstr "پیش‌فرض؟"
 
 #. <label class="form-check-label" title="@T["Set as default"]" v-bind:for="'customRadio_' + index"></label>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:46
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Set as default"
-msgstr ""
+msgstr "تنظیم به‌عنوان پیش‌فرض"
 
 #. <a v-on:click="remove(index)" href="javascript:void(0)" title="@T["Remove element from list"]" class="btn">
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:50
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Remove element from list"
-msgstr ""
+msgstr "حذف المان از لیست"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fa-solid fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:60
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Add an option"
-msgstr ""
+msgstr "افزودن یک گزینه"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fa-solid fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:73
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:101
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Edit Data"
-msgstr ""
+msgstr "ویرایش اطلاعات"
 
-#. <label for="options-textarea">@T["Options"]</label>
-#. <label asp-for="Options">@T["Options"]</label>
+#. <label for="options-textarea" class="form-label">@T["Options"]</label>
+#. <label asp-for="Options" class="form-label">@T["Options"]</label>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:78
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:100
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Options"
-msgstr ""
+msgstr "تنظیمات"
 
 #. <span class="hint">@T["A JSON representation of the allowed values, e.g. {0}", "[ { name: 'First option', value: 'option1' }, { name: 'Second option', value: 'option2' } ]"]</span>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:80
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "A JSON representation of the allowed values, e.g. {0}"
-msgstr ""
+msgstr "یک فایل JSON که مقادیر مجاز را نشان می‌دهد، برای مثال {0}"
 
-#. <label for="options-defaultvalue">@T["Default value"]</label>
+#. <label for="options-defaultvalue" class="form-label">@T["Default value"]</label>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:83
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Default value"
-msgstr ""
+msgstr "مقدار پیش‌فرض"
 
 #. <span class="hint">@T["(Optional) The default to assign to the text field."]</span>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:85
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "(Optional) The default to assign to the text field."
-msgstr ""
+msgstr "(اختیاری) مقدار پیش‌فرضی که به فیلد متنی اختصاص داده می‌شود."
 
 #. <button type="button" class="btn btn-primary btn-submit" v-on:click="closeModal()">@T["OK"]</button>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:89
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "OK"
-msgstr ""
+msgstr "تایید"
 
 #. <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@T["Cancel"]</button>
 #: OrchardCore.ContentFields\Views\MultiTextFieldSettings.Edit.cshtml:90
 msgctxt "OrchardCore.ContentFields.Views.MultiTextFieldSettings.Edit"
 msgid "Cancel"
-msgstr ""
+msgstr "انصراف"
 
 #. <option value="Range" selected="@(currentEditor == "Range")">@T["Range"]</option>
 #: OrchardCore.ContentFields\Views\NumericField-Range.Option.cshtml:4
@@ -1136,7 +1154,7 @@ msgid "Range"
 msgstr "محدوده"
 
 #. <option value="">@T["None"]</option>
-#: OrchardCore.ContentFields\Views\NumericField-Select.Edit.cshtml:19
+#: OrchardCore.ContentFields\Views\NumericField-Select.Edit.cshtml:18
 msgctxt "OrchardCore.ContentFields.Views.NumericField-Select.Edit"
 msgid "None"
 msgstr "هیچ‌کدام"
@@ -1159,13 +1177,13 @@ msgctxt "OrchardCore.ContentFields.Views.NumericField-Spinner.Option"
 msgid "Spinner"
 msgstr "اسپینر"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\NumericField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.NumericField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Number"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Number"]</option>
 #: OrchardCore.ContentFields\Views\NumericField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.NumericField.Option"
 msgid "Number"
@@ -1183,7 +1201,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Hint"
@@ -1195,7 +1213,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <label for="Placeholder">@T["Watermark (placeholder)"]</label>
+#. <label for="Placeholder" class="form-label">@T["Watermark (placeholder)"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:29
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Watermark (placeholder)"
@@ -1207,7 +1225,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "A hint to display when the input is empty. (optional)"
 msgstr "توضیحی که در صورت وارد نکردن مقدار نمایش داده می‌شود. (اختیاری)"
 
-#. <label for="Scale">@T["Scale"]</label>
+#. <label for="Scale" class="form-label">@T["Scale"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:37
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Scale"
@@ -1219,7 +1237,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "The number of digits after the decimal point."
 msgstr "تعداد رقم اعشار."
 
-#. <label for="Minimum">@T["Minimum"]</label>
+#. <label for="Minimum" class="form-label">@T["Minimum"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Minimum"
@@ -1231,7 +1249,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "The minimum value allowed. (optional)"
 msgstr "کمترین مقداری که مجاز است. (اختیاری)"
 
-#. <label for="Maximum">@T["Maximum"]</label>
+#. <label for="Maximum" class="form-label">@T["Maximum"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:53
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Maximum"
@@ -1243,7 +1261,7 @@ msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "The maximum value allowed. (optional)"
 msgstr "بیشترین مقداری که مجاز است. (اختیاری)"
 
-#. <label for="DefaultValue">@T["Default value"]</label>
+#. <label for="DefaultValue" class="form-label">@T["Default value"]</label>
 #: OrchardCore.ContentFields\Views\NumericFieldSettings.Edit.cshtml:61
 msgctxt "OrchardCore.ContentFields.Views.NumericFieldSettings.Edit"
 msgid "Default value"
@@ -1259,7 +1277,7 @@ msgstr "مقدار پیش‌فرض. (اختیاری)"
 #: OrchardCore.ContentFields\Views\TextField-CodeMirror.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField-CodeMirror.Option"
 msgid "Code Mirror"
-msgstr ""
+msgstr "Code Mirror"
 
 #. <option value="Color" selected="@(currentEditor == "Color")">@T["Color"]</option>
 #: OrchardCore.ContentFields\Views\TextField-Color.Option.cshtml:4
@@ -1289,7 +1307,7 @@ msgstr "انتخابگر آیکون"
 #: OrchardCore.ContentFields\Views\TextField-Monaco.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField-Monaco.Option"
 msgid "Monaco editor"
-msgstr ""
+msgstr "ویرایشگر Monaco"
 
 #. <option value="PredefinedList" selected="@(currentEditor == "PredefinedList")">@T["Predefined List"]</option>
 #: OrchardCore.ContentFields\Views\TextField-PredefinedList.Option.cshtml:4
@@ -1315,19 +1333,19 @@ msgctxt "OrchardCore.ContentFields.Views.TextField-Url.Option"
 msgid "Url"
 msgstr "آدرس"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\TextField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField.DisplayOption"
 msgid "Standard"
 msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\TextField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextField.Option"
 msgid "Standard"
 msgstr "استاندارد"
 
-#. <label asp-for="Level">@T["Select the header level to use"]</label>
+#. <label asp-for="Level" class="form-label">@T["Select the header level to use"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "Select the header level to use"
@@ -1337,49 +1355,49 @@ msgstr "انتخاب سطح تیتر برای استفاده"
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:6
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H1"
-msgstr ""
+msgstr "H1"
 
 #. <option value="h2">@T["H2"]</option>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H2"
-msgstr ""
+msgstr "H2"
 
 #. <option value="h3">@T["H3"]</option>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:8
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H3"
-msgstr ""
+msgstr "H3"
 
 #. <option value="h4">@T["H4"]</option>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:9
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H4"
-msgstr ""
+msgstr "H4"
 
 #. <option value="h5">@T["H5"]</option>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:10
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H5"
-msgstr ""
+msgstr "H5"
 
 #. <option value="h6">@T["H6"]</option>
 #: OrchardCore.ContentFields\Views\TextFieldHeaderDisplaySettings.Edit.cshtml:11
 msgctxt "OrchardCore.ContentFields.Views.TextFieldHeaderDisplaySettings.Edit"
 msgid "H6"
-msgstr ""
+msgstr "H6"
 
-#. <label asp-for="Options">@T["Enter the editor options."]</label>
-#: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:10
+#. <label asp-for="Options" class="form-label">@T["Enter the editor options."]</label>
+#: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:11
 msgctxt "OrchardCore.ContentFields.Views.TextFieldMonacoEditorSettings.Edit"
 msgid "Enter the editor options."
-msgstr ""
+msgstr "تنظیمات ویرایشگر را وارد کنید."
 
-#. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.IStandaloneEditorConstructionOptions.html" target="_blank">@T["Documentation for options"]</a></span>
-#: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:12
+#. <span class="hint"><a href="https://microsoft.github.io/monaco-editor/typedoc/interfaces/editor.IStandaloneEditorConstructionOptions.html" target="_blank">@T["Documentation for options"]</a></span>
+#: OrchardCore.ContentFields\Views\TextFieldMonacoEditorSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.TextFieldMonacoEditorSettings.Edit"
 msgid "Documentation for options"
-msgstr ""
+msgstr "مستندات تنظیمات"
 
 #. <th scope="col">@T["Option Label"]</th>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:15
@@ -1411,22 +1429,22 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "Remove element from list"
 msgstr "حذف المان از لیست"
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fa-solid fa-plus small" aria-hidden="true"></i> @T["Add an option"]</a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:45
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "Add an option"
 msgstr "افزودن یک گزینه"
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fa-solid fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:58
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:96
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "Edit Data"
 msgstr "ویرایش اطلاعات"
 
-#. <label for="options-textarea">@T["Options"]</label>
-#. <label asp-for="Options">@T["Options"]</label>
+#. <label for="options-textarea" class="form-label">@T["Options"]</label>
+#. <label asp-for="Options" class="form-label">@T["Options"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:63
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:95
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
@@ -1439,7 +1457,7 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "A JSON representation of the allowed values, e.g. {0}"
 msgstr "یک فایل JSON که مقادیر مجاز را نشان می‌دهد، برای مثال {0}"
 
-#. <label for="options-defaultvalue">@T["Default value"]</label>
+#. <label for="options-defaultvalue" class="form-label">@T["Default value"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:68
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "Default value"
@@ -1463,7 +1481,7 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "Cancel"
 msgstr "انصراف"
 
-#. <label asp-for="Editor">@T["What type of list editor should be used?"]</label>
+#. <label asp-for="Editor" class="form-label">@T["What type of list editor should be used?"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:85
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
 msgid "What type of list editor should be used?"
@@ -1493,7 +1511,7 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldSettings.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
 msgid "Hint"
@@ -1505,13 +1523,25 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <label for="DefaultValue" class="form-label">@T["Default value"]</label>
+#: OrchardCore.ContentFields\Views\TextFieldSettings.Edit.cshtml:21
+msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
+msgid "Default value"
+msgstr "مقدار پیش‌فرض"
+
+#. <span class="hint">@T["The default value. (optional)"]</span>
+#: OrchardCore.ContentFields\Views\TextFieldSettings.Edit.cshtml:24
+msgctxt "OrchardCore.ContentFields.Views.TextFieldSettings.Edit"
+msgid "The default value. (optional)"
+msgstr "مقدار پیش‌فرض. (اختیاری)"
+
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\TimeField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TimeField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\TimeField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.TimeField.Option"
 msgid "Standard"
@@ -1529,25 +1559,25 @@ msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Step">@T["Step"]</label>
+#. <label asp-for="Step" class="form-label">@T["Step"]</label>
 #: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:12
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Step"
-msgstr ""
+msgstr "گام"
 
 #. <span class="hint">@T["The step attribute of the time input allowing to edit seconds and ms."]</span>
 #: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:15
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "The step attribute of the time input allowing to edit seconds and ms."
-msgstr ""
+msgstr "ویژگی مرحله ورودی زمان که امکان ویرایش ثانیه و ms را می دهد."
 
 #. <span class="hint">@T["For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."]</span>
 #: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:16
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "For seconds use a divisor of 60 e.g. '15', for ms a decimal equal to a divisor of 1000 divided by 1000 e.g. '0.250'."
-msgstr ""
+msgstr "برای ثانیه از مقسوم علیه 60 استفاده کنید. '15'، برای ms یک اعشار برابر با تقسیم کننده 1000 بر 1000 است. '0.250'."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\TimeFieldSettings.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.TimeFieldSettings.Edit"
 msgid "Hint"
@@ -1563,174 +1593,174 @@ msgstr "توضیحی در مورد این فیلد که برای ویرایشگ�
 #: OrchardCore.ContentFields\Views\UserPickerField-UserNames.Display.cshtml:23
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField-UserNames.Display"
 msgid "No users."
-msgstr ""
+msgstr "بدون کاربر."
 
 #. <option value="UserNames" selected="@(currentDisplayMode == "UserNames")">@T["User Names"]</option>
 #: OrchardCore.ContentFields\Views\UserPickerField-UserNames.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField-UserNames.DisplayOption"
 msgid "User Names"
-msgstr ""
+msgstr "نام کاربری"
 
 #. <span class="value">@T["No users."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerField.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField"
 msgid "No users."
-msgstr ""
+msgstr "بدون کاربر."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\UserPickerField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <div class="align-items-center align-self-center"><span>{{ user.displayText }}</span> <span v-show="!user.isEnabled" class="text-muted small">(@T["Not enabled"])</span></div>
 #. <div v-cloak><span>{{ props.option.displayText }}</span><span class="small ms-2" v-show="!props.option.isEnabled">(@T["Not enabled"])</span></div>
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:30
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:49
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:29
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:48
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Edit"
 msgid "Not enabled"
-msgstr ""
+msgstr "غیرفعال"
 
 #. label="displayText" placeholder="@T["Type to search"]"
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:42
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:41
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Edit"
 msgid "Type to search"
-msgstr ""
+msgstr "برای جستجو تایپ کنید"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:47
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:46
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Edit"
 msgid "Select"
-msgstr ""
+msgstr "انتخاب"
 
 #. select-label="@T["Select"]" deselect-label="@T["Remove"]">
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:47
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:46
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Edit"
 msgid "Remove"
-msgstr ""
+msgstr "حذف"
 
 #. @T["No result found"]
-#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:52
+#: OrchardCore.ContentFields\Views\UserPickerField.Edit.cshtml:51
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Edit"
 msgid "No result found"
-msgstr ""
+msgstr "موردی یافت نشد"
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentEditor)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\UserPickerField.Option.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.UserPickerField.Option"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <label class="form-check-label" asp-for="Required">@T["Required"]</label>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:8
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Required"
-msgstr ""
+msgstr "ضروری"
 
 #. <span class="hint dashed">@T["Whether to ensure at least one element is selected."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:9
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Whether to ensure at least one element is selected."
-msgstr ""
+msgstr "در صورتی که می‌خواهید مطمئن شوید، حداقل یک المان انتخاب شده باشد."
 
 #. <label class="form-check-label" asp-for="Multiple">@T["Allow multiple"]</label>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:16
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Allow multiple"
-msgstr ""
+msgstr "چند انتخابی بودن"
 
 #. <span class="hint dashed">@T["Whether to allow multiple elements to be selected."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:17
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Whether to allow multiple elements to be selected."
-msgstr ""
+msgstr "امکان انتخاب چند اِلمان وجود داشته باشد."
 
-#. <label asp-for="Roles">@T["Roles"]</label>
+#. <label asp-for="Roles" class="form-label">@T["Roles"]</label>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:22
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Roles"
-msgstr ""
+msgstr "نقش‌ها"
 
 #. <span class="hint">@T["The roles that a user must belong to. Choose at least one."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:23
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "The roles that a user must belong to. Choose at least one."
-msgstr ""
+msgstr "نقش هایی که یک کاربر باید به آن تعلق داشته باشد. حداقل یک مورد را انتخاب کنید."
 
 #. <label class="form-check-label" asp-for="DisplayAllUsers">@T["Display All Users"]</label>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:27
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Display All Users"
-msgstr ""
+msgstr "نمایش همه کاربران"
 
 #. <span class="hint dashed">@T["Whether to allow picker to display users from all roles."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:28
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Whether to allow picker to display users from all roles."
-msgstr ""
+msgstr "آیا به انتخابگر اجازه می‌دهد تا کاربران را از همه نقش‌ها نمایش دهد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:47
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "Hint"
-msgstr ""
+msgstr "راهنمایی"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
 #: OrchardCore.ContentFields\Views\UserPickerFieldSettings.Edit.cshtml:50
 msgctxt "OrchardCore.ContentFields.Views.UserPickerFieldSettings.Edit"
 msgid "The hint text to display for this field on the editor."
-msgstr ""
+msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
+#. <option value="" selected="@string.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.ContentFields\Views\YoutubeField.DisplayOption.cshtml:4
 msgctxt "OrchardCore.ContentFields.Views.YoutubeField.DisplayOption"
 msgid "Standard"
-msgstr ""
+msgstr "استاندارد"
 
 #. <label class="form-check-label" asp-for="Required">@T["Required"]</label>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:12
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:6
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Required"
 msgstr "ضروری"
 
 #. <span class="hint dashed">@T["Whether a value is required."]</span>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:13
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:7
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Whether a value is required."
 msgstr "وارد کردن مقدار ضروری باشد."
 
-#. <label asp-for="Hint">@T["Hint"]</label>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:19
+#. <label asp-for="Hint" class="form-label">@T["Hint"]</label>
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:13
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Hint"
 msgstr "راهنمایی"
 
 #. <span class="hint">@T["The hint text to display for this field on the editor."]</span>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:22
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:16
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "The hint text to display for this field on the editor."
 msgstr "توضیحی در مورد این فیلد که برای ویرایشگر آن نمایش داده می‌شود."
 
-#. <label asp-for="Width">@T["Width"]</label>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:27
+#. <label asp-for="Width" class="form-label">@T["Width"]</label>
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:21
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Width"
 msgstr "عرض"
 
 #. <span class="hint">@T["The width of the Videobox"]</span>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:30
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:24
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "The width of the Videobox"
 msgstr "عرض کادر ویدیو"
 
-#. <label asp-for="Height">@T["Height"]</label>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:35
+#. <label asp-for="Height" class="form-label">@T["Height"]</label>
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:29
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "Height"
 msgstr "ارتفاع"
 
 #. <span class="hint">@T["The height of the Videobox"]</span>
-#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:38
+#: OrchardCore.ContentFields\Views\YoutubeFieldSetting.Edit.cshtml:32
 msgctxt "OrchardCore.ContentFields.Views.YoutubeFieldSetting.Edit"
 msgid "The height of the Videobox"
 msgstr "ارتفاع کادر ویدیو"

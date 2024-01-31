@@ -10,24 +10,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-02-18 20:34\n"
+"PO-Revision-Date: 2023-12-22 16:30\n"
+
+#. .Add(S["Configuration"], configuration => configuration
+#: OrchardCore.Seo\AdminMenu.cs:25
+msgctxt "OrchardCore.Seo.AdminMenu"
+msgid "Configuration"
+msgstr ""
+
+#. .Add(S["Settings"], settings => settings
+#: OrchardCore.Seo\AdminMenu.cs:26
+msgctxt "OrchardCore.Seo.AdminMenu"
+msgid "Settings"
+msgstr ""
+
+#. .Add(S["SEO"], S["SEO"].PrefixPosition(), seo => seo
+#. .Add(S["SEO"], S["SEO"].PrefixPosition(), seo => seo
+#: OrchardCore.Seo\AdminMenu.cs:27
+#: OrchardCore.Seo\AdminMenu.cs:27
+msgctxt "OrchardCore.Seo.AdminMenu"
+msgid "SEO"
+msgstr ""
+
+#. await _notifier.WarningAsync(H["A physical {0} file is found for the current site. Until removed, the settings below will have no effect.", SeoConstants.RobotsFileName]);
+#: OrchardCore.Seo\Drivers\RobotsSettingsDisplayDriver.cs:53
+msgctxt "OrchardCore.Seo.Drivers.RobotsSettingsDisplayDriver"
+msgid "A physical {0} file is found for the current site. Until removed, the settings below will have no effect."
+msgstr ""
 
 #. updater.ModelState.AddModelError(Prefix, S["The canonical entry contains invalid characters."]);
-#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:121
+#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:109
 msgctxt "OrchardCore.Seo.Drivers.SeoMetaPartDisplayDriver"
 msgid "The canonical entry contains invalid characters."
 msgstr ""
 
 #. updater.ModelState.AddModelError(Prefix, S["The meta entries are written in an incorrect format."]);
-#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:126
+#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:114
 msgctxt "OrchardCore.Seo.Drivers.SeoMetaPartDisplayDriver"
 msgid "The meta entries are written in an incorrect format."
 msgstr ""
 
 #. updater.ModelState.AddModelError(Prefix, S["The google schema is written in an incorrect format."]);
-#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:154
+#: OrchardCore.Seo\Drivers\SeoMetaPartDisplayDriver.cs:142
 msgctxt "OrchardCore.Seo.Drivers.SeoMetaPartDisplayDriver"
 msgid "The google schema is written in an incorrect format."
+msgstr ""
+
+#. Description = S["Meta entry"];
+#: OrchardCore.Seo\GraphQL\MetaEntryQueryObjectType.cs:14
+msgctxt "OrchardCore.Seo.GraphQL.MetaEntryQueryObjectType"
+msgid "Meta entry"
+msgstr ""
+
+#. Description = S["SEO meta fields"];
+#: OrchardCore.Seo\GraphQL\SeoMetaQueryObjectType.cs:14
+msgctxt "OrchardCore.Seo.GraphQL.SeoMetaQueryObjectType"
+msgid "SEO meta fields"
+msgstr ""
+
+#. <label class="form-check-label" asp-for="AllowAllAgents">@T["Add a rule to allow all web robots."]</label>
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:10
+msgctxt "OrchardCore.Seo.Views.RobotsSettings.Edit"
+msgid "Add a rule to allow all web robots."
+msgstr ""
+
+#. <span class="hint dashed">@T["Adds: <code>{0}</code>", "User-agent: *"]</span>
+#. <span class="hint dashed">@T["Adds: <code>{0}</code>", $"Disallow: /{AdminOptions.Value.AdminUrlPrefix}"]</span>
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:11
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:18
+msgctxt "OrchardCore.Seo.Views.RobotsSettings.Edit"
+msgid "Adds: <code>{0}</code>"
+msgstr ""
+
+#. <label class="form-check-label" asp-for="DisallowAdmin">@T["Add a rule to disallow web robots to the admin routes."]</label>
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:17
+msgctxt "OrchardCore.Seo.Views.RobotsSettings.Edit"
+msgid "Add a rule to disallow web robots to the admin routes."
+msgstr ""
+
+#. <label asp-for="AdditionalRules" class="form-label">@T["Additional rules"]</label>
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:22
+msgctxt "OrchardCore.Seo.Views.RobotsSettings.Edit"
+msgid "Additional rules"
+msgstr ""
+
+#. <div class="hint">@T["Optionally, you can include any additional rules."]</div>
+#: OrchardCore.Seo\Views\RobotsSettings.Edit.cshtml:24
+msgctxt "OrchardCore.Seo.Views.RobotsSettings.Edit"
+msgid "Optionally, you can include any additional rules."
 msgstr ""
 
 #. <label class="form-check-label" asp-for="Render">@T["Render"]</label>
@@ -42,7 +112,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Whether to render metadata for this page."
 msgstr "是否渲染此页面的元数据。"
 
-#. <label asp-for="PageTitle" class="@Orchard.GetLabelCssClasses()">@T["Page Title"] </label>
+#. <label asp-for="PageTitle" class="@Orchard.GetLabelClasses()">@T["Page Title"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:17
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Page Title"
@@ -54,7 +124,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Override the default generated web browser page title (recommended to keep under 70 characters)."
 msgstr ""
 
-#. <label asp-for="MetaDescription" class="@Orchard.GetLabelCssClasses()">@T["Meta Description"] </label>
+#. <label asp-for="MetaDescription" class="@Orchard.GetLabelClasses()">@T["Meta Description"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:25
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Meta Description"
@@ -66,7 +136,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "The meta description to render for this page."
 msgstr ""
 
-#. <label asp-for="MetaKeywords" class="@Orchard.GetLabelCssClasses()">@T["Meta Keywords"] </label>
+#. <label asp-for="MetaKeywords" class="@Orchard.GetLabelClasses()">@T["Meta Keywords"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:35
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Meta Keywords"
@@ -78,7 +148,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "The meta keywords to render for this page, comma separated."
 msgstr ""
 
-#. <label asp-for="Canonical" class="@Orchard.GetLabelCssClasses()"> @T["Canonical"] </label>
+#. <label asp-for="Canonical" class="@Orchard.GetLabelClasses()"> @T["Canonical"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:44
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Canonical"
@@ -90,7 +160,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Override the default canonical url."
 msgstr ""
 
-#. <label asp-for="MetaRobots" class="@Orchard.GetLabelCssClasses()">@T["Meta Robots"] </label>
+#. <label asp-for="MetaRobots" class="@Orchard.GetLabelClasses()">@T["Meta Robots"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:52
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Meta Robots"
@@ -138,22 +208,22 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Remove element from list"
 msgstr ""
 
-#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fas fa-plus small" aria-hidden="true"></i> @T["Add a custom meta tag"]</a>
+#. <a v-on:click="add()" class="btn btn-light w-100 btn-sm"><i class="fa-solid fa-plus small" aria-hidden="true"></i> @T["Add a custom meta tag"]</a>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:107
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Add a custom meta tag"
 msgstr ""
 
 #. <h5 class="modal-title">@T["Edit Data"]</h5>
-#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fas fa-edit" aria-hidden="true"></i></a>
+#. <a href="javascript:void(0)" v-on:click="showModal" class="float-end" title="@T["Edit Data"]"><i class="fa-solid fa-edit" aria-hidden="true"></i></a>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:120
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:141
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Edit Data"
 msgstr "编辑数据"
 
-#. <label for="meta-tags-textarea">@T["Custom Meta Tags"]</label>
-#. <label asp-for="CustomMetaTags">@T["Custom Meta Tags"]</label>
+#. <label for="meta-tags-textarea" class="form-label">@T["Custom Meta Tags"]</label>
+#. <label asp-for="CustomMetaTags" class="form-label">@T["Custom Meta Tags"]</label>
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:125
 #: OrchardCore.Seo\Views\SeoMetaPart.Edit.cshtml:140
 msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
@@ -178,7 +248,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPart.Edit"
 msgid "Cancel"
 msgstr "取消"
 
-#. <label asp-for="GoogleSchema">@T["Google Schema"] </label>
+#. <label asp-for="GoogleSchema" class="form-label">@T["Google Schema"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartGoogleSchema.Edit.cshtml:4
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartGoogleSchema.Edit"
 msgid "Google Schema"
@@ -190,7 +260,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartGoogleSchema.Edit"
 msgid "The Social Meta Settings Google Schema is used by default, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="OpenGraphType">@T["Open Graph Type"] </label>
+#. <label asp-for="OpenGraphType" class="form-label">@T["Open Graph Type"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartOpenGraph.Edit.cshtml:4
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartOpenGraph.Edit"
 msgid "Open Graph Type"
@@ -202,7 +272,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartOpenGraph.Edit"
 msgid "The Social Meta Settings Open Graph Type is used by default, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="OpenGraphTitle">@T["Open Graph Title"] </label>
+#. <label asp-for="OpenGraphTitle" class="form-label">@T["Open Graph Title"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartOpenGraph.Edit.cshtml:10
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartOpenGraph.Edit"
 msgid "Open Graph Title"
@@ -214,7 +284,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartOpenGraph.Edit"
 msgid "The Title is used by default, then the Page Title, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="OpenGraphDescription">@T["Open Graph Description"] </label>
+#. <label asp-for="OpenGraphDescription" class="form-label">@T["Open Graph Description"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartOpenGraph.Edit.cshtml:16
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartOpenGraph.Edit"
 msgid "Open Graph Description"
@@ -286,7 +356,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartSettings.Edit"
 msgid "Check to display the Google Schema panel."
 msgstr ""
 
-#. <label asp-for="TwitterTitle">@T["Twitter Title"] </label>
+#. <label asp-for="TwitterTitle" class="form-label">@T["Twitter Title"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartTwitter.Edit.cshtml:4
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "Twitter Title"
@@ -298,7 +368,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "The Title is used by default, then the Page Title, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="TwitterDescription">@T["Twitter Description"] </label>
+#. <label asp-for="TwitterDescription" class="form-label">@T["Twitter Description"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartTwitter.Edit.cshtml:10
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "Twitter Description"
@@ -310,7 +380,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "The Meta Description is used by default, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="TwitterCard">@T["Twitter Card"] </label>
+#. <label asp-for="TwitterCard" class="form-label">@T["Twitter Card"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartTwitter.Edit.cshtml:16
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "Twitter Card"
@@ -322,7 +392,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "The Social Meta Settings Twitter Card is used by default, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="TwitterCreator">@T["Twitter Creator"] </label>
+#. <label asp-for="TwitterCreator" class="form-label">@T["Twitter Creator"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartTwitter.Edit.cshtml:22
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "Twitter Creator"
@@ -334,7 +404,7 @@ msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "The Social Meta Settings Twitter Creator is used by default, or can be overridden here."
 msgstr ""
 
-#. <label asp-for="TwitterSite">@T["Twitter Site"] </label>
+#. <label asp-for="TwitterSite" class="form-label">@T["Twitter Site"] </label>
 #: OrchardCore.Seo\Views\SeoMetaPartTwitter.Edit.cshtml:28
 msgctxt "OrchardCore.Seo.Views.SeoMetaPartTwitter.Edit"
 msgid "Twitter Site"

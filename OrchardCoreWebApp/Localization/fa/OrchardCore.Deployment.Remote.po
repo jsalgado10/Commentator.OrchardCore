@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
-"PO-Revision-Date: 2023-02-18 19:32\n"
+"PO-Revision-Date: 2023-12-22 16:15\n"
 
 #. .Add(S["Configuration"], configuration => configuration
 #: OrchardCore.Deployment.Remote\AdminMenu.cs:25
@@ -41,115 +41,115 @@ msgid "Remote Clients"
 msgstr "سرویس‌گیرندگان ریموت"
 
 #. await _notifier.SuccessAsync(H["Deployment executed successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\ExportRemoteInstanceController.cs:107
+#: OrchardCore.Deployment.Remote\Controllers\ExportRemoteInstanceController.cs:108
 msgctxt "OrchardCore.Deployment.Remote.Controllers.ExportRemoteInstanceController"
 msgid "Deployment executed successfully."
 msgstr "برنامه استقرار با موفقیت اجرا شد."
 
 #. await _notifier.ErrorAsync(H["An error occurred while sending the deployment to the remote instance: \"{0} ({1})\"", response.ReasonPhrase, (int)response.StatusCode]);
-#: OrchardCore.Deployment.Remote\Controllers\ExportRemoteInstanceController.cs:111
+#: OrchardCore.Deployment.Remote\Controllers\ExportRemoteInstanceController.cs:112
 msgctxt "OrchardCore.Deployment.Remote.Controllers.ExportRemoteInstanceController"
 msgid "An error occurred while sending the deployment to the remote instance: \"{0} ({1})\""
 msgstr "در هنگام فرستادن برنامه استقرار به یکی از موارد ریموت، خطایی رخ داده است: \"{0} ({1})\""
 
 #. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:92
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:93
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #. await _notifier.SuccessAsync(H["Remote client created successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:136
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:137
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "Remote client created successfully."
-msgstr ""
+msgstr "کلاینت راه دور با موفقیت ایجاد شد."
 
 #. await _notifier.SuccessAsync(H["Remote client updated successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:192
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:193
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "Remote client updated successfully."
-msgstr ""
+msgstr "سرویس‌گیرنده ریموت با موفقیت به‌روزرسانی شد."
 
 #. await _notifier.SuccessAsync(H["Remote client deleted successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:218
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:219
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "Remote client deleted successfully."
-msgstr ""
+msgstr "سرویس‌گیرنده ریموت با موفقیت پاک شد."
 
 #. await _notifier.SuccessAsync(H["Remote clients successfully removed."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:246
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:247
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "Remote clients successfully removed."
-msgstr ""
+msgstr "مشتریان راه دور با موفقیت حذف شدند."
 
 #. ModelState.AddModelError(nameof(EditRemoteClientViewModel.ClientName), S["The client name is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:260
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:261
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "The client name is mandatory."
 msgstr "نام سرویس‌گیرنده اجباری است."
 
 #. ModelState.AddModelError(nameof(EditRemoteClientViewModel.ApiKey), S["The api key is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:265
+#: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:266
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteClientController"
 msgid "The api key is mandatory."
 msgstr "کلید API اجباری است."
 
 #. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:87
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:86
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #. await _notifier.SuccessAsync(H["Remote instance created successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:131
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:130
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "Remote instance created successfully."
-msgstr ""
+msgstr "نمونه راه دور با موفقیت ایجاد شد."
 
 #. await _notifier.SuccessAsync(H["Remote instance updated successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:189
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:188
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "Remote instance updated successfully."
-msgstr ""
+msgstr "مورد ریموت با موفقیت به‌روزرسانی شد."
 
 #. await _notifier.SuccessAsync(H["Remote instance deleted successfully."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:215
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:214
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "Remote instance deleted successfully."
-msgstr ""
+msgstr "مورد ریموت با موفقیت پاک شد."
 
 #. await _notifier.SuccessAsync(H["Remote instances successfully removed."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:243
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:242
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "Remote instances successfully removed."
-msgstr ""
+msgstr "نمونه های راه دور با موفقیت حذف شدند."
 
 #. ModelState.AddModelError(nameof(EditRemoteInstanceViewModel.Name), S["The name is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:257
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:256
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "The name is mandatory."
 msgstr "نام اجباری است."
 
 #. ModelState.AddModelError(nameof(EditRemoteInstanceViewModel.ClientName), S["The client name is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:262
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:261
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "The client name is mandatory."
 msgstr "نام سرویس‌گیرنده اجباری است."
 
 #. ModelState.AddModelError(nameof(EditRemoteInstanceViewModel.ApiKey), S["The api key is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:267
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:266
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "The api key is mandatory."
 msgstr "کلید API اجباری است."
 
 #. ModelState.AddModelError(nameof(EditRemoteInstanceViewModel.Url), S["The url is mandatory."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:272
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:271
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "The url is mandatory."
 msgstr "آدرس اجباری است."
 
 #. ModelState.AddModelError(nameof(EditRemoteInstanceViewModel.Url), S["The url is invalid."]);
-#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:279
+#: OrchardCore.Deployment.Remote\Controllers\RemoteInstanceController.cs:277
 msgctxt "OrchardCore.Deployment.Remote.Controllers.RemoteInstanceController"
 msgid "The url is invalid."
 msgstr "آدرس نامعتبر است."
@@ -160,29 +160,17 @@ msgctxt "OrchardCore.Deployment.RemoteInstanceDeploymentTargetProvider"
 msgid "Sends the deployment plan to a remote instance."
 msgstr "برنامه استقرار را به یکی از موارد ریموت ارسال می‌کند."
 
-#. <label asp-for="ClientName">@T["Client Name"]</label>
+#. <label asp-for="ClientName" class="form-label">@T["Client Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Create.cshtml:7
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Create"
 msgid "Client Name"
 msgstr "نام سرویس‌گیرنده"
 
-#. <span asp-validation-for="ClientName" class="text-danger">@T["The client name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteClient\Create.cshtml:9
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Create"
-msgid "The client name is required."
-msgstr "نام سرویس‌گیرنده ضروری است."
-
-#. <label asp-for="ApiKey">@T["Api Key"]</label>
+#. <label asp-for="ApiKey" class="form-label">@T["Api Key"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Create.cshtml:13
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Create"
 msgid "Api Key"
 msgstr "کلید API"
-
-#. <span asp-validation-for="ApiKey" class="text-danger">@T["The api key is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteClient\Create.cshtml:15
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Create"
-msgid "The api key is required."
-msgstr "کلید API ضروری است."
 
 #. <button class="btn btn-primary create" type="submit">@T["Create"]</button>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Create.cshtml:19
@@ -202,53 +190,29 @@ msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
 msgid "Create Remote Instance"
 msgstr "ایجاد مورد ریموت"
 
-#. <label asp-for="Name">@T["Name"]</label>
+#. <label asp-for="Name" class="form-label">@T["Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:8
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
 msgid "Name"
 msgstr "نام"
 
-#. <span asp-validation-for="Name" class="text-danger">@T["The name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:10
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
-msgid "The name is required."
-msgstr "نام ضروری است."
-
-#. <label asp-for="Url">@T["Url"]</label>
+#. <label asp-for="Url" class="form-label">@T["Url"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:14
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
 msgid "Url"
 msgstr "آدرس"
 
-#. <span asp-validation-for="Url" class="text-danger">@T["The url is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:16
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
-msgid "The url is required."
-msgstr "آدرس ضروری است."
-
-#. <label asp-for="ClientName">@T["Client Name"]</label>
+#. <label asp-for="ClientName" class="form-label">@T["Client Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:20
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
 msgid "Client Name"
 msgstr "نام سرویس‌گیرنده"
 
-#. <span asp-validation-for="ClientName" class="text-danger">@T["The client name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:22
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
-msgid "The client name is required."
-msgstr "نام سرویس‌گیرنده ضروری است."
-
-#. <label asp-for="ApiKey">@T["Api Key"]</label>
+#. <label asp-for="ApiKey" class="form-label">@T["Api Key"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:26
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
 msgid "Api Key"
 msgstr "کلید API"
-
-#. <span asp-validation-for="ApiKey" class="text-danger">@T["The api key is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:28
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Create"
-msgid "The api key is required."
-msgstr "کلید API ضروری است."
 
 #. <button class="btn btn-primary create" type="submit">@T["Create"]</button>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Create.cshtml:32
@@ -268,29 +232,17 @@ msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Edit"
 msgid "Edit Remote Client"
 msgstr "ویرایش سرویس‌گیرنده ریموت"
 
-#. <label asp-for="ClientName">@T["Client Name"]</label>
+#. <label asp-for="ClientName" class="form-label">@T["Client Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Edit.cshtml:10
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Edit"
 msgid "Client Name"
 msgstr "نام سرویس‌گیرنده"
 
-#. <span asp-validation-for="ClientName" class="text-danger">@T["The client name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteClient\Edit.cshtml:12
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Edit"
-msgid "The client name is required."
-msgstr "نام سرویس‌گیرنده ضروری است."
-
-#. <label asp-for="ApiKey">@T["Api Key"]</label>
+#. <label asp-for="ApiKey" class="form-label">@T["Api Key"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Edit.cshtml:16
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Edit"
 msgid "Api Key"
 msgstr "کلید API"
-
-#. <span asp-validation-for="ApiKey" class="text-danger">@T["The api key is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteClient\Edit.cshtml:18
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Edit"
-msgid "The api key is required."
-msgstr "کلید API ضروری است."
 
 #. <button class="btn btn-primary save" type="submit">@T["Save"]</button>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Edit.cshtml:22
@@ -310,53 +262,29 @@ msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
 msgid "Edit Remote Instance"
 msgstr "ویرایش مورد ریموت"
 
-#. <label asp-for="Name">@T["Name"]</label>
+#. <label asp-for="Name" class="form-label">@T["Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:10
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
 msgid "Name"
 msgstr "نام"
 
-#. <span asp-validation-for="Name" class="text-danger">@T["The name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:12
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
-msgid "The name is required."
-msgstr "نام ضروری است."
-
-#. <label asp-for="Url">@T["Url"]</label>
+#. <label asp-for="Url" class="form-label">@T["Url"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:16
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
 msgid "Url"
 msgstr "آدرس"
 
-#. <span asp-validation-for="Url" class="text-danger">@T["The url is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:18
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
-msgid "The url is required."
-msgstr "آدرس ضروری است."
-
-#. <label asp-for="ClientName">@T["Client Name"]</label>
+#. <label asp-for="ClientName" class="form-label">@T["Client Name"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:22
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
 msgid "Client Name"
 msgstr "نام کِلایِنت"
 
-#. <span asp-validation-for="ClientName" class="text-danger">@T["The client name is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:24
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
-msgid "The client name is required."
-msgstr "نام کِلایِنت ضروری است."
-
-#. <label asp-for="ApiKey">@T["Api Key"]</label>
+#. <label asp-for="ApiKey" class="form-label">@T["Api Key"]</label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:28
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
 msgid "Api Key"
 msgstr "کلید API"
-
-#. <span asp-validation-for="ApiKey" class="text-danger">@T["The api key is required."]</span>
-#: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:30
-msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Edit"
-msgid "The api key is required."
-msgstr "کلید API ضروری است."
 
 #. <button class="btn btn-primary save" type="submit">@T["Save"]</button>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Edit.cshtml:34
@@ -386,7 +314,7 @@ msgstr "آدرسی که سرویس‌گیرنده‌ها از آن استفاد�
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:25
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Search"
-msgstr ""
+msgstr "جستجو"
 
 #. <a asp-route-action="Create" class="btn btn-secondary create" role="button">@T["Add Remote Client"]</a>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:29
@@ -398,47 +326,47 @@ msgstr "افزودن سرویس‌گیرنده ریموت"
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:43
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Select All"
-msgstr ""
+msgstr "انتخاب همه"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteClients.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:44
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "1 item"
 msgid_plural "{0} items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 مورد"
+msgstr[1] "{0} مورد"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteClients.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:44
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Items {0} to {1}"
-msgstr ""
+msgstr "موارد {0} تا {1}"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteClients.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:44
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid " / {0} item in total"
 msgid_plural " / {0} items in total"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " / {0} مورد در مجموع"
+msgstr[1] " / {0} مورد در مجموع"
 
 #. @T["Actions"]
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:53
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Actions"
-msgstr ""
+msgstr "اقدامات"
 
 #. <li><a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a></li>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:58
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Bulk Action"
-msgstr ""
+msgstr "عملیات گروهی"
 
 #. <li><a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a></li>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:58
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Are you sure you want to {0} these items?"
-msgstr ""
+msgstr "آیا مطمئنید که می خواهید این موارد را {0} کنید؟"
 
 #. <a asp-action="Edit" asp-route-id="@entry.Id" class="btn btn-primary btn-sm">@T["Edit"]</a>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:75
@@ -464,7 +392,7 @@ msgstr "<strong>چیزی اینجا نیست!</strong>در این لحظه هی�
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:149
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "selected"
-msgstr ""
+msgstr "انتخاب شده"
 
 #. <zone Name="Title"><h1>@RenderTitleSegments(T["Remote Instances"])</h1></zone>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:7
@@ -476,7 +404,7 @@ msgstr "موارد ریموت"
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:21
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Search"
-msgstr ""
+msgstr "جستجو"
 
 #. <a asp-route-action="Create" class="btn btn-secondary create" role="button">@T["Add Remote Instance"]</a>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:25
@@ -488,47 +416,47 @@ msgstr "افزودن مورد ریموت"
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:38
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Select All"
-msgstr ""
+msgstr "انتخاب همه"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteInstances.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:39
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "1 item"
 msgid_plural "{0} items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 مورد"
+msgstr[1] "{0} مورد"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteInstances.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:39
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Items {0} to {1}"
-msgstr ""
+msgstr "موارد {0} تا {1}"
 
 #. <label id="items" for="select-all">@T.Plural(Model.RemoteInstances.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:39
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid " / {0} item in total"
 msgid_plural " / {0} items in total"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " / {0} مورد در مجموع"
+msgstr[1] " / {0} مورد در مجموع"
 
 #. @T["Actions"]
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:46
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Actions"
-msgstr ""
+msgstr "اقدامات"
 
 #. <li><a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a></li>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:51
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Bulk Action"
-msgstr ""
+msgstr "عملیات گروهی"
 
 #. <li><a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a></li>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:51
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "Are you sure you want to {0} these items?"
-msgstr ""
+msgstr "آیا مطمئنید که می خواهید این موارد را {0} کنید؟"
 
 #. <a asp-action="Edit" asp-route-id="@entry.Id" class="btn btn-primary btn-sm">@T["Edit"]</a>
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:68
@@ -554,5 +482,5 @@ msgstr "<strong>چیزی اینجا نیست!</strong>در این لحظه هی�
 #: OrchardCore.Deployment.Remote\Views\RemoteInstance\Index.cshtml:143
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteInstance.Index"
 msgid "selected"
-msgstr ""
+msgstr "انتخاب شده"
 

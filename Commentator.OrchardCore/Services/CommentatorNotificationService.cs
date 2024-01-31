@@ -121,7 +121,7 @@ namespace Commentator.OrchardCore.Services
                                     To = user.Email,
                                     Subject = mentionedEmailSubject,
                                     Body = await BuildShapeOutput(model),
-                                    IsBodyHtml = true
+                                    IsHtmlBody = true
                                 };
 
                                 messages.Add(message);
@@ -162,7 +162,7 @@ namespace Commentator.OrchardCore.Services
                                         To = user.Email,
                                         Subject = replyEmailSubject,
                                         Body = await BuildShapeOutput(model),
-                                        IsBodyHtml = true
+                                        IsHtmlBody = true
                                     };
 
                                     messages.Add(message);
