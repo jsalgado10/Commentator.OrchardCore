@@ -17,8 +17,9 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Product>Commentator.OrchardCore</Product>
     <AssemblyName>Commentator.OrchardCore</AssemblyName>
-    <Version>1.6.1</Version>
+    <Version>2.0.0-beta1</Version>
     <RepositoryType>Commentator.OrchardCore</RepositoryType>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,6 +45,10 @@
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+    <None Include="docs\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 

@@ -1,0 +1,1 @@
+﻿This Orchardcore Module is used to add a comment engine. The Commentator part can be added to the Content type to display a box to post comments
