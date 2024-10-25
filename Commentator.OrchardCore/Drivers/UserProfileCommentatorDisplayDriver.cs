@@ -11,17 +11,19 @@ namespace Commentator.OrchardCore.Drivers
 {
     public class UserProfileCommentatorDisplayDriver : SectionDisplayDriver<User, UserProfileCommentator>
     {
-        public override IDisplayResult Edit(UserProfileCommentator profile, BuildEditorContext context)
+        public override Task<IDisplayResult> EditAsync(User user, UserProfileCommentator profile, BuildEditorContext context)
         {
-            return Initialize<EditUserProfileCommentatorViewModel>("UserProfileCommentator_Edit", model =>
+            var result = Initialize<EditUserProfileCommentatorViewModel>("UserProfileCommentator_Edit", model =>
             {
                 model.NotificationCommentOnReplies = profile.NotificationCommentOnReplies;
                 model.NotificationCommentOnMentions = profile.NotificationCommentOnMentions;
 
             }).Location("Content:2#Notifications");
+
+            return Task.FromResult<IDisplayResult>(result);
         }
 
-        public override async Task<IDisplayResult> UpdateAsync(UserProfileCommentator profile, BuildEditorContext context)
+        public override async Task<IDisplayResult> UpdateAsync(User user, UserProfileCommentator profile, UpdateEditorContext context)
         {
             var model = new EditUserProfileCommentatorViewModel();
 
@@ -31,7 +33,7 @@ namespace Commentator.OrchardCore.Drivers
                 profile.NotificationCommentOnMentions = model.NotificationCommentOnMentions;
             }
 
-            return Edit(profile, context);
+            return await EditAsync(user, profile, context);
         }
     }
 }

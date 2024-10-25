@@ -247,19 +247,19 @@ namespace Commentator.OrchardCore.Controllers
         {
             dynamic content = item.Content;
 
-            return content.CommentPost.CommentArticle.Text.Value == documentId;
+            return content.CommentPost.CommentArticle.Text == documentId;
         }
 
         private bool IsParentComment(ContentItem item)
         {
             dynamic content = item.Content;
 
-            return content.CommentPost.CommentParent.Text.Value == "0";
+            return content.CommentPost.CommentParent.Text == "0";
         }
 
         private bool IsChildOf(string parentId, ContentItem comment)
         {
-            string commentParent = comment.Content.CommentPost.CommentParent.Text.Value;
+            string commentParent = comment.Content.CommentPost.CommentParent.Text;
 
             return parentId == commentParent;
         }

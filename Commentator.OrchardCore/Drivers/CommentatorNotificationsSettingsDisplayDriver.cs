@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Commentator.OrchardCore.Drivers
 {
-    public class CommentatorNotificationsSettingsDisplayDriver : SectionDisplayDriver<ISite, CommentatorNotificationsSettings>
+    public class CommentatorNotificationsSettingsDisplayDriver : SiteDisplayDriver<CommentatorNotificationsSettings>
     {
         public const string GroupId = "notifications";
         private readonly IShellHost shellHost;
@@ -38,32 +38,24 @@ namespace Commentator.OrchardCore.Drivers
             contentDefinitionManager = currentContentDefinitionManager;
         }
 
-        public override async Task<IDisplayResult> EditAsync(CommentatorNotificationsSettings section, BuildEditorContext context)
+        protected override string SettingsGroupId => GroupId;
+
+        public override IDisplayResult Edit(ISite site, CommentatorNotificationsSettings section, BuildEditorContext context)
         {
-            var user = httpContextAccessor.HttpContext?.User;
-
-            if (!await authorizationService.AuthorizeAsync(user, Permissions.ManageCommentNotificationsSettings))
+            return Initialize<CommentatorNotificationsSettings>("CommentsNotificationsSettings_Edit", model =>
             {
-                return null;
-            }
+                model.SendCommentNotifications = section.SendCommentNotifications;
+                model.CommentReplySubjectMessage = section.CommentReplySubjectMessage;
+                model.CommentReplyEmailMessage = section.CommentReplyEmailMessage;
+                model.CommentMentionSubjectMessage = section.CommentMentionSubjectMessage;
+                model.CommentMentionEmailMessage = section.CommentMentionEmailMessage;
 
-            var shapes = new List<IDisplayResult>
-            {
-                Initialize<CommentatorNotificationsSettings>("CommentsNotificationsSettings_Edit", model =>
-                {
-                    model.SendCommentNotifications = section.SendCommentNotifications;
-                    model.CommentReplySubjectMessage = section.CommentReplySubjectMessage;
-                    model.CommentReplyEmailMessage = section.CommentReplyEmailMessage;
-                    model.CommentMentionSubjectMessage = section.CommentMentionSubjectMessage;
-                    model.CommentMentionEmailMessage = section.CommentMentionEmailMessage;
-
-                }).Location("Content:2#Comments").OnGroup(GroupId)
-            };
-
-            return Combine(shapes);
+            }).Location("Content:2#Comments")
+            .RenderWhen(() => authorizationService.AuthorizeAsync(httpContextAccessor.HttpContext?.User, Permissions.ManageCommentNotificationsSettings))
+            .OnGroup(GroupId);
         }
 
-        public override async Task<IDisplayResult> UpdateAsync(CommentatorNotificationsSettings section, BuildEditorContext context)
+        public override async Task<IDisplayResult> UpdateAsync(ISite site, CommentatorNotificationsSettings section, UpdateEditorContext context)
         {
             var user = httpContextAccessor.HttpContext?.User;
 
@@ -78,7 +70,7 @@ namespace Commentator.OrchardCore.Drivers
                 await shellHost.ReleaseShellContextAsync(shellSettings);
             }
 
-            return await EditAsync(section, context);
+            return Edit(site, section, context);
         }
     }
 }

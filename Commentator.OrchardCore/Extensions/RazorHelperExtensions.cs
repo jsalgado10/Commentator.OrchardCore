@@ -31,7 +31,7 @@ public static class RazorHelperExtensions
     {
         dynamic content = item.Content;
 
-        return content.CommentPost.CommentArticle.Text.Value == documentId;
+        return content.CommentPost.CommentArticle.Text == documentId;
     }
 
     public static async Task<IEnumerable<dynamic>> GetContentItemCommentsAsync(this IOrchardHelper orchardHelper, string contentTypeId)

@@ -6,8 +6,8 @@
 @if (Model.ContentItems.Count > 0)
 {
     var commentItem = Model.ContentItems.FirstOrDefault();
-    var articleId = commentItem.ContentItem.Content.CommentPost.CommentArticle.Text.Value;
-    ContentItem articleItem = await ContentManager.GetAsync(articleId);
+    string articleId = commentItem.ContentItem.Content.CommentPost.CommentArticle.Text;
+    ContentItem articleItem = await ContentManager.GetAsync(articleId, VersionOptions.Latest);
     var commentCount = await Orchard.CommentCount(articleItem);
     var commentMessage = commentCount > 1 ? $@"{commentCount} comments" : $@"{commentCount} comment";
 

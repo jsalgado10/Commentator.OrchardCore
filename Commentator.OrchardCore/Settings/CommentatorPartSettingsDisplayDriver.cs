@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Commentator.OrchardCore.Models;
 using OrchardCore.ContentManagement.Metadata.Models;
 using OrchardCore.ContentTypes.Editors;
+using OrchardCore.DisplayManagement.Handlers;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.DisplayManagement.Views;
 
@@ -10,7 +11,7 @@ namespace Commentator.OrchardCore.Settings
 {
     public class CommentatorPartSettingsDisplayDriver : ContentTypePartDefinitionDisplayDriver
     {
-        public override IDisplayResult Edit(ContentTypePartDefinition contentTypePartDefinition)
+        public override IDisplayResult Edit(ContentTypePartDefinition contentTypePartDefinition, BuildEditorContext context)
         {
             if (!String.Equals(nameof(CommentatorPart), contentTypePartDefinition.PartDefinition.Name, StringComparison.Ordinal))
             {
@@ -50,7 +51,7 @@ namespace Commentator.OrchardCore.Settings
                 });
             }
 
-            return Edit(contentTypePartDefinition, context.Updater);
+            return Edit(contentTypePartDefinition, context);
         }
     }
 }

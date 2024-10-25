@@ -4,6 +4,7 @@ using Commentator.OrchardCore.Models;
 using Commentator.OrchardCore.Settings;
 using Commentator.OrchardCore.ViewModels;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
+using OrchardCore.ContentManagement.Display.Models;
 using OrchardCore.ContentManagement.Metadata;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.DisplayManagement.Views;
@@ -19,28 +20,28 @@ namespace Commentator.OrchardCore.Drivers
             _contentDefinitionManager = contentDefinitionManager;
         }
 
-        public override IDisplayResult Display(CommentatorPart commentatorPart)
+        public override IDisplayResult Display(CommentatorPart commentatorPart, BuildPartDisplayContext context)
         {
             return Combine(
-                Initialize<CommentatorPartViewModel>("CommentatorPart", m =>  BuildViewModel(m, commentatorPart))
+                Initialize<CommentatorPartViewModel>("CommentatorPart", m => BuildViewModel(m, commentatorPart))
                     .Location("Detail", "Content:20"),
                 Initialize<CommentatorPartViewModel>("CommentatorPart_Summary", m => BuildViewModel(m, commentatorPart))
                     .Location("Summary", "Meta:5")
             );
         }
 
-        public override IDisplayResult Edit(CommentatorPart commentatorPart)
+        public override IDisplayResult Edit(CommentatorPart commentatorPart, BuildPartEditorContext context)
         {
             return Initialize<CommentatorPartViewModel>("CommentatorPart_Edit", m => BuildViewModel(m, commentatorPart));
         }
 
-        public override async Task<IDisplayResult> UpdateAsync(CommentatorPart model, IUpdateModel updater)
+        public override async Task<IDisplayResult> UpdateAsync(CommentatorPart model, UpdatePartEditorContext context)
         {
             var settings = GetCommentatorPartSettings(model);
 
-            await updater.TryUpdateModelAsync(model, Prefix, t => t.AllowComments);
+            await context.Updater.TryUpdateModelAsync(model, Prefix, t => t.AllowComments);
 
-            return Edit(model);
+            return Edit(model, context);
         }
 
         public async Task<CommentatorPartSettings> GetCommentatorPartSettings(CommentatorPart part)
